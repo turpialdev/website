@@ -18,13 +18,14 @@ function myFunction(x) {
         if (mY <= 100 && mX) {
             document.getElementById('menuItems').style.opacity = Math.abs((mY - 100) * 0.01);
 
-            var rotation1 = Math.abs(((mY / 100) * 45) - 45);
-            var transla1X = Math.abs(((mY / 100) * -7) - 7);
-            var transla1Y = Math.abs(((mY / 100) * 6) + 6);
+            var roof = mY - 100;
+            var rotation1 = Math.abs( (roof / 100) * 45 );
+            var transla1X = Math.abs( (roof / 100) * -7 );
+            var transla1Y = Math.abs( (roof / 100) * 6  );
 
-            var rotation2 = Math.abs(((mY / 100) * 45) + 45);
-            var transla2X = Math.abs(((mY / 100) * -7) - 7);
-            var transla2Y = Math.abs(((mY / 100) * -5) - 5);
+            var rotation2 = Math.abs( (roof / 100) * 45 );
+            var transla2X = Math.abs( (roof / 100) * -7 );
+            var transla2Y = Math.abs( (roof / 100) * -5 );
 
             console.log(rotation1);
 
