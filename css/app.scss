@@ -150,7 +150,7 @@ Hamburger button
 	margin: 18px 52px;
 	width: 100%;
 	padding: 0;
-	
+
 	li > a {
 		color: $black;
 	}
@@ -186,7 +186,7 @@ Hamburger button
 /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-7px, 6px) ;
-    transform: rotate(-45deg) translate(-7px, 6px) ;
+    transform: rotate(-45deg) translate(-7px, 6px);
 }
 
 /* Fade out the second bar */
@@ -210,8 +210,6 @@ Nav-bar
 	grid-auto-rows: auto;
 	align-items: center;
 	text-align: center;
-	// display: none;
-	// opacity: 0;
 	transition: $menu-transition;
 
 	.item {
