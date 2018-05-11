@@ -198,31 +198,44 @@ Turpial Logo
 ********/
 
 .nav-logo img {
-	width: $frameborder;
-	height: auto;
-	padding: 7.7px 0;
-	float: right;
+    width: $frameborder;
+    height: auto;
+    padding: 7.7px 0;
+    float: right;
 }
 
 /********
 Home Page
 ********/
 
+@keyframes typing { from { width: 0; } }
+@keyframes blink-caret { 50% { border-color: transparent; } }
+
 #home {
     height: calc(100vh - 208px);
     padding: $frameborder;
     background: #1b1b1b;
 
-    h1 {
+
+    .title {
         color: #fff;
         font-family: 'Courier New', Courier, monospace;
         font-size: 110px;
-        font-weight: bold;
+        font-weight: lighter;
         letter-spacing: -0.7px;
+
+        margin-top: 52px; 
     
-        span .typing-line-1 {
+        h1.typing-line-1 {
+            margin: 0;
+            border-right: 5px solid #fff;
+            width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            -webkit-animation: typing 2s steps(21, end),
+                blink-caret .5s step-end infinite
         }
-        span .typing-line-2 {
+        .typing-line-2 {
         }
     }
 }
@@ -251,7 +264,7 @@ Contact us
 	height: calc(100vh - 208px);
     padding: $frameborder;
 	background: #000;
-	color: #fff;
+    color: #fff;
 
 	.contact-offices {
 		width: 20%;
