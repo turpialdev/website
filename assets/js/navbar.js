@@ -15,7 +15,7 @@ function myFunction(x) {
             mY = 0;
         }
         
-        if (mY <= 100 && mX) {
+        if (mY <= 52 && mX <= 720) {
             document.getElementById('menuItems').style.opacity = Math.abs((mY - 100) * 0.01);
 
             var roof = mY - 100;
@@ -33,7 +33,7 @@ function myFunction(x) {
         } else {
             document.getElementById('menuItems').style.opacity = 0;
             document.getElementById('bar1').style.transform = 'none';
-            document.getElementById('bar2').style.opacity = Math.abs((mY - 100) * 0.01);
+            document.getElementById('bar2').style.opacity = 'initial';
             document.getElementById('bar3').style.transform = 'none';
         }
     });
