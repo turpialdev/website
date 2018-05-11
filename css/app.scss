@@ -264,4 +264,20 @@ Contact us
 		display: inline-block;
 		float: left;
 	}
+
+	.form-input {
+		display: block;
+		position: relative;
+		width: 100%;
+		background-color: #000000;
+		color: #ffffff;
+		border: 1px solid #ffffff;
+
+	}
+
+	.form-container {
+		margin: 20px;
+	}
+
+
 }
