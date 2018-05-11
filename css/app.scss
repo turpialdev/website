@@ -263,13 +263,26 @@ Contact us
 #contact {
 	height: calc(100vh - 208px);
     padding: $frameborder;
-	background: #000;
+	background: #1b1b1b;
     color: #fff;
 
 	.contact-offices {
 		width: 20%;
 		display: inline-block;
 		float: left;
+	}
+
+	.contact-title {
+		width: 696px;
+		height: 140px;
+		transform: rotate(-360deg);
+		font-family: Poppins;
+		font-size: 100px;
+		font-weight: 900;
+		letter-spacing: -0.6px;
+		text-align: left;
+		color: #ffffff;
+		color: var(--white);
 	}
 
 	.contact-content {
@@ -280,17 +293,38 @@ Contact us
 
 	.form-input {
 		display: block;
-		position: relative;
 		width: 100%;
-		background-color: #000000;
+		background-color: transparent;
 		color: #ffffff;
 		border: 1px solid #ffffff;
+		height: 52px;
+		font-family: Poppins;
+		font-size: 20px;
+		letter-spacing: -0.1px;
+		margin-top: 15px;
 
+	}
+
+	textarea.form-input {
+		height: 120px;
 	}
 
 	.form-container {
-		margin: 20px;
+		padding: 20px;
+		width: 45%;
+		display: inline-block;
 	}
 
+	.form-container.text-area {
+		width: 95%;
+	}
+
+	label {
+		width: 96px;
+		height: 32px;
+		font-family: Poppins;
+		font-size: 20px;
+		letter-spacing: -0.1px;
+	}
 
 }
