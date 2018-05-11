@@ -1,19 +1,18 @@
 # Site settings
 title: Turpial Development
 tagline: "New cool site"
-url: "http://yourwebsite.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
+url: "http://turpialdev.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
 socialimg: /img/social.jpg # be sure to change this image
 facebook: fbusername
 twitter: twusername
 github: ghusername
-googleplus: gusername
-instagram: igusername
+instagram: turpialdev
 
 # Contact
 phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@garrettboatman.com" # This is my real email address. Please don't email me.
+email: "hello@turpialdev.com" # This is my real email address. Please don't email me.
 
 # Build settings
 markdown: kramdown

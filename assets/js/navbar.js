@@ -27,15 +27,13 @@ function myFunction(x) {
             var transla2X = Math.abs( (roof / 100) * -7 );
             var transla2Y = Math.abs( (roof / 100) * -5 );
 
-            console.log(rotation1);
-
             document.getElementById('bar1').style.transform = 'rotate(' + -rotation1 + 'deg) translate(' + -transla1X + 'px,' + transla1Y + 'px)';
-            document.getElementById('bar2').style.opacity = 0;
+            document.getElementById('bar2').style.opacity = (mY - 100) * 0.01;
             document.getElementById('bar3').style.transform = 'rotate(' + rotation2 + 'deg) translate(' + -transla2X + 'px,' + -transla2Y + 'px)';
         } else {
             document.getElementById('menuItems').style.opacity = 0;
             document.getElementById('bar1').style.transform = 'none';
-            document.getElementById('bar2').style.opacity = 1;
+            document.getElementById('bar2').style.opacity = Math.abs((mY - 100) * 0.01);
             document.getElementById('bar3').style.transform = 'none';
         }
     });
