@@ -208,8 +208,12 @@ Turpial Logo
 Home Page
 ********/
 
+@keyframes hiden {
+	0% { opacity: 0; }
+	100% { opacity: 0; }
+}
 @keyframes typing { from { width: 0; } }
-@keyframes blink-caret { 50% { border-color: transparent; } }
+@keyframes blink-caret { 50% { border-right: 5px solid #fff; } }
 
 #home {
     height: calc(100vh - 208px);
@@ -226,16 +230,26 @@ Home Page
 
         margin-top: 52px; 
     
-        h1.typing-line-1 {
+        h2.typing-line-1 {
             margin: 0;
-            border-right: 5px solid #fff;
+			border-color: transparent;
             width: 400px;
             white-space: nowrap;
             overflow: hidden;
-            -webkit-animation: typing 2s steps(21, end),
-                blink-caret .5s step-end infinite
+			-webkit-animation:
+				typing 1s steps(6, end),
+				blink-caret .5s step-end
         }
-        .typing-line-2 {
+        h2.typing-line-2 {
+			margin: 0;
+            border-color: transparent;
+            width: 852px;
+            white-space: nowrap;
+            overflow: hidden;
+			-webkit-animation:
+				hiden 1.4s ease,
+				typing 2.2s steps(13, end) 1.4s,
+                blink-caret .5s step-end infinite 1s
         }
     }
 }
