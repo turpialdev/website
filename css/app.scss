@@ -70,6 +70,8 @@ $frameborder: 52px;
 
 /* colors */
 $black: #1b1b1b;
+$yellow: #ffcb00;
+$yellowHover: #e2b500;
 
 /*
 *********************
@@ -219,7 +221,26 @@ Home Page
 #home {
     height: calc(100vh - 208px);
     padding: $frameborder;
-    background: #1b1b1b;
+	background: #1b1b1b;
+	
+	.call-to-action-footer {
+		width: calc(100vw - 222px);
+		text-align: right;
+		position: absolute;
+		bottom: 107px;
+
+		a {
+			background-color: $yellow;
+			padding: 9px 12px;
+			font-size: 14px;
+			letter-spacing: 1px;
+			border: none;
+			color: $black;
+			&:hover {
+				background-color: $yellowHover;
+			}
+		}
+	}
 
     .title {
         color: #fff;
@@ -291,12 +312,12 @@ Home Page
 				font-size: 16x;
 				letter-spacing: -0.1px;
 			}
-		}
-		a:hover {
-			background-color: rgba(174, 174, 174, 0.8);
-			img {
-				margin-top: 40px;
-				margin-bottom: 27px;
+			&:hover {
+				background-color: rgba(174, 174, 174, 0.8);
+				img {
+					margin-top: 40px;
+					margin-bottom: 27px;
+				}
 			}
 		}
 
