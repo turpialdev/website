@@ -213,45 +213,85 @@ Home Page
 	100% { opacity: 0; }
 }
 @keyframes typing { from { width: 0; } }
-@keyframes blink-caret { 50% { border-right: 5px solid #fff; } }
+@keyframes blink-caret { 50% { border-right: 3px solid #fff; } }
 
 #home {
     height: calc(100vh - 208px);
     padding: $frameborder;
     background: #1b1b1b;
 
-
     .title {
         color: #fff;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 110px;
+        font-size: 96px;
         font-weight: lighter;
         letter-spacing: -0.7px;
-
-        margin-top: 52px; 
     
         h2.typing-line-1 {
             margin: 0;
 			border-color: transparent;
-            width: 400px;
+            width: 345px;
             white-space: nowrap;
             overflow: hidden;
 			-webkit-animation:
 				typing 1s steps(6, end),
-				blink-caret .5s step-end
+				blink-caret 1s step-end
         }
         h2.typing-line-2 {
 			margin: 0;
             border-color: transparent;
-            width: 852px;
+            width: 752px;
             white-space: nowrap;
             overflow: hidden;
 			-webkit-animation:
 				hiden 1.4s ease,
 				typing 2.2s steps(13, end) 1.4s,
-                blink-caret .5s step-end infinite 1s
+                blink-caret 1s step-end infinite 1s
         }
-    }
+	}
+
+	@keyframes slogan-trans {
+		0% { opacity: 0; }
+		80% { opacity: 0; }
+		100% { opacity: 1; }
+	}
+	
+	.slogan {
+		h4 {
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 32px;
+			font-weight: lighter;
+			letter-spacing: -0.2px;
+			color: #ffffff;
+			-webkit-animation:
+				slogan-trans 4.5s ease,
+		}
+	}
+
+	.call-to-action-btns {
+		margin-top: 35px;
+		div {
+			display: inline-block;
+			height: 150px;
+			width: 150px;
+			background-color: rgba(174, 174, 174, 0.7);
+			margin-right: 30px;
+			text-align: center;
+			img {
+				max-height: 32px;
+				max-width: 32px;
+				background-color: #ccc;
+			}
+			p {
+				margin: 0;
+				a {
+					color: #fff;
+					font-size: 16x;
+					letter-spacing: -0.1px;
+				}
+			}
+		}
+	}
 }
 
 /********
@@ -340,5 +380,14 @@ Contact us
 		font-size: 20px;
 		letter-spacing: -0.1px;
 	}
+}
 
+/********
+Globals
+********/
+
+.center-v {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
