@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="32px" viewBox="0 0 35 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>web_asset</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Turpail-Dev-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="T--Home-1-" transform="translate(-179.000000, -619.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="web_asset" transform="translate(179.000000, 619.000000)">
+                <path d="M31.0802178,27.9760479 L31.0802178,8.04790419 L3.91978223,8.04790419 L3.91978223,27.9760479 L31.0802178,27.9760479 Z M31.0802178,0 C33.2675962,0 35,1.87225549 35,4.0239521 L35,27.9760479 C35,30.1277445 33.1762124,32 31.0802178,32 L3.91978223,32 C1.73240376,32 0,30.1277445 0,27.9760479 L0,4.0239521 C0,1.87225549 1.73240376,0 3.91978223,0 L31.0802178,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
