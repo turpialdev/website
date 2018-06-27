@@ -636,58 +636,54 @@ Contact us
 */
 
 #contact {
-    min-height: 600px;
+    min-height: 38.46vw;
     height: calc(100vh - 208px);
     padding: $frameborder;
     background: #1b1b1b;
     color: #fff;
 
     .contact-offices {
-        width: 18%;
+        width: 23%;
         height: 100%;
         position: relative;
         display: inline-block;
         float: left;
         border-left: 1px solid #ffffff;
-        padding-left: 20px;
-        line-height: 20px;
+        padding-left: 1.28vw;
+        line-height: 1.28vw;
 
         .address {
-            margin-top: 60px;
+            font-size: 1.03vw;
+            margin-top: 3.85vw;
             position: relative;
         }
 
         .phones-email {
-            font-size: 20px;
+            font-size: 1.28vw;
             position: absolute;
             bottom: 0;
-            line-height: 27px;
+            line-height: 1.73vw;
         }
 
         hr {
-            width: 20px;
+            width: 1.28vw;
             display: inline-block;
             position: absolute;
-            left: -32px;
-            top: -6px;
+            left: -2.05vw;
+            top: -0.38vw;
         }
     }
 
     .contact-title {
-        width: 696px;
-        height: 140px;
-        transform: rotate(-360deg);
-        font-family: Poppins;
-        font-size: 100px;
+        font-size: 6.41vw;
         font-weight: 900;
-        letter-spacing: -0.6px;
         text-align: left;
         color: #ffffff;
         color: var(--white);
     }
 
     .contact-content {
-        width: 80%;
+        width: 66%;
         display: inline-block;
     }
 
@@ -697,23 +693,20 @@ Contact us
         background-color: transparent;
         color: #ffffff;
         border: 1px solid #ffffff;
-        height: 52px;
-        font-family: Poppins;
-        font-size: 20px;
-        letter-spacing: -0.1px;
-        margin-top: 15px;
-        padding: 0 15px;
+        height: 3.33vw;
+        font-size: 1.28vw;
+        margin-top: 0.96vw;
+        padding: 0 0.96vw;
     }
 
     .form-container.send-btn {
         text-align: right;
-        width: 97%;
+        width: 99%;
 
         a {
             background-color: $yellow;
-            padding: 9px 12px;
-            font-size: 14px;
-            letter-spacing: 1px;
+            padding: 0.58vw 2.78vw;
+            font-size: 0.9vw;
             border: none;
             color: $black;
             &:hover {
@@ -723,26 +716,25 @@ Contact us
     }
 
     textarea.form-input {
-        height: 120px;
-        padding: 15px;
+        height: 7.69vw;
+        padding: 0.96vw;
     }
 
     .form-container {
-        padding: 20px;
+        padding: 1.28vw 2.3%;
         width: 45%;
         display: inline-block;
     }
 
     .form-container.text-area {
-        width: 94%;
+        width: 95%;
     }
 
     label {
-        width: 96px;
-        height: 32px;
+        width: 6.15vw;
+        height:  2.05px;
         font-family: Poppins;
-        font-size: 20px;
-        letter-spacing: -0.1px;
+        font-size: 1.28vw;
     }
 }
 
