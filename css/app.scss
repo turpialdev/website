@@ -75,6 +75,9 @@ Global variables
 *********************
 */
 
+/* minimum screen width for descktop version */
+$min-width-desktop: 768px;
+
 $frameborder: 52px;
 
 /* colors */
@@ -248,7 +251,11 @@ Home Page
 @keyframes blink-caret { 50% { border-right: 3px solid #fff; } }
 
 #home {
-    height: calc(100vh - 208px);
+    /* For subtract border and padding to section height */
+    --sub-vertival-border: 208px;
+
+    height: calc(100vh - var(--sub-vertival-border));
+    min-height: calc(55.98vw - var(--sub-vertival-border));
     padding: $frameborder;
     background: #686868;
     background-image: url('/img/bg-home.jpg');
@@ -259,12 +266,12 @@ Home Page
         width: calc(100vw - 222px);
         text-align: right;
         position: absolute;
-        bottom: 107px;
+        bottom: 85px;
 
         a {
             background-color: $yellow;
-            padding: 9px 12px;
-            font-size: 14px;
+            padding: 0.625vw 0.83vw;
+            font-size: 1.39vw;
             letter-spacing: 1px;
             border: none;
             color: $black;
@@ -276,27 +283,24 @@ Home Page
 
     .title {
         color: #fff;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 96px;
-        font-weight: lighter;
-        letter-spacing: -0.7px;
-    
-        h2.typing-line-1 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 7.64vw;
+
+        h2 {
             margin: 0;
             border-color: transparent;
-            width: 345px;
             white-space: nowrap;
             overflow: hidden;
+        }
+    
+        h2.typing-line-1 {
+            width:  26vw;
             -webkit-animation:
                 typing 1s steps(6, end),
                 blink-caret 1s step-end
         }
         h2.typing-line-2 {
-            margin: 0;
-            border-color: transparent;
-            width: 752px;
-            white-space: nowrap;
-            overflow: hidden;
+            width: 61vw;
             -webkit-animation:
                 hiden 1.4s ease,
                 typing 2.2s steps(13, end) 1.4s,
@@ -311,10 +315,11 @@ Home Page
     }
     
     .slogan {
+        margin-top: 0.35vw;
+
         h4 {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 32px;
-            font-weight: lighter;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 2.78vw;
             letter-spacing: -0.2px;
             color: #ffffff;
             -webkit-animation: slogan-trans 4.5s ease,
@@ -322,41 +327,40 @@ Home Page
     }
 
     .call-to-action-btns {
-        margin-top: 35px;
+        margin-top: 2.43vw;
         a {
             display: inline-block;
             position: relative;
-            height: 150px;
-            width: 150px;
+            height: 10.42vw;
+            width: 10.42vw;
             background-color: rgba(174, 174, 174, 0.6);
-            margin-right: 30px;
+            margin-right: 2.08vw;
             text-align: center;
             img {
-                max-height: 32px;
-                max-width: 32px;
-                margin-top: 43px;
-                margin-bottom: 24px;
+                max-height: 2.22vw;
+                max-width: 2.22vw;
+                margin-top: 2.99vw;
+                margin-bottom: 1.67vw;
                 transition: .2s;
             }
             p {
                 margin: 0;
                 color: #fff;
-                font-size: 16x;
-                letter-spacing: -0.1px;
+                font-size: 1.39vw;
             }
             &:hover {
                 background-color: rgba(174, 174, 174, 0.8);
                 img {
-                    margin-top: 40px;
-                    margin-bottom: 27px;
+                    margin-top: 2.78vw;
+                    margin-bottom: 1.875vw;
                 }
             }
         }
 
         @keyframes flycont {
-            0% { height: 130px; }
-            90% { height: 130px; }
-            100% { height: 150px; } 
+            0% { height: 9.03vw; }
+            90% { height: 9.03vw; }
+            100% { height: 10.42vw; } 
         }
 
         @keyframes flya { 
@@ -387,6 +391,19 @@ Home Page
             -webkit-animation: flyc 4s ease, flycont 4s ease,
         }
     }
+
+    /* When section has scroll */
+    @media screen and (max-height: 55.86vw) {
+        .call-to-action-footer {
+            top: 42.84vw;
+            bottom: 0;
+        }
+        .center-v {
+            top: 28.39vw;
+        }
+    }
+
+
 }
 
 /*
@@ -396,7 +413,11 @@ Web, Mobile and design Pages
 */
 
 #web, #mobile, #design {
-    height: calc(100vh - 208px);
+    /* For subtract border and padding to section height */
+    --sub-vertival-border: 208px;
+
+    height: calc(100vh - var(--sub-vertival-border));
+    min-height: calc(65.10vw - var(--sub-vertival-border));;
     padding: $frameborder;
     background: #fff;
     position: relative;
@@ -438,47 +459,47 @@ Web, Mobile and design Pages
     }
 
     .title-box {
-        width: 38.65vw;
-        height: 10.5vw;
+        width: 41.875vw;
+        height: 12.7vw;
         position: absolute;
         background-color: $yellow;
-        top: 7.56vw;
-        right: 40%;
+        top: 14.7vh;
+        right: 37.9%;
 
         h1 {
-            margin-top: 1.41vw;
-            margin-left: 2.3vw;
-            font-size: 6.4vw;
+            margin-top: 2.3vw;
+            margin-left: 2.5vw;
+            font-size: 7.32vw;
             font-weight: 900;
             line-height: 0.95;
         }
 
         h2 {
-            margin-left: 2.3vw;
-            font-size: 1.28vw;
+            margin-left: 2.5vw;
+            font-size: 1.46vw;
             font-weight: bold;
             text-transform: uppercase;
         }
     }
 
     .title-box.design {
-        width: 47.65vw;
-        right: 30%;
+        width: 54vw;
+        right: 28.1%;
     }
 
     .info {
-        margin-top: 19vw;
-        margin-left: 2.5vw;
+        margin-top: 32.1vh;
+        margin-left: 0vw;
+        font-size: 1.3vw;
 
         h3 {
-            font-size: 1.28vw;
             font-weight: bold;
             line-height: 1.1;
+            margin-bottom: 1vw;
         }
 
         p {
-            width: 90%;
-            font-size: 1.15vw;
+            margin-right: 5.64vw;
             font-weight: normal;
             font-style: normal;
             font-stretch: normal;
@@ -487,43 +508,151 @@ Web, Mobile and design Pages
     }
 
     .info.mobile {
-        margin-top: 22vw;
-        margin-left: 3.53vw;
+        margin-top: 41.4vh;
+        margin-left: 3.8vw;
     }
 
-    @media screen and (max-width: 1240px){
+    /* When section has scroll */
+    @media screen and (max-height:  64.97vw) {
+        .title-box {
+            top: 9.51vw;
+        }
         .info {
-            h3 {
-                font-size: 1.32vw;
-            }
-            p {
-                font-size: 1.2vw;
-            }
+            margin-top: 20.83vw;
+        }
+        .info.mobile {
+            margin-top: 26.95vw;
         }
     }
 
-    @media screen and (max-width: 1190px){
+    /* Aspect Ratio 4:3 or less, Deskctop version */
+    @media screen and (max-aspect-ratio: 4/3) and (width: 768px) and (max-height: 719px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
+            }
+            h2{
+                font-size: 1.5vw;
+            }
+        }
         .info {
-            h3 {
-                font-size: 1.35vw;
-            }
-            p {
-                font-size: 1.25vw;
-            }
+            font-size: 1.5vw;
         }
     }
 
-    @media screen and (max-width: 1100px){
-        .info {
-            h3 {
-                font-size: 1.4vw;
+    @media screen and (max-aspect-ratio: 4/3) and (min-width: 768px) and (min-height: 720px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
             }
-            p {
+            h2{
+                font-size: 1.7vw;
+            }
+        }
+        .info {
+            font-size: 1.7vw;
+        }
+    }
+
+    @media screen and (max-aspect-ratio: 4/3) and (min-width: 768px) and (min-height: 850px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
+            }
+            h2{
+                font-size: 1.9vw;
+            }
+        }
+        .info {
+            font-size: 2vw;
+        }
+    }
+
+    /* Aspect Ratio 3:2 or less, Deskctop version */
+    @media screen and (max-aspect-ratio: 3/2) and (min-width: 769px) and (min-height: 720px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
+            }
+            h2{
+                font-size: 1.7vw;
+            }
+        }
+        .info {
+            font-size: 1.7vw;
+        }
+    }
+
+    @media screen and (max-aspect-ratio: 3/2) and (min-width: 900px) and (min-height: 650px) {
+        .title-box {
+            width: 43.875vw;
+            height: 13.7vw;
+            top: 13.7vh;
+
+            h1 {
+                font-size: 8vw;
+            }
+            h2{
+                font-size: 1.5vw;
+            }
+        }
+        .info {
+            font-size: 1.5vw;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 5/4) and (min-width: 1280px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
+            }
+            h2{
+                font-size: 1.7vw;
+            }
+        }
+        .info {
+            font-size: 1.7vw;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 21/9) and (min-width: 2560px) {
+        .title-box {
+            width: 39.875vw;
+            height: 9.7vw;
+            top: 12.7vh;
+
+            h1 {
+                margin-top: 1.5vw;
+                font-size: 5.32vw;
+            }
+            h2{
                 font-size: 1.3vw;
             }
         }
+        .info {
+            font-size: 1.3vw;
+        }
     }
-
 }
 
 /*
@@ -540,8 +669,8 @@ About Us Page
 
     .about-content {
         border: solid 2px #cecece;
-        padding: 52px;
-        width: 53vw;
+        width: 57.15vw;
+        height: 47.57vw;
         border-left: 0;
         left: 0;
         position: absolute;
@@ -567,14 +696,14 @@ About Us Page
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: 104px;
+        left: 50.42vw;
         text-align: center;
 
         .video-content {
             background-color: $yellow;
-            padding: 16px;
+            padding: 1.875vw;
             video {
-                width: calc(30vw);
+                width: calc(32.78vw);
             }
         }
 
