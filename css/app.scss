@@ -598,7 +598,7 @@ Portafolio Page
 
 	.col-1 {
 		width: 23%;
-		height: 26vw;
+		height: 27vw;
 		background-color: #e5e5e5;
 
 		img {
@@ -612,7 +612,8 @@ Portafolio Page
 
 	.col-2 {
 		width: 55%;
-		height: 320px;
+		height: 17vw;
+		margin-top: 30px;
 		background-color: #ffcb00;
 	}
 
@@ -674,7 +675,7 @@ Portafolio Page
 		background-color: #1b1b1b;
 		width: 70%;
 		height: 6vw;
-		margin-left: 22%;
+		margin-left: 9vw;
 		transform: translateY(21vw);
 	}
 
@@ -694,11 +695,11 @@ Portafolio Page
 
 	.portafolio-content-p-1 {
 		position: relative;
-		transform: translateY(-30%);
+		transform: translateY(-35%);
 		
 		h2 {
 			color: $black;
-			font-weight: 900;
+			font-weight: 600;
 			letter-spacing: -0.8px;
 			text-transform: uppercase;
 			font-size: 17vw;
@@ -708,16 +709,17 @@ Portafolio Page
 
 	.portafolio-content-p-2 {
 		position: relative;
-		padding-left: 10%;
-		padding-right: 20%;
-		transform: translateY(-240%);
-		
+		padding-left: 12%;
+		padding-right: 18%;
+		transform: translateY(-205%);
+
 		h2 {
 			color: $black;
 			font-weight: 900;
 			letter-spacing: -0.8px;
 			text-transform: uppercase;
-			font-size: 1.8vw;
+			font-size: 1.9vw;
+			line-height: 4vw;
 		}
 
 		p {
@@ -742,12 +744,12 @@ Portafolio Page
 
 	.portafolio-content-p-4 {
 		position: relative;
-		transform: translateY(-20%);
+		transform: translateY(-35%);
 		padding-left: 20%;
 		
 		h2 {
 			color: $black;
-			font-weight: 900;
+			font-weight: 600;
 			letter-spacing: -0.8px;
 			text-transform: uppercase;
 			font-size: 17vw;
@@ -757,8 +759,8 @@ Portafolio Page
 
 	.portafolio-content-p-5 {
 		position: relative;
-		padding-left: 30%;
-		transform: translateY(-200%);
+		padding-left: 32%;
+		transform: translateY(-205%);
 		
 		h2 {
 			color: $black;
@@ -766,6 +768,7 @@ Portafolio Page
 			letter-spacing: -0.8px;
 			text-transform: uppercase;
 			font-size: 1.8vw;
+			line-height: 4vw;
 		}
 
 		p {
@@ -785,11 +788,22 @@ Portafolio Page
 	@media screen and (max-width: 1499px) {
 		.portafolio-content	{
 			padding-left: 33%;
+			padding-top: 25%;
 			h2 {
 				font-size: 7.1vw;
 			}
 		}
 
+		.col-1 {
+			height: 28vw;
+		}
+
+	}
+
+	@media screen and (max-width: 1180px) {
+		.portafolio-content	{
+			padding-left: 38% !important;
+		}
 	}
 
 	@media screen and (max-width: 1260px) {
@@ -811,29 +825,36 @@ Portafolio Page
 		}
 
 		.portafolio-content-p-2 {
-			transform: translateY(-200%);
+			transform: translateY(-160%);
 		}
 
 		.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
 			margin-top: -15%;
 		}
 
+		.col-1 {
+			height: 30vw;
+		}														
 	}
 
-	@media screen and (max-width: 1620px) {
+	/* @media screen and (max-width: 1620px) {
 		
 		.content-grey-1 {
 			margin-left: 30%;
 		}
-	}
+	} */
 
 	@media screen and (max-width: 1435px) {
-		.portafolio-content-p-1 {
-			transform: translateY(-25%);
+		.portafolio-content-p-1, .portafolio-content-p-4 {
+			transform: translateY(-38%);
 		}
 
-		.portafolio-content-p-2 {
-			transform: translateY(-220%);
+		.portafolio-content-p-2, .portafolio-content-p-5 {
+			transform: translateY(-215%);
+		}
+
+		.portafolio-content-p-5 {
+			width: 80%;
 		}
 
 		.row-2, .row-3, .row-4, .row-5 {
@@ -842,6 +863,10 @@ Portafolio Page
 
 		.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
 			margin-top: -8%;
+		}
+
+		.content-grey-1 {
+			margin-left: 10vw;
 		}
 
 	}
