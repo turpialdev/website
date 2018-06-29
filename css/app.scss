@@ -476,6 +476,7 @@ About Us Page
 			}
 		}
 	}
+
 }
 
 /********
@@ -550,6 +551,303 @@ Contact us
 		letter-spacing: -0.1px;
 	}
 }
+
+/********
+Portafolio Page
+********/
+#portafolio {
+	
+	background-color: #fff !important;
+
+	.container {
+		padding: 8% 7% 8% 7%;
+		background-color: #fff !important;
+	}
+
+	.row-1 > div {
+  		float:left;
+	}
+
+	.row-2 > div {
+  		float:left;
+	}
+
+	.row-3 > div {
+  		float:left;
+	}
+
+	.row-4 > div {
+  		float:left;
+	}
+
+	.row-5 > div {
+  		float:left;
+	}
+
+	.row-1 {
+		height: 520px;
+	}
+
+	.row-2, .row-3, .row-5 {
+		height: 550px;
+	}
+
+	.row-4 {
+		height: 550px;
+	}
+
+	.col-1 {
+		width: 23%;
+		height: 26vw;
+		background-color: #e5e5e5;
+
+		img {
+			margin-left: 75px;
+			margin-top: 59px;
+			position: absolute;
+			width: 25%;
+			height: auto;
+		}
+	}
+
+	.col-2 {
+		width: 55%;
+		height: 320px;
+		background-color: #ffcb00;
+	}
+
+	.col-3 {
+		width: 50%;
+		height: 440px;
+		margin-left: -5%;
+	}
+
+	.col-4 {
+		width: 50%;
+		height: 440px;
+
+		img {
+			margin-left: 75px;
+			position: absolute;
+			width: 37%;
+			height: auto;
+		}
+	}
+
+	.col-5 {
+		width: 50%;
+		height: 440px;
+		margin-left: -5%;
+
+		img {
+			margin-left: 75px;
+			position: absolute;
+			width: 37%;
+			height: auto;
+		}
+	}
+
+	.col-6 {
+		width: 50%;
+		height: 440px;
+	}
+
+	.col-7 {
+		width: 50%;
+		height: 440px;
+		margin-left: -5%;
+	}
+
+	.col-8 {
+		width: 50%;
+		height: 440px;
+
+		img {
+			margin-left: 75px;
+			position: absolute;
+			width: 37%;
+			height: auto;
+		}
+	}
+
+	.content-grey-1 {
+		background-color: #1b1b1b;
+		width: 70%;
+		height: 6vw;
+		margin-left: 22%;
+		transform: translateY(21vw);
+	}
+
+	.portafolio-content {
+		position: relative;
+		padding: 190px 2% 2% 28%;
+		transform: translateY(-50%);
+		
+		h2 {
+			color: $black;
+			font-weight: 900;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			font-size: 9vw;
+		}
+	}
+
+	.portafolio-content-p-1 {
+		position: relative;
+		transform: translateY(-30%);
+		
+		h2 {
+			color: $black;
+			font-weight: 900;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			font-size: 17vw;
+			color: #f7f7f7;
+		}
+	}
+
+	.portafolio-content-p-2 {
+		position: relative;
+		padding-left: 10%;
+		padding-right: 20%;
+		transform: translateY(-240%);
+		
+		h2 {
+			color: $black;
+			font-weight: 900;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			font-size: 1.8vw;
+		}
+
+		p {
+			letter-spacing: -0.1px;
+			font-size: 1.3vw;
+			line-height: 1.8vw;
+		}
+	}
+
+	.portafolio-content-p-3 {
+		position: relative;
+		transform: translateY(70%);
+		padding-left: 18%;
+
+		p {
+			letter-spacing: -0.1px;
+			font-size: 1.6vw;
+			line-height: 2.5vw;
+			color: #ffffff;
+		}
+	}
+
+	.portafolio-content-p-4 {
+		position: relative;
+		transform: translateY(-20%);
+		padding-left: 20%;
+		
+		h2 {
+			color: $black;
+			font-weight: 900;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			font-size: 17vw;
+			color: #f7f7f7;
+		}
+	}
+
+	.portafolio-content-p-5 {
+		position: relative;
+		padding-left: 30%;
+		transform: translateY(-200%);
+		
+		h2 {
+			color: $black;
+			font-weight: 900;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			font-size: 1.8vw;
+		}
+
+		p {
+			letter-spacing: -0.1px;
+			font-size: 1.3vw;
+			line-height: 1.8vw;
+		}
+	}
+
+	@media screen and (min-width: 1500px) {
+		.portafolio-content	h2 {
+				font-size: 7.5vw;
+		}
+
+	}
+
+	@media screen and (max-width: 1499px) {
+		.portafolio-content	{
+			padding-left: 33%;
+			h2 {
+				font-size: 7.1vw;
+			}
+		}
+
+	}
+
+	@media screen and (max-width: 1260px) {
+		.portafolio-content	{
+			padding-left: 35%;
+			h2 {
+				font-size: 6.9vw;
+			}
+		}
+
+		.row-2, .row-3, .row-4, .row-5 {
+			height: 380px !important;
+		}
+	}
+
+	@media screen and (max-width: 1270px) {
+		.portafolio-content-p-1 {
+			transform: translateY(-20%);
+		}
+
+		.portafolio-content-p-2 {
+			transform: translateY(-200%);
+		}
+
+		.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+			margin-top: -15%;
+		}
+
+	}
+
+	@media screen and (max-width: 1620px) {
+		
+		.content-grey-1 {
+			margin-left: 30%;
+		}
+	}
+
+	@media screen and (max-width: 1435px) {
+		.portafolio-content-p-1 {
+			transform: translateY(-25%);
+		}
+
+		.portafolio-content-p-2 {
+			transform: translateY(-220%);
+		}
+
+		.row-2, .row-3, .row-4, .row-5 {
+			height: 440px;
+		}
+
+		.col-3, .col-4, .col-5, .col-6, .col-7, .col-8 {
+			margin-top: -8%;
+		}
+
+	}
+}
+
+
 
 /********
 Globals
