@@ -417,7 +417,7 @@ Web, Mobile and design Pages
     --sub-vertival-border: 208px;
 
     height: calc(100vh - var(--sub-vertival-border));
-    min-height: calc(65.10vw - var(--sub-vertival-border));;
+    min-height: calc(65.10vw - var(--sub-vertival-border));
     padding: $frameborder;
     background: #fff;
     position: relative;
@@ -515,13 +515,13 @@ Web, Mobile and design Pages
     /* When section has scroll */
     @media screen and (max-height:  64.97vw) {
         .title-box {
-            top: 9.51vw;
+            top: 9.51vw !important;
         }
         .info {
-            margin-top: 20.83vw;
+            margin-top: 25.83vw !important;
         }
         .info.mobile {
-            margin-top: 26.95vw;
+            margin-top: 26.95vw !important;
         }
     }
 
@@ -537,6 +537,12 @@ Web, Mobile and design Pages
             }
             h2{
                 font-size: 1.5vw;
+            }
+        }
+        .title-box.design {
+            height: 12.7vw;
+            h1{
+                font-size: 7.3vw;
             }
         }
         .info {
@@ -555,6 +561,12 @@ Web, Mobile and design Pages
             }
             h2{
                 font-size: 1.7vw;
+            }
+        }
+        .title-box.design {
+            height: 12.7vw;
+            h1{
+                font-size: 7.3vw;
             }
         }
         .info {
@@ -612,12 +624,42 @@ Web, Mobile and design Pages
                 font-size: 1.5vw;
             }
         }
+        .title-box.design {
+            h1{
+                font-size: 7.3vw;
+            }
+        }
         .info {
             font-size: 1.5vw;
         }
     }
 
-    @media screen and (min-aspect-ratio: 5/4) and (min-width: 1280px) {
+    /* Aspect Ratio 5:4 or less, Deskctop version */
+    @media screen and (min-aspect-ratio: 5/4) and (min-width: 1280px) and (min-height: 832px) {
+        .title-box {
+            width: 43.875vw;
+            height: 14vw;
+            top: 13.7vh;
+
+            h1 {
+                font-size: 8.5vw;
+            }
+            h2{
+                font-size: 1.5vw;
+            }
+        }
+        .title-box.design {
+            h1{
+                font-size: 7.3vw;
+            }
+        }
+        .info {
+            margin-top: 36vh;
+            font-size: 1.5vw;
+        }
+    }
+    
+    @media screen and (min-aspect-ratio: 5/4) and (min-width: 1280px) and (min-height: 1024px){
         .title-box {
             width: 43.875vw;
             height: 14.7vw;
@@ -632,6 +674,25 @@ Web, Mobile and design Pages
         }
         .info {
             font-size: 1.7vw;
+        }
+    }
+
+    @media screen and (min-aspect-ratio: 5/4) and (min-width: 1600px) and (min-height: 1040px){
+        .title-box {
+            width: 43.875vw;
+            height: 14.7vw;
+            top: 14.7vh;
+
+            h1 {
+                font-size: 9vw;
+            }
+            h2{
+                font-size: 1.6vw;
+            }
+        }
+        .info {
+            margin-top: 38vh;
+            font-size: 1.6vw;
         }
     }
 
@@ -662,15 +723,19 @@ About Us Page
 */
 
 #aboutus {
-    height: calc(100vh - 208px);
+    /* For subtract border and padding to section height */
+    --sub-vertival-border: 208px;
+
+    height: calc(100vh - var(--sub-vertival-border));
+    min-height: calc(65.10vw - var(--sub-vertival-border));
     padding: $frameborder;
     background: #fff;
     position: relative;
 
     .about-content {
         border: solid 2px #cecece;
-        width: 57.15vw;
-        height: 47.57vw;
+        width: 56vw;
+        height: 58vh;
         border-left: 0;
         left: 0;
         position: absolute;
@@ -681,14 +746,17 @@ About Us Page
             color: $black;
             font-weight: 900;
             text-transform: uppercase;
-            font-size: 9vw;
+            font-size: 8vw;
+            margin-top: 10vh;
+            margin-left: 3vw;
         }
 
         p {
             width: 44vw;
             letter-spacing: -0.1px;
             font-size: 1.3vw;
-            line-height: 1.8vw;
+            line-height: 2vw;
+            margin-left: 3vw;
         }
     }
 
@@ -696,14 +764,14 @@ About Us Page
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 50.42vw;
+        left: 45vw;
         text-align: center;
 
         .video-content {
             background-color: $yellow;
             padding: 1.875vw;
             video {
-                width: calc(32.78vw);
+                width: 30vw;
             }
         }
 
@@ -711,50 +779,30 @@ About Us Page
             display: inline-block;
             color: #1b1b1b;
             border: 2px solid #1b1b1b;
-            padding: 8px 14px;
-            margin-top: 16px;
+            padding: 1.6vh 1.82vw;
+            margin-top: 3.2vh;
+            font-size: 1.3vw;
             background-color: #fff;
         }
     }
 
-    @media screen and (max-width: 1100px) {
+    /* When section has scroll */
+    @media screen and (max-height:  64.97vw) {
         .about-content {
-            width: 42vw;
+            height: 43.62vw;
             h2 {
-                font-size: 8.5vw;
-            }
-            p {
-                width: 40vw;
-                font-size: 1.2vw;
-                line-height: 1.7vw;
-            }
-        }
-    }
-
-    @media screen and (max-width: 960px) {
-        .about-content {
-            width: 40vw;
-            h2 {
-                font-size: 8vw;
-            }
-            p {
-                width: 40vw;
-                font-size: 1.1vw;
-                line-height: 1.6vw;
+                margin-top: 9.11vw;
             }
         }
         .video-box {
-            right: 52px;
+            a {
+                margin-top: 2.08vw;
+            }
         }
     }
 
-    @media screen and (max-width: 860px) {
-        .about-content {
-            width: 35vw;
-            h2 {
-                font-size: 7.5vw;
-            }
-        }
+    @media screen and (max-width: 0px) {
+        
     }
 }
 
