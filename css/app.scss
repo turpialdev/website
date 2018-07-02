@@ -627,13 +627,13 @@ Portafolio Page
 	.col-4 {
 		width: 50%;
 		height: 440px;
-		z-index: 5;
 
 		img {
 			margin-left: 75px;
 			position: absolute;
 			width: 37%;
 			height: auto;
+			z-index: 3;
 		}
 	}
 
@@ -647,6 +647,7 @@ Portafolio Page
 			position: absolute;
 			width: 37%;
 			height: auto;
+			z-index: 3;
 		}
 	}
 
@@ -670,16 +671,18 @@ Portafolio Page
 			position: absolute;
 			width: 37%;
 			height: auto;
+			z-index: 3;
 		}
 	}
 
 	.content-grey-1 {
 		background-color: #1b1b1b;
-		width: 70%;
+		width: 27%;
 		height: 6vw;
 		margin-left: 9vw;
 		transform: translateY(21vw);
-		z-index: 2;
+		position: absolute;
+		z-index: 4;
 	}
 
 	.portafolio-content {
@@ -792,13 +795,13 @@ Portafolio Page
 	}
 
 	.line-grey-2 {
-		width: 1px; 
+		width: 0.01vw; 
 		height: 29vw; 
 		display: inline-block;
 		background-color: #979797;
 		position: absolute;
     	margin-top: -21.5vw;
-    	margin-left: -20%;
+    	margin-left: 31.5%;
     	z-index: 1;
 	}
 
@@ -888,6 +891,10 @@ Portafolio Page
 
 		.line-grey-1 {
     		margin-top: -29.5vw;
+		}
+
+		.line-grey-2 {
+    		margin-top: -29vw;
 		}
 	}
 }
