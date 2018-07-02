@@ -607,6 +607,7 @@ Portafolio Page
 			position: absolute;
 			width: 25%;
 			height: auto;
+			z-index: 1;
 		}
 	}
 
@@ -626,6 +627,7 @@ Portafolio Page
 	.col-4 {
 		width: 50%;
 		height: 440px;
+		z-index: 5;
 
 		img {
 			margin-left: 75px;
@@ -677,6 +679,7 @@ Portafolio Page
 		height: 6vw;
 		margin-left: 9vw;
 		transform: translateY(21vw);
+		z-index: 2;
 	}
 
 	.portafolio-content {
@@ -778,6 +781,27 @@ Portafolio Page
 		}
 	}
 
+	.line-grey-1 {
+		width: 0.01vw; 
+		height: 29vw; 
+		display: inline-block;
+		background-color: #979797;
+		position: absolute;
+    	margin-left: 28%;
+    	margin-top: -20vw;
+	}
+
+	.line-grey-2 {
+		width: 1px; 
+		height: 29vw; 
+		display: inline-block;
+		background-color: #979797;
+		position: absolute;
+    	margin-top: -21.5vw;
+    	margin-left: -20%;
+    	z-index: 1;
+	}
+
 	@media screen and (min-width: 1500px) {
 		.portafolio-content	h2 {
 				font-size: 7.5vw;
@@ -837,13 +861,6 @@ Portafolio Page
 		}														
 	}
 
-	/* @media screen and (max-width: 1620px) {
-		
-		.content-grey-1 {
-			margin-left: 30%;
-		}
-	} */
-
 	@media screen and (max-width: 1435px) {
 		.portafolio-content-p-1, .portafolio-content-p-4 {
 			transform: translateY(-38%);
@@ -869,6 +886,9 @@ Portafolio Page
 			margin-left: 10vw;
 		}
 
+		.line-grey-1 {
+    		margin-top: -29.5vw;
+		}
 	}
 }
 
