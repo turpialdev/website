@@ -3,9 +3,52 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+    https://github.com/google/material-design-icons/tree/master/iconfont
+    material design icons
+*/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(/assets/font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(/assets/font/MaterialIcons-Regular.woff) format('woff'),
+      url(/assets/font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -93,6 +136,8 @@ $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
 $lightgray: #e5e5e5;
+$menu-width: 40px;
+$menu-height: 50px;
 
 /*
 *********************
@@ -147,69 +192,6 @@ $menu-transition: 0.6s;
 
 /*
 *********************
-Hamburger button
-*********************
-*/
-
-.nav-items ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 18px 52px;
-    width: 100%;
-    padding: 0;
-
-    li > a {
-        color: $black;
-    }
-}
-
-.nav-btn {
-    // display: inline-block;
-    cursor: pointer;
-    margin: 16px 0;;
-    float: left;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 43px;
-    height: 4px;
-    background-color: $black;
-    transition: $menu-transition;
-}
-
-.bar1 {
-    margin-bottom: 5px;
-}
-
-.bar2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.bar3 {
-    margin-top: 5px;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
-    transform: rotate(-45deg) translate(-7px, 6px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-7px, -5px);
-    transform: rotate(45deg) translate(-7px, -5px) ;
-}
-
-/*
-*********************
 Nav-bar
 *********************
 */
@@ -221,10 +203,115 @@ Nav-bar
     align-items: center;
     text-align: center;
     transition: $menu-transition;
+    visibility: hidden;
+    opacity: 1;
 
     .item {
         grid-column: 1;
     }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 18px 52px;
+        width: 100%;
+        padding: 0;
+    
+        li > a {
+            color: $black;
+        }
+    }
+}
+
+.showMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-btn {
+    cursor: pointer;
+    margin: 16px 0;;
+    float: left;
+}
+
+/*
+*********************
+Hamburger button
+*********************
+*/
+
+#h-menu {
+    float: left;
+    width: 50px;
+    height: 25px;
+    margin-top: 13px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#h-menu span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: $black;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#h-menu span:nth-child(1) {
+    top: 0px;
+}
+
+#h-menu span:nth-child(2),#h-menu span:nth-child(3) {
+    top: 10px;
+}
+
+#h-menu span:nth-child(4) {
+    top: 20px;
+}
+
+#h-menu.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#h-menu.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+#h-menu.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#h-menu.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
 
 /*
@@ -666,6 +753,16 @@ Contact us
             }
         }
 
+        .location {
+            position: absolute;
+            top: -32px;
+            transition: 0.1s;
+            &:hover {
+                color: $yellowHover;
+                top: -34px; 
+            }
+        }
+
         .phones-email {
             font-size: 1.28vw;
             position: absolute;
@@ -770,4 +867,14 @@ Globals
     &:hover {
         background-color: $yellowHover;
     }
+}
+
+/*
+*********************
+Icons
+*********************
+*/
+
+.ico-yellow {
+    color: $yellow;
 }
