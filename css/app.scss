@@ -60,6 +60,8 @@ table {
 
 a {
     text-decoration: none;
+    outline: 0;
+    color: inherit;
 }
 
 body {
@@ -67,6 +69,15 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fff;
     transition: 3s;
+}
+
+@media screen
+and (min-width: 768px) {
+    /* remove tel events in desktop screen */
+    a[href*="tel:"] {
+        cursor: default;
+        pointer-events: none;
+    }
 }
 
 /*
@@ -81,6 +92,7 @@ $frameborder: 52px;
 $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
+$lightgray: #e5e5e5;
 
 /*
 *********************
@@ -130,7 +142,7 @@ $menu-transition: 0.6s;
 }
 
 .onBodyColorChange {
-    background: #e5e5e5;
+    background: $lightgray;
 }
 
 /*
@@ -257,20 +269,10 @@ Home Page
     
     .call-to-action-footer {
         width: calc(100vw - 222px);
-        text-align: right;
         position: absolute;
         bottom: 107px;
-
         a {
-            background-color: $yellow;
-            padding: 9px 12px;
-            font-size: 14px;
-            letter-spacing: 1px;
-            border: none;
-            color: $black;
-            &:hover {
-                background-color: $yellowHover;
-            }
+            float: right;
         }
     }
 
@@ -646,7 +648,6 @@ Contact us
         width: 23%;
         height: 100%;
         position: relative;
-        display: inline-block;
         float: left;
         border-left: 1px solid #ffffff;
         padding-left: 1.28vw;
@@ -656,6 +657,13 @@ Contact us
             font-size: 1.03vw;
             margin-top: 3.85vw;
             position: relative;
+            p {
+                margin: 5px 0;
+                a:hover {
+                    color: $lightgray;
+                    margin-left: 2px; 
+                }
+            }
         }
 
         .phones-email {
@@ -663,6 +671,13 @@ Contact us
             position: absolute;
             bottom: 0;
             line-height: 1.73vw;
+            p {
+                margin: 5px 0;
+                a:hover {
+                    color: $lightgray;
+                    margin-left: 2px; 
+                }
+            }
         }
 
         hr {
@@ -675,10 +690,10 @@ Contact us
     }
 
     .contact-title {
+        display: block;
         font-size: 6.41vw;
         font-weight: 900;
-        text-align: left;
-        color: #ffffff;
+        text-align: right;
         color: var(--white);
     }
 
@@ -699,20 +714,11 @@ Contact us
         padding: 0 0.96vw;
     }
 
-    .form-container.send-btn {
-        text-align: right;
-        width: 99%;
-
-        a {
-            background-color: $yellow;
-            padding: 0.58vw 2.78vw;
-            font-size: 0.9vw;
-            border: none;
-            color: $black;
-            &:hover {
-                background-color: $yellowHover;
+    .form-container.send {
+        width: 100%;
+            a {
+                float: right;
             }
-        }
     }
 
     textarea.form-input {
@@ -748,4 +754,19 @@ Globals
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+a.call-to-action {
+    display: block;
+    width: 140px;
+    color: $black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 9px;
+    border: none;
+    background-color: $yellow;
+    &:hover {
+        background-color: $yellowHover;
+    }
 }
