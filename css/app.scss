@@ -760,7 +760,7 @@ Portafolio Page
 	.portafolio-content-p-4 {
 		position: relative;
 		transform: translateY(-35%);
-		padding-left: 20%;
+		padding-left: 25%;
 		
 		h2 {
 			color: $black;
@@ -799,18 +799,29 @@ Portafolio Page
 		display: inline-block;
 		background-color: #979797;
 		position: absolute;
-    	margin-left: 28%;
+    	margin-left: -47%;
     	margin-top: -20vw;
 	}
 
 	.line-grey-2 {
-		width: 0.01vw; 
-		height: 29vw; 
+		width: 19vw; 
+		height: 0.01vw; 
 		display: inline-block;
 		background-color: #979797;
 		position: absolute;
-    	margin-top: -21.5vw;
-    	margin-left: 31.5%;
+    	margin-top: 8vw;
+    	margin-left: -50.5%;
+    	z-index: 1;
+	}
+
+	.line-grey-3 {
+		width: 19vw; 
+		height: 0.01vw; 
+		display: inline-block;
+		background-color: #979797;
+		position: absolute;
+    	margin-top: 8vw;
+    	margin-left: -42.5%;
     	z-index: 1;
 	}
 
@@ -907,7 +918,7 @@ Portafolio Page
 		}
 
 		.line-grey-2 {
-    		margin-top: -29vw;
+    		margin-top: 6vw;
 		}
 	}
 }
