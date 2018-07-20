@@ -841,6 +841,17 @@ Contact us
         font-size: 1.28vw;
     }
 
+    .call-to-action {
+        border: 2px solid #1b1b1b;
+    }
+
+    .disabled {
+        pointer-events: none;
+        background-color: transparent;
+        border: 2px solid $yellowHover;
+        color: $yellowHover;
+    }
+
     .saving {
         display: initial!important;
     }

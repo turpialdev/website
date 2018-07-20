@@ -1,37 +1,16 @@
-/*
-function clearForm() {
-    var time = 500;
-
-    function loop( input ) {
-
-        var control_val = $( input ).val();
-
-        control_val = control_val.substr( 0, control_val.length - 1 );
-        $( input ).val( control_val );
-
-        if ( control_val.length > 0 ) {
-
-            setTimeout( loop( input ), time);
-
-        }
-    }
-
-    // $form_controls = $(".form-input").each(function(i, input) {
-    //     loop(i, input)
-    // });
-
-    $form_controls = $(".form-input");
-
-    loop($form_controls[0]);
-}
-*/
-
 var done = false;
 var status = null;
+
+/**
+ * Send the form
+ * @function $.ajax
+ */
 
 $(function () {
 
     $("#submitbtn").click(function (event) {
+
+        $("#submitbtn").addClass("disabled");
         
         var name = $("#name-input").val();
         var email = $("#email-input").val();
@@ -63,6 +42,7 @@ $(function () {
                     $("#submit").html("");
                     $("#dot").removeClass("saving");
                     $("#check").addClass("saving");
+                    completed();
                 } else {
                     done = true;
                 }
@@ -75,6 +55,7 @@ $(function () {
                     $("#submit").html("");
                     $("#dot").removeClass("saving");
                     $("#error").addClass("saving");
+                    completed();
                 } else {
                     done = true;
                 }
@@ -82,11 +63,6 @@ $(function () {
             },
             complete: function (jqXHR, textStatus) {
                 console.log('completed');
-                setTimeout(() => {
-                    $("#submit").html("ENVIAR");
-                    $("#check").removeClass("saving");
-                    $("#error").removeClass("saving");
-                }, 1000);
             }
         });
         event.preventDefault();
@@ -94,8 +70,36 @@ $(function () {
     })
 });
 
+/**
+ * When the form has been submitted
+ * regardless of its status
+ * @function completed();
+ */
+
+function completed() {
+    setTimeout(() => {
+        $("#submitbtn").removeClass("disabled");
+
+        $("#submit").html("ENVIAR");
+        $("#check").removeClass("saving");
+        $("#error").removeClass("saving");
+
+        done = false;
+        status = null;
+    }, 1000);
+};
+
+/**
+ * TODO:
+ * @function clearForm();
+ * This next function must be improved
+ * using a cleaner and readable structure.
+ * Something like:
+ * @function newClearForm();
+ */
+
 function clearForm() {
-    var time = 50;
+    var time = 25;
 
     /* clear name value */
     !function clearName() {
@@ -151,36 +155,42 @@ function clearForm() {
                                         if (c_message.length > 0) {
                                             setTimeout(clearMessage, time);
                                         } else {
+
+                                            /* cleaning is done */
                                             if (done == false) {
                                                 done = true;
+
                                             } else {
 
-
+                                                /* If the form has not been sent */
                                                 if (status == null) {
                                                     done = true;
 
+                                                /* If the form was sent successfully */
                                                 } else if (status == 'success') {
                                                     if (done == true) {
                                                         $("#submit").html("");
                                                         $("#dot").removeClass("saving");
                                                         $("#check").addClass("saving");
+                                                        completed();
                                                     } else {
                                                         done = true;
                                                     }
 
+                                                /* if the form resulted in error */
                                                 } else if (status == 'error') {
                                                     if (done == true) {
                                                         $("#submit").html("");
                                                         $("#dot").removeClass("saving");
                                                         $("#error").addClass("saving");
+                                                        completed();
                                                     } else {
                                                         done = true;
                                                     }
                                                 }
-
-
                                             }
                                         };
+
                                     }();
 
                                 };
@@ -196,3 +206,28 @@ function clearForm() {
     }();
 };
 
+function newClearForm() {
+    var time = 500;
+
+    function loop( input ) {
+
+        var control_val = $( input ).val();
+
+        control_val = control_val.substr( 0, control_val.length - 1 );
+        $( input ).val( control_val );
+
+        if ( control_val.length > 0 ) {
+
+            setTimeout( loop( input ), time);
+
+        }
+    }
+
+    // $form_controls = $(".form-input").each(function(i, input) {
+    //     loop(i, input)
+    // });
+
+    $form_controls = $(".form-input");
+
+    loop($form_controls[0]);
+};
