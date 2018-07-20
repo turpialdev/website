@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('#h-menu').click(function(){
         $(this).toggleClass('open');
-        $('#menuItems').toggleClass('showMenu')
+        $('#menuItems').toggleClass('showMenu');
 	});
 });
 
