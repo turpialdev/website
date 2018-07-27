@@ -788,7 +788,8 @@ Contact us
 
     .contact-title {
         display: block;
-        font-size: 6.41vw;
+        font-size: 6vw;
+        letter-spacing: 4px;
         font-weight: 900;
         text-align: right;
         color: var(--white);
@@ -799,46 +800,13 @@ Contact us
         display: inline-block;
     }
 
-    .form-input {
-        display: block;
+    .send {
         width: 100%;
-        background-color: transparent;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        height: 3.33vw;
-        font-size: 1.28vw;
-        margin-top: 0.96vw;
-        padding: 0 0.96vw;
-    }
-
-    .form-container.send {
-        width: 100%;
-            a, input {
-                float: right;
-                outline: none;
-            }
-    }
-
-    textarea.form-input {
-        height: 7.69vw;
-        padding: 0.96vw;
-    }
-
-    .form-container {
-        padding: 1.28vw 2.3%;
-        width: 45%;
-        display: inline-block;
-    }
-
-    .form-container.text-area {
-        width: 95%;
-    }
-
-    label {
-        width: 6.15vw;
-        height:  2.05px;
-        font-family: Poppins;
-        font-size: 1.28vw;
+        margin-top: 8px;
+        a, input {
+            float: right;
+            outline: none;
+        }
     }
 
     .call-to-action {
@@ -889,6 +857,47 @@ Contact us
 
     #check svg, #error svg {
         height: 12px;
+    }
+    
+
+    input:focus,
+    textarea:focus {
+        border: 1px solid $yellow;
+    }  
+    
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+        margin: 0;
+        border: 1px solid #fff;
+        width: calc(100% - 25px);
+        background: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+    form p {
+        float: left;
+        width: calc(50% - 16px);
+        margin-top: 24px;
+    }
+    form p:not(:nth-child(2n)) {
+        margin-right: 32px;
+    }
+    form p:last-child {
+        clear: both;
+        width: 100%;
+        margin-right: 0;
+    }
+    form p:nth-last-child(2) {
+        clear: both;
+        width: 100%;
+    }
+    form label {
+        display: block;
+        margin-bottom: 12px;
     }
 }
 
