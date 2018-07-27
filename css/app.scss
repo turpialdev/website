@@ -3,9 +3,52 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+    https://github.com/google/material-design-icons/tree/master/iconfont
+    material design icons
+*/
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/font/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+      local('MaterialIcons-Regular'),
+      url(/assets/font/MaterialIcons-Regular.woff2) format('woff2'),
+      url(/assets/font/MaterialIcons-Regular.woff) format('woff'),
+      url(/assets/font/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/* 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -58,8 +101,10 @@ table {
     border-spacing: 0;
 }
 
-a {
+a, input {
     text-decoration: none;
+    outline: 0;
+    color: inherit;
 }
 
 body {
@@ -67,6 +112,15 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fff;
     transition: 3s;
+}
+
+@media screen
+and (min-width: 768px) {
+    /* remove tel events in desktop screen */
+    a[href*="tel:"] {
+        cursor: default;
+        pointer-events: none;
+    }
 }
 
 /*
@@ -81,6 +135,9 @@ $frameborder: 52px;
 $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
+$lightgray: #e5e5e5;
+$menu-width: 40px;
+$menu-height: 50px;
 
 /*
 *********************
@@ -130,70 +187,7 @@ $menu-transition: 0.6s;
 }
 
 .onBodyColorChange {
-    background: #e5e5e5;
-}
-
-/*
-*********************
-Hamburger button
-*********************
-*/
-
-.nav-items ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 18px 52px;
-    width: 100%;
-    padding: 0;
-
-    li > a {
-        color: $black;
-    }
-}
-
-.nav-btn {
-    // display: inline-block;
-    cursor: pointer;
-    margin: 16px 0;;
-    float: left;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 43px;
-    height: 4px;
-    background-color: $black;
-    transition: $menu-transition;
-}
-
-.bar1 {
-    margin-bottom: 5px;
-}
-
-.bar2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.bar3 {
-    margin-top: 5px;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-7px, 6px);
-    transform: rotate(-45deg) translate(-7px, 6px);
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-7px, -5px);
-    transform: rotate(45deg) translate(-7px, -5px) ;
+    background: $lightgray;
 }
 
 /*
@@ -209,10 +203,115 @@ Nav-bar
     align-items: center;
     text-align: center;
     transition: $menu-transition;
+    visibility: hidden;
+    opacity: 1;
 
     .item {
         grid-column: 1;
     }
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        margin: 18px 52px;
+        width: 100%;
+        padding: 0;
+    
+        li > a {
+            color: $black;
+        }
+    }
+}
+
+.showMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-btn {
+    cursor: pointer;
+    margin: 16px 0;;
+    float: left;
+}
+
+/*
+*********************
+Hamburger button
+*********************
+*/
+
+#h-menu {
+    float: left;
+    width: 50px;
+    height: 25px;
+    margin-top: 13px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#h-menu span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: $black;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#h-menu span:nth-child(1) {
+    top: 0px;
+}
+
+#h-menu span:nth-child(2),#h-menu span:nth-child(3) {
+    top: 10px;
+}
+
+#h-menu span:nth-child(4) {
+    top: 20px;
+}
+
+#h-menu.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#h-menu.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  
+#h-menu.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#h-menu.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
 }
 
 /*
@@ -248,7 +347,7 @@ Home Page
 @keyframes blink-caret { 50% { border-right: 3px solid #fff; } }
 
 #home {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 190px);
     padding: $frameborder;
     background: #686868;
     background-image: url('/img/bg-home.jpg');
@@ -257,20 +356,10 @@ Home Page
     
     .call-to-action-footer {
         width: calc(100vw - 222px);
-        text-align: right;
         position: absolute;
         bottom: 107px;
-
         a {
-            background-color: $yellow;
-            padding: 9px 12px;
-            font-size: 14px;
-            letter-spacing: 1px;
-            border: none;
-            color: $black;
-            &:hover {
-                background-color: $yellowHover;
-            }
+            float: right;
         }
     }
 
@@ -396,7 +485,7 @@ Web, Mobile and design Pages
 */
 
 #web, #mobile, #design {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 140px);
     padding: $frameborder;
     background: #fff;
     position: relative;
@@ -442,7 +531,7 @@ Web, Mobile and design Pages
         height: 10.5vw;
         position: absolute;
         background-color: $yellow;
-        top: 7.56vw;
+        top: 8vw;
         right: 40%;
 
         h1 {
@@ -467,7 +556,7 @@ Web, Mobile and design Pages
     }
 
     .info {
-        margin-top: 19vw;
+        margin-top: 19.5vw;
         margin-left: 2.5vw;
 
         h3 {
@@ -533,10 +622,10 @@ About Us Page
 */
 
 #aboutus {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 150px);
     padding: $frameborder;
-    background: #fff;
     position: relative;
+    background-color: #fff;
 
     .about-content {
         border: solid 2px #cecece;
@@ -637,7 +726,8 @@ Contact us
 
 #contact {
     min-height: 38.46vw;
-    height: calc(100vh - 208px);
+    height: calc(100vh - 190px);
+    min-height: 620px;
     padding: $frameborder;
     background: #1b1b1b;
     color: #fff;
@@ -646,7 +736,6 @@ Contact us
         width: 23%;
         height: 100%;
         position: relative;
-        display: inline-block;
         float: left;
         border-left: 1px solid #ffffff;
         padding-left: 1.28vw;
@@ -656,6 +745,23 @@ Contact us
             font-size: 1.03vw;
             margin-top: 3.85vw;
             position: relative;
+            p {
+                margin: 5px 0;
+                a:hover {
+                    color: $lightgray;
+                    margin-left: 2px; 
+                }
+            }
+        }
+
+        .location {
+            position: absolute;
+            top: -32px;
+            transition: 0.1s;
+            &:hover {
+                color: $yellowHover;
+                top: -34px; 
+            }
         }
 
         .phones-email {
@@ -663,6 +769,13 @@ Contact us
             position: absolute;
             bottom: 0;
             line-height: 1.73vw;
+            p {
+                margin: 5px 0;
+                a:hover {
+                    color: $lightgray;
+                    margin-left: 2px; 
+                }
+            }
         }
 
         hr {
@@ -675,66 +788,118 @@ Contact us
     }
 
     .contact-title {
-        font-size: 6.41vw;
+        display: block;
+        font-size: 6vw;
         font-weight: 900;
         text-align: left;
-        color: #ffffff;
         color: var(--white);
+        margin-bottom: 18px;
+        letter-spacing: 3px;
     }
 
     .contact-content {
-        width: 66%;
         display: inline-block;
+        width: 66%;
+        margin-top: 32px;
     }
 
-    .form-input {
-        display: block;
+    .send {
         width: 100%;
-        background-color: transparent;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        height: 3.33vw;
-        font-size: 1.28vw;
-        margin-top: 0.96vw;
-        padding: 0 0.96vw;
-    }
-
-    .form-container.send-btn {
-        text-align: right;
-        width: 99%;
-
-        a {
-            background-color: $yellow;
-            padding: 0.58vw 2.78vw;
-            font-size: 0.9vw;
-            border: none;
-            color: $black;
-            &:hover {
-                background-color: $yellowHover;
-            }
+        margin-top: 24px;
+        a, input {
+            float: right;
+            outline: none;
         }
     }
 
-    textarea.form-input {
-        height: 7.69vw;
-        padding: 0.96vw;
+    .call-to-action {
+        border: 2px solid #1b1b1b;
     }
 
-    .form-container {
-        padding: 1.28vw 2.3%;
-        width: 45%;
-        display: inline-block;
+    .disabled {
+        pointer-events: none;
+        background-color: transparent;
+        border: 2px solid $yellowHover;
+        color: $yellowHover;
     }
 
-    .form-container.text-area {
-        width: 95%;
+    .saving {
+        display: initial!important;
     }
 
-    label {
-        width: 6.15vw;
-        height:  2.05px;
-        font-family: Poppins;
-        font-size: 1.28vw;
+    .saving span {
+        animation-name: blink;
+        animation-duration: 1.4s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+
+    .saving span:nth-child(2) {
+        animation-delay: .2s;
+    }
+
+    .saving span:nth-child(3) {
+        animation-delay: .4s;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: .2;
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            opacity: .2;
+        }
+    }
+
+    #check, #error {
+        position: relative;
+    }
+
+    #check svg, #error svg {
+        height: 12px;
+    }
+    
+
+    input:focus,
+    textarea:focus {
+        border: 1px solid $yellow;
+    }  
+    
+    input,
+    textarea {
+        font-size: 14px;
+        padding: 12px;
+        margin: 0;
+        border: 1px solid #fff;
+        width: calc(100% - 25px);
+        background: none;
+    }
+
+    .form {
+        width: 100%;
+    }
+    form p {
+        float: left;
+        width: calc(50% - 16px);
+        margin-top: 32px;
+    }
+    form p:not(:nth-child(2n)) {
+        margin-right: 32px;
+    }
+    form p:last-child {
+        clear: both;
+        width: 100%;
+    }
+    form p:nth-last-child(2) {
+        clear: both;
+        width: 100%;
+    }
+    form label {
+        display: block;
+        margin-bottom: 12px;
     }
 }
 
@@ -748,4 +913,30 @@ Globals
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.call-to-action {
+    display: block;
+    width: 140px;
+    color: $black;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 9px;
+    border: none;
+    background-color: $yellow;
+    cursor: pointer;
+    &:hover {
+        background-color: $yellowHover;
+    }
+}
+
+/*
+*********************
+Icons
+*********************
+*/
+
+.ico-yellow {
+    color: $yellow;
 }

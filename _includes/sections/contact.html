@@ -1,69 +1,91 @@
 <section id="contact">
     <div class="contact-offices">
-        <div class="address">
+
+        <address class="address">
+            <a class="location" target="_blank" href="http://maps.google.com/?q=Quinta 20-65, Av. Neveri, Caracas 1080, Distrito Capital">
+                <i class="material-icons ico-yellow">location_on</i>
+            </a>
+            <hr>
+            <p>20-65, Av. Neverí</p>
+            <p>Oficina 09</p>
+            <p>Col. Bello Monte, Caracas</p>
+            <p>1080 Venezuela</p>
+        </address>
+        <address class="address">
+            <hr>
+            <p>Bogotá</p>
+            <p>Oficina 11</p>
+            <p>Los Cedritos</p>
+            <p>1080 Colombia</p>
+        </address>
+        <address class="address">
+            <hr>
+            <p>20-65, Miami</p>
+            <p>Oficina 11</p>
+            <p>El Doral</p>
+            <p>331145 EEUU</p>
+        </address>
+        <address class="phones-email">
             <p>
-                <hr>
-                20-65, Av. Neverí<br>
-                Oficina 09<br>
-                Col. Bello Monte, Caracas<br>
-                1080 Venezuela<br>
+                <a href="tel:+582127541143">+58 (212) 754 1143</a>
             </p>
-        </div>
-        <div class="address">
             <p>
-                <hr>
-                Bogotá<br>
-                Oficina 11<br>
-                Los Cedritos<br>
-                1080 Colombia<br>
+                <a href="tel:+17075001015">+1 (707) 500 1015</a>
             </p>
-        </div>
-        <div class="address">
             <p>
-                <hr>
-                20-65, Miami<br>
-                Oficina 11<br>
-                El Doral<br>
-                331145 EEUU<br>
+                <a href="mailto:hola@turpialdev.com?Subject=Hola%20Turpial%20Dev" target="_top">hola@turpialdev.com</a>
             </p>
-        </div>
-        <div class="phones-email">
-            +58 (212) 754 1283<br>
-            +58 (212) 754 1143<br>
-            +1  (707) 500 1015<br>
-            hola@turpialdev.com<br>
-        </div>
+        </address>
     </div>
     <div class="contact-content">
         <span class="contact-title">
             CONTÁCTANOS!
         </span>
-        <form action="." id="contact-form">
-            <div id="contact-name" class="form-container">
-                <label for="name-input">Nombre y Apellido*</label>
-                <input type="text" id="name-input" class="form-input">
-            </div>
-            <div id="contact-phone" class="form-container">
-                <label for="phone-input">Teléfono</label>
-                <input type="tel" id="phone-input" class="form-input">
-            </div>
-            <div id="contact-email" class="form-container">
-                <label for="email-input">Correo Electrónico*</label>
-                <input type="email" id="email-input" class="form-input">
-            </div>
-            <div id="contact-company" class="form-container">
-                <label for="company-company">Nombre de la Compañía</label>
-                <input type="text" id="company-company" class="form-input">
-            </div>
-            <div id="contact-message" class="form-container text-area">
-                <label for="message-input">Mensaje*</label>
-                <textarea name="message-input" id="message-input" cols="30" rows="10" class="form-input"></textarea>
-            </div>
-            <div class="form-container send-btn">
-                <a href="#">
-                    Enviar
-                </a>
-            </div>
-        </form>
+
+        <div class="form">
+            <form action="http://cake.turpialdos.webfactional.com/email/send.php" id="contact-form" method="post">
+                <p>
+                    <label for="name-input">Nombre y Apellido *</label>
+                    <input type="text" id="name-input">
+                </p>
+                <p>
+                    <label for="phone-input">Teléfono</label>
+                    <input type="tel" id="phone-input">
+                </p>
+                <p>
+                    <label for="email-input">Correo Electrónico *</label>
+                    <input type="email" id="email-input">
+                </p>
+                <p>
+                    <label for="company-input">Nombre de la Compañía</label>
+                    <input type="text" id="company-input">
+                </p>
+                <p>
+                    <label for="message-input">Mensaje *</label>
+                    <textarea id="message-input" cols="30" rows="7"></textarea>
+                </p>
+                <p class="send">
+                    <a class="call-to-action" type="submit" id="submitbtn">
+                        <span id="submit">ENVIAR</span>
+                        <span id="dot" style="display: none;">
+                            <span>.</span>
+                            <span>.</span>
+                            <span>.</span>
+                        </span>
+                        <span id="check" style="display: none;">
+                            <svg fill="#ffcb00" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M9 21.035l-9-8.638 2.791-2.87 6.156 5.874 12.21-12.436 2.843 2.817z" />
+                            </svg>
+                        </span>
+                        <span id="error" style="display: none;">
+                            <svg fill="#ffcb00" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"
+                                />
+                            </svg>
+                        </span>
+                    </a>
+                </p>
+            </form>
+        </div>
     </div>
 </section>
