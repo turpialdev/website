@@ -347,7 +347,7 @@ Home Page
 @keyframes blink-caret { 50% { border-right: 3px solid #fff; } }
 
 #home {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 190px);
     padding: $frameborder;
     background: #686868;
     background-image: url('/img/bg-home.jpg');
@@ -485,7 +485,7 @@ Web, Mobile and design Pages
 */
 
 #web, #mobile, #design {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 140px);
     padding: $frameborder;
     background: #fff;
     position: relative;
@@ -531,7 +531,7 @@ Web, Mobile and design Pages
         height: 10.5vw;
         position: absolute;
         background-color: $yellow;
-        top: 7.56vw;
+        top: 8vw;
         right: 40%;
 
         h1 {
@@ -556,7 +556,7 @@ Web, Mobile and design Pages
     }
 
     .info {
-        margin-top: 19vw;
+        margin-top: 19.5vw;
         margin-left: 2.5vw;
 
         h3 {
@@ -622,10 +622,10 @@ About Us Page
 */
 
 #aboutus {
-    height: calc(100vh - 208px);
+    height: calc(100vh - 150px);
     padding: $frameborder;
-    background: #fff;
     position: relative;
+    background-color: #fff;
 
     .about-content {
         border: solid 2px #cecece;
@@ -726,7 +726,8 @@ Contact us
 
 #contact {
     min-height: 38.46vw;
-    height: calc(100vh - 208px);
+    height: calc(100vh - 190px);
+    min-height: 620px;
     padding: $frameborder;
     background: #1b1b1b;
     color: #fff;
@@ -789,20 +790,22 @@ Contact us
     .contact-title {
         display: block;
         font-size: 6vw;
-        letter-spacing: 4px;
         font-weight: 900;
-        text-align: right;
+        text-align: left;
         color: var(--white);
+        margin-bottom: 18px;
+        letter-spacing: 3px;
     }
 
     .contact-content {
-        width: 66%;
         display: inline-block;
+        width: 66%;
+        margin-top: 32px;
     }
 
     .send {
         width: 100%;
-        margin-top: 8px;
+        margin-top: 24px;
         a, input {
             float: right;
             outline: none;
@@ -881,7 +884,7 @@ Contact us
     form p {
         float: left;
         width: calc(50% - 16px);
-        margin-top: 24px;
+        margin-top: 32px;
     }
     form p:not(:nth-child(2n)) {
         margin-right: 32px;
@@ -889,7 +892,6 @@ Contact us
     form p:last-child {
         clear: both;
         width: 100%;
-        margin-right: 0;
     }
     form p:nth-last-child(2) {
         clear: both;
