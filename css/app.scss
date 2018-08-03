@@ -905,6 +905,158 @@ Contact us
 
 /*
 *********************
+Advantages
+*********************
+*/
+
+#advantage {
+    height: calc(100vh - 50px);
+    color: #fff;
+    margin: 0;
+
+    .v-card {
+        transition: 0.4s;
+        position: relative;
+        float: left;
+        width: calc(50% / 4);
+        height: 100%;
+        background-color: #333;
+        // background-size: auto;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-blend-mode: multiply;
+
+        .v-title {
+            height: 100%;
+            z-index: 100;
+
+            h3 {
+                position: relative;
+                height: 100%;
+                color: $yellow;
+                font-weight: bold;
+                font-size: 3vw;
+                text-align: center;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                text-transform: uppercase;
+                margin: 0;
+                left: 50%;
+                transform: translateX(-50%) rotate(180deg);
+                cursor: pointer;
+            }
+        }
+
+        .v-content {
+            transition-delay: 0.1s;
+            transition: 0.4s;
+            position: absolute;
+            bottom: 52px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            h2 {
+                font-size: 4.5vw;
+                text-align: center;
+                text-transform: uppercase;
+                color: #000;
+                font-weight: bold;
+                background-color: #ffcb00;
+                padding: 32px 16px;
+            }
+            div {
+                line-height: 1.5vw;
+                width: 70%;
+                background-color: #fff;
+                color: #000;
+                padding: 16px;
+                font-size: 1vw;
+                margin: 0 auto;
+                b {
+                    font-weight: bold;
+                    margin: 6px 0;
+                    display: block;
+                }
+            }
+        }
+
+        .v-hidden-c {
+            bottom: -100%;
+            opacity: 0;
+            height: 0;
+            h2, div {
+                font-size: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    .v-hidden {
+        display: none;
+    }
+
+    .v-open {
+        width: 50%;
+        background-color: #999;
+        background-blend-mode: normal;
+        background-position: bottom;
+    }
+
+    #v1 {
+        background-image: url("/img/advantage/sm/usability.jpg");
+    }
+    #v2 {
+        background-image: url("/img/advantage/sm/accesibility.jpg");
+    }
+    #v3 {
+        background-image: url("/img/advantage/sm/security.jpg");
+    }
+    #v4 {
+        background-image: url("/img/advantage/sm/working.jpg");
+    }
+    #v5 {
+        background-image: url("/img/advantage/sm/agile.jpg");
+    }
+
+    @media screen and (max-width: 720px) and (min-width: 320px) {
+        #v1 {
+            background-image: url("/img/advantage/md/usability.jpg");
+        }
+        #v2 {
+            background-image: url("/img/advantage/md/accesibility.jpg");
+        }
+        #v3 {
+            background-image: url("/img/advantage/md/security.jpg");
+        }
+        #v4 {
+            background-image: url("/img/advantage/md/working.jpg");
+        }
+        #v5 {
+            background-image: url("/img/advantage/md/agile.jpg");
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        #v1 {
+            background-image: url("/img/advantage/lg/usability.jpg");
+        }
+        #v2 {
+            background-image: url("/img/advantage/lg/accesibility.jpg");
+        }
+        #v3 {
+            background-image: url("/img/advantage/lg/security.jpg");
+        }
+        #v4 {
+            background-image: url("/img/advantage/lg/working.jpg");
+        }
+        #v5 {
+            background-image: url("/img/advantage/lg/agile.jpg");
+        }
+    }
+}
+
+/*
+*********************
 Globals
 *********************
 */
