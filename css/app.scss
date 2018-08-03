@@ -350,9 +350,21 @@ Home Page
     height: calc(100vh - 190px);
     padding: $frameborder;
     background: #686868;
-    background-image: url('/img/bg-home.jpg');
+    background-image: url('/img/pages/sm/home.jpg');
     background-size: cover;
     background-blend-mode: multiply;
+
+    @media screen and (max-width: 1480px) and (min-width: 640px) {
+        background-image: url('/img/pages/md/home.jpg');
+    }
+
+    @media screen and (max-width: 1481px) and (min-width: 1820px) {
+        background-image: url('/img/pages/lg/home.jpg');
+    }
+
+    @media screen and (min-width: 1821px) {
+        background-image: url('/img/pages/xl/home.jpg');            
+    }
     
     .call-to-action-footer {
         width: calc(100vw - 222px);
@@ -498,15 +510,39 @@ Web, Mobile and design Pages
         background-blend-mode: multiply;
         top: 0;
     }
-    
+
     .image.web {
-        background-image: url('/img/StockSnap_GHIBZPY4FS.jpg');
+        background-image: url('/img/pages/sm/web.jpg');
         right: 0;
+
+        @media screen and (max-width: 1480px) and (min-width: 640px) {
+            background-image: url('/img/pages/md/web.jpg');
+        }
+    
+        @media screen and (max-width: 1481px) and (min-width: 1820px) {
+            background-image: url('/img/pages/lg/web.jpg');
+        }
+    
+        @media screen and (min-width: 1821px) {
+            background-image: url('/img/pages/xl/web.jpg');            
+        }
     }
 
     .image.mobile {
-        background-image: url('/img/StockSnap_NOJRYJQXZK.jpg');
+        background-image: url('/img/pages/sm/mobile.jpg');
         left: 0;
+
+        @media screen and (max-width: 1480px) and (min-width: 640px) {
+            background-image: url('/img/pages/md/mobile.jpg');
+        }
+    
+        @media screen and (max-width: 1481px) and (min-width: 1820px) {
+            background-image: url('/img/pages/lg/mobile.jpg');
+        }
+    
+        @media screen and (min-width: 1821px) {
+            background-image: url('/img/pages/xl/mobile.jpg');            
+        }
     }
 
     .image.design {
@@ -921,10 +957,11 @@ Advantages
         width: calc(50% / 4);
         height: 100%;
         background-color: #333;
-        // background-size: auto;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: top;
         background-blend-mode: multiply;
+        cursor: pointer;
 
         .v-title {
             height: 100%;
@@ -943,7 +980,6 @@ Advantages
                 margin: 0;
                 left: 50%;
                 transform: translateX(-50%) rotate(180deg);
-                cursor: pointer;
             }
         }
 
@@ -1000,6 +1036,7 @@ Advantages
         background-color: #999;
         background-blend-mode: normal;
         background-position: bottom;
+        cursor: unset;
     }
 
     #v1 {
@@ -1018,7 +1055,7 @@ Advantages
         background-image: url("/img/advantage/sm/agile.jpg");
     }
 
-    @media screen and (max-width: 720px) and (min-width: 320px) {
+    @media screen and (max-width: 1480px) and (min-width: 640px) {
         #v1 {
             background-image: url("/img/advantage/md/usability.jpg");
         }
@@ -1036,7 +1073,7 @@ Advantages
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (max-width: 1481px) and (min-width: 1820px) {
         #v1 {
             background-image: url("/img/advantage/lg/usability.jpg");
         }
@@ -1051,6 +1088,24 @@ Advantages
         }
         #v5 {
             background-image: url("/img/advantage/lg/agile.jpg");
+        }
+    }
+
+    @media screen and (min-width: 1821px) {
+        #v1 {
+            background-image: url("/img/advantage/xl/usability.jpg");
+        }
+        #v2 {
+            background-image: url("/img/advantage/xl/accesibility.jpg");
+        }
+        #v3 {
+            background-image: url("/img/advantage/xl/security.jpg");
+        }
+        #v4 {
+            background-image: url("/img/advantage/xl/working.jpg");
+        }
+        #v5 {
+            background-image: url("/img/advantage/xl/agile.jpg");
         }
     }
 }
