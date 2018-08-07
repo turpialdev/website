@@ -855,6 +855,10 @@ Portafolio Page
 		.portafolio-content	{
 			padding-left: 38% !important;
 		}
+
+		.row-1 {
+			height: 430px !important;
+		}
 	}
 
 	@media screen and (max-width: 1260px) {
@@ -868,6 +872,7 @@ Portafolio Page
 		.row-2, .row-3, .row-4, .row-5 {
 			height: 380px !important;
 		}
+
 	}
 
 	@media screen and (max-width: 1270px) {
@@ -885,7 +890,11 @@ Portafolio Page
 
 		.col-1 {
 			height: 30vw;
-		}														
+		}	
+
+		.row-1 {
+			height: 470px;
+		}													
 	}
 
 	@media screen and (max-width: 1435px) {
@@ -919,6 +928,35 @@ Portafolio Page
 
 		.line-grey-2 {
     		margin-top: 6vw;
+		}
+	}
+
+
+	@media screen and (max-width: 950px) {
+		.row-1 {
+			height: 400px !important;
+		}
+
+		.col-5, .col-6, .col-7, .col-8 {
+			margin-top: -17%;
+		}
+
+		.row-2, .row-3, .row-4, .row-5 {
+			height: 350px;
+		}
+
+		.col-5 {
+			margin-left: -10% !important;
+		}
+	}
+
+	@media screen and (max-width: 850px) {
+		.col-5, .col-6, .col-7, .col-8 {
+			margin-top: -34%;
+		}
+
+		.row-1 {
+			height: 325px !important;
 		}
 	}
 }
