@@ -381,27 +381,54 @@ Home Page
         font-size: 96px;
         font-weight: lighter;
         letter-spacing: -0.7px;
+
+        h2.typing-line-1, 
+        h2.typing-line-2, 
+        h2.typing-line-3 {
+            margin: 0;
+            border-color: transparent;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     
         h2.typing-line-1 {
-            margin: 0;
-            border-color: transparent;
             width: 345px;
-            white-space: nowrap;
-            overflow: hidden;
             -webkit-animation:
-                typing 1s steps(6, end),
-                blink-caret 1s step-end
+                typing 0.7s steps(6, end),
+                blink-caret 0.7s step-end
         }
         h2.typing-line-2 {
-            margin: 0;
-            border-color: transparent;
             width: 752px;
-            white-space: nowrap;
-            overflow: hidden;
             -webkit-animation:
-                hiden 1.4s ease,
-                typing 2.2s steps(13, end) 1.4s,
-                blink-caret 1s step-end infinite 1s
+                hiden 0.8s ease,
+                typing 2s steps(13, end) 0.8s,
+                blink-caret 0.5s step-end infinite 0.5s
+        }
+        h2.typing-line-3 {
+            display: none;
+            width: 408px;
+            -webkit-animation:
+                hiden 1.6s ease,
+                typing 0.8s steps(7, end) 1.6s,
+                blink-caret 0.5s step-end infinite 0.5s;
+        }
+
+        @media only screen and (max-width: 964px) {
+            h2.typing-line-2 {
+                width: 287px;
+                -webkit-animation:
+                    hiden 0.8s ease,
+                    typing 0.55s steps(5, end) 0.8s,
+                    blink-caret 0.5s step-end
+            }
+            h2.typing-line-3 {
+                display: block;
+                width: 408px;
+                -webkit-animation:
+                    hiden 1.6s ease,
+                    typing 0.8s steps(7, end) 1.6s,
+                    blink-caret 0.5s step-end infinite 0.5s;
+            }
         }
     }
 
@@ -418,7 +445,7 @@ Home Page
             font-weight: lighter;
             letter-spacing: -0.2px;
             color: #ffffff;
-            -webkit-animation: slogan-trans 4.5s ease,
+            -webkit-animation: slogan-trans 3s ease,
         }
     }
 
@@ -479,13 +506,39 @@ Home Page
         }
 
         .fly-a {
-            -webkit-animation: flya 4s ease, flycont 4s ease,
+            -webkit-animation: flya 3s ease, flycont 3s ease,
         }
         .fly-b {
-            -webkit-animation: flyb 4s ease, flycont 4s ease,
+            -webkit-animation: flyb 3s ease, flycont 3s ease,
         }
         .fly-c {
-            -webkit-animation: flyc 4s ease, flycont 4s ease,
+            -webkit-animation: flyc 3s ease, flycont 3s ease,
+        }
+    }
+
+    @media only screen and (max-width: 756px) {
+        .call-to-action-btns {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 930px) {
+        height: initial;
+        .center-v {
+            position: relative;
+            top: initial;
+            transform: initial;
+        }
+        .call-to-action-footer {
+            width: initial;
+            position: relative;
+            bottom: initial;
+            height: 60px;
+            a {
+                bottom: 0;
+                position: absolute;
+                right: 0;
+            }
         }
     }
 }
