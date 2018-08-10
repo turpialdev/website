@@ -1009,7 +1009,7 @@ Advantages
         background-color: #333;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: bottom;
         background-blend-mode: multiply;
         cursor: pointer;
 
@@ -1074,7 +1074,6 @@ Advantages
     .v-open {
         background-color: #999;
         background-blend-mode: normal;
-        background-position: bottom;
         cursor: unset;
     }
 
@@ -1186,7 +1185,7 @@ Advantages
         }
     }
 
-    @media screen and (max-width: 1481px) and (min-width: 1820px) {
+    @media screen and (max-width: 1820px) and (min-width: 1481px) {
         #v1 {
             background-image: url("/img/advantage/lg/usability.jpg");
         }
