@@ -141,6 +141,25 @@ $menu-height: 50px;
 
 /*
 *********************
+Responsive size
+*********************
+*/
+
+$break_sm: 640px;
+$break_md: 1024px;
+$break_lg: 1366px;
+$break_xl: 1900px;
+
+$p_sm: 1.5vw;
+$p_md: 1.5vw;
+$p_lg: 1.5vw;
+
+$h_sm: 4.5vw;
+$h_md: 4.5vw;
+$h_lg: 4.5vw;
+
+/*
+*********************
 Frame & container
 *********************
 */
@@ -354,15 +373,15 @@ Home Page
     background-size: cover;
     background-blend-mode: multiply;
 
-    @media screen and (max-width: 1480px) and (min-width: 640px) {
+    @media screen and (max-width: $break_md) and (min-width: $break_sm) {
         background-image: url('/img/pages/md/home.jpg');
     }
 
-    @media screen and (max-width: 1481px) and (min-width: 1820px) {
+    @media screen and (max-width: $break_lg) and (min-width: $break_md) {
         background-image: url('/img/pages/lg/home.jpg');
     }
 
-    @media screen and (min-width: 1821px) {
+    @media screen and (min-width: $break_lg) {
         background-image: url('/img/pages/xl/home.jpg');            
     }
     
@@ -413,7 +432,7 @@ Home Page
                 blink-caret 0.5s step-end infinite 0.5s;
         }
 
-        @media only screen and (max-width: 964px) {
+        @media only screen and (max-width: $break_md) {
             h2.typing-line-2 {
                 width: 287px;
                 -webkit-animation:
@@ -428,6 +447,15 @@ Home Page
                     hiden 1.6s ease,
                     typing 0.8s steps(7, end) 1.6s,
                     blink-caret 0.5s step-end infinite 0.5s;
+            }
+        }
+        @media only screen and (max-width: $break_sm) {
+            h2 {
+                text-align: center!important;
+                width: auto!important;
+                span {
+                    display: none!important;
+                }
             }
         }
     }
@@ -469,7 +497,7 @@ Home Page
             p {
                 margin: 0;
                 color: #fff;
-                font-size: 16x;
+                font-size: 16px;
                 letter-spacing: -0.1px;
             }
             &:hover {
@@ -481,49 +509,34 @@ Home Page
             }
         }
 
-        @keyframes flycont {
-            0% { height: 130px; }
-            90% { height: 130px; }
-            100% { height: 150px; } 
-        }
-
-        @keyframes flya { 
-            0% { left: -700px; }
-            80% { left: -700px; }
+        @keyframes fly { 
+            0% { left: -100vw; }
+            80% { left: -100vw; }
             100% { left: 0px; } 
         }
 
-        @keyframes flyb { 
-            0% { left: -700px; }
-            85% { left: -700px; }
-            100% { left: 0px; } 
-        }
-
-        @keyframes flyc { 
-            0% { left: -700px; }
-            90% { left: -700px; }
-            100% { left: 0px;  } 
-        }
-
-        .fly-a {
-            -webkit-animation: flya 3s ease, flycont 3s ease,
-        }
-        .fly-b {
-            -webkit-animation: flyb 3s ease, flycont 3s ease,
-        }
-        .fly-c {
-            -webkit-animation: flyc 3s ease, flycont 3s ease,
+        .fly-a, .fly-b, .fly-c {
+            -webkit-animation: fly 3s ease
         }
     }
 
-    @media only screen and (max-width: 756px) {
+    @media only screen and (max-width: $break_sm) {
         .call-to-action-btns {
             display: none;
         }
+        .center-v {
+            position: relative;
+            top: initial;
+            transform: initial;
+            margin-top: 15vh;
+        }
+        .slogan h4 {
+            font-size: 30px!important;
+            margin-top: 12px!important;
+        }
     }
 
-    @media only screen and (max-width: 930px) {
-        height: initial;
+    @media only screen and (max-width: $break_md) and (min-width: $break_sm) {
         .center-v {
             position: relative;
             top: initial;
@@ -538,6 +551,30 @@ Home Page
                 bottom: 0;
                 position: absolute;
                 right: 0;
+            }
+        }
+        .call-to-action-btns {
+            a {
+                height: 17vw;
+                width: 17vw;
+                max-height: 150px;
+                max-width: 150px;
+                img {
+                    height: 4vw;
+                    width: 4vw;
+                    max-height: 32px;
+                    max-width: 32px;
+                    margin-top: 4vw;
+                }
+                p {
+                    font-size: 2vw;
+                }
+                &:hover {
+                    img {
+                        margin-top: 4vw;
+                        margin-bottom: inherit;
+                    }
+                }
             }
         }
     }
