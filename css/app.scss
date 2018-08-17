@@ -1217,7 +1217,7 @@ Advantages
         background-image: url("/img/advantage/sm/agile.jpg");
     }
 
-    @media screen and (max-width: 1480px) and (min-width: 640px) {
+    @media screen and (max-width: $break_md) and (min-width: $break_sm) {
         #v1 {
             background-image: url("/img/advantage/md/usability.jpg");
         }
@@ -1235,7 +1235,7 @@ Advantages
         }
     }
 
-    @media screen and (max-width: 1820px) and (min-width: 1481px) {
+    @media screen and (max-width: $break_lg) and (min-width: $break_md) {
         #v1 {
             background-image: url("/img/advantage/lg/usability.jpg");
         }
@@ -1253,7 +1253,7 @@ Advantages
         }
     }
 
-    @media screen and (min-width: 1821px) {
+    @media screen and (min-width: $break_xl) {
         #v1 {
             background-image: url("/img/advantage/xl/usability.jpg");
         }
@@ -1375,7 +1375,6 @@ Portfolio
             display: inline-block;
             background-size: cover;
             background-position: center;
-            background-color: gray;
             background-color: $lightgray;
             width: 35vw;
             height: 23vw;
@@ -1396,11 +1395,11 @@ Portfolio
             }
         }
 
-        .vertical-line {
+        .line {
             position: absolute;
-            width: 1px;
-            height: 13vw;
-            top: 26.3vw;
+            width: 8.5vw;
+            height: 1px;
+            top: 12.5vw;
             background-color: #979797;
         }
 
@@ -1411,13 +1410,13 @@ Portfolio
             font-weight: 600;
             letter-spacing: -1vw;
             color: #f7f7f7;
-            top: 40vw;
+            top: 5vw;
         }
 
         .title-text-box {
             position: absolute;
             line-height: 12vw;
-            top: 43vw;
+            top: 8vw;
             h3 {
                 font-size: 2vw;
                 line-height: 2vw;
@@ -1444,16 +1443,16 @@ Portfolio
             right: 4.5vw;
         }
 
-        .vertical-line {
-            right: 10vw;
+        .line {
+            right: 37vw;
         }
 
         .title-year-box {
-            right: 0;
+            left: 0;
         }
 
         .title-text-box {
-            right: 2vw;
+            left: 2vw;
         }
     }
 
@@ -1467,17 +1466,42 @@ Portfolio
             left: 4.5vw;
         }
 
-        .vertical-line {
-            left: 25.5vw;
+        .line {
+            left: 37vw;
         }
 
         .title-year-box {
-            left: 0;
+            right: 0;
         }
 
         .title-text-box {
-            left: 2vw;
+            right: 2vw;
         }
+    }
+
+    .img-1 {
+        background-image: url("/img/advantage/sm/usability.jpg");
+    }
+    .img-2 {
+        background-image: url("/img/advantage/sm/usability.jpg");
+    }
+    .img-3 {
+        background-image: url("/img/advantage/sm/usability.jpg");
+    }
+    .img-4 {
+        background-image: url("/img/advantage/sm/usability.jpg");
+    }
+
+    @media screen and (max-width: $break_md) and (min-width: $break_sm) {
+
+    }
+
+    @media screen and (max-width: $break_lg) and (min-width: $break_md) {
+
+    }
+
+    @media screen and (min-width: $break_xl) {
+    
     }
 }
 
