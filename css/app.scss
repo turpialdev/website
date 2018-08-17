@@ -51,6 +51,41 @@
     License: none (public domain)
 */
 
+/*
+*********************
+Global variables
+*********************
+*/
+
+$frameborder: 52px;
+
+/* colors */
+$black: #1b1b1b;
+$yellow: #ffcb00;
+$yellowHover: #e2b500;
+$lightgray: #e5e5e5;
+$menu-width: 40px;
+$menu-height: 50px;
+
+/*
+*********************
+Responsive size
+*********************
+*/
+
+$break_sm: 768px;
+$break_md: 1024px;
+$break_lg: 1366px;
+$break_xl: 1920px;
+
+$p_sm: 1.5vw;
+$p_md: 1.5vw;
+$p_lg: 1.5vw;
+
+$h_sm: 4.5vw;
+$h_md: 4.5vw;
+$h_lg: 4.5vw;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -76,10 +111,6 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
     display: block;
-}
-
-body {
-    line-height: 1;
 }
 
 ol, ul {
@@ -108,10 +139,12 @@ a, input {
 }
 
 body {
+    color: $black;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: #fff;
     transition: 3s;
+    line-height: 1;
 }
 
 @media screen
@@ -122,41 +155,6 @@ and (min-width: 768px) {
         pointer-events: none;
     }
 }
-
-/*
-*********************
-Global variables
-*********************
-*/
-
-$frameborder: 52px;
-
-/* colors */
-$black: #1b1b1b;
-$yellow: #ffcb00;
-$yellowHover: #e2b500;
-$lightgray: #e5e5e5;
-$menu-width: 40px;
-$menu-height: 50px;
-
-/*
-*********************
-Responsive size
-*********************
-*/
-
-$break_sm: 640px;
-$break_md: 1024px;
-$break_lg: 1366px;
-$break_xl: 1900px;
-
-$p_sm: 1.5vw;
-$p_md: 1.5vw;
-$p_lg: 1.5vw;
-
-$h_sm: 4.5vw;
-$h_md: 4.5vw;
-$h_lg: 4.5vw;
 
 /*
 *********************
@@ -533,6 +531,7 @@ Home Page
         .slogan h4 {
             font-size: 30px!important;
             margin-top: 12px!important;
+            text-align: center!important;
         }
         .call-to-action-footer {
             position: relative;
@@ -866,7 +865,6 @@ Contact us
 */
 
 #contact {
-    min-height: 38.46vw;
     height: calc(100vh - 190px);
     min-height: 620px;
     padding: $frameborder;
@@ -1270,6 +1268,215 @@ Advantages
         }
         #v5 {
             background-image: url("/img/advantage/xl/agile.jpg");
+        }
+    }
+}
+
+/*
+*********************
+Portfolio
+*********************
+*/
+
+#portfolio {
+    background-color: #fff;
+    padding: 104px;
+    
+    .float-title {
+        display: block;
+        position: relative;
+        height: 60vw;
+
+    .title-gray-box {
+        position: absolute;
+        display: inline-block;
+        background-color: $lightgray;
+        width: 20vw;
+        height: 31vw;
+    }
+
+    .title-titl-box {
+        position: absolute;
+        display: inline-block;
+        background-color: $yellow;
+        top: 2vw;
+        left: 20vw;
+        padding-left: 12.8vw;
+        padding-right: 5vw;
+        h1 {
+            font-size: 8.5vw;
+            line-height: 7.2vw;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 2.1vw 0;
+        }
+    }
+
+    .title-imag-box {
+        position: absolute;
+        display: inline-block;
+        background-image: url('https://via.placeholder.com/400x400');
+        background-size: cover;
+        background-position: center;
+        background-color: gray;
+        top: 4.5vw;
+        left: 5.5vw;
+        width: 25vw;
+        height: 18.5vw;
+    }
+
+    .vertical-line1 {
+        position: absolute;
+        width: 1px;
+        height: 20vw;
+        top: calc(18.5vw + 4.5vw);
+        left: 25vw;
+        background-color: $lightgray;
+    }
+
+    .title-year-box {
+        position: absolute;
+        margin-left: -4vw;
+        line-height: 12vw;
+        font-size: 19vw;
+        font-weight: 600;
+        letter-spacing: -1vw;
+        color: #f7f7f7;
+        top: calc(18.5vw + 4.5vw + 20vw);
+    }
+
+    .title-text-box {
+        position: absolute;
+        line-height: 12vw;
+        top: calc(18.5vw + 4.5vw + 20vw + 4vw);
+        h3 {
+            font-size: 2vw;
+            line-height: 2vw;
+            text-transform: uppercase;
+            margin: 0;
+            }
+        p {
+            font-size: 1.4vw;
+            line-height: 2vw;
+            margin: 0.5vw 0;
+            max-width: 31vw;
+            }
+        }
+    }
+
+    .float-container-right, .float-container-left {
+        display: block;
+        position: relative;
+        height: 60vw;
+        margin-top: -25vw;
+
+        .imag-box {
+            position: absolute;
+            display: inline-block;
+            background-size: cover;
+            background-position: center;
+            background-color: gray;
+            background-color: $lightgray;
+            width: 35vw;
+            height: 23vw;
+        }
+
+        .titl-box {
+            position: absolute;
+            display: inline-block;
+            background-color: $black;
+            top: 20vw;
+            width: 30vw;
+            text-align: center;
+            h2 {
+                color: #fff;
+                font-size: 1.7vw;
+                font-weight: 300;
+                line-height: 6.3vw;
+            }
+        }
+
+        .vertical-line {
+            position: absolute;
+            width: 1px;
+            height: 13vw;
+            top: 26.3vw;
+            background-color: #979797;
+        }
+
+        .title-year-box {
+            position: absolute;
+            line-height: 12vw;
+            font-size: 19vw;
+            font-weight: 600;
+            letter-spacing: -1vw;
+            color: #f7f7f7;
+            top: 40vw;
+        }
+
+        .title-text-box {
+            position: absolute;
+            line-height: 12vw;
+            top: 43vw;
+            h3 {
+                font-size: 2vw;
+                line-height: 2vw;
+                text-transform: uppercase;
+                margin: 0;
+            }
+            p {
+                font-size: 1.4vw;
+                line-height: 2vw;
+                margin: 0.5vw 0;
+                max-width: 31vw;
+            }
+        }
+
+    }
+
+    .float-container-right {
+
+        .imag-box {
+            right: 2vw;
+        }
+
+        .titl-box {
+            right: 4.5vw;
+        }
+
+        .vertical-line {
+            right: 10vw;
+        }
+
+        .title-year-box {
+            right: 0;
+        }
+
+        .title-text-box {
+            right: 2vw;
+        }
+    }
+
+    .float-container-left {
+
+        .imag-box {
+            left: 2vw;
+        }
+
+        .titl-box {
+            left: 4.5vw;
+        }
+
+        .vertical-line {
+            left: 25.5vw;
+        }
+
+        .title-year-box {
+            left: 0;
+        }
+
+        .title-text-box {
+            left: 2vw;
         }
     }
 }
