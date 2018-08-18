@@ -32,21 +32,21 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-  
+
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
     /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
+
     /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
+
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
 
-/* 
-    http://meyerweb.com/eric/tools/css/reset/ 
+/*
+    http://meyerweb.com/eric/tools/css/reset/
     v2.0 | 20110126
     License: none (public domain)
 */
@@ -96,8 +96,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -109,7 +109,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -198,7 +198,7 @@ $menu-transition: 0.6s;
 .wrapper {
     display: grid;
     grid-gap: 0;
-    grid-template-areas: 
+    grid-template-areas:
       "header"
       "content"
       "footer";
@@ -227,7 +227,7 @@ Nav-bar
     .item {
         grid-column: 1;
     }
-    
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -353,7 +353,7 @@ Hamburger button
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-  
+
 #h-menu.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -422,9 +422,9 @@ Home Page
     }
 
     @media screen and (min-width: $break_lg) {
-        background-image: url('/img/pages/xl/home.jpg');            
+        background-image: url('/img/pages/xl/home.jpg');
     }
-    
+
     .call-to-action-footer {
         width: calc(100vw - 222px);
         position: absolute;
@@ -441,15 +441,15 @@ Home Page
         font-weight: lighter;
         letter-spacing: -0.7px;
 
-        h2.typing-line-1, 
-        h2.typing-line-2, 
+        h2.typing-line-1,
+        h2.typing-line-2,
         h2.typing-line-3 {
             margin: 0;
             border-color: transparent;
             white-space: nowrap;
             overflow: hidden;
         }
-    
+
         h2.typing-line-1 {
             width: 345px;
             -webkit-animation:
@@ -505,7 +505,7 @@ Home Page
         80% { opacity: 0; }
         100% { opacity: 1; }
     }
-    
+
     .slogan {
         h4 {
             font-family: 'Courier New', Courier, monospace;
@@ -549,10 +549,10 @@ Home Page
             }
         }
 
-        @keyframes fly { 
+        @keyframes fly {
             0% { left: -100vw; }
             80% { left: -100vw; }
-            100% { left: 0px; } 
+            100% { left: 0px; }
         }
 
         .fly-a, .fly-b, .fly-c {
@@ -647,7 +647,7 @@ Web, Mobile and design Pages
     padding: $frameborder;
     background: #fff;
     position: relative;
-    
+
     .image {
         width: 50%;
         height: 100%;
@@ -664,13 +664,13 @@ Web, Mobile and design Pages
         @media screen and (max-width: 1480px) and (min-width: 640px) {
             background-image: url('/img/pages/md/web.jpg');
         }
-    
+
         @media screen and (max-width: 1481px) and (min-width: 1820px) {
             background-image: url('/img/pages/lg/web.jpg');
         }
-    
+
         @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/web.jpg');            
+            background-image: url('/img/pages/xl/web.jpg');
         }
     }
 
@@ -681,13 +681,13 @@ Web, Mobile and design Pages
         @media screen and (max-width: 1480px) and (min-width: 640px) {
             background-image: url('/img/pages/md/mobile.jpg');
         }
-    
+
         @media screen and (max-width: 1481px) and (min-width: 1820px) {
             background-image: url('/img/pages/lg/mobile.jpg');
         }
-    
+
         @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/mobile.jpg');            
+            background-image: url('/img/pages/xl/mobile.jpg');
         }
     }
 
@@ -901,7 +901,7 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px; 
+                    margin-left: 2px;
                 }
             }
         }
@@ -912,7 +912,7 @@ Contact us
             transition: 0.1s;
             &:hover {
                 color: $yellowHover;
-                top: -34px; 
+                top: -34px;
             }
         }
 
@@ -925,7 +925,7 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px; 
+                    margin-left: 2px;
                 }
             }
         }
@@ -1013,13 +1013,13 @@ Contact us
     #check svg, #error svg {
         height: 12px;
     }
-    
+
 
     input:focus,
     textarea:focus {
         border: 1px solid $yellow;
-    }  
-    
+    }
+
     input,
     textarea {
         font-size: 14px;
@@ -1080,6 +1080,8 @@ Advantages
         .v-title {
             height: 100%;
             z-index: 100;
+            cursor: pointer;
+
 
             h3 {
                 position: relative;
@@ -1142,7 +1144,7 @@ Advantages
     }
 
     /**
-     * vertical carousel 
+     * vertical carousel
      **/
     @media only screen and (max-width : 768px) {
 
@@ -1177,7 +1179,7 @@ Advantages
     }
 
     /**
-     * horizontal carousel 
+     * horizontal carousel
      **/
     @media only screen and (min-width : 769px) {
 
@@ -1295,7 +1297,7 @@ Portfolio
 #portfolio {
     background-color: #fff;
     padding: 104px;
-    
+
     .float-title {
         display: block;
         position: relative;
@@ -1536,7 +1538,7 @@ Portfolio
     }
 
     @media screen and (min-width: $break_xl) {
-    
+
     }
 }
 
