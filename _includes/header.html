@@ -17,7 +17,7 @@
             <ul>
                 {% for link in site.navigation %} {% if link.section != 'Home' %} {% if link.subsection %}
                 <li>
-                    <span>{{ link.section }} &#9662;</span>
+                    <span>{{ link.section }}</span>&#9662;
                     <ul class="subsection">
                         {% for sublink in link.subsection %}
                         <li>

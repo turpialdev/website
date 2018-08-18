@@ -238,20 +238,15 @@ Nav-bar
     
         li {
             position: relative;
-            a {
+            a, span {
+                cursor: pointer;
                 padding: 0 6px;
                 color: $black;
                 font-size: 1.4vw;
                 transition: .3s;
                 &:hover {
-                    color: #333;
-                    font-size: 1.5vw;
-                    letter-spacing: 1px;
+                    color: #777;
                 }
-            }
-            span {
-                cursor: pointer;
-                padding: 0 6px;
             }
         }
 
@@ -272,11 +267,6 @@ Nav-bar
                 a {
                     font-size: 1.2vw;
                     padding: 0;
-                    &:hover {
-                        color: #333;
-                        font-size: 1.25vw;
-                        letter-spacing: 1px;
-                    }
                 }
             }
         }
