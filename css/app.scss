@@ -1481,17 +1481,23 @@ Portfolio
         }
     }
 
-    .img-1 {
-        background-image: url("/img/advantage/sm/usability.jpg");
+    .img-widu {
+        background-image: url("/img/portfolio/widu.png");
     }
-    .img-2 {
-        background-image: url("/img/advantage/sm/usability.jpg");
+    .img-tibit {
+        background-image: url("/img/portfolio/tibit.png");
     }
-    .img-3 {
-        background-image: url("/img/advantage/sm/usability.jpg");
+    .img-iucn {
+        background-image: url("/img/portfolio/iucn.png");
     }
-    .img-4 {
-        background-image: url("/img/advantage/sm/usability.jpg");
+    .img-tintaleo {
+        background-image: url("/img/portfolio/tintaleo.png");
+    }
+    .img-airways {
+        background-image: url("/img/portfolio/airways.png");
+    }
+    .img-citimarine {
+        background-image: url("/img/portfolio/citimarine.png");
     }
 
     @media screen and (max-width: $break_md) and (min-width: $break_sm) {
