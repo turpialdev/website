@@ -1378,7 +1378,7 @@ Portfolio
         }
     }
 
-    .float-container-right, .float-container-left {
+    .portfolio-card {
         display: block;
         position: relative;
         height: 30vw;
@@ -1458,54 +1458,55 @@ Portfolio
             }
         }
 
+    
+        &:nth-child(even) {
+    
+            .imag-box {
+                right: 2vw;
+            }
+    
+            .titl-box {
+                right: 4.5vw;
+            }
+    
+            .line {
+                left: 33vw;
+            }
+    
+            .title-year-box {
+                left: 0;
+                margin-left: -3vw;
+            }
+    
+            .title-text-box {
+                left: 0vw;
+            }
+        }
+    
+        &:nth-child(odd) {
+    
+            .imag-box {
+                left: 2vw;
+            }
+    
+            .titl-box {
+                left: 4.5vw;
+            }
+    
+            .line {
+                right: 36vw;
+            }
+    
+            .title-year-box {
+                right: 0;
+            }
+    
+            .title-text-box {
+                right: 5.3vw;
+            }
+        }
     }
 
-    .float-container-right {
-
-        .imag-box {
-            right: 2vw;
-        }
-
-        .titl-box {
-            right: 4.5vw;
-        }
-
-        .line {
-            left: 33vw;
-        }
-
-        .title-year-box {
-            left: 0;
-            margin-left: -3vw;
-        }
-
-        .title-text-box {
-            left: 0vw;
-        }
-    }
-
-    .float-container-left {
-
-        .imag-box {
-            left: 2vw;
-        }
-
-        .titl-box {
-            left: 4.5vw;
-        }
-
-        .line {
-            right: 36vw;
-        }
-
-        .title-year-box {
-            right: 0;
-        }
-
-        .title-text-box {
-            right: 5.3vw;
-        }
-    }
 
     .img-widu {
         background-image: url("/img/portfolio/widu.png");
