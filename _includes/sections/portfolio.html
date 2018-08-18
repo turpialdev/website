@@ -12,6 +12,33 @@
         <div class="line"></div>
     </span>
 
+    {% for project in site.portfolio %}
+    <span class="portfolio-card">
+        <div class="line"></div>
+
+        <a href="#">
+            <picture class="imag-box">
+                {% for img in project.cover-img-source %}
+                <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}">
+                {% endfor %}
+                <img src="{{ project.cover-img }}" alt="Flowers" style="width:auto;">
+            </picture>
+            <div class="titl-box">
+                <h2>Toto's web page</h2>
+            </div>
+        </a>
+
+        <div class="title-year-box">
+            {{ project.date | date: "%Y"}}
+        </div>
+        <div class="title-text-box">
+            <h3>Página informativa</h3>
+            <p>Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto...
+                <p>
+        </div>
+    </span>
+    {% endfor %}
+
     <!-- 1 float: right -->
     <span class="portfolio-card">
         <div class="line"></div>

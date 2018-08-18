@@ -54,3 +54,7 @@ navigation:
 
   - section: Contact
     url: '#contact'
+
+collections:
+  portfolio:
+    output: true
