@@ -205,7 +205,7 @@ $menu-transition: 0.6s;
 }
 
 .onBodyColorChange {
-    background: $lightgray;
+    background: $lightgray!important;
 }
 
 /*
@@ -236,8 +236,53 @@ Nav-bar
         width: 100%;
         padding: 0;
     
-        li > a {
-            color: $black;
+        li {
+            position: relative;
+            a {
+                padding: 0 6px;
+                color: $black;
+                font-size: 1.4vw;
+                transition: .3s;
+                &:hover {
+                    color: #333;
+                    font-size: 1.5vw;
+                    letter-spacing: 1px;
+                }
+            }
+            span {
+                cursor: pointer;
+                padding: 0 6px;
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            padding-top: 16px;
+            margin: 0;
+            min-width: 10vw;
+            transform: translateX(-50%);
+            transition: 3s;
+            background: #fff;
+            li {
+                padding: .5vw;
+                line-height: 2vw;
+                a {
+                    font-size: 1.2vw;
+                    padding: 0;
+                    &:hover {
+                        color: #333;
+                        font-size: 1.25vw;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+
+        li:hover > ul {
+            display: block;
         }
     }
 }
@@ -338,13 +383,19 @@ Turpial Logo
 *********************
 */
 
-.nav-logo img {
-    width: $frameborder;
-    height: auto;
-    padding: 7.7px 0;
-    float: right;
-    transition: 3s;
+.nav-logo {
+    a > img {
+            width: $frameborder;
+            height: auto;
+            padding: 7.7px 0;
+            float: right;
+            transition: 2s;
+    }
+    a:hover > img {
+        filter: grayscale(0%);
+    }
 }
+
 
 .grayScale {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -775,7 +826,7 @@ About Us Page
         width: 50%;
         height: 100%;
         backdrop-filter: blur(10px);
-        background-color: rgba(0,0,0,0.6);
+        background-color: rgba(0,0,0,0.5);
         color: #fff;
         div {
             position: absolute;
@@ -794,8 +845,8 @@ About Us Page
             }
             p {
                 font-size: 1.13vw;
-                font-weight: 600;
                 line-height: 2vw;
+                text-shadow: .05vw .05vw .05vw #000;
             }
             .call-to-actions {
                 display: block;
@@ -824,6 +875,9 @@ About Us Page
         min-height: 100%;
         min-width: 100%;
         max-height: 100%;
+        filter: grayscale(25%) brightness(95%);
+        background-image: url('/img/pages/lg/home.jpg');
+        background-size: cover;
     }
 }
 
@@ -1030,6 +1084,7 @@ Advantages
         background-repeat: no-repeat;
         background-position: bottom;
         background-blend-mode: multiply;
+        overflow: hidden;
         cursor: pointer;
 
         .v-title {
@@ -1343,7 +1398,7 @@ Portfolio
             display: inline-block;
             background-size: cover;
             background-position: center;
-            background-color: $lightgray;
+            background-color: #333;
             width: 35vw;
             height: 23vw;
         }
@@ -1355,11 +1410,24 @@ Portfolio
             top: 20vw;
             width: 30vw;
             text-align: center;
+            transition: .3s;
             h2 {
                 color: #fff;
                 font-size: 1.7vw;
                 font-weight: 300;
                 line-height: 6.3vw;
+            }
+        }
+
+        a:hover > .imag-box {
+            filter: contrast(1.17);
+        }
+
+        a:hover > .titl-box {
+            top: 19.5vw;
+            background-color: $yellow;
+            h2 {
+                color: $black;
             }
         }
 

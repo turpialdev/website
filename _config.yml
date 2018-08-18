@@ -23,3 +23,34 @@ sass:
   style: compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+navigation:
+  - section: Home
+    url: '#home'
+  
+  - section: Blog
+    url: '/blog/'
+
+  - section: Services
+    subsection:
+
+      - section: Web
+        url: '#web'
+
+      - section: Mobile
+        url: '#mobile'
+
+      - section: Design
+        url: '#design'
+
+  - section: Portfolio
+    url: '#portfolio'
+
+  - section: About Us
+    url: '#aboutus'
+
+  - section: Advantages
+    url: '#advantage'
+
+  - section: Contact
+    url: '#contact'
