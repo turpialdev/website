@@ -816,7 +816,7 @@ About Us Page
         width: 50%;
         height: 100%;
         backdrop-filter: blur(10px);
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.6);
         color: #fff;
         div {
             position: absolute;
@@ -835,8 +835,7 @@ About Us Page
             }
             p {
                 font-size: 1.13vw;
-                line-height: 2vw;
-                text-shadow: .05vw .05vw .05vw #000;
+                line-height: 1.6vw;
             }
             .call-to-actions {
                 display: block;
@@ -1411,6 +1410,10 @@ Portfolio
             }
         }
 
+        a:hover {
+            cursor: pointer;
+        }
+
         a:hover > .imag-box {
             filter: contrast(1.17);
         }
@@ -1539,6 +1542,174 @@ Portfolio
 
     @media screen and (min-width: $break_xl) {
 
+    }
+}
+
+/*
+*********************
+Portfolio detail
+*********************
+*/
+#portfolioDetail {
+    z-index: 5000;
+    border: 52px solid #fff;
+    background-color: #ccc;
+    width: calc(100% - 104px);
+    height: calc(100% - 104px);
+
+    .dissmiss-btn {
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        width: 77px;
+        height: 77px;
+        background-color: #fff;
+        border: 5px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+        span {
+            display: block;
+            position: relative;
+            background-color: #000;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 10px;
+            &:nth-child(1) {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: translate(-50%, -50%) rotate(-45deg);
+                top: 38%;
+            }
+        }
+        &:hover {
+            border-color: #444;
+            top: 13px;
+            right: 13px;
+            span {
+                background-color: #444;
+            }
+        }
+    }
+
+    .detail-content {
+        padding: 52px;
+    }
+    
+    /* PROJECT DETAIL DESCRIPTION */
+    .detail-project {
+        background-color: $yellow;
+        color: #fff;
+        position: relative;
+
+        h2 {
+            font-size: 4vw;
+            padding: 6vw 0 2vw;
+            text-transform: uppercase;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .project-image {
+            display: inline-block;
+            width: calc(50vw - 104px);
+            height: 25vw;
+            margin: 0 52px;
+            background-color: rgba(0, 0, 0, .1);
+        }
+
+        .project-description {
+            display: inline-block;
+            top: -2vw;
+            color: $black;
+            width: calc(30vw - 52px);
+            border: 1px solid #fff;
+            padding: 104px 1.4vw;
+            b { 
+                font-size: 1.2vw; 
+                font-weight: 600;
+            }
+            p, b {
+                font-size: 1.2vw;
+                line-height: 2vw;
+            }
+        }
+
+        .project-footer {
+            width: 15vw;
+            background-color: #fff;
+            padding: 1.4vw;
+            color: $black;
+            p {
+                font-size: 1vw;
+            }
+        }
+    }
+
+    .detail-steps {}
+
+    .detail-design {}
+
+    .detail-tech {}
+
+    .detail-result {}
+
+    /* PROJECT DETAIL FOOTER */
+    .detail-footer {
+        position: relative;
+        background-color: $yellow;
+        padding: 32px;
+        display: grid;
+        grid-template-columns: 60% 35%;
+        grid-gap: 16px;
+        align-items: start;
+
+        div:nth-child(1) {
+            h3 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2.4vw;
+                letter-spacing: -1.5px;
+            }
+            p {
+                font-size: 1.4vw;
+                line-height: 1.6vw;
+                text-transform: uppercase;
+            }
+        }
+        div:nth-child(2) {
+            display: none;
+            a {
+                display: block;
+                font-weight: bold;
+                font-size: 1vw;
+                line-height: 1.5vw;
+            }
+        }
+        div:nth-child(3) {
+            cursor: pointer;
+            font-size: 1.4vw;
+            border: solid 2px $black;
+            background-color: $yellow;
+            text-align: center;
+            padding: 16px;
+            &:hover {
+                background-color: $yellowHover;
+            }
+        }
+    }
+
+    @media screen and (min-width: $break_md) {
+        .detail-footer {
+            grid-template-columns: 60% 20% 20%;
+            div:nth-child(2) {
+                display: block;
+            }
+            div:nth-child(3) {
+                margin-right: -16px;
+            }
+        }
     }
 }
 
