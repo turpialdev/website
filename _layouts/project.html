@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+    <section id="portfolioDetail">
+        <div class="dissmiss-btn" onclick="onDismissDetail()">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="detail-content">
+
+            <!-- PROJECT DETAIL DESCRIPTION -->
+            <div class="detail-project">
+                <h2>{{ page.title }}</h2>
+                <div class="project-image">
+                    <img src="" alt="">
+                </div>
+                <div class="project-description">
+                    <b>Lorem ipsum dolor</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab officia deserunt nam incidunt, explicabo
+                        delectus distinctio adipisci amet repellendus quas? Praesentium vero rerum tempore explicabo fugit
+                        labore harum eius? Reiciendis.</p>
+                </div>
+                <div class="project-footer">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aperiam obcaecati.</p>
+                </div>
+            </div>
+
+            <!-- PROJECT DETAIL FIRTS STEPS 
+                    <div class="detail-steps">
+                        <h2>Steps</h2>
+                    </div>-->
+
+            <!-- PROJECT DETAIL DESIGN 
+                    <div class="detail-design">
+                        <h2>Design</h2>
+                    </div>-->
+
+            <!-- PROJECT DETAIL TECHNOLOGIES 
+                    <div class="detail-tech">
+                        <h2>Tech</h2>
+                    </div>-->
+
+            <!-- PROJECT DETAIL RESULT 
+                    <div class="detail-result">
+                        <h2>Result</h2>
+                    </div>-->
+
+            <!-- PROJECT DETAIL FOOTER -->
+            <div class="detail-footer">
+                <div>
+                    <h3>You already know how we work</h3>
+                    <p>Start working with us</p>
+                </div>
+                <div>
+                    <a href="mailto:hola@turpialdev.com?Subject=Hola%20Turpial%20Dev" target="_top">hola@turpialdev.com</a>
+                    <a href="tel:+582127541143">+58 (212) 754 1143</a>
+                </div>
+                <div>
+                    Let's work together
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    function onDismissDetail() {
+        window.location.href = "/";
+    }
+</script>
+
+{% include script.html %}
+
+</html>
