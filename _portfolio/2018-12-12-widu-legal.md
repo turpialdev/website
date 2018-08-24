@@ -9,4 +9,3 @@ extlink: http://widu.maduro
 date: 2017-09-09
 cover-img: "/img/portfolio/widu.png"
 ---
-
