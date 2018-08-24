@@ -1,7 +1,7 @@
 ---
 title: "Widu Legal espanol"
 layout: project
-permalink: /widulegal/
+permalink: /widulegal/es/
 collections: portfolio
 subtitle: "Widu Legal"
 description: "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto..."

@@ -58,4 +58,4 @@ navigation:
 
 collections:
   portfolio:
-    output: false
+    output: true
