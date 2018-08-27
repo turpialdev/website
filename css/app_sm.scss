@@ -1,0 +1,64 @@
+---
+---
+
+/*
+*********************
+Global variables
+*********************
+*/
+$frameborder: 13px;
+
+@media screen and (max-width: 768px) {
+
+    /*
+    *********************
+    Frame & container / layout
+    *********************
+    */
+    .main-head, .content, .main-footer {
+        margin: 0 $frameborder;
+    }
+    .main-footer {
+        height: $frameborder;
+    }
+    #home, #web, #mobile, #design, #contact {
+        padding: $frameborder;
+    }
+
+    /*
+    *********************
+    Home Page
+    *********************
+    */
+    #home {
+        display: block;
+        background-image: url('/img/pages/sm/home.jpg');
+        height: initial;
+        padding-top: 25vh;
+        padding-bottom: 25vh;
+
+        .fly-a, .fly-b, .fly-c {
+            display: none;
+        }
+
+        .title {
+            text-align: center;
+            h1 {
+                font-size: 14vw;
+            }
+            h4 {
+                font-size: 5vw;
+                margin-top: 4vw;
+            }
+        }
+
+        .call-to-action {
+            padding: 2.5vw;
+            width: 30vw;
+            font-size: 4vw;
+            margin: 0 auto;
+            margin-top: 8vw;
+        }
+    }
+
+}
