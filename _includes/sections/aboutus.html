@@ -1,28 +1,20 @@
 <section id="aboutus">
-
     <video autoplay loop id="video-background" muted plays-inline>
         <source src="/img/videos/v4.mp4" type="video/mp4">
     </video>
-
     <div class="about-content">
         <div>
             <h2>
-                Somos
-                <br> Turpial
+                {{ section.title }}
             </h2>
             <p>
-                Iniciada por jóvenes emprendedores venezolanos, en Turpial trabajamos con empresas y emprendedores en distintas partes del
-                continente. Produciendo soluciones en poco tiempo con los mejores estándares de usabilidad, diseño y funcionalidad.
+                {{ section.content }}
             </p>
             <span class="call-to-actions">
-                <a href="#">Nuestro
-                    <br>equipo</a>
-                <a href="#">Nuestra
-                    <br>cultura</a>
-                <a href="#">Ofertas de
-                    <br>empleo</a>
+                <a href="#">{{ section.team-link }}</a>
+                <a href="#">{{ section.culture-link }}</a>
+                <a href="#">{{ section.jobs-link }}</a>
             </span>
         </div>
     </div>
-
 </section>

@@ -4,7 +4,7 @@ layout: project
 permalink: /widulegal/
 collections: portfolio
 subtitle: "Widu Legal"
-description: "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto..."
+description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
 extlink: http://widu.maduro
 date: 2017-02-17
 lang: en

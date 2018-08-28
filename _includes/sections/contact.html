@@ -1,72 +1,62 @@
 <section id="contact">
     <div class="contact-offices">
 
+        {% for address in section.addresses %}
         <address class="address">
-            <a class="location" target="_blank" href="http://maps.google.com/?q=Quinta 20-65, Av. Neveri, Caracas 1080, Distrito Capital">
+            {% if address.link %}
+            <a class="location" target="_blank" href="{{ address.link }}">
                 <i class="material-icons ico-yellow">location_on</i>
             </a>
+            {% endif %}
             <hr>
-            <p>20-65, Av. Neverí</p>
-            <p>Oficina 09</p>
-            <p>Col. Bello Monte, Caracas</p>
-            <p>1080 Venezuela</p>
+            <p>{{ address.city }}</p>
+            <p>{{ address.building }}, {{ address.office }}</p>
+            <p>{{ address.zone }}</p>
+            <p>{{ address.zipcode }}, {{ address.country }}</p>
         </address>
-        <address class="address">
-            <hr>
-            <p>Bogotá</p>
-            <p>Oficina 11</p>
-            <p>Los Cedritos</p>
-            <p>1080 Colombia</p>
-        </address>
-        <address class="address">
-            <hr>
-            <p>20-65, Miami</p>
-            <p>Oficina 11</p>
-            <p>El Doral</p>
-            <p>331145 EEUU</p>
-        </address>
+        {% endfor %}
+
         <address class="phones-email">
+            {% for contact in section.contact-phones %}
             <p>
-                <a href="tel:+582127541143">+58 (212) 754 1143</a>
+                <a href="tel:{{ contact.phone-number }}">{{ contact.label }}</a>
             </p>
+            {% endfor %}
             <p>
-                <a href="tel:+17075001015">+1 (707) 500 1015</a>
-            </p>
-            <p>
-                <a href="mailto:hola@turpialdev.com?Subject=Hola%20Turpial%20Dev" target="_top">hola@turpialdev.com</a>
+                <a href="mailto:{{ section.contact-mail }}?Subject={{ section.contact-mail-subject }}" target="_top">{{ section.contact-mail }}</a>
             </p>
         </address>
     </div>
     <div class="contact-content">
         <span class="contact-title">
-            CONTÁCTANOS!
+            {{ section.title }}
         </span>
 
         <div class="form">
             <form action="http://cake.turpialdos.webfactional.com/email/send.php" id="contact-form" method="post">
                 <p>
-                    <label for="name-input">Nombre y Apellido *</label>
+                    <label for="name-input">{{ section.fullname }} *</label>
                     <input type="text" id="name-input">
                 </p>
                 <p>
-                    <label for="phone-input">Teléfono</label>
+                    <label for="phone-input">{{ section.phone }}</label>
                     <input type="tel" id="phone-input">
                 </p>
                 <p>
-                    <label for="email-input">Correo Electrónico *</label>
+                    <label for="email-input">{{ section.email }} *</label>
                     <input type="email" id="email-input">
                 </p>
                 <p>
-                    <label for="company-input">Nombre de la Compañía</label>
+                    <label for="company-input">{{ section.company }}</label>
                     <input type="text" id="company-input">
                 </p>
                 <p>
-                    <label for="message-input">Mensaje *</label>
+                    <label for="message-input">{{ section.message }} *</label>
                     <textarea id="message-input" cols="30" rows="7"></textarea>
                 </p>
                 <p class="send">
                     <a class="call-to-action" type="submit" id="submitbtn">
-                        <span id="submit">ENVIAR</span>
+                        <span id="submit">{{ section.send }}</span>
                         <span id="dot" style="display: none;">
                             <span>.</span>
                             <span>.</span>
