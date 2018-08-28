@@ -3,8 +3,13 @@ $(document).ready(function(){
 	$('#h-menu').click(function(){
         $(this).toggleClass('open');
         $('#menuItems').toggleClass('showMenu');
-	});
+    });
 });
+
+function closeMenu() {
+    $('#h-menu').toggleClass('open');
+    $('#menuItems').toggleClass('showMenu');
+}
 
 /*
 function myFunction(x) {
