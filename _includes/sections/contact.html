@@ -62,6 +62,17 @@
             <p>{{ address.zipcode }}, {{ address.country }}</p>
         </address>
         {% endfor %}
+        <address class="phones-email">
+            {% for contact in section.contact-phones %}
+            <p>
+                <a href="tel:{{ contact.phone-number }}">{{ contact.label }}</a>
+            </p>
+            {% endfor %}
+            <p>
+                <a href="mailto:{{ section.contact-mail }}?Subject={{ section.contact-mail-subject }}" target="_top">{{ section.contact-mail }}</a>
+            </p>
+        </address>
+
     </div>
 
 </section>
