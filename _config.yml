@@ -32,6 +32,7 @@ navigation:
     url: '/blog/'
 
   - section: Services
+    url: '#web'
     subsection:
 
       - section: Web
