@@ -221,8 +221,15 @@ Nav-bar
         grid-column: 1;
     }
 
-    ul {
+    .small-menu {
+        display: none;
+    }
+
+    .large-menu {
         display: flex;
+    }
+
+    ul.large-menu {
         justify-content: space-between;
         list-style: none;
         margin: 18px 52px;
