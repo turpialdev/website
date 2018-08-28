@@ -21,23 +21,26 @@
                     <ul class="subsection">
                         {% for sublink in link.subsection %}
                         <li>
-                            <a href="{{ sublink.url }}" alt="{{ sublink.section }}">{{ sublink.section }}</a>
+                            <a onclick="closeMenu()" href="{{ sublink.url }}" alt="{{ sublink.section }}">{{ sublink.section }}</a>
                         </li>
                         {% endfor %}
                     </ul>
                 </li>
                 {% else %}
                 <li>
-                    <a href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
+                    <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
                 </li>
                 {% endif %} {% endif %} {% endfor %}
             </ul>
             <div class="small-menu">
                 <ul>
-                    <li class="turpial">turpial</li>
+                    <li class="turpial">
+                        <a onclick="closeMenu()" href="#home">turpial
+                        </a>
+                    </li>
                     {% for link in site.navigation %} {% if link.section != 'Home' %}
-                    <li onclick="closeMenu()">
-                        <a href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
+                    <li>
+                        <a onclick="closeMenu()"  href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
                     </li>
                     {% endif %} {% endfor %}
                 </ul>
