@@ -384,5 +384,78 @@ $softgray: #f2f2f2;
         max-height: 160vw;
         min-height: 120vw;
     }
+    #advantage .v-card .v-title h3 {
+        font-size: 7vw;
+        font-weight: normal;
+    }
+
+    /*
+    *********************
+    Contact Page
+    *********************
+    */
+    #contact {
+        display: block;
+        padding: 10vw 5vw;
+        height: auto;
+    }
+    #contact .contact-form {
+        display: block;
+        div {
+            margin: 5vw 2.5vw;
+        }
+    }
+    #contact .contact-form h2 {
+        font-size: 8vw;
+        font-weight: normal;
+        margin-bottom: 10vw;
+    }
+    #contact .contact-form input, #contact .contact-form textarea {
+        padding: 2vw;
+        width: calc(100% - 4vw);
+        font-size: small;
+    }
+    #contact .send a {
+        font-size: 3.4vw;
+        float: none;
+        width: 100%;
+        padding: 4vw 0;
+    }
+
+    #contact .contact-offices {
+        border-left: none;
+        padding: 0;
+        line-height: 1;
+
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        width: 60%;
+        margin: 10vw auto 0;
+
+        .address, .phones-email {
+            position: relative;
+            text-align: center;
+            font-size: 3vw;
+            line-height: 1;
+            margin: 5vw 0;
+
+            p {
+                margin: 1vw 0;
+                a:hover {
+                    color: $lightgray;
+                    margin-left: 0;
+                }
+            }
+
+        }
+
+        .location {
+            display: none;
+        }
+
+        hr {
+            display: none;
+        }
+    }
 
 }
