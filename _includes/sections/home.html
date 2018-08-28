@@ -1,31 +1,32 @@
 <section id="home">
-    <div class="center-v">
-        <div class="title">
-            <h2 class="typing-line-1">{{ section.typing-line-1 }}</h2>
-            <h2 class="typing-line-2">{{ section.typing-line-2 }} <span>{{ section.typing-line-3 }}</span></h2>
-            <h2 class="typing-line-3">{{ section.typing-line-3 }}</h2>
-        </div>
-        <div class="slogan">
-            <h4>{{ section.highlight }}</h4>
-        </div>
-        <div class="call-to-action-btns">
-            <a href="#web" class="fly-a">
-                <img src="/img/ico-browser.svg" alt="web">
-                <p>{{ section.web }}</p>
-            </a>
-            <a href="#mobile" class="fly-b">
-                <img src="/img/ico-mobile.svg" alt="Mobile">
-                <p>{{ section.mobile }}</p>
-            </a>
-            <a href="#design" class="fly-c">
-                <img src="/img/ico-pencil.svg" alt="UX/UI Design">
-                <p>{{ section.design }}</p>
-            </a>
-        </div>
+    <div class="title">
+        <h1 class="typing-line-1">{{ section.typing-line-1 }}</h1>
+        <h1 class="typing-line-2">{{ section.typing-line-2 }}
+            <span>{{ section.typing-line-3 }}</span>
+        </h1>
+        <h1 class="typing-line-3">{{ section.typing-line-3 }}</h1>
+        <h4>{{ section.highlight }}</h4>
     </div>
-    <div class="call-to-action-footer">
-        <a class="call-to-action" href="mailto:{{ section.email }}?Subject={{ section.email-subject }}" target="_top">
-            {{ section.contact }}
-        </a>
-    </div>
+
+    <a href="#web" class="fly-a">
+        <span>
+            <img src="/img/ico-browser.svg" alt="web">
+            <p>{{ section.web }}</p>
+        </span>
+    </a>
+    <a href="#mobile" class="fly-b">
+        <span>
+            <img src="/img/ico-mobile.svg" alt="Mobile">
+            <p>{{ section.mobile }}</p>
+        </span>
+    </a>
+    <a href="#design" class="fly-c">
+        <span>
+            <img src="/img/ico-pencil.svg" alt="UX/UI Design">
+            <p>{{ section.design }}</p>
+        </span>
+    </a>
+    <a class="call-to-action" href="mailto:{{ section.email }}?Subject={{ section.email-subject }}" target="_top">
+        {{ section.contact }}
+    </a>
 </section>
