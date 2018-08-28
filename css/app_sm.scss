@@ -128,6 +128,92 @@ $softgray: #f2f2f2;
 
     /*
     *********************
+    Web, Mobile and design Pages
+    *********************
+    */
+    #web, #mobile, #design {
+        height: unset;
+        margin-bottom: 2.5vw;
+        padding-bottom: 10vw;
+    }
+
+    #web .title-box,
+    #mobile .title-box,
+    #design .title-box,
+    #design .title-box.design {
+        position: absolute;
+        bottom: unset;
+        right: unset;
+        left: unset;
+        top: -28.15vw;
+        height: unset;
+        width: 70vw;
+        padding: 2.5vw;
+        h1 {
+            max-width: 80%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: " ";
+        }
+    }
+
+    #web, #mobile, #design {
+        .image.web, .image.mobile, .image.design {
+            position: relative;
+            width: 100%;
+            height: 65vw;
+            top: unset;
+            bottom: unset;
+            left: unset;
+            right: unset;
+        }
+    }
+
+    #web .title-box h1,
+    #mobile .title-box h1,
+    #design .title-box h1 {
+        font-size: 16vw;
+        margin: 0;
+    }
+    #web .title-box h2,
+    #mobile .title-box h2,
+    #design .title-box h2 {
+        font-size: 3vw;
+        margin: 0;
+        font-weight: normal;
+    }
+    #web .wmd-content,
+    #mobile .wmd-content.mobile,
+    #design .wmd-content.mobile,
+    #design .wmd-content {
+        height: unset;
+        width: unset;
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+    }
+    #web .info,
+    #mobile .info.mobile,
+    #design .info,
+    #design .info.mobile {
+        margin: 0;
+        margin-top: 5vw;
+    }
+    #web .info h3,
+    #mobile .info h3,
+    #design .info h3 {
+        font-size: 4vw;
+        font-weight: normal;
+    }
+    #web .info p,
+    #mobile .info p,
+    #design .info p {
+        font-size: 2vw;
+    }
+
+    /*
+    *********************
     Portfolio Page
     *********************
     */

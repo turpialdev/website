@@ -177,7 +177,7 @@ Frame & container
 
 .content {
     grid-area: content;
-    background-color: #ccc;
+    background-color: $lightgray;
 }
 
 .main-footer {
@@ -1852,7 +1852,7 @@ Portfolio detail
                 width: 70%;
                 margin-left: 30%;
                 margin-top: 2.5vw;
-                background-color: #e5e5e5;
+                background-color: $lightgray;
                 &:hover {
                     background-color: $softgray;
                 }
