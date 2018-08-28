@@ -149,12 +149,12 @@ $softgray: #f2f2f2;
         height: unset;
         width: 70vw;
         padding: 2.5vw;
-        h1 {
-            max-width: 80%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: " ";
-        }
+    }
+    #design .title-box.design h1 {
+        max-width: 46vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: " ";
     }
 
     #web, #mobile, #design {
