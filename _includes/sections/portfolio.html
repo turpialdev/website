@@ -11,15 +11,17 @@
         <div class="title-imag-box"></div>
         <div class="line"></div>
     </span>
+    <br>
+    {% assign portfolio=site.portfolio | where:"lang", page.lang %}
 
-    {% for project in site.portfolio %}
+    {% for project in portfolio %}
     <span class="portfolio-card">
         <div class="line"></div>
-
         <a href="{{ project.permalink }}">
             <picture class="imag-box">
                 {% for img in project.cover-img-source %}
-                <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}"> {% endfor %}
+                <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}">
+                {% endfor %}
                 <img src="{{ project.cover-img }}" alt="Flowers" style="width:auto;">
             </picture>
             <div class="titl-box">

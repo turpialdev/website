@@ -27,7 +27,7 @@ exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 navigation:
   - section: Home
     url: '#home'
-  
+
   - section: Blog
     url: '/blog/'
 
@@ -54,6 +54,7 @@ navigation:
 
   - section: Contact
     url: '#contact'
+
 
 collections:
   portfolio:
