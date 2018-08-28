@@ -345,7 +345,7 @@ $softgray: #f2f2f2;
     *********************
     */
     #aboutus {
-        height: calc(100vh - 180px);
+        height: unset;
     }
     #aboutus .about-content {
         width: initial;
