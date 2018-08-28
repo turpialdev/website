@@ -1,42 +1,45 @@
 <section id="portfolio">
 
-    <!-- title -->
-    <span class="float-title">
-        <div class="title-gray-box"></div>
-        <div class="title-titl-box">
-            <h1>Porta
-                <br> folio
-            </h1>
-        </div>
-        <div class="title-imag-box"></div>
-        <div class="line"></div>
-    </span>
-    <br>
-    {% assign portfolio=site.portfolio | where:"lang", page.lang %}
-
-    {% for project in portfolio %}
-    <span class="portfolio-card">
-        <div class="line"></div>
-        <a href="{{ project.permalink }}">
-            <picture class="imag-box">
-                {% for img in project.cover-img-source %}
-                <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}">
-                {% endfor %}
-                <img src="{{ project.cover-img }}" alt="Flowers" style="width:auto;">
-            </picture>
-            <div class="titl-box">
-                <h2>{{ project.title }}</h2>
+    <div class="portfolio-container">
+        <!-- title -->
+        <span class="float-title">
+            <div class="title-gray-box"></div>
+            <div class="title-titl-box">
+                <h1>Porta
+                    <br> folio
+                </h1>
             </div>
-        </a>
-
-        <div class="title-year-box">
-            {{ project.date | date: "%Y"}}
-        </div>
-        <div class="title-text-box">
-            <h3>{{ project.subtitle }}</h3>
-            <p>{{ project.description }}
-                <p>
-        </div>
-    </span>
-    {% endfor %}
+            <div class="title-imag-box"></div>
+            <div class="line"></div>
+        </span>
+        <br>
+        {% assign portfolio=site.portfolio | where:"lang", page.lang %}
+    
+        {% for project in portfolio %}
+        <span class="portfolio-card">
+            <div class="line"></div>
+            <a href="{{ project.permalink }}">
+                <picture class="imag-box">
+                    {% for img in project.cover-img-source %}
+                    <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}">
+                    {% endfor %}
+                    <img src="{{ project.cover-img }}" alt="{{ project.title }}">
+                </picture>
+                <div class="titl-box">
+                    <h2>{{ project.title }}</h2>
+                </div>
+            </a>
+    
+            <div class="title-year-box">
+                {{ project.date | date: "%Y"}}
+            </div>
+            <div class="title-text-box">
+                <h3>{{ project.subtitle }}</h3>
+                <p>{{ project.description }}
+                    <p>
+            </div>
+        </span>
+        {% endfor %}
+    </div>
+    
 </section>

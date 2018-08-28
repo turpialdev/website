@@ -10,6 +10,7 @@ $frameborder: 13px;
 $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
+$gray: #ccc;
 $lightgray: #e5e5e5;
 $softgray: #f2f2f2;
 
@@ -220,15 +221,20 @@ $softgray: #f2f2f2;
     #portfolio {
         padding: 5vw $frameborder;
 
+        .portfolio-container {
+            border: 1px solid $gray;
+            padding: $frameborder;
+        }
+
         .float-title {
-            height: 45vw;
+            height: 40vw;
         }
 
         .float-title .title-imag-box {
             top: 0;
             left: 0;
             width: 55vw;
-            height: 34.5vw;
+            height: 30vw;
         }
 
         .float-title .title-titl-box {
@@ -239,13 +245,14 @@ $softgray: #f2f2f2;
             padding: 2vw;
             h1 {
                 margin: 0;
-                font-size: 16vw;
+                font-size: 13vw;
                 line-height: 0.8;
             }
         }
 
         .float-title .line {
-            top: 34.5vw;
+            background-color: $gray;
+            top: 30vw;
             left: 46vw;
         }
 
@@ -316,11 +323,55 @@ $softgray: #f2f2f2;
             margin: 0;
         }
 
+        .portfolio-card:nth-child(2n) .titl-box,
+        .portfolio-card:nth-child(2n) .imag-box,
+        .portfolio-card:nth-child(2n+1) .titl-box,
+        .portfolio-card:nth-child(2n+1) .imag-box {
+            right: unset;
+            left: unset;
+        }
+
         .portfolio-card:nth-child(2n) .title-year-box, .portfolio-card:nth-child(1n) .title-year-box {
             right: -20%;
             left: unset;
             margin: 0;
         }
+    }
+
+    
+    /*
+    *********************
+    Aboutus Page
+    *********************
+    */
+    #aboutus {
+        height: calc(100vh - 180px);
+    }
+    #aboutus .about-content {
+        width: initial;
+        background-color: rgba(29, 29, 29, 0.7);
+    }
+    #aboutus .about-content div {
+        width: initial;
+        left: unset;
+        transform: translateX(0) translateY(-50%);
+        padding: 0 5vw;
+    }
+    #aboutus .about-content div h2 {
+        font-size: 17vw;
+        font-weight: normal;
+    }
+    #aboutus .about-content div p {
+        font-size: 4vw;
+        line-height: 5vw;
+        margin-bottom: 10vw;
+    }
+    #aboutus .about-content div .call-to-actions a {
+        font-size: 4vw;
+        font-weight: normal;
+    }
+    #aboutus #video-background {
+        filter: grayscale(35%) brightness(85%);
     }
 
 }
