@@ -424,6 +424,7 @@ Home Page
         grid-row: 1;
         align-self: center;
         font-family: 'IBM Plex Mono', monospace;
+        font-weight: 900;
         color: #fff;
         
         h1 {
@@ -780,6 +781,7 @@ Contact us
     color: #fff;
 
     .contact-offices {
+        position: relative;
         grid-column: 1;
         grid-row: 1;
         border-left: 1px solid #ffffff;
