@@ -1,2 +1,135 @@
 ---
 ---
+
+/*
+*********************
+Global variables
+*********************
+*/
+$frameborder: 55px;
+$black: #1b1b1b;
+$yellow: #ffcb00;
+$yellowHover: #e2b500;
+$gray: #ccc;
+$lightgray: #e5e5e5;
+$softgray: #f2f2f2;
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /*
+    *********************
+    Frame & container / layout
+    *********************
+    */
+    .main-head, .content, .main-footer {
+        margin: 0 $frameborder;
+    }
+    .main-footer {
+        height: $frameborder;
+    }
+    #home, #web, #mobile, #design, #contact {
+        padding: $frameborder;
+    }
+
+    /*
+    *********************
+    Nav-bar
+    *********************
+    */
+    .nav-items {
+        .large-menu {
+            display: none;
+        }
+        .small-menu {
+            display: block;
+        }
+        .small-menu {
+            display: grid;
+            grid-template-columns: auto 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba($color: #000, $alpha: .7);
+            ul {
+                font-size: 18px;
+                line-height: 60px;
+                text-align: left;
+                text-transform: uppercase;
+                padding: 0 32px 64px;
+                max-height: 415px;
+                background-color: #fff;
+                li.turpial {
+                    font-size: 28px;
+                    line-height: 76px;
+                    text-transform: lowercase;
+                    text-align: center;
+                    border-bottom: 1px solid $lightgray;
+                }
+            }
+            #s-menu {
+                height: 60px;
+                background: $yellow;
+                cursor: pointer;
+                span {
+                    display: block;
+                    position: absolute;
+                    height: 5px;
+                    width: 25px;
+                    top: 26px;
+                    right: 18px;
+                    background: #fff;
+                }
+                span:nth-child(1) {
+                    transform: rotate(45deg);
+                }
+                span:nth-child(2) {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    /*
+    *********************
+    Home Page
+    *********************
+    */
+
+    #home {
+        grid-template-columns: repeat(3, 22vw);
+        grid-template-rows: auto 22vw auto;
+        min-height: 80vw;
+    }
+    #home .title {
+        grid-column: 1 / 4;
+    }
+    #home .title h1 {
+        font-size: 12vw;
+    }
+    #home .title h4 {
+        margin-top: 2vw;
+        font-size: 4.5vw;
+    }
+    #home .fly-a span img,
+    #home .fly-b span img,
+    #home .fly-c span img {
+        max-height: 5vw;
+        max-width: 5vw;
+        width: 5vw;
+        margin-bottom: 2vw;
+    }
+    #home .fly-a span p,
+    #home .fly-b span p,
+    #home .fly-c span p {
+        font-size: 2.2vw;
+    }
+    #home .call-to-action {
+        font-size: 2.4vw;
+        grid-column: 3;
+        align-self: end;
+        position: relative;
+        right: -5vw;
+    }
+}
