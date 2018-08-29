@@ -1,16 +1,15 @@
 <section id="portfolio">
 
-    <div class="portfolio-container">
-        <!-- title -->
-        <span class="float-title">
-            <div class="title-gray-box"></div>
-            <div class="title-titl-box">
-                <h1>Porta
-                    <br> folio
-                </h1>
-            </div>
-            <div class="title-imag-box"></div>
-            <div class="line"></div>
+    <!-- title -->
+    <span class="float-title">
+        <div class="title-gray-box"></div>
+        <div class="title-titl-box">
+            <h1>{{ section.title1 }}
+                <br> {{ section.title2 }}
+            </h1>
+        </div>
+        <div class="title-imag-box"></div>
+        <div class="line"></div>
         </span>
         <br>
         {% assign portfolio=site.portfolio | where:"lang", page.lang %}

@@ -60,3 +60,5 @@ navigation:
 collections:
   portfolio:
     output: true
+  sections:
+    output: false
