@@ -1929,6 +1929,7 @@ Opportunities Page
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 12vw auto;
     grid-gap: 3vw;
+    height: 100vh;
     // height: calc(100vh - 190px);
     background-color: #fff;
 
@@ -1949,11 +1950,11 @@ Opportunities Page
     .col-1, .col-2, .col-3 {
         background-color: white;
         .img-container {
-            height: 250px;
+            height: 25vw;
             width: 100%;
             img {
                 height: 100%;
-                width: 100%;
+                max-width: 100%;
             }
         }
         .col-content {
@@ -1968,6 +1969,7 @@ Opportunities Page
             }
             p {
                 line-height: 1.5;
+                font-size: 1.15px;
             }
         }
     }
