@@ -186,4 +186,38 @@ $softgray: #f2f2f2;
     #portfolio .portfolio-card:nth-child(2n+1) .title-text-box {
         right: 4.3vw;
     }
+
+    /*
+    *********************
+    Aboutus Page
+    *********************
+    */
+    #aboutus {
+        min-height: 120vw;
+        max-height: 120vw;
+    }
+    #aboutus .about-content {
+        width: initial;
+        background-color: rgba(29, 29, 29, 0.7);
+    }
+    #aboutus .about-content div {
+        width: initial;
+        left: unset;
+        transform: translateX(0) translateY(-50%);
+        padding: 0 5vw;
+    }
+    #aboutus .about-content div h2 {
+        font-size: 15vw;
+    }
+    #aboutus .about-content div p {
+        font-size: 3vw;
+        line-height: 4vw;
+        margin-bottom: 10vw;
+    }
+    #aboutus .about-content div .call-to-actions a {
+        font-size: 3vw;
+    }
+    #aboutus #video-background {
+        filter: grayscale(35%) brightness(85%);
+    }
 }
