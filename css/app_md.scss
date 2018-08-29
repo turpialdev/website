@@ -14,7 +14,7 @@ $gray: #ccc;
 $lightgray: #e5e5e5;
 $softgray: #f2f2f2;
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
 
     /*
     *********************
@@ -131,5 +131,59 @@ $softgray: #f2f2f2;
         align-self: end;
         position: relative;
         right: -5vw;
+    }
+
+    /*
+    *********************
+    Web, Mobile and design Pages
+    *********************
+    */
+
+    /*
+    *********************
+    Portfolio Page
+    *********************
+    */
+
+    #portfolio {
+        padding: 25px;
+    }
+    #portfolio .float-title .title-titl-box {
+        padding-left: 15vw;
+        padding-right: 8vw;
+    }
+    #portfolio .float-title .title-titl-box h1 {
+        font-size: 10vw;
+        line-height: .9;
+    }
+    #portfolio .portfolio-card:nth-child(2n) .line,
+    #portfolio .portfolio-card:nth-child(2n+1) .line {
+        display: none;
+    }
+    #portfolio .portfolio-card .imag-box img {
+        max-width: 100%;
+    }
+    #portfolio .portfolio-card .title-text-box {
+        top: 6vw;
+    }
+    #portfolio .portfolio-card .title-text-box h3 {
+        font-size: 2.4vw;
+    }
+    #portfolio .portfolio-card .title-text-box p {
+        font-size: 1.8vw;
+        line-height: 1.3;
+    }
+    #portfolio .portfolio-card:nth-child(2n) .title-year-box {
+        left: unset;
+        margin-left: 0;
+    }
+    #portfolio .portfolio-card:nth-child(2n+1) .title-year-box {
+        right: 1vw;
+    }
+    #portfolio .portfolio-card:nth-child(2n) .title-text-box {
+        left: 3vw;
+    }
+    #portfolio .portfolio-card:nth-child(2n+1) .title-text-box {
+        right: 4.3vw;
     }
 }
