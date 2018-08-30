@@ -189,7 +189,8 @@ Frame & container
 
 .main-footer {
     grid-area: footer;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     background-color: white;
     transition: $transition;
