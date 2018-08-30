@@ -7,7 +7,7 @@ read-more: "Leer más"
 
 {% assign opportunities=site.opportunities | where:"lang", "es" | sort: 'order' %}
 {% for opportunity in opportunities %}
-    <div class="col-1 {{ class }}">
+    <div class="col-1">
         <div class="img-container">
             <img src="/img/opportunities/senior-profile.jpg" alt="{{ opportunity.alt }}">
         </div>
