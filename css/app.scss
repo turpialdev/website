@@ -80,6 +80,7 @@ $break_md: 1024px;
 $break_lg: 1366px;
 $break_xl: 1920px;
 
+$transition: 0; /* 3s */
 $menu-transition: 0.6s;
 
 html, body, div, span, applet, object, iframe,
@@ -139,7 +140,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background: #fff;
-    transition: 3s;
+    transition: $transition;
     line-height: 1;
 }
 
@@ -172,7 +173,7 @@ Frame & container
     top: 0;
     background-color: white;
     z-index: 500;
-    transition: 3s;
+    transition: $transition;
 }
 
 .content {
@@ -185,7 +186,7 @@ Frame & container
     position: sticky;
     bottom: 0;
     background-color: white;
-    transition: 3s;
+    transition: $transition;
 }
 
 .wrapper {
@@ -259,7 +260,7 @@ Nav-bar
             margin: 0;
             min-width: 10vw;
             transform: translateX(-50%);
-            transition: 3s;
+            transition: $transition;
             background: #fff;
             li {
                 padding: .5vw;
@@ -1033,7 +1034,7 @@ Advantages
     /**
      * vertical carousel
      **/
-    @media only screen and (max-width : 768px) {
+    @media only screen and (max-width : $break_md) {
 
         .v-card {
             width: 100%;
@@ -1068,7 +1069,7 @@ Advantages
     /**
      * horizontal carousel
      **/
-    @media only screen and (min-width : 769px) {
+    @media only screen and (min-width : $break_md) {
 
         .v-card {
             float: left;
@@ -1277,7 +1278,7 @@ Portfolio
             display: inline-block;
             background-size: cover;
             background-position: center;
-            background-color: #333;
+            background-color: #fff;
             width: 35vw;
             height: 23vw;
         }
@@ -1289,7 +1290,6 @@ Portfolio
             top: 20vw;
             width: 30vw;
             text-align: center;
-            transition: .3s;
             h2 {
                 color: #fff;
                 font-size: 1.7vw;
