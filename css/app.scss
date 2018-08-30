@@ -135,6 +135,10 @@ a, input {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: underline solid $yellow;
+}
+
 body {
     color: $black;
     margin: 0;
@@ -651,7 +655,7 @@ About Us Page
                     font-weight: bold;
                     text-transform: uppercase;
                     &:hover {
-                        text-decoration: $yellowHover;
+                        text-decoration-color: $yellowHover;
                         color: $yellowHover;
                     }
                     &:nth-child(2) {
@@ -708,7 +712,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -732,7 +735,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -773,10 +775,12 @@ Contact us
         }
 
         label {
+            font-size: 1.2vw;
             display: block;
             margin-bottom: 1vw;
         }
         input, textarea {
+            font-size: 1.2vw;
             width: calc(100% - 2vw);
             color: #fff;
         }
