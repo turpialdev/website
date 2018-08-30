@@ -1,5 +1,5 @@
-var grayStart = document.getElementById("web");
-var grayEnd = document.getElementById("aboutus");
+var grayStart = document.getElementById("web").offsetTop - 300;
+var grayEnd = document.getElementById("aboutus").offsetTop;
 
 $(function () {
     if (window.location.href.indexOf("opportunities") > -1) {
@@ -10,14 +10,14 @@ $(function () {
         $('.nav-logo img').addClass('grayScale');
     } else {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > grayStart.offsetTop || $(this).scrollTop() < grayEnd.offsetTop) {
+            if ($(this).scrollTop() > grayStart || $(this).scrollTop() < grayEnd) {
                 $('body').addClass('onBodyColorChange');
                 $('header').addClass('onBodyColorChange');
                 $('footer').addClass('onBodyColorChange');
                 $('.subsection').addClass('onBodyColorChange');
                 $('.nav-logo img').addClass('grayScale');
             }
-            if ($(this).scrollTop() < grayStart.offsetTop || $(this).scrollTop() > grayEnd.offsetTop) {
+            if ($(this).scrollTop() < grayStart || $(this).scrollTop() > grayEnd) {
                 $('body').removeClass('onBodyColorChange');
                 $('header').removeClass('onBodyColorChange');
                 $('footer').removeClass('onBodyColorChange');
