@@ -10,7 +10,8 @@ image: path/to/img
 # Buttons text
 team-link: Our<br> team
 culture-link: Our<br> culture
-jobs-link: Work<br> with us
+jobs-link-label: Work<br> with us
+jobs-link:  /opportunities
 ---
 
 Initiated by young Venezuelan entrepreneurs, in Turpial we work with
