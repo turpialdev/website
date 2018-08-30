@@ -329,27 +329,34 @@ $softgray: #f2f2f2;
         width: 20px;
         height: 5px;
     }
-    /* detail */
-    #portfolioDetail .detail-project {
+    #portfolioDetail .detail-project,
+    #portfolioDetail .detail-steps,
+    #portfolioDetail .detail-design,
+    #portfolioDetail .detail-tech,
+    #portfolioDetail .detail-result {
         display: block;
         padding: 25px
     }
+    #portfolioDetail .detail-project .show-case-1,
+    #portfolioDetail .detail-project .show-case-2,
+    #portfolioDetail .detail-steps .info {
+        display: none;
+    }
+    /* detail */
     #portfolioDetail .detail-project h2 {
-        font-size: 10vw;
-        margin: 25px 0;
+        font-size: 9vw;
+        margin: 2.5vw 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     #portfolioDetail .detail-project .imag {
         margin: 0;
         height: 40vw;
     }
-    #portfolioDetail .detail-project .show-case-1,
-    #portfolioDetail .detail-project .show-case-2 {
-        display: none;
-    }
     #portfolioDetail .detail-project .text {
         top: unset;
         margin: 2.5vw 0;
-        font-size: 2.5vw;
+        font-size: 2vw;
         line-height: 3vw;
     }
     #portfolioDetail .detail-project .text p {
@@ -361,6 +368,52 @@ $softgray: #f2f2f2;
         margin: 0 auto;
         font-size: 1.5vw;
         line-height: 1.5;
+    }
+    /* first steps */
+    #portfolioDetail .detail-steps h2 {
+        font-size: 9vw;
+        margin: 2.5vw 0;
+        text-align: center;
+    }
+    #portfolioDetail .detail-steps .imag {
+        margin-left: 0;
+        margin-right: 5vw;
+        height: 50vw;
+    }
+    #portfolioDetail .detail-steps .imag div {
+        height: 40vw;
+        width: calc(100% + 2.5vw);
+    }
+    #portfolioDetail .detail-steps .imag p {
+        font-size: 2vw;
+    }
+    #portfolioDetail .detail-steps .text {
+        margin: 0;
+        margin-top: 2.5vw;
+        font-size: 2vw;
+        line-height: 1.5;
+        top: unset;
+    }
+    #portfolioDetail .detail-steps .text p {
+        max-height: unset;
+    }
+
+    /* design */
+    #portfolioDetail .detail-design h2 {
+        font-size: 9vw;
+        line-height: 1;
+        margin: 2.5vw 0;
+        text-align: center;
+    }
+    #portfolioDetail .detail-design .list .num {
+        font-size: 4vw;
+    }
+    #portfolioDetail .detail-design .list .txt {
+        font-size: 2vw;
+        line-height: 1.5;
+    }
+    #portfolioDetail .detail-design .list {
+        grid-template-columns: 5vw auto;
     }
     
     /*
