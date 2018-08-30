@@ -46,6 +46,6 @@ contact-phones:
       phone-number: +582127541143
 
 contact-mail: hola@turpialdev.com
-contact-mail-subject: Hi%20Turpial%20Dev
+contact-mail-subject: Hello%20Turpial%20Dev
 
 ---

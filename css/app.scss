@@ -1640,29 +1640,18 @@ Portfolio detail
             grid-template-columns: 3vw auto;
             margin: 8vw 5vw 8vw 0;
 
-            .num1, .num2, .num3 {
+            .num {
                 grid-column: 1 / 2;
                 font-size: 2vw;
                 font-weight: 600;
                 color: #fff;
                 letter-spacing: -0.1vw;
             }
-            .txt1, .txt2, .txt3 {
+            .txt {
                 grid-column: 2 / 3;
                 font-size: 1.2vw;
                 line-height: 1.6vw;
                 margin-bottom: 2.5vw;
-            }
-
-            .num1, .txt1 {
-                grid-row: 1 / 2;
-            }
-            .num2, .txt2 {
-                grid-row: 2 / 3;
-            }
-            .num3, .txt3 {
-                grid-row: 3 / 4;
-                margin-bottom: 0;
             }
         }
     }
@@ -1723,19 +1712,8 @@ Portfolio detail
                 background-color: $yellowHover;
                 box-shadow: -1px 1px 3px rgba(0,0,0,.3);
             }
-            .box1 {
-                grid-column: 1 / 2;
+            .box {
                 grid-row: 3 / 4;
-            }
-            .box2 {
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
-            }
-            .box3 {
-                grid-column: 3 / 4;
-                grid-row: 3 / 4;
-            }
-            .box1, .box2, .box3 {
                 background-color: #fff;
                 align-self: center;
                 text-align: center;
@@ -1810,7 +1788,7 @@ Portfolio detail
                 word-wrap: break-word;
                 max-height: 8vw;
             }
-            button {
+            a.result-link {
                 cursor: pointer;
                 font-weight: 900;
                 font-size: 1.2vw;

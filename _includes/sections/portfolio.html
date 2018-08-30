@@ -1,5 +1,4 @@
 <section id="portfolio">
-
     <div class="portfolio-container">
         <!-- title -->
         <span class="float-title">
@@ -13,7 +12,8 @@
             <div class="line"></div>
         </span>
 
-        {% assign portfolio=site.portfolio | where:"lang", page.lang %} {% for project in portfolio %}
+        {% assign portfolio=site.portfolio | where:"lang", page.lang %}
+        {% for project in portfolio %}
         <span class="portfolio-card">
             <div class="line"></div>
             <a href="{{ project.permalink }}">
@@ -31,13 +31,11 @@
                 {{ project.date | date: "%Y"}}
             </div>
             <div class="title-text-box">
-                <h3>{{ project.subtitle }}</h3>
+                <h3>{{ project.title }}</h3>
                 <p>{{ project.description }}
                     <p>
             </div>
         </span>
         {% endfor %}
-        </span>
     </div>
-
 </section>
