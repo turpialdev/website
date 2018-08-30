@@ -420,9 +420,22 @@ Home Page
     
     height: calc(100vh - 190px);
     background: #686868;
-    background-image: url('/img/pages/xl/home.jpg');
+    background-image: url('/img/Sm/home-sm-@1x-bottom-center.jpg');
+    background-position: center center;
     background-size: cover;
     background-blend-mode: multiply;
+
+    @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
+        background-image: url('/img/Md/home-md-@1x-bottom-center.jpg');
+    }
+
+    @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
+        background-image: url('/img/Lg/home-lg-@1x-bottom-center.jpg');
+    }
+
+    @media only screen and (min-width: $break_xl) {
+        background-image: url('/img/Xl/home-xl-@1x-bottom-center.jpg');
+    }
 
     .title {
         grid-column: 1 / 5;
@@ -554,6 +567,54 @@ Web, Mobile and design Pages
         grid-column: 2;
         grid-row: 1 / 3;
     }
+    
+    .img.web {
+        background-image: url('/img/Sm/web-sm-@1x-center-center.jpg');
+    }
+    .img.mobile {
+        background-image: url('/img/Sm/mobile-sm-@1xcenter-center.jpg');
+    }
+    .img.design {
+        background-image: url('/img/Sm/diseño-sm-@1x-bottom-right.jpg');
+    }
+
+    @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
+        .img.web {
+            background-image: url('/img/Md/web-md-@1x-center-center.jpg');
+        }
+        .img.mobile {
+            background-image: url('/img/Md/mobile-md-@1xcenter-center.jpg');
+        }
+        .img.design {
+            background-image: url('/img/Md/diseño-md-@1x-bottom-right.jpg');
+        }
+    }
+
+    @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
+        .img.web {
+            background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
+        }
+        .img.mobile {
+            background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
+        }
+        .img.design {
+            background-image: url('/img/Lg/diseño-lg-@1x-bottom-right.jpg');
+        }
+    }
+
+    @media only screen and (min-width: $break_xl) {
+        .img.web {
+            background-image: url('/img/Xl/web-xl-@1x-center-center.jpg');
+        }
+        .img.mobile {
+            background-image: url('/img/Xl/mobile-xl-@1x-center-center.jpg');
+        }
+        .img.design {
+            background-image: url('/img/Xl/diseño-xl-@1x-bottom-right.jpg');
+        }
+    }
+
+
     .tit {
         grid-column: 1;
         grid-row: 1;
