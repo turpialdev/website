@@ -76,7 +76,7 @@ Responsive size
 $frameborder: 52px;
 
 $break_sm: 768px;
-$break_md: 1024px;
+$break_md: 1025px;
 $break_lg: 1366px;
 $break_xl: 1920px;
 
@@ -133,6 +133,10 @@ a, input {
     text-decoration: none;
     outline: 0;
     color: inherit;
+}
+
+a:hover {
+    text-decoration: underline solid $yellow;
 }
 
 body {
@@ -537,158 +541,69 @@ Web, Mobile and design Pages
 */
 
 #web, #mobile, #design {
-    height: calc(100vh - 140px);
-    padding: $frameborder;
-    background: #fff;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20vw 1fr;
+    height: calc(100vh - 150px);
+    min-height: 50vw;
+    overflow: hidden;
+    background: #fff;
 
-    .image {
-        width: 50%;
-        height: 100%;
-        position: absolute;
-        background-size: cover;
-        background-blend-mode: multiply;
-        top: 0;
+    .img {
+        grid-column: 2;
+        grid-row: 1 / 3;
     }
-
-    .image.web {
-        background-image: url('/img/pages/sm/web.jpg');
-        right: 0;
-
-        @media screen and (max-width: 1480px) and (min-width: 640px) {
-            background-image: url('/img/pages/md/web.jpg');
-        }
-
-        @media screen and (max-width: 1481px) and (min-width: 1820px) {
-            background-image: url('/img/pages/lg/web.jpg');
-        }
-
-        @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/web.jpg');
-        }
-    }
-
-    .image.mobile {
-        background-image: url('/img/pages/sm/mobile.jpg');
-        left: 0;
-
-        @media screen and (max-width: 1480px) and (min-width: 640px) {
-            background-image: url('/img/pages/md/mobile.jpg');
-        }
-
-        @media screen and (max-width: 1481px) and (min-width: 1820px) {
-            background-image: url('/img/pages/lg/mobile.jpg');
-        }
-
-        @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/mobile.jpg');
-        }
-    }
-
-    .image.design {
-        background-image: url('/img/StockSnap_SWRREC0K3A.jpg');
-        right: 0;
-    }
-
-    .wmd-content {
-        width: 50%;
-        height: 100%;
-        background: none;
-    }
-
-    .wmd-content.mobile {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .title-box {
-        width: 38.65vw;
-        height: 10.5vw;
-        position: absolute;
-        background-color: $yellow;
-        top: 8vw;
-        right: 40%;
-
-        h1 {
-            margin-top: 1.41vw;
-            margin-left: 2.3vw;
-            font-size: 6.4vw;
+    .tit {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        background-color: #ffcb00;
+        padding: 1.5vw 2.5vw;
+        max-width: 40vw;
+        position: relative;
+        left: 20vw;
+        h2 {
+            font-size: 6vw;
             font-weight: 900;
             line-height: 0.95;
         }
-
-        h2 {
-            margin-left: 2.3vw;
-            font-size: 1.28vw;
+        h3 {
+            font-size: 1.3vw;
             font-weight: bold;
             text-transform: uppercase;
         }
     }
-
-    .title-box.design {
-        width: 47.65vw;
-        right: 30%;
-    }
-
-    .info {
-        margin-top: 19.5vw;
-        margin-left: 2.5vw;
-
-        h3 {
+    .inf {
+        grid-column: 1;
+        grid-row: 2;
+        padding: $frameborder;
+        b {
             font-size: 1.28vw;
             font-weight: bold;
             line-height: 1.1;
         }
-
         p {
-            width: 90%;
             font-size: 1.15vw;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
             line-height: normal;
         }
     }
+}
 
-    .info.mobile {
-        margin-top: 22vw;
-        margin-left: 3.53vw;
-    }
-
-    @media screen and (max-width: 1240px){
-        .info {
-            h3 {
-                font-size: 1.32vw;
-            }
-            p {
-                font-size: 1.2vw;
-            }
+@media screen and (min-width: $break_md) {
+    #mobile {
+        .img {
+            grid-column: 1;
+        }
+        .tit {
+            grid-column: 2;
+            left: unset;
+            right: 20vw;
+        }
+        .inf {
+            grid-column: 2;
         }
     }
-
-    @media screen and (max-width: 1190px){
-        .info {
-            h3 {
-                font-size: 1.35vw;
-            }
-            p {
-                font-size: 1.25vw;
-            }
-        }
-    }
-
-    @media screen and (max-width: 1100px){
-        .info {
-            h3 {
-                font-size: 1.4vw;
-            }
-            p {
-                font-size: 1.3vw;
-            }
-        }
-    }
-
 }
 
 /*
@@ -740,7 +655,7 @@ About Us Page
                     font-weight: bold;
                     text-transform: uppercase;
                     &:hover {
-                        text-decoration: $yellowHover;
+                        text-decoration-color: $yellowHover;
                         color: $yellowHover;
                     }
                     &:nth-child(2) {
@@ -797,7 +712,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -821,7 +735,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -862,10 +775,12 @@ Contact us
         }
 
         label {
+            font-size: 1.2vw;
             display: block;
             margin-bottom: 1vw;
         }
         input, textarea {
+            font-size: 1.2vw;
             width: calc(100% - 2vw);
             color: #fff;
         }
@@ -952,7 +867,6 @@ Advantages
 #advantage {
     height: calc(100vh + 100px);
     color: #fff;
-    margin: 0;
 
     .v-card {
         transition: 0.4s;
@@ -1183,8 +1097,8 @@ Portfolio
 */
 
 #portfolio {
-    background-color: #fff;
     padding: 104px;
+    background-color: #fff;
 
     .float-title {
         display: block;
@@ -1307,11 +1221,7 @@ Portfolio
         }
 
         a:hover > .titl-box {
-            top: 19.5vw;
-            background-color: $yellow;
-            h2 {
-                color: $black;
-            }
+            background-color: #363636;
         }
 
         .line {

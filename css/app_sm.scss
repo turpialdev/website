@@ -133,84 +133,52 @@ $softgray: #f2f2f2;
     *********************
     */
     #web, #mobile, #design {
+        grid-template-columns: 8vw auto;
+        grid-template-rows: 40vw 20vw auto;
         height: unset;
-        margin-bottom: 2.5vw;
-        padding-bottom: 10vw;
+        max-height: unset;
+        margin-bottom: $frameborder;
     }
-
-    #web .title-box,
-    #mobile .title-box,
-    #design .title-box,
-    #design .title-box.design {
-        position: absolute;
-        bottom: unset;
-        right: unset;
-        left: unset;
-        top: -28.15vw;
-        height: unset;
-        width: 70vw;
-        padding: 2.5vw;
-    }
-    #design .title-box.design h1 {
-        max-width: 46vw;
-        white-space: nowrap;
+    #web .img, #mobile .img, #design .img {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
         overflow: hidden;
-        text-overflow: " ";
     }
-
-    #web, #mobile, #design {
-        .image.web, .image.mobile, .image.design {
-            position: relative;
-            width: 100%;
-            height: 65vw;
-            top: unset;
-            bottom: unset;
-            left: unset;
-            right: unset;
+    #web .tit, #mobile .tit, #design .tit {
+        grid-column: 2;
+        grid-row: 2;
+        max-width: unset;
+        left: unset;
+    }
+    #web .tit h2, #mobile .tit h2, #design .tit h2 {
+        font-size: 16vw;
+    }
+    #web .tit h3, #mobile .tit h3, #design .tit h3 {
+        font-size: 3vw
+    }
+    #web .inf, #mobile .inf, #design .inf {
+        grid-column: 1 / 3;
+        grid-row: 3;
+        padding: 13px;
+    }
+    #web .inf b, #mobile .inf b, #design .inf b {
+        font-size: 4vw;
+        margin-bottom: 2vw;
+        display: block;
+    }
+    #web .inf p, #mobile .inf p, #design .inf p {
+        font-size: 3vw;
+    }
+    #mobile {
+        grid-template-columns: auto 8vw;
+        .tit {
+            grid-column: 1;
         }
     }
-
-    #web .title-box h1,
-    #mobile .title-box h1,
-    #design .title-box h1 {
-        font-size: 16vw;
-        margin: 0;
-    }
-    #web .title-box h2,
-    #mobile .title-box h2,
-    #design .title-box h2 {
-        font-size: 3vw;
-        margin: 0;
-        font-weight: normal;
-    }
-    #web .wmd-content,
-    #mobile .wmd-content.mobile,
-    #design .wmd-content.mobile,
-    #design .wmd-content {
-        height: unset;
-        width: unset;
-        position: relative;
-        right: unset;
-        left: unset;
-        top: unset;
-    }
-    #web .info,
-    #mobile .info.mobile,
-    #design .info,
-    #design .info.mobile {
-        margin: 0;
-        margin-top: 5vw;
-    }
-    #web .info h3,
-    #mobile .info h3,
-    #design .info h3 {
-        font-size: 4vw;
-        font-weight: normal;
-    }
-    #web .info p,
-    #mobile .info p,
-    #design .info p {
-        font-size: 2vw;
+    #design .tit h2 {
+        max-width: 43vw;
+        overflow: hidden;
+        white-space: nowrap;
     }
 
     /*
