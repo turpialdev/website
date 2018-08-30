@@ -27,7 +27,7 @@ $softgray: #f2f2f2;
     .main-footer {
         height: $frameborder;
     }
-    #home, #web, #mobile, #design, #contact {
+    #home, #contact {
         padding: $frameborder;
     }
 
@@ -138,6 +138,44 @@ $softgray: #f2f2f2;
     Web, Mobile and design Pages
     *********************
     */
+    #web, #mobile, #design {
+        height: unset;
+        max-height: 65vw;
+        grid-template-rows: 25vw auto;
+    }
+    #web .tit, #mobile .tit, #design .tit {
+        grid-column: 1 / 3;
+        max-width: unset;
+        left: unset;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+    #web .tit h2, #mobile .tit h2, #design .tit h2 {
+        font-size: 10vw;
+    }
+    #web .tit h3, #mobile .tit h3, #design .tit h3 {
+        font-size: 2.3vw;
+    }
+    #web .inf, #mobile .inf, #design .inf {
+        padding: 2.5vw;
+    }
+    #web .inf b, #mobile .inf b, #design .inf b {
+        font-size: 2vw;
+        margin-bottom: 2vw;
+        display: block;
+    }
+    #web .inf p, #mobile .inf p, #design .inf p {
+        font-size: 1.5vw;
+    }
+    #mobile {
+        .img {
+            grid-column: 1;
+        }
+        .inf {
+            grid-column: 2;
+        }
+    }
+
 
     /*
     *********************
