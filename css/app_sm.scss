@@ -22,6 +22,10 @@ Frame & container / layout
 .main-head, .content, .main-footer {
     margin: 0 $frameborder;
 }
+.main-head {
+    width: calc(100% - 26px);
+    padding-right: 26px;
+}
 .main-footer {
     height: $frameborder;
 }

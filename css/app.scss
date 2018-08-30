@@ -173,7 +173,9 @@ Frame & container
 
 .main-head {
     grid-area: header;
-    position: sticky;
+    position: fixed;
+    width: calc(100% - 104px);
+    padding-right: 104px;
     top: 0;
     background-color: white;
     z-index: 500;
