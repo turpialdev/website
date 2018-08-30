@@ -336,6 +336,11 @@ Contact Page
     width: 100%;
     padding: 4vw 0;
 }
+#contact .contact-form label,
+#contact .contact-form input,
+#contact .contact-form textarea {
+    font-size: 3vw;
+}
 
 #contact .contact-offices {
     border-left: none;

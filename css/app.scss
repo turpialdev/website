@@ -75,7 +75,7 @@ Responsive size
 
 $frameborder: 52px;
 
-$break_sm: 768px;
+$break_sm: 767px;
 $break_md: 1025px;
 $break_lg: 1366px;
 $break_xl: 1920px;
@@ -570,13 +570,14 @@ Web, Mobile and design Pages
     }
     
     .img.web {
-        background-image: url('/img/Sm/web-sm-@1x-center-center.jpg');
+        background-image: url('/img/Sm/web-sm-center-center.jpg');
     }
     .img.mobile {
-        background-image: url('/img/Sm/mobile-sm-@1xcenter-center.jpg');
+        background-image: url('/img/Sm/mobile-sm-center-center.jpg');
     }
     .img.design {
-        background-image: url('/img/Sm/diseño-sm-@1x-bottom-right.jpg');
+        background-position: bottom right;
+        background-image: url('/img/Sm/diseño-sm-bottom-right.jpg');
     }
 
     @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
@@ -587,6 +588,7 @@ Web, Mobile and design Pages
             background-image: url('/img/Md/mobile-md-@1xcenter-center.jpg');
         }
         .img.design {
+            background-position: center right;
             background-image: url('/img/Md/diseño-md-@1x-bottom-right.jpg');
         }
     }
