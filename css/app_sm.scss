@@ -329,19 +329,23 @@ $softgray: #f2f2f2;
         width: 20px;
         height: 5px;
     }
+    /* change view to block */
     #portfolioDetail .detail-project,
     #portfolioDetail .detail-steps,
     #portfolioDetail .detail-design,
-    #portfolioDetail .detail-tech,
+    #portfolioDetail .detail-tech .tech-container,
     #portfolioDetail .detail-result {
         display: block;
         padding: 25px
     }
+    /* hide unwanted elements */
     #portfolioDetail .detail-project .show-case-1,
     #portfolioDetail .detail-project .show-case-2,
-    #portfolioDetail .detail-steps .info {
+    #portfolioDetail .detail-steps .info,
+    #portfolioDetail .detail-tech .tech-container .box {
         display: none;
     }
+
     /* detail */
     #portfolioDetail .detail-project h2 {
         font-size: 9vw;
@@ -369,6 +373,7 @@ $softgray: #f2f2f2;
         font-size: 1.5vw;
         line-height: 1.5;
     }
+
     /* first steps */
     #portfolioDetail .detail-steps h2 {
         font-size: 9vw;
@@ -414,6 +419,48 @@ $softgray: #f2f2f2;
     }
     #portfolioDetail .detail-design .list {
         grid-template-columns: 5vw auto;
+    }
+
+    /* technical */
+    #portfolioDetail .detail-tech {
+        padding: 0;
+    }
+    #portfolioDetail .detail-tech .tech-container {
+        border: none;
+        max-height: unset;
+    }
+    #portfolioDetail .detail-tech .tech-container h2 {
+        font-size: 9vw;
+        line-height: 1;
+        margin: 2.5vw 0;
+        text-align: center;
+        color: $black;
+    }
+    #portfolioDetail .detail-tech .tech-container .text {
+        font-size: 2vw;
+        line-height: 1.5;
+        width: 100%;
+    }
+    #portfolioDetail .detail-tech .tech-container .text p {
+        max-height: unset;
+    }
+    #portfolioDetail .detail-tech .tech-container .imag {
+        height: 32vw;
+        right: 0;
+        max-height: unset;
+        width: 90%;
+        margin: 2.5vw 0 2.5vw 10%;
+    }
+    #portfolioDetail .detail-tech .tech-container .info {
+        width: 60%;
+        font-size: 1.5vw;
+        line-height: 1.5;
+        top: unset;
+        right: unset;
+        margin-left: calc(40% - 3vw);
+    }
+    #portfolioDetail .detail-tech .tech-container .info p {
+        max-height: unset;
     }
     
     /*
