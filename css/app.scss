@@ -1920,15 +1920,15 @@ Opportunities Page
 *********************
 */
 .opportunities-content {
-    margin: 0 $frameborder;
+    padding: 0 $frameborder;
 }
 
 .opportunities-grid {
     padding: 30px 10vw 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 12vw auto;
-    grid-gap: 3vw;
+    grid-template-rows: 9vw auto;
+    grid-gap: 2.7vw;
     // min-height: 120vw;
     // height: calc(100vh - 190px);
     background-color: #fff;
@@ -1936,15 +1936,16 @@ Opportunities Page
     .sub-header {
         grid-column: 1 / 4;
         grid-row: 1;
-        padding-left: 5px;
         letter-spacing: 1.5px;
-        max-width: 33vw;
+        max-width: 50vw;
+        height: 132px;
         
         h2 {
             text-transform: uppercase;
             background-color: $yellow;
-            font-size: 6vw;
+            font-size: 64px;
             font-weight: 900;
+            padding-left: .5vw;
         }
     }
 
@@ -1952,7 +1953,7 @@ Opportunities Page
         background-color: white;
         .img-container {
             overflow: hidden;
-            // height: 25vw;
+            // margin-top: 15px;
             width: 100%;
             img {
                 // height: 100%;
@@ -1966,13 +1967,13 @@ Opportunities Page
                 text-transform: uppercase;
                 margin-bottom: 15px;
                 font-weight: bold;
-                font-size: 1.4vw;
+                font-size: 16px;
                 letter-spacing: -.5px;
                 // line-height: 3.2;
             }
             p {
                 line-height: 1.5;
-                font-size: 1.15vw;
+                font-size: 14px;
             }
         }
     }
@@ -1992,12 +1993,23 @@ Opportunities Page
         border: none;
         background-color: $yellow;
         font-family: 'Poppins', sans-serif;
-        font-size: 1.5vw;
+        font-size: 16px;
         cursor: pointer;
+        padding: 7px 5px;
     }
 }
 
-
+/*
+*********************
+Culture Page
+*********************
+*/
+.culture-content {
+    margin: 0 $frameborder;
+}
+.culture-grid {
+    display: grid;
+}
 /*
 *********************
 Globals
