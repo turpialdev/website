@@ -9,3 +9,28 @@
         <p>{{ section.content }}</p>
     </div>
 </section>
+
+<style>
+    .img.mobile {
+        background-image: url('/img/Sm/mobile-sm-@1xcenter-center.jpg');
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+        .img.mobile {
+            background-image: url('/img/Md/mobile-md-@1xcenter-center.jpg');
+        }
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+        .img.mobile {
+            background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
+        }
+    }
+
+    @media only screen and (min-width: 1366px) {
+        .img.mobile {
+            background-image: url('/img/Xl/mobile-xl-@1x-center-center.jpg');
+        }
+    }
+</style>

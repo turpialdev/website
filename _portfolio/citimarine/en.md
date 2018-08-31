@@ -27,7 +27,10 @@ phone_number: +582127541143
 
 sections:
     detail:
-        image: /img/portfolio/airways.png
+        image_sm: /img/portfolio/portafolio-citimarine-sm-@1x.png
+        image_md: /img/portfolio/
+        image_lg:
+        image_xl:
         image_pointer_1: Hola
         image_pointer_2: Aqui otro hola
         synthesis_title: Aqui un titulo cool

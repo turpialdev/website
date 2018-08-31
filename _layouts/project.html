@@ -21,9 +21,7 @@
             <!-- PROJECT DETAIL DESCRIPTION -->
             <div class="detail-project">
                 <h2>{{ page.title }}</h2>
-                <div class="imag">
-                    <img src="{{ sections.detail.image }}" alt="">
-                </div>
+                <div class="imag"></div>
                 <div class="text">
                     <b>{{ page.sections.detail.synthesis_title }}</b>
                     <p>
@@ -54,7 +52,6 @@
                 <h2>{{ first_steps.title }}</h2>
                 <div class="imag">
                     <div>
-                        <img src="" alt="">
                     </div>
                     <p>{{ first_steps.image_pointer }}</p>
                 </div>
@@ -108,9 +105,7 @@
                             {{ tech.synthesis }}
                         </p>
                     </div>
-                    <div class="imag">
-                        <img src="" alt="">
-                    </div>
+                    <div class="imag"></div>
                     {% for tool in tech.tools limit:3 %}
                     <div class="box">
                         <p>{{ tool.name }}</p>
@@ -132,9 +127,7 @@
             {% assign results=page.sections.results %}
             <div class="detail-result">
                 <h2>{{ results.title }}</h2>
-                <div class="imag">
-                    <img src="" alt="">
-                </div>
+                <div class="imag"></div>
                 <div class="text">
                     <span>&#8220;</span>
                     <p>
@@ -162,6 +155,67 @@
             </div>
         </div>
     </section>
+
+    <style>
+        .detail-project div.imag {
+            background-image: url('{{ page.sections.detail.image_sm }}');
+        }
+        .detail-steps div.imag div {
+            background-image: url('{{ page.sections.first_steps.image_sm }}');
+        }
+        .detail-tech div.imag {
+            background-image: url('{{ page.sections.technologies.image_sm }}');
+        }
+        .detail-result div.imag {
+            background-image: url('{{ page.sections.results.image_sm }}');
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_md }}');
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_md }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_md }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_md }}');
+            }
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_lg }}')
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_lg }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_lg }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_lg }}');
+            }
+        }
+
+        @media only screen and (min-width: 1366px) {
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_xl }}');
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_xl }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_xl }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_xl }}');
+            }
+        }
+    </style>
 
 </body>
 
