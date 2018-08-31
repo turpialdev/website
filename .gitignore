@@ -9,4 +9,4 @@ node_modules
 package.json
 .idea/
 img/videos/v4.mp4
-img/team/
+.img/team/
