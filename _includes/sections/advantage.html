@@ -1,0 +1,166 @@
+<section id="advantage">
+
+    <div id="v1" class="v-card">
+        <div id="v1_title" class="v-title">
+            <h3>{{ section.u-title }}</h3>
+        </div>
+        <div id="v1_content" class="v-content v-hidden-c">
+            <h2>{{ section.u-title }}</h2>
+            <div>
+                <b>{{ section.u-highlight }}</b>
+                <p>{{ section.u-content }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="v2" class="v-card">
+        <div id="v2_title" class="v-title">
+            <h3>{{ section.a-title }}</h3>
+        </div>
+        <div id="v2_content" class="v-content v-hidden-c">
+            <h2>{{ section.a-title }}</h2>
+            <div>
+                <b>{{ section.a-highlight }}</b>
+                <p>{{ section.a-content }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="v3" class="v-card">
+        <div id="v3_title" class="v-title">
+            <h3>{{ section.s-title }}</h3>
+        </div>
+        <div id="v3_content" class="v-content v-hidden-c">
+            <h2>{{ section.s-title }}</h2>
+            <div>
+                <b>{{ section.s-highlight }}</b>
+                <p>{{ section.s-content }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="v4" class="v-card">
+        <div id="v4_title" class="v-title">
+            <h3>{{ section.wt-title }}</h3>
+        </div>
+        <div id="v4_content" class="v-content v-hidden-c">
+            <h2>{{ section.wt-title }}</h2>
+            <div>
+                <b>{{ section.wt-highlight }}</b>
+                <p>{{ section.wt-content }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="v5" class="v-card">
+        <div id="v5_title" class="v-title">
+            <h3>{{ section.ap-title }}</h3>
+        </div>
+        <div id="v5_content" class="v-content v-hidden-c">
+            <h2>{{ section.ap-title }}</h2>
+            <div>
+                <b>{{ section.ap-highlight }}</b>
+                <p>{{ section.ap-content }}</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    openV1();
+
+    document.getElementById("v1").addEventListener("click", openV1);
+    document.getElementById("v2").addEventListener("click", openV2);
+    document.getElementById("v3").addEventListener("click", openV3);
+    document.getElementById("v4").addEventListener("click", openV4);
+    document.getElementById("v5").addEventListener("click", openV5);
+
+    function closeVs() {
+        var v1 = document.getElementById("v1");
+        var v2 = document.getElementById("v2");
+        var v3 = document.getElementById("v3");
+        var v4 = document.getElementById("v4");
+        var v5 = document.getElementById("v5");
+
+        var v1_title = document.getElementById("v1_title");
+        var v2_title = document.getElementById("v2_title");
+        var v3_title = document.getElementById("v3_title");
+        var v4_title = document.getElementById("v4_title");
+        var v5_title = document.getElementById("v5_title");
+
+        var v1_content = document.getElementById("v1_content");
+        var v2_content = document.getElementById("v2_content");
+        var v3_content = document.getElementById("v3_content");
+        var v4_content = document.getElementById("v4_content");
+        var v5_content = document.getElementById("v5_content");
+
+        v1.classList.remove("v-open");
+        v2.classList.remove("v-open");
+        v3.classList.remove("v-open");
+        v4.classList.remove("v-open");
+        v5.classList.remove("v-open");
+
+        v1_title.classList.remove("v-hidden");
+        v2_title.classList.remove("v-hidden");
+        v3_title.classList.remove("v-hidden");
+        v4_title.classList.remove("v-hidden");
+        v5_title.classList.remove("v-hidden");
+
+        v1_content.classList.add("v-hidden-c");
+        v2_content.classList.add("v-hidden-c");
+        v3_content.classList.add("v-hidden-c");
+        v4_content.classList.add("v-hidden-c");
+        v5_content.classList.add("v-hidden-c");
+    }
+
+    function openV1() {
+        closeVs();
+        var v1 = document.getElementById("v1");
+        var v1_title = document.getElementById("v1_title");
+        var v1_content = document.getElementById("v1_content");
+        v1.classList.add("v-open");
+        v1_title.classList.add("v-hidden");
+        v1_content.classList.remove("v-hidden-c");
+    }
+
+    function openV2() {
+        closeVs();
+        var v2 = document.getElementById("v2");
+        var v2_title = document.getElementById("v2_title");
+        var v2_content = document.getElementById("v2_content");
+        v2.classList.add("v-open");
+        v2_title.classList.add("v-hidden");
+        v2_content.classList.remove("v-hidden-c");
+    }
+
+    function openV3() {
+        closeVs();
+        var v3 = document.getElementById("v3");
+        var v3_title = document.getElementById("v3_title");
+        var v3_content = document.getElementById("v3_content");
+        v3.classList.add("v-open");
+        v3_title.classList.add("v-hidden");
+        v3_content.classList.remove("v-hidden-c");
+    }
+
+    function openV4() {
+        closeVs();
+        var v4 = document.getElementById("v4");
+        var v4_title = document.getElementById("v4_title");
+        var v4_content = document.getElementById("v4_content");
+        v4.classList.add("v-open");
+        v4_title.classList.add("v-hidden");
+        v4_content.classList.remove("v-hidden-c");
+    }
+
+    function openV5() {
+        closeVs();
+        var v5 = document.getElementById("v5");
+        var v5_title = document.getElementById("v5_title");
+        var v5_content = document.getElementById("v5_content");
+        v5.classList.add("v-open");
+        v5_title.classList.add("v-hidden");
+        v5_content.classList.remove("v-hidden-c");
+    }
+</script>
