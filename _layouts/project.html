@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<body>
+
+    <section id="portfolioDetail">
+        <div class="dissmiss-btn" onclick="onDismissDetail()">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="detail-content">
+
+            <!-- PROJECT DETAIL DESCRIPTION -->
+            <div class="detail-project">
+                <h2>{{ page.title }}</h2>
+                <div class="imag">
+                    <img src="{{ sections.detail.image }}" alt="">
+                </div>
+                <div class="text">
+                    <b>{{ page.sections.detail.synthesis_title }}</b>
+                    <p>
+                        {{ page.sections.detail.synthesis }}
+                    </p>
+                </div>
+                <div class="case">
+                    <p>
+                        {{ page.sections.detail.fun_fact }}
+                    </p>
+                </div>
+                <div class="show-case-1">
+                    <span></span>
+                    {{ page.sections.detail.image_pointer_1 }}
+                </div>
+                <div class="show-case-2">
+                    <span></span>
+                    {{ page.sections.detail.image_pointer_2 }}
+                </div>
+            </div>
+
+            <!-- PROJECT DETAIL FIRTS STEPS -->
+            {% if page.sections.first_steps %}
+
+            {% assign first_steps=page.sections.first_steps %}
+
+            <div class="detail-steps">
+                <h2>{{ first_steps.title }}</h2>
+                <div class="imag">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <p>{{ first_steps.image_pointer }}</p>
+                </div>
+                <div class="text">
+                    <b>{{ first_steps.synthesis_title }}</b>
+                    <p>
+                        {{ first_steps.synthesis }}
+                    </p>
+                </div>
+                <div class="info">
+                    <p>
+                        {{ first_steps.fun_fact }}
+                    </p>
+                </div>
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL DESIGN -->
+            {% if page.sections.first_steps %}
+
+            {% assign design=page.sections.design %}
+            <div class="detail-design">
+                <h2>
+                    {{ design.title }}
+                </h2>
+                <div class="list">
+                    {% for step in design.steps %}
+                    <div class="num">
+                        {{ forloop.index }}
+                    </div>
+                    <div class="txt">
+                        {{ step.content }}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL TECHNOLOGIES -->
+            {% if page.sections.technologies %}
+
+            {% assign tech=page.sections.technologies %}
+            <div class="detail-tech">
+                <div class="tech-container">
+                    <h2>{{ tech.title }}</h2>
+                    <div class="text">
+                        <b>{{ tech.synthesis_title }}</b>
+                        <p>
+                            {{ tech.synthesis }}
+                        </p>
+                    </div>
+                    <div class="imag">
+                        <img src="" alt="">
+                    </div>
+                    {% for tool in tech.tools limit:3 %}
+                    <div class="box">
+                        <p>{{ tool.name }}</p>
+                    </div>
+                    {% endfor %}
+                    <div class="info">
+                        <p>
+                            {{ tech.fun_fact }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL RESULT -->
+            {% if page.sections.results %}
+
+            {% assign results=page.sections.results %}
+            <div class="detail-result">
+                <h2>{{ results.title }}</h2>
+                <div class="imag">
+                    <img src="" alt="">
+                </div>
+                <div class="text">
+                    <span>&#8220;</span>
+                    <p>
+                        {{ results.quote }}
+                    </p>
+                    <a href="{{ results.external_button_link }}" class="result-link" target="_blank">{{ results.external_button_label }}</a>
+                </div>
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL FOOTER -->
+            <div class="detail-footer">
+                <div>
+                    <h3>{{ page.call_to_action_title }}</h3>
+                    <p>{{ page. cal_to_action_subtitle}}</p>
+                </div>
+                <div>
+                    <a href="mailto:{{ page.email }}?Subject={{ page.email_subject }}" target="_top">{{ page.email }}</a>
+                    <a href="tel:{{ page.phone_number }}">{{ page.phone_number_label }}</a>
+                </div>
+                <div>
+                    Let's work together
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<script>
+    function onDismissDetail() {
+        window.location.href = "/#portfolio";
+    }
+</script> {% include script.html %}
+
+</html>

@@ -1,0 +1,657 @@
+---
+---
+
+/*
+*********************
+Global variables
+*********************
+*/
+$frameborder: 13px;
+$black: #1b1b1b;
+$yellow: #ffcb00;
+$yellowHover: #e2b500;
+$gray: #ccc;
+$lightgray: #e5e5e5;
+$softgray: #f2f2f2;
+
+/*
+*********************
+Frame & container / layout
+*********************
+*/
+.content {
+    margin: 0 $frameborder;
+}
+.main-head, .main-footer {
+    padding: 0 $frameborder;
+}
+.main-head {
+    width: calc(100% - 26px);
+}
+.main-footer {
+    height: $frameborder;
+}
+#home, #web, #mobile, #design, #contact {
+    padding: $frameborder;
+}
+
+/*
+*********************
+Nav-bar
+*********************
+*/
+.nav-items {
+    .large-menu {
+        display: none;
+    }
+    .small-menu {
+        display: block;
+    }
+    .small-menu {
+        display: grid;
+        grid-template-columns: auto 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000, $alpha: .7);
+        ul {
+            font-size: 18px;
+            line-height: 60px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0 32px 64px;
+            max-height: 415px;
+            background-color: #fff;
+            li.turpial {
+                font-size: 28px;
+                line-height: 76px;
+                text-transform: lowercase;
+                text-align: center;
+                border-bottom: 1px solid $lightgray;
+            }
+        }
+        #s-menu {
+            height: 60px;
+            background: $yellow;
+            cursor: pointer;
+            span {
+                display: block;
+                position: absolute;
+                height: 5px;
+                width: 25px;
+                top: 26px;
+                right: 18px;
+                background: #fff;
+            }
+            span:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            span:nth-child(2) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
+
+/*
+*********************
+Home Page
+*********************
+*/
+#home {
+    display: block;
+    background-image: url('/img/pages/sm/home.jpg');
+    height: initial;
+    padding-top: 25vh;
+    padding-bottom: 25vh;
+
+    .fly-a, .fly-b, .fly-c {
+        display: none;
+    }
+
+    .title {
+        text-align: center;
+        h1 {
+            font-size: 14vw;
+        }
+        h4 {
+            font-size: 5vw;
+            margin-top: 4vw;
+        }
+    }
+
+    .call-to-action {
+        padding: 2.5vw;
+        width: 30vw;
+        font-size: 4vw;
+        margin: 0 auto;
+        margin-top: 8vw;
+    }
+}
+
+/*
+*********************
+Web, Mobile and design Pages
+*********************
+*/
+#web, #mobile, #design {
+    grid-template-columns: 8vw auto;
+    grid-template-rows: 40vw 20vw auto;
+    height: unset;
+    max-height: unset;
+    margin-bottom: $frameborder;
+}
+#web .img, #mobile .img, #design .img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    overflow: hidden;
+}
+#web .tit, #mobile .tit, #design .tit {
+    grid-column: 2;
+    grid-row: 2;
+    max-width: unset;
+    left: unset;
+}
+#web .tit h2, #mobile .tit h2, #design .tit h2 {
+    font-size: 16vw;
+}
+#web .tit h3, #mobile .tit h3, #design .tit h3 {
+    font-size: 3vw
+}
+#web .inf, #mobile .inf, #design .inf {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    padding: 13px;
+}
+#web .inf b, #mobile .inf b, #design .inf b {
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    display: block;
+}
+#web .inf p, #mobile .inf p, #design .inf p {
+    font-size: 3vw;
+}
+#mobile {
+    grid-template-columns: auto 8vw;
+    .tit {
+        grid-column: 1;
+    }
+}
+#design .tit h2 {
+    max-width: 43vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/*
+*********************
+Portfolio Page
+*********************
+*/
+#portfolio {
+    padding: 5vw $frameborder;
+
+    .portfolio-container {
+        border: 1px solid $gray;
+        padding: $frameborder;
+    }
+
+    .float-title {
+        height: 40vw;
+    }
+
+    .float-title .title-imag-box {
+        top: 0;
+        left: 0;
+        width: 55vw;
+        height: 30vw;
+    }
+
+    .float-title .title-titl-box {
+        z-index: 1;
+        right: 0;
+        top: 2.5vw;
+        left: 30vw;
+        padding: 2vw;
+        h1 {
+            margin: 0;
+            font-size: 13vw;
+            line-height: 0.8;
+        }
+    }
+
+    .float-title .line {
+        background-color: $gray;
+        top: 30vw;
+        left: 46vw;
+    }
+
+    .portfolio-card {
+        height: initial;
+    }
+
+    .portfolio-card .imag-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: unset;
+        img {
+            width: 100%;
+        }
+    }
+
+    .portfolio-card .titl-box {
+        display: block;
+        position: relative;
+        width: 70vw;
+        margin: 0 auto;
+        top: -6vw;
+        left: 0;
+        h2 {
+            font-size: 5vw;
+            line-height: 13vw;
+        }
+    }
+
+    .portfolio-card a:hover > .titl-box {
+        top: -6vw;
+        background-color: #ffcb00;
+    }
+
+
+    .float-title .title-gray-box, .portfolio-card .line {
+        display: none;
+    }
+
+    .portfolio-card .title-text-box {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .portfolio-card .title-text-box h3 {
+        font-size: 5vw;
+    }
+
+    .portfolio-card .title-text-box p {
+        font-size: 3vw;
+        line-height: 1;
+        margin-top: 2.5vw;
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 10vw;
+    }
+
+    .portfolio-card .title-year-box {
+        position: relative;
+        right: -20%;
+        width: 50%;
+        font-size: 30vw;
+        top: 10vw;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    .portfolio-card:nth-child(2n) .titl-box,
+    .portfolio-card:nth-child(2n) .imag-box,
+    .portfolio-card:nth-child(2n+1) .titl-box,
+    .portfolio-card:nth-child(2n+1) .imag-box {
+        right: unset;
+        left: unset;
+    }
+
+    .portfolio-card:nth-child(2n) .title-year-box, .portfolio-card:nth-child(1n) .title-year-box {
+        right: -20%;
+        left: unset;
+        margin: 0;
+    }
+}
+
+/*
+*********************
+Contact Page
+*********************
+*/
+#contact {
+    display: block;
+    padding: 10vw 5vw;
+    height: auto;
+}
+#contact .contact-form {
+    display: block;
+    div {
+        margin: 5vw 2.5vw;
+    }
+}
+#contact .contact-form h2 {
+    font-size: 8vw;
+    font-weight: normal;
+    margin-bottom: 10vw;
+}
+#contact .contact-form input, #contact .contact-form textarea {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+    font-size: small;
+}
+#contact .send a {
+    font-size: 3.4vw;
+    float: none;
+    width: 100%;
+    padding: 4vw 0;
+}
+#contact .contact-form label,
+#contact .contact-form input,
+#contact .contact-form textarea {
+    font-size: 3vw;
+}
+
+#contact .contact-offices {
+    border-left: none;
+    padding: 0;
+    line-height: 1;
+
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    width: 60%;
+    margin: 10vw auto 0;
+
+    .address, .phones-email {
+        position: relative;
+        text-align: center;
+        font-size: 3vw;
+        line-height: 1;
+        margin: 5vw 0;
+
+        p {
+            margin: 1vw 0;
+            a:hover {
+                color: $lightgray;
+                margin-left: 0;
+            }
+        }
+
+    }
+
+    .location {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/*
+*********************
+Aboutus Page
+*********************
+*/
+#aboutus {
+    min-height: 120vw;
+    max-height: 120vw;
+}
+#aboutus .about-content {
+    width: initial;
+    background-color: rgba(29, 29, 29, 0.7);
+}
+#aboutus .about-content div {
+    width: initial;
+    left: unset;
+    transform: translateX(0) translateY(-50%);
+    padding: 0 5vw;
+}
+#aboutus .about-content div h2 {
+    font-size: 15vw;
+    font-weight: normal;
+}
+#aboutus .about-content div p {
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-bottom: 10vw;
+}
+#aboutus .about-content div .call-to-actions a {
+    font-size: 3vw;
+    font-weight: normal;
+}
+#aboutus #video-background {
+    filter: grayscale(35%) brightness(85%);
+}
+
+/*
+*********************
+Advantage Page
+*********************
+*/
+#advantage {
+    max-height: 160vw;
+    min-height: 120vw;
+}
+#advantage .v-card .v-title h3 {
+    font-size: 7vw;
+    font-weight: normal;
+}
+
+/*
+*********************
+Portfolio detail Page
+*********************
+*/
+#portfolioDetail {
+    border: 25px solid #fff;
+    width: calc(100% - 50px);
+}
+#portfolioDetail .detail-content {
+    padding: 25px;
+}
+#portfolioDetail .dissmiss-btn {
+    top: 6px;
+    right: 6px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000;
+}
+#portfolioDetail .dissmiss-btn:hover {
+    top: 6px;
+    right: 6px;
+}
+#portfolioDetail .dissmiss-btn span {
+    width: 20px;
+    height: 5px;
+}
+/* change view to block */
+#portfolioDetail .detail-project,
+#portfolioDetail .detail-steps,
+#portfolioDetail .detail-design,
+#portfolioDetail .detail-tech .tech-container,
+#portfolioDetail .detail-result {
+    display: block;
+    padding: 25px
+}
+/* hide unwanted elements */
+#portfolioDetail .detail-project .show-case-1,
+#portfolioDetail .detail-project .show-case-2,
+#portfolioDetail .detail-steps .info,
+#portfolioDetail .detail-tech .tech-container .box {
+    display: none;
+}
+
+/* detail */
+#portfolioDetail .detail-project h2 {
+    font-size: 9vw;
+    margin: 2.5vw 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#portfolioDetail .detail-project .imag {
+    margin: 0;
+    height: 40vw;
+}
+#portfolioDetail .detail-project .text {
+    top: unset;
+    margin: 2.5vw 0;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+#portfolioDetail .detail-project .text p {
+    max-height: 12vw;
+}
+#portfolioDetail .detail-project .case {
+    left: unset;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+/* first steps */
+#portfolioDetail .detail-steps h2 {
+    font-size: 9vw;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-steps .imag {
+    margin-left: 0;
+    margin-right: 5vw;
+    height: 50vw;
+}
+#portfolioDetail .detail-steps .imag div {
+    height: 40vw;
+    width: calc(100% + 2.5vw);
+}
+#portfolioDetail .detail-steps .imag p {
+    font-size: 2vw;
+}
+#portfolioDetail .detail-steps .text {
+    margin: 0;
+    margin-top: 2.5vw;
+    font-size: 2vw;
+    line-height: 1.5;
+    top: unset;
+}
+#portfolioDetail .detail-steps .text p {
+    max-height: unset;
+}
+
+/* design */
+#portfolioDetail .detail-design h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-design .list .num {
+    font-size: 4vw;
+}
+#portfolioDetail .detail-design .list .txt {
+    font-size: 2vw;
+    line-height: 1.5;
+}
+#portfolioDetail .detail-design .list {
+    grid-template-columns: 5vw auto;
+}
+
+/* technical */
+#portfolioDetail .detail-tech {
+    padding: 0;
+}
+#portfolioDetail .detail-tech .tech-container {
+    border: none;
+    max-height: unset;
+}
+#portfolioDetail .detail-tech .tech-container h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+    color: $black;
+}
+#portfolioDetail .detail-tech .tech-container .text {
+    font-size: 2vw;
+    line-height: 1.5;
+    width: 100%;
+}
+#portfolioDetail .detail-tech .tech-container .text p {
+    max-height: unset;
+}
+#portfolioDetail .detail-tech .tech-container .imag {
+    height: 32vw;
+    right: 0;
+    max-height: unset;
+    width: 90%;
+    margin: 2.5vw 0 2.5vw 10%;
+}
+#portfolioDetail .detail-tech .tech-container .info {
+    width: 60%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    top: unset;
+    right: unset;
+    margin-left: calc(40% - 3vw);
+}
+#portfolioDetail .detail-tech .tech-container .info p {
+    max-height: unset;
+}
+
+/* Results */
+#portfolioDetail .detail-result h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-result .imag {
+    height: 25vw;
+    background: #ddd;
+    width: 80%;
+    margin: 0 auto;
+}
+#portfolioDetail .detail-result .text {
+    font-size: 2vw;
+    line-height: 1.5;
+}
+#portfolioDetail .detail-result .text span {
+    font-size: 25vw;
+    width: 13%;
+    height: 15vw;
+    line-height: 0.6;
+    top: 9vw;
+}
+#portfolioDetail .detail-result .text p {
+    width: 86%;
+    max-height: unset;
+}
+#portfolioDetail .detail-result .text a.result-link {
+    font-size: 2vw;
+    padding: 2vw;
+    width: 40%;
+    display: block;
+    margin: 5vw auto 0;
+    text-align: center; 
+}
+/* footer */
+#portfolioDetail .detail-footer div:nth-child(1) h3 {
+    letter-spacing: 0;
+    font-size: 2.5vw;
+}
+#portfolioDetail .detail-footer div:nth-child(1) p {
+    font-size: 2vw;
+    line-height: 1;
+}
+#portfolioDetail .detail-footer div:nth-child(3) {
+    padding: 2vw;
+    font-size: 2.5vw;
+}
+
+/*
+*********************
+Team Page
+*********************
+*/
+#team {
+    margin: 0 $frameborder;
+    padding: $frameborder 0;
+    height: calc(100vh - 40px);
+}

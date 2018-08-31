@@ -1,9 +1,17 @@
 ---
 layout: base
 title: "Home Page"
-fulltitle: "My New Website | Update Coming August 2004" 
+fulltitle: "My New Website | Update Coming August 2019"
 excerpt: This is the greatest website on earth. Share! Like! Subscribe! I'm dead inside!
+lang: en
 ---
 
 <!-- fulltitle: This overrides the default page title, which is "{{page.tite}} | {{site.title}}" -->
 <!-- excerpt: If this isn't set, it'll pull your {{site.tagline}} for meta description-->
+
+{% assign sections = site.sections | where:"lang", "en" | sort: 'order' %}
+{% for section in sections %}
+  {% if section.include != null %}
+    {% include {{ section.include }} %}
+  {% endif %}
+{% endfor %}

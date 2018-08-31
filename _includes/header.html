@@ -1,6 +1,8 @@
 <nav>
     <div class="nav-logo">
-        <img src="/img/logo-turpial.png" alt="Turpial Development Logo">
+        <a href="#home">
+            <img src="/img/logo-turpial.png" alt="Turpial Development Logo">
+        </a>
     </div>
 
     <div id="h-menu">
@@ -12,17 +14,41 @@
 
     <div class="nav-items">
         <span id="menuItems" class="hideMenu">
-            <ul>
+            <ul class="large-menu">
+                {% for link in site.navigation %} {% if link.section != 'Home' %} {% if link.subsection %}
                 <li>
-                    <a href="#home">Home</a>
+                    <span>{{ link.section }}</span>&#9662;
+                    <ul class="subsection">
+                        {% for sublink in link.subsection %}
+                        <li>
+                            <a onclick="closeMenu()" href="{{ sublink.url }}" alt="{{ sublink.section }}">{{ sublink.section }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
                 </li>
+                {% else %}
                 <li>
-                    <a href="#aboutus">Blog</a>
+                    <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact us</a>
-                </li>
+                {% endif %} {% endif %} {% endfor %}
             </ul>
+            <div class="small-menu">
+                <ul>
+                    <li class="turpial">
+                        <a onclick="closeMenu()" href="#home">turpial
+                        </a>
+                    </li>
+                    {% for link in site.navigation %} {% if link.section != 'Home' %}
+                    <li>
+                        <a onclick="closeMenu()"  href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
+                    </li>
+                    {% endif %} {% endfor %}
+                </ul>
+                <div id="s-menu" onclick="closeMenu()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
         </span>
     </div>
 </nav>

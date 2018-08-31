@@ -23,3 +23,42 @@ sass:
   style: compressed
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
+navigation:
+  - section: Home
+    url: '/index/#home'
+
+  - section: Blog
+    url: '/blog/'
+
+  - section: Services
+    url: '/index/#web'
+    subsection:
+
+      - section: Web
+        url: '/index/#web'
+
+      - section: Mobile
+        url: '/index/#mobile'
+
+      - section: Design
+        url: '/index/#design'
+
+  - section: Portfolio
+    url: '/index/#portfolio'
+
+  - section: About Us
+    url: '/index/#aboutus'
+
+  - section: Advantages
+    url: '/index/#advantage'
+
+  - section: Contact
+    url: '/index/#contact'
+
+
+collections:
+  portfolio:
+    output: true
+  sections:
+    output: false
