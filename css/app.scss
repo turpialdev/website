@@ -243,18 +243,14 @@ Nav-bar
         margin: 18px 52px;
         width: 100%;
         padding: 0;
-    
+        
         li {
             position: relative;
             a, span {
                 cursor: pointer;
                 padding: 0 6px;
-                color: $black;
-                font-size: 1.4vw;
-                transition: .3s;
-                &:hover {
-                    color: #777;
-                }
+                color: #333;
+                font-size: 1.2vw;
             }
         }
 
@@ -273,7 +269,7 @@ Nav-bar
                 padding: .5vw;
                 line-height: 2vw;
                 a {
-                    font-size: 1.2vw;
+                    font-size: 1.1vw;
                     padding: 0;
                 }
             }
@@ -387,7 +383,6 @@ Turpial Logo
             height: auto;
             padding: 7.7px 0;
             float: right;
-            transition: 2s;
     }
     a:hover > img {
         filter: grayscale(0%);
@@ -419,7 +414,8 @@ Home Page
     grid-template-rows: auto 9vw auto;
     grid-gap: 2.5vw;
     padding: $frameborder;
-    padding-bottom: 5vw; 
+    padding-bottom: 5vw;
+    margin-top: $frameborder;
     
     height: calc(100vh - 190px);
     background: #686868;
@@ -924,7 +920,7 @@ Advantages
 */
 
 #advantage {
-    height: calc(100vh + 100px);
+    height: calc(100vh - 60px);
     color: #fff;
 
     .v-card {
@@ -958,7 +954,7 @@ Advantages
             transition-delay: 0.1s;
             transition: 0.4s;
             position: absolute;
-            bottom: 52px;
+            bottom: 100px;
             left: 50%;
             transform: translateX(-50%);
             opacity: 1;
