@@ -26,35 +26,35 @@ exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
 navigation:
   - section: Home
-    url: '#home'
+    url: '/index/#home'
 
   - section: Blog
     url: '/blog/'
 
   - section: Services
-    url: '#web'
+    url: '/index/#web'
     subsection:
 
       - section: Web
-        url: '#web'
+        url: '/index/#web'
 
       - section: Mobile
-        url: '#mobile'
+        url: '/index/#mobile'
 
       - section: Design
-        url: '#design'
+        url: '/index/#design'
 
   - section: Portfolio
-    url: '#portfolio'
+    url: '/index/#portfolio'
 
   - section: About Us
-    url: '#aboutus'
+    url: '/index/#aboutus'
 
   - section: Advantages
-    url: '#advantage'
+    url: '/index/#advantage'
 
   - section: Contact
-    url: '#contact'
+    url: '/index/#contact'
 
 
 collections:

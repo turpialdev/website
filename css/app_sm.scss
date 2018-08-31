@@ -19,8 +19,14 @@ $softgray: #f2f2f2;
 Frame & container / layout
 *********************
 */
-.main-head, .content, .main-footer {
+.content {
     margin: 0 $frameborder;
+}
+.main-head, .main-footer {
+    padding: 0 $frameborder;
+}
+.main-head {
+    width: calc(100% - 26px);
 }
 .main-footer {
     height: $frameborder;
@@ -336,6 +342,11 @@ Contact Page
     width: 100%;
     padding: 4vw 0;
 }
+#contact .contact-form label,
+#contact .contact-form input,
+#contact .contact-form textarea {
+    font-size: 3vw;
+}
 
 #contact .contact-offices {
     border-left: none;
@@ -632,4 +643,15 @@ Portfolio detail Page
 #portfolioDetail .detail-footer div:nth-child(3) {
     padding: 2vw;
     font-size: 2.5vw;
+}
+
+/*
+*********************
+Team Page
+*********************
+*/
+#team {
+    margin: 0 $frameborder;
+    padding: $frameborder 0;
+    height: calc(100vh - 40px);
 }

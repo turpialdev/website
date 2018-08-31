@@ -75,7 +75,7 @@ Responsive size
 
 $frameborder: 52px;
 
-$break_sm: 768px;
+$break_sm: 767px;
 $break_md: 1025px;
 $break_lg: 1366px;
 $break_xl: 1920px;
@@ -163,17 +163,19 @@ Frame & container
 *********************
 */
 
-.main-head, .content, .main-footer {
+.content {
     margin: 0 $frameborder;
 }
 
 .main-head, .main-footer {
+    padding: 0 $frameborder;
     height: $frameborder;
 }
 
 .main-head {
     grid-area: header;
-    position: sticky;
+    position: fixed;
+    width: calc(100% - 104px);
     top: 0;
     background-color: white;
     z-index: 500;
@@ -187,7 +189,8 @@ Frame & container
 
 .main-footer {
     grid-area: footer;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     background-color: white;
     transition: $transition;
@@ -572,10 +575,14 @@ Web, Mobile and design Pages
     }
     
     .img.web {
-        background-image: url('/img/Sm/web-sm-@1x-center-center.jpg');
+        background-image: url('/img/Sm/web-sm-center-center.jpg');
+    }
+    .img.mobile {
+        background-image: url('/img/Sm/mobile-sm-center-center.jpg');
     }
     .img.design {
-        background-image: url('/img/Sm/diseño-sm-@1x-bottom-right.jpg');
+        background-position: bottom right;
+        background-image: url('/img/Sm/diseño-sm-bottom-right.jpg');
     }
 
     @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
@@ -583,6 +590,7 @@ Web, Mobile and design Pages
             background-image: url('/img/Md/web-md-@1x-center-center.jpg');
         }
         .img.design {
+            background-position: center right;
             background-image: url('/img/Md/diseño-md-@1x-bottom-right.jpg');
         }
     }
@@ -1931,6 +1939,25 @@ Opportunities Page
         font-size: 1.5vw;
         cursor: pointer;
     }
+}
+
+/*
+*********************
+Team Page
+*********************
+*/
+#team {
+    display: grid;
+    grid-template-columns: repeat(3, 9vw) 25vw auto;
+    grid-template-rows: auto 9vw auto;
+    grid-gap: 2.5vw;
+
+    margin: 0 $frameborder;
+    padding: $frameborder 0;
+    
+    width: 200vw;
+    height: calc(100vh - 118px);
+    background: #fff;
 }
 
 

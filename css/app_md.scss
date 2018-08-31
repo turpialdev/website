@@ -6,7 +6,7 @@
 Global variables
 *********************
 */
-$frameborder: 55px;
+$frameborder: 52px;
 $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
@@ -19,8 +19,14 @@ $softgray: #f2f2f2;
 Frame & container / layout
 *********************
 */
-.main-head, .content, .main-footer {
+.content {
     margin: 0 $frameborder;
+}
+.main-head {
+    width: calc(100% - 104px);
+}
+.main-head, .main-footer {
+    padding: 0 $frameborder;
 }
 .main-footer {
     height: $frameborder;
@@ -308,7 +314,7 @@ Contact Page
     padding: 2vw 0;
 }
 #contact .contact-offices .phones-email {
-    top: -20vw;
+    top: -18vw;
     bottom: unset;
     left: 0;
     right: unset;
@@ -324,6 +330,11 @@ Contact Page
 #contact .contact-offices .phones-email {
     font-size: 1.6vw;
     line-height: 1.2;
+}
+#contact .contact-form label,
+#contact .contact-form input,
+#contact .contact-form textarea {
+    font-size: 1.6vw;
 }
 #contact .contact-offices hr {
     position: absolute;
