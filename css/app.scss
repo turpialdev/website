@@ -1994,6 +1994,12 @@ Globals
     transform: translateY(-50%);
 }
 
+.imag-box{
+    img{
+        max-width: 100%;
+    }
+}
+
 /*
 *********************
 Icons

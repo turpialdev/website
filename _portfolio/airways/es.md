@@ -22,10 +22,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
-        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
-        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
-        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm.png
+        image_md: /img/portfolio/airways/portafolio-airways-md.png
+        image_lg: /img/portfolio/airways/portafolio-airways-lg.png
+        image_xl: /img/portfolio/airways/portafolio-airways-xl.png
     first_steps:
         title: Primeros Pasos
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
-        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
-        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
-        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm.png
+        image_md: /img/portfolio/airways/portafolio-airways-md.png
+        image_lg: /img/portfolio/airways/portafolio-airways-lg.png
+        image_xl: /img/portfolio/airways/portafolio-airways-xl.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,18 +55,18 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
-        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
-        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
-        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm.png
+        image_md: /img/portfolio/airways/portafolio-airways-md.png
+        image_lg: /img/portfolio/airways/portafolio-airways-lg.png
+        image_xl: /img/portfolio/airways/portafolio-airways-xl.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widulegal, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
-        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
-        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
-        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm.png
+        image_md: /img/portfolio/airways/portafolio-airways-md.png
+        image_lg: /img/portfolio/airways/portafolio-airways-lg.png
+        image_xl: /img/portfolio/airways/portafolio-airways-xl.png
 ---
 

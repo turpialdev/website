@@ -1,42 +1,42 @@
 ---
-title: "Widu"
-lang: en
+title: "Tintaleo espanol"
+lang: es
 date: 2017-05-09
 layout: project
-permalink: /widulegal/
-description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
+permalink: /tintaleo/es/
+description:  Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto...
 
 # Footer
-call_to_action_title: You already know how we work
-cal_to_action_subtitle: Start working with us
+call_to_action_title: Ya sabes como trabajamos
+cal_to_action_subtitle: Comienza a trabajar con nosotros
 
 email: hola@turpialdev.com
-email_subject: Hello%20Turpial%20Dev
+email_subject: Hola%20Turpial%20Dev
 phone_number_label: +58 (212) 754 1143
 phone_number: +582127541143
 
 sections:
     detail:
-        image_pointer_1: Hello
-        image_pointer_2: An other hello here
-        synthesis_title: Here's a cool title
-        synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
-        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
-    first_steps:
-        title: First steps
-        image: /img/portfolio/airways.png
-        image_pointer: Hello
+        image_pointer_1: Hola
+        image_pointer_2: Aqui otro hola
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
+        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
+        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
+        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
+    first_steps:
+        title: Primeros Pasos
+        image: /img/portfolio/airways.png
+        image_pointer: Hola
+        synthesis_title: Aqui un titulo cool
+        synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
+        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
+        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
+        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
+        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,17 +55,18 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
+        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
+        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
+        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        external_button_label: Widu, CCO.
+        external_button_label: Widulegal, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
+        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
+        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
+        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
 ---
+

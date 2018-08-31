@@ -18,10 +18,10 @@
             <div class="line"></div>
             <a href="{{ project.permalink }}">
                 <picture class="imag-box">
-                    <source media="(max-width: 768px)" srcset="{{ project.sections.detail.image_sm }}">
-                    <source media="(max-width: 1024px)" srcset="{{ project.sections.detail.image_md }}">
-                    <source media="(max-width: 1366px)" srcset="{{ project.sections.detail.image_lg }}">
-                    <source media="(max-width: 1920px)" srcset="{{ project.sections.detail.image_xl }}">
+                    <source media="(min-width: 1367px)" srcset="{{ project.sections.detail.image_xl }}">
+                    <source media="(min-width: 1025px)" srcset="{{ project.sections.detail.image_lg }}">
+                    <source media="(min-width: 769px)" srcset="{{ project.sections.detail.image_md }}">
+                    <source media="" srcset="{{ project.sections.detail.image_sm }}">
                     <img src="{{ project.sections.detail.image_sm }}" alt="{{ project.title }}">
                 </picture>
                 <div class="titl-box">
