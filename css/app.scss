@@ -1955,8 +1955,8 @@ Team Page
     
     #principal {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 22vw);
-        grid-template-rows: repeat(2, 18vw);
+        grid-template-columns: repeat(auto-fill, 20vw);
+        grid-template-rows: repeat(2, 42vh);
         grid-auto-flow: column;
         grid-gap: 2.5vw;
         position: relative;
@@ -1973,14 +1973,15 @@ Team Page
 
         .info-black, .info-white {
             a.call-to-action {
-                font-size: 1.2vw;
-                width: 12vw;
+                font-size: 1vw;
+                display: inline-block;
+                padding: .8vw 2vw;
             }
             p {
                 font-size: 1.2vw;
-                line-height: 1.5;
+                line-height: 1.2;
                 margin-bottom: 2.5vw;
-                max-height: 13.5vw;
+                max-height: 7.2vw;
                 overflow: hidden;
             }
         }
@@ -2002,10 +2003,10 @@ Team Page
                 top: 50%;
                 transform: translateY(-50%);
                 h1 {
-                    font-size: 8vw;
+                    font-size: 6vw;
                 }
                 p {
-                    font-size: 2.5vw;
+                    font-size: 2vw;
                 }
             }
         }
