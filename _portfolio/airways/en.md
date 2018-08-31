@@ -1,9 +1,9 @@
 ---
-title: "Widu"
+title: "AirWays"
 lang: en
 date: 2017-05-09
 layout: project
-permalink: /widulegal/
+permalink: /airways/
 description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
 
 # Footer
@@ -22,10 +22,10 @@ sections:
         synthesis_title: Here's a cool title
         synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.jpg
-        image_md: /img/portfolio/widu/portafolio-widu-md.jpg
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.jpg
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
+        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
+        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
+        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.jpg
-        image_md: /img/portfolio/widu/portafolio-widu-md.jpg
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.jpg
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
+        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
+        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
+        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,17 +55,17 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.jpg
-        image_md: /img/portfolio/widu/portafolio-widu-md.jpg
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.jpg
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
+        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
+        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
+        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widu, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.jpg
-        image_md: /img/portfolio/widu/portafolio-widu-md.jpg
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.jpg
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.jpg
+        image_sm: /img/portfolio/airways/portafolio-airways-sm-@1x.jpg
+        image_md: /img/portfolio/airways/portafolio-airways-md-@1x.jpg
+        image_lg: /img/portfolio/airways/portafolio-airways-lg-@2x.jpg
+        image_xl: /img/portfolio/airways/portafolio-airways-xl-@1x.jpg
 ---

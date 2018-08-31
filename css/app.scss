@@ -570,6 +570,8 @@ Web, Mobile and design Pages
         grid-column: 2;
         grid-row: 1 / 3;
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     
     .img.web {
@@ -587,9 +589,6 @@ Web, Mobile and design Pages
         .img.web {
             background-image: url('/img/Md/web-md-@1x-center-center.jpg');
         }
-        .img.mobile {
-            background-image: url('/img/Md/mobile-md-@1xcenter-center.jpg');
-        }
         .img.design {
             background-position: center right;
             background-image: url('/img/Md/diseño-md-@1x-bottom-right.jpg');
@@ -598,9 +597,6 @@ Web, Mobile and design Pages
 
     @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
         .img.web {
-            background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
-        }
-        .img.mobile {
             background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
         }
         .img.design {
@@ -612,14 +608,10 @@ Web, Mobile and design Pages
         .img.web {
             background-image: url('/img/Xl/web-xl-@1x-center-center.jpg');
         }
-        .img.mobile {
-            background-image: url('/img/Xl/mobile-xl-@1x-center-center.jpg');
-        }
         .img.design {
             background-image: url('/img/Xl/diseño-xl-@1x-bottom-right.jpg');
         }
     }
-
 
     .tit {
         grid-column: 1;
@@ -1462,7 +1454,9 @@ Portfolio detail
         }
 
         .imag {
-            background: $yellowHover;
+            background-color: $yellowHover;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 20vw;
             margin-left: 5vw;
             box-shadow: 1px 1px 3px rgba(0,0,0,.3);
@@ -1551,7 +1545,7 @@ Portfolio detail
         }
 
         .imag {
-            background: $yellow;
+            background-color: $yellow;
             margin-left: 5vw;
             div {
                 position: relative;
@@ -1560,6 +1554,8 @@ Portfolio detail
                 top: 3vw;
                 left: 3vw;
                 background-color: $yellowHover;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             p {
                 position: relative;
@@ -1697,6 +1693,8 @@ Portfolio detail
 
                 max-height: 20.5vw;
                 background-color: $yellowHover;
+                background-repeat: no-repeat;
+                background-size: cover;
                 box-shadow: -1px 1px 3px rgba(0,0,0,.3);
             }
             .box {
@@ -1754,7 +1752,10 @@ Portfolio detail
             text-align: center;
         }
         .imag {
-
+            height: 30vw;
+            background-color: $yellowHover;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .text {
             font-size: 1.1vw;
