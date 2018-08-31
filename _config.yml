@@ -62,3 +62,5 @@ collections:
     output: true
   sections:
     output: false
+  team:
+    output: false

@@ -17,7 +17,7 @@
             <ul class="large-menu">
                 {% for link in site.navigation %} {% if link.section != 'Home' %} {% if link.subsection %}
                 <li>
-                    <span>{{ link.section }}</span>&#9662;
+                    <span>{{ link.section }} &nbsp; &#9662;</span>
                     <ul class="subsection">
                         {% for sublink in link.subsection %}
                         <li>
