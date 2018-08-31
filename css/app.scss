@@ -1945,18 +1945,102 @@ Opportunities Page
 Team Page
 *********************
 */
-#team {
-    display: grid;
-    grid-template-columns: repeat(3, 9vw) 25vw auto;
-    grid-template-rows: auto 9vw auto;
-    grid-gap: 2.5vw;
-
+.team {
     margin: 0 $frameborder;
     padding: $frameborder 0;
-    
-    width: 200vw;
     height: calc(100vh - 118px);
     background: #fff;
+
+    
+    #principal {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 22vw);
+        grid-template-rows: repeat(2, 18vw);
+        grid-auto-flow: column;
+        grid-gap: 2.5vw;
+        position: relative;
+
+        height: 100%;
+        width: 200vw;
+
+        .title,
+        .section,
+        .info-black,
+        .info-white {
+            padding: 2.5vw;
+        }
+
+        .info-black, .info-white {
+            a.call-to-action {
+                font-size: 1.2vw;
+                width: 12vw;
+            }
+            p {
+                font-size: 1.2vw;
+                line-height: 1.5;
+                margin-bottom: 2.5vw;
+                max-height: 13.5vw;
+                overflow: hidden;
+            }
+        }
+
+        .col-2 {
+            grid-column: span 2;
+        }
+        .row-2 {
+            grid-row: 1 / 3;
+        }
+
+
+        .title {
+            background-color: $yellow;
+            text-transform: uppercase;
+            padding: 2.5vw;
+            div {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                h1 {
+                    font-size: 8vw;
+                }
+                p {
+                    font-size: 2.5vw;
+                }
+            }
+        }
+
+        .section {
+            background-color: #fff;
+        }
+
+        .info-black {
+            color: #fff;
+            background-color: $black;
+        }
+
+        .info-white {
+            background-color: #fff;
+        }
+
+        .people {
+            position: relative;
+            overflow: hidden;
+            background-color: #eee;
+            img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 100%;
+            }
+        }
+        .people.row-2 {
+            img {
+                max-height: 100%;
+                max-width: unset;
+            }
+        }
+    }
 }
 
 
