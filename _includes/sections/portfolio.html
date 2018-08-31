@@ -18,9 +18,11 @@
             <div class="line"></div>
             <a href="{{ project.permalink }}">
                 <picture class="imag-box">
-                    {% for img in project.cover-img-source %}
-                    <source media="(min-width: {{ img.size }})" srcset="{{ img.src }}"> {% endfor %}
-                    <img src="{{ project.cover-img }}" alt="{{ project.title }}">
+                    <source media="(min-width: 768)" srcset="{{ project.sections.detail.image_sm }}">
+                    <source media="(min-width: 1024)" srcset="{{ project.sections.detail.image_md }}">
+                    <source media="(min-width: 1366)" srcset="{{ project.sections.detail.image_lg }}">
+                    <source media="(min-width: 1920)" srcset="{{ project.sections.detail.image_xl }}">
+                    <img src="{{ project.sections.detail.image_sm }}" alt="{{ project.title }}">
                 </picture>
                 <div class="titl-box">
                     <h2>{{ project.title }}</h2>

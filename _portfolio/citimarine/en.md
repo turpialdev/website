@@ -5,16 +5,6 @@ date: 2017-05-09
 layout: project
 permalink: /citimarine/
 description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
-cover-img: "/img/portfolio/airways.png"
-cover-img-source:
-    - size: "768px"
-      src: "/img/portfolio/airways.png"
-    - size: "1024px"
-      src: "/img/portfolio/iucn.png"
-    - size: "1366px"
-      src: "/img/portfolio/tidbit.png"
-    - size: "1920px"
-      src: "/img/portfolio/tintaleo.png"
 
 # Footer
 call_to_action_title: You already know how we work
@@ -27,15 +17,15 @@ phone_number: +582127541143
 
 sections:
     detail:
-        image_sm: /img/portfolio/portafolio-citimarine-sm-@1x.png
-        image_md: /img/portfolio/
-        image_lg:
-        image_xl:
         image_pointer_1: Hola
         image_pointer_2: Aqui otro hola
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        image_sm: /img/portfolio/citimarine/portafolio-citimarine-sm-@1x.png
+        image_md: /img/portfolio/citimarine/portafolio-citimarine-md-@1x.png
+        image_lg: /img/portfolio/citimarine/portafolio-citimarine-lg-@2x.png
+        image_xl: /img/portfolio/citimarine/portafolio-citimarine-xl-@1x.png
     first_steps:
         title: Primeros Pasos
         image: /img/portfolio/airways.png
@@ -43,6 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        image_sm: /img/portfolio/citimarine/portafolio-citimarine-sm-@1x.png
+        image_md: /img/portfolio/citimarine/portafolio-citimarine-md-@1x.png
+        image_lg: /img/portfolio/citimarine/portafolio-citimarine-lg-@2x.png
+        image_xl: /img/portfolio/citimarine/portafolio-citimarine-xl-@1x.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -61,10 +55,18 @@ sections:
             - name: C#
             # ----------- limit 3 -------------
             - name: Sketch
+        image_sm: /img/portfolio/citimarine/portafolio-citimarine-sm-@1x.png
+        image_md: /img/portfolio/citimarine/portafolio-citimarine-md-@1x.png
+        image_lg: /img/portfolio/citimarine/portafolio-citimarine-lg-@2x.png
+        image_xl: /img/portfolio/citimarine/portafolio-citimarine-xl-@1x.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Citimarine, CCO.
         external_button_link: https://google.com
+        image_sm: /img/portfolio/citimarine/portafolio-citimarine-sm-@1x.png
+        image_md: /img/portfolio/citimarine/portafolio-citimarine-md-@1x.png
+        image_lg: /img/portfolio/citimarine/portafolio-citimarine-lg-@2x.png
+        image_xl: /img/portfolio/citimarine/portafolio-citimarine-xl-@1x.png
 ---
 
