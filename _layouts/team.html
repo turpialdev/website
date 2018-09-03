@@ -44,7 +44,6 @@
 
         <div class="content">
             <div id="team">
-
                 <section id="grid">
                     {% for element in page.elements %}
 
@@ -105,23 +104,19 @@
 
 <script>
     $(function() {
-        var elmnt = document.getElementById("grid");
-        console.log(elmnt);
-        console.log(elmnt.scrollLeft);
-        elmnt.scrollLeft = 800;
-        console.log(elmnt.scrollLeft);
 
         const doScroll = function (e) {
             // cross-browser wheel delta
             e = window.event || e;
             const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            var team = $("#team");
 
-            // Do something with `delta`
-            console.log(delta);
-            console.log($(".team").scrollLeft());
-            $(".team").scrollLeft(1500);
-            console.log($(".team").scrollLeft());
-//            $(".team").scrollLeft(delta * 30);
+            team.animate({
+                scrollLeft: team.scrollLeft() - delta * 30
+            }, 7, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+            });
 
 
             e.preventDefault();
@@ -136,13 +131,18 @@
 
         $(document).keyup(function (e) {
             var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+            var container = $("#team");
+            var delta = 0;
+
             if ( key == 38 ) {  /* up */
-                console.log(key, " wah");
-//                $(".team").scrollLeft( -30 );
+                delta = -30;
             }else if( key == 40 ){  /* down */
-                console.log(key, " wow");
-//                $(".team").scrollLeft( 30 );
+                delta = 30;
             }
+
+            container.animate({
+                scrollLeft: container.scrollLeft() + delta
+            }, 7);
             e.preventDefault();
             return false;
         });
