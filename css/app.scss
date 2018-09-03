@@ -1963,13 +1963,9 @@ Team Page
 *********************
 */
 #team {
+    height: calc(100vh - 104px);
     margin: $frameborder;
     background: #fff;
-
-    height: calc(100vh - 104px);
-    width: calc(100vw - 104px);
-
-    overflow: auto;
     
     #grid {
         display: grid;

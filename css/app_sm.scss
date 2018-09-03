@@ -655,8 +655,6 @@ Team Page
 */
 #team {
     margin: 52px $frameborder $frameborder;
-    width: calc(100vw - 26px);
-    height: calc(100vh - 65px);
 }
 #team #grid {
     grid-template-columns: repeat(auto-fill, 20vw);

@@ -9,6 +9,13 @@
 {% include head.html %}
 
 <style>
+
+    #body {
+        width: calc(100vw - 26px);
+        height: calc(100vh - 65px);
+        overflow: auto;
+    }
+
     .main-head,
     .content,
     .main-footer {
@@ -19,24 +26,36 @@
         margin: 0;
     }
 
-    #grid {
+    #scroll {
         width: calc((36vw * {{ page.gridSize }}) + 26px);
     }
+
     @media only screen and (min-width: 767px) and (max-width: 1025px) {
-        #grid {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
             width: calc((26vw * {{ page.gridSize }}) + 52px);
         }
     }
+
     @media only screen and (min-width:1025px) {
-        #grid {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
             width: calc((16vw * {{ page.gridSize }}) + 52px);
         }
     }
 </style>
 
-<body>
+<body id="body">
 
-    <div class="wrapper">
+    <div class="wrapper" id="scroll">
 
         <header class="main-head">
             {% include header.html %}
@@ -109,7 +128,7 @@
             // cross-browser wheel delta
             e = window.event || e;
             const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            var team = $("#team");
+            var team = $("#body");
 
             team.animate({
                 scrollLeft: team.scrollLeft() - delta * 30
@@ -131,7 +150,7 @@
 
         $(document).keyup(function (e) {
             var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
-            var container = $("#team");
+            var container = $("#body");
             var delta = 0;
 
             if ( key == 38 ) {  /* up */
