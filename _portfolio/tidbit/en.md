@@ -22,10 +22,10 @@ sections:
         synthesis_title: Here's a cool title
         synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/tidbit/portafolio-tidbit-sm.png
-        image_md: /img/portfolio/tidbit/portafolio-tidbit-md.png
-        image_lg: /img/portfolio/tidbit/portafolio-tidbit-lg.png
-        image_xl: /img/portfolio/tidbit/portafolio-tidbit-xl.png
+        image_sm: /img/portfolio/tidbit/detail/sm.png
+        image_md: /img/portfolio/tidbit/detail/md.png
+        image_lg: /img/portfolio/tidbit/detail/lg.png
+        image_xl: /img/portfolio/tidbit/detail/xl.png
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/tidbit/portafolio-tidbit-sm.png
-        image_md: /img/portfolio/tidbit/portafolio-tidbit-md.png
-        image_lg: /img/portfolio/tidbit/portafolio-tidbit-lg.png
-        image_xl: /img/portfolio/tidbit/portafolio-tidbit-xl.png
+        image_sm: /img/portfolio/tidbit/first_steps/sm.png
+        image_md: /img/portfolio/tidbit/first_steps/md.png
+        image_lg: /img/portfolio/tidbit/first_steps/lg.png
+        image_xl: /img/portfolio/tidbit/first_steps/xl.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,19 +55,19 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/tidbit/portafolio-tidbit-sm.png
-        image_md: /img/portfolio/tidbit/portafolio-tidbit-md.png
-        image_lg: /img/portfolio/tidbit/portafolio-tidbit-lg.png
-        image_xl: /img/portfolio/tidbit/portafolio-tidbit-xl.png
+        image_sm: /img/portfolio/tidbit/technologies/sm.png
+        image_md: /img/portfolio/tidbit/technologies/md.png
+        image_lg: /img/portfolio/tidbit/technologies/lg.png
+        image_xl: /img/portfolio/tidbit/technologies/xl.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widu, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/tidbit/portafolio-tidbit-sm.png
-        image_md: /img/portfolio/tidbit/portafolio-tidbit-md.png
-        image_lg: /img/portfolio/tidbit/portafolio-tidbit-lg.png
-        image_xl: /img/portfolio/tidbit/portafolio-tidbit-xl.png
+        image_sm: /img/portfolio/tidbit/results/sm.png
+        image_md: /img/portfolio/tidbit/results/md.png
+        image_lg: /img/portfolio/tidbit/results/lg.png
+        image_xl: /img/portfolio/tidbit/results/xl.png
 ---
 
 # subtitulo

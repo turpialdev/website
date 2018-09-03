@@ -22,10 +22,10 @@ sections:
         synthesis_title: Here's a cool title
         synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
-        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
-        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
-        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
+        image_sm: /img/portfolio/tintaleo/detail/sm.png
+        image_md: /img/portfolio/tintaleo/detail/md.png
+        image_lg: /img/portfolio/tintaleo/detail/lg.png
+        image_xl: /img/portfolio/tintaleo/detail/xl.png
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
-        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
-        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
-        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
+        image_sm: /img/portfolio/tintaleo/first_steps/sm.png
+        image_md: /img/portfolio/tintaleo/first_steps/md.png
+        image_lg: /img/portfolio/tintaleo/first_steps/lg.png
+        image_xl: /img/portfolio/tintaleo/first_steps/xl.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,17 +55,17 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
-        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
-        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
-        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
+        image_sm: /img/portfolio/tintaleo/technologies/sm.png
+        image_md: /img/portfolio/tintaleo/technologies/md.png
+        image_lg: /img/portfolio/tintaleo/technologies/lg.png
+        image_xl: /img/portfolio/tintaleo/technologies/xl.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widu, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/tintaleo/portafolio-tintaleo-sm.png
-        image_md: /img/portfolio/tintaleo/portafolio-tintaleo-md.png
-        image_lg: /img/portfolio/tintaleo/portafolio-tintaleo-lg.png
-        image_xl: /img/portfolio/tintaleo/portafolio-tintaleo-xl.png
+        image_sm: /img/portfolio/tintaleo/results/sm.png
+        image_md: /img/portfolio/tintaleo/results/md.png
+        image_lg: /img/portfolio/tintaleo/results/lg.png
+        image_xl: /img/portfolio/tintaleo/results/xl.png
 ---

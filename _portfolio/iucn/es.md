@@ -22,10 +22,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/iucn/portafolio-iucn-sm.png
-        image_md: /img/portfolio/iucn/portafolio-iucn-md.png
-        image_lg: /img/portfolio/iucn/portafolio-iucn-lg.png
-        image_xl: /img/portfolio/iucn/portafolio-iucn-xl.png
+        image_sm: /img/portfolio/iucn/detail/sm.png
+        image_md: /img/portfolio/iucn/detail/md.png
+        image_lg: /img/portfolio/iucn/detail/lg.png
+        image_xl: /img/portfolio/iucn/detail/xl.png
     first_steps:
         title: Primeros Pasos
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/iucn/portafolio-iucn-sm.png
-        image_md: /img/portfolio/iucn/portafolio-iucn-md.png
-        image_lg: /img/portfolio/iucn/portafolio-iucn-lg.png
-        image_xl: /img/portfolio/iucn/portafolio-iucn-xl.png
+        image_sm: /img/portfolio/iucn/first_steps/sm.png
+        image_md: /img/portfolio/iucn/first_steps/md.png
+        image_lg: /img/portfolio/iucn/first_steps/lg.png
+        image_xl: /img/portfolio/iucn/first_steps/xl.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,18 +55,18 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/iucn/portafolio-iucn-sm.png
-        image_md: /img/portfolio/iucn/portafolio-iucn-md.png
-        image_lg: /img/portfolio/iucn/portafolio-iucn-lg.png
-        image_xl: /img/portfolio/iucn/portafolio-iucn-xl.png
+        image_sm: /img/portfolio/iucn/technologies/sm.png
+        image_md: /img/portfolio/iucn/technologies/md.png
+        image_lg: /img/portfolio/iucn/technologies/lg.png
+        image_xl: /img/portfolio/iucn/technologies/xl.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widulegal, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/iucn/portafolio-iucn-sm.png
-        image_md: /img/portfolio/iucn/portafolio-iucn-md.png
-        image_lg: /img/portfolio/iucn/portafolio-iucn-lg.png
-        image_xl: /img/portfolio/iucn/portafolio-iucn-xl.png
+        image_sm: /img/portfolio/iucn/results/sm.png
+        image_md: /img/portfolio/iucn/results/md.png
+        image_lg: /img/portfolio/iucn/results/lg.png
+        image_xl: /img/portfolio/iucn/results/xl.png
 ---
 
