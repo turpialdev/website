@@ -1967,27 +1967,35 @@ Team Page
     padding: $frameborder 0;
     height: calc(100vh - 118px);
     background: #fff;
-
     
-    #principal {
+    #grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 20vw);
-        grid-template-rows: repeat(2, 42vh);
+        grid-template-columns: repeat(auto-fill, 8vw);
         grid-auto-flow: column;
-        grid-gap: 2.5vw;
+        grid-gap: 2vw;
         position: relative;
-
+        overflow: hidden;
+        
         height: 100%;
-        width: 200vw;
+        min-width: 500vw;
 
+        div,
         .title,
-        .section,
         .info-black,
-        .info-white {
-            padding: 2.5vw;
+        .info-white,
+        .info-yellow  {
+            padding: 2vw;
         }
 
-        .info-black, .info-white {
+        .people,
+        .title,
+        .info-black,
+        .info-white,
+        .info-yellow {
+            grid-column: span 2;
+        }
+
+        .info-black, .info-white, .info-yellow {
             a.call-to-action {
                 font-size: 1vw;
                 display: inline-block;
@@ -2000,35 +2008,51 @@ Team Page
                 max-height: 7.2vw;
                 overflow: hidden;
             }
+            h2 {
+                font-size: 1.5vw;
+                text-transform: uppercase;
+            }
         }
 
-        .col-2 {
-            grid-column: span 2;
+        .full-horizontal {
+            grid-column: span 4;
         }
-        .row-2 {
+        .full-vertical {
             grid-row: 1 / 3;
         }
-
 
         .title {
             background-color: $yellow;
             text-transform: uppercase;
-            padding: 2.5vw;
             div {
                 position: relative;
                 top: 50%;
                 transform: translateY(-50%);
                 h1 {
-                    font-size: 6vw;
+                    font-size: 5vw;
                 }
                 p {
-                    font-size: 2vw;
+                    font-size: 1.5vw;
                 }
             }
         }
 
         .section {
+            position: relative;
+            padding: 0;
+            grid-row: 1 / 3;
             background-color: #fff;
+            p {
+                font-size: 4vw;
+                text-transform: uppercase;
+                
+                position: absolute;
+                bottom: 52px;
+                left: 50%;
+                transform: translate(0, 0) rotate(-90deg);
+                transform-origin: bottom;
+                width: 100%;
+            }
         }
 
         .info-black {
@@ -2040,7 +2064,12 @@ Team Page
             background-color: #fff;
         }
 
+        .info-yellow {
+            background-color: $yellow;
+        }
+
         .people {
+            padding: 0;
             position: relative;
             overflow: hidden;
             background-color: #eee;
@@ -2052,7 +2081,8 @@ Team Page
                 max-width: 100%;
             }
         }
-        .people.row-2 {
+        .people.full-vertical {
+            padding: 0;
             img {
                 max-height: 100%;
                 max-width: unset;
