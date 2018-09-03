@@ -1950,7 +1950,7 @@ Team Page
 
     #grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 16vw);
+        grid-template-columns: repeat(auto-fill, 8vw);
         grid-template-rows: repeat(2, 39vh);
         grid-auto-flow: column;
         grid-gap: 2vw;
@@ -1972,7 +1972,7 @@ Team Page
         .info-black,
         .info-white,
         .info-yellow {
-            grid-column: span 1;
+            grid-column: span 2;
         }
 
         .info-black, .info-white, .info-yellow {
@@ -1988,10 +1988,14 @@ Team Page
                 max-height: 7.2vw;
                 overflow: hidden;
             }
+            h2 {
+                font-size: 1.5vw;
+                text-transform: uppercase;
+            }
         }
 
         .full-horizontal {
-            grid-column: span 2;
+            grid-column: span 4;
         }
         .full-vertical {
             grid-row: 1 / 3;
@@ -2025,7 +2029,7 @@ Team Page
                 position: absolute;
                 bottom: 52px;
                 left: calc(40% - 4vw);
-                transform: translate(-50%, 0) rotate(-90deg);
+                transform: translate(-45%, 0) rotate(-90deg);
                 transform-origin: top;
             }
         }

@@ -45,6 +45,9 @@
 
                         {% if element.template != 'title' %}
                         <p>{{ element.text }}</p>
+                            {% if element.title %}
+                            <h2>{{ element.title }}</h2>
+                            {% endif %}
                         {% endif %}
                         
                         {% if element.button %}
