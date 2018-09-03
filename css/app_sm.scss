@@ -34,9 +34,6 @@ Frame & container / layout
 #home, #web, #mobile, #design, #contact {
     padding: $frameborder;
 }
-#team{
-    margin: 0 $frameborder;
-}
 
 /*
 *********************
@@ -656,49 +653,49 @@ Portfolio detail Page
 Team Page
 *********************
 */
-#team{
-    margin: 0 $frameborder;
-    padding: 52px 0 $frameborder;
+#team {
+    margin: 52px $frameborder $frameborder;
+    width: calc(100vw - 26px);
     height: calc(100vh - 65px);
 }
-#team#grid {
+#team #grid {
     grid-template-columns: repeat(auto-fill, 20vw);
 }
-#team#grid .title div h1 {
+#team #grid .title div h1 {
     font-size: 14vw;
 }
-#team#grid .title div p {
+#team #grid .title div p {
     font-size: 3.5vw;
 }
-#team#grid .info-black p,
-#team#grid .info-white p,
-#team#grid .info-yellow p {
+#team #grid .info-black p,
+#team #grid .info-white p,
+#team #grid .info-yellow p {
     font-size: 3.5vw;
     line-height: 1.5;
     max-height: 47vw;
     margin-bottom: 5vw;
 }
-#team#grid .info-black a.call-to-action,
-#team#grid .info-white a.call-to-action,
-#team#grid .info-yellow a.call-to-action {
+#team #grid .info-black a.call-to-action,
+#team #grid .info-white a.call-to-action,
+#team #grid .info-yellow a.call-to-action {
     font-size: 3vw;
     display: inline-block;
     padding: 3vw;
 }
-#team#grid .info-black h2,
-#team#grid .info-white h2,
-#team#grid .info-yellow h2 {
+#team #grid .info-black h2,
+#team #grid .info-white h2,
+#team #grid .info-yellow h2 {
     font-size: 8vw;
     text-transform: uppercase;
 }
-#team#grid div,
-#team#grid .title,
-#team#grid .info-black,
-#team#grid .info-white,
-#team#grid .info-yellow {
+#team #grid div,
+#team #grid .title,
+#team #grid .info-black,
+#team #grid .info-white,
+#team #grid .info-yellow {
     padding: 5vw;
 }
-#team#grid .section p {
+#team #grid .section p {
     position: relative;
     font-size: 10vw;
     bottom: -50%;
