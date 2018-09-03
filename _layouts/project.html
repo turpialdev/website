@@ -122,6 +122,15 @@
             {% endif %}
 
             <!-- PROJECT DETAIL RESULT -->
+            {% if page.content %}
+
+            <div class="detail-additional-info">
+                {{ page.content }}
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL RESULT -->
             {% if page.sections.results %}
 
             {% assign results=page.sections.results %}
