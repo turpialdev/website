@@ -108,10 +108,49 @@
 {% include script.html %}
 
 <script>
-    $("#btn").click(function () {
-        var elmnt = document.getElementById("team");
-        console.log('scroll', elmnt);
+    $(function() {
+        var elmnt = document.getElementById("grid");
+        console.log(elmnt);
+        console.log(elmnt.scrollLeft);
         elmnt.scrollLeft = 800;
+        console.log(elmnt.scrollLeft);
+
+        const doScroll = function (e) {
+            // cross-browser wheel delta
+            e = window.event || e;
+            const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+
+            // Do something with `delta`
+            console.log(delta);
+            console.log($(".team").scrollLeft());
+            $(".team").scrollLeft(1500);
+            console.log($(".team").scrollLeft());
+//            $(".team").scrollLeft(delta * 30);
+
+
+            e.preventDefault();
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener("mousewheel", doScroll, false);
+            window.addEventListener("DOMMouseScroll", doScroll, false);
+        } else {
+            window.attachEvent("onmousewheel", doScroll);
+        }
+
+        $(document).keyup(function (e) {
+            var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+            if ( key == 38 ) {  /* up */
+                console.log(key, " wah");
+//                $(".team").scrollLeft( -30 );
+            }else if( key == 40 ){  /* down */
+                console.log(key, " wow");
+//                $(".team").scrollLeft( 30 );
+            }
+            e.preventDefault();
+            return false;
+        });
+
     });
 </script>
 
