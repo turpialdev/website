@@ -31,7 +31,25 @@
         <div class="content">
             <div class="team">
 
-                <section id="grid" style="width: calc(16vw * ({{ page.gridSize }} / 2) + 52px">
+                <style>
+                    #grid {
+                        width: calc((36vw * {{ page.gridSize }}) + 26px);
+                    }
+
+                    @media only screen and (min-width: 767px) and (max-width: 1025px) {
+                        #grid {
+                            width: calc((26vw * {{ page.gridSize }}) + 52px);
+                        }
+                    }
+
+                    @media only screen and (min-width:1025px) {
+                        #grid {
+                            width: calc((16vw * {{ page.gridSize }}) + 52px);
+                        }
+                    }
+                </style>
+
+                <section id="grid">
                     {% for element in page.elements %}
 
                     <div class="{{ element.template }} {{ element.span }}">
