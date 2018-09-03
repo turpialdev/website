@@ -18,6 +18,20 @@
     .content {
         margin: 0;
     }
+
+    #grid {
+        width: calc((36vw * {{ page.gridSize }}) + 26px);
+    }
+    @media only screen and (min-width: 767px) and (max-width: 1025px) {
+        #grid {
+            width: calc((26vw * {{ page.gridSize }}) + 52px);
+        }
+    }
+    @media only screen and (min-width:1025px) {
+        #grid {
+            width: calc((16vw * {{ page.gridSize }}) + 52px);
+        }
+    }
 </style>
 
 <body>
@@ -29,25 +43,7 @@
         </header>
 
         <div class="content">
-            <div class="team">
-
-                <style>
-                    #grid {
-                        width: calc((36vw * '{{ page.gridSize }}') + 26px);
-                    }
-
-                    @media only screen and (min-width: 767px) and (max-width: 1025px) {
-                        #grid {
-                            width: calc((26vw * '{{ page.gridSize }}') + 52px);
-                        }
-                    }
-
-                    @media only screen and (min-width:1025px) {
-                        #grid {
-                            width: calc((16vw * '{{ page.gridSize }}') + 52px);
-                        }
-                    }
-                </style>
+            <div id="team">
 
                 <section id="grid">
                     {% for element in page.elements %}
@@ -110,13 +106,12 @@
 </body>
 
 {% include script.html %}
-<script>
-    $(document).ready(function () {
-        $('#grid').mousewheel(function (e, delta) {
-            this.scrollLeft -= (delta * 40);
-            e.preventDefault();
-        });
 
+<script>
+    $("#btn").click(function () {
+        var elmnt = document.getElementById("team");
+        console.log('scroll', elmnt);
+        elmnt.scrollLeft = 800;
     });
 </script>
 
