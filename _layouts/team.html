@@ -31,11 +31,10 @@
         <div class="content">
             <div class="team">
 
-
-                <section id="principal">
+                <section id="grid" style="width: calc(16vw * ({{ page.gridSize }} / 2) + 52px">
                     {% for element in page.elements %}
 
-                    <div class="{{ element.template }} {{ element.size }}">
+                    <div class="{{ element.template }} {{ element.span }}">
 
                         {% if element.template == 'title' %}
                         <div>

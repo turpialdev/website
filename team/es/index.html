@@ -13,7 +13,7 @@ class: this defines the template of the element.
 # people
 
 # Available parameters:
-#     size: defines element size
+#     span: defines element size
 #     title: set a title <tag>             (Only available for title template)
 #     text: set a paragraph <tag>          (Only available for title, info-black and info-white templates)
 #     button: set a button content         (Only available for title, info-black and info-white templates)
@@ -23,59 +23,82 @@ class: this defines the template of the element.
 #     hover: set the person's image hover  (Only available for people template)
 
 # sizes: leave in blank for one column and/or one row
-#     col-2: two columns
-#     row-2: two rows
+#     full-horizontal: two columns
+#     full-vertical: two rows
+
+gridSize: 40
 
 elements:
 - template: title
-  size: col-2
+  span: full-horizontal
   title: Turpiales
   text: We  are a team lorem ipsum here
 
 - template: info-black
-  size:
+  span:
   text: Text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
   button: I wanna be part
   url: "/"
 
 - template: people
-  size:
+  span:
   name: Jacobo Martines
   image: "/img/team/Jacobo-M-1"
   hover: "/img/team/Jacobo-Martinez-2"
 
 - template: people
-  size: row-2
+  span: full-vertical
   name: Andres Azpurua
   image: "/img/team/Andres-Azpurua-1-.jpg"
   hover: "/img/team/Andres-Azpurua-2-.jpg"
 
 - template: info-white
-  size: col-2
+  span: full-horizontal
   text: As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
   button: Contact us
   url: "/"
 
 - template: people
-  size:
+  span:
   name: Boris
   image: "/"
   hover: "/"
 
 - template: people
-  size:
+  span:
   name: Leo
   image: "/"
   hover: "/"
 
 - template: people
-  size: row-2
+  span: full-vertical
   name: Fer
   image: "/"
   hover: "/"
 
 # sales
 - template: section
-  size: row-2
   text: sales
+
+- template: info-yellow
+  span:
+  text: As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
+  button:
+  url: "/"
+
+- template: people
+  span:
+  name: Pinky
+  image: "/"
+  hover: "/"
+
+- template: people
+  span: full-vertical
+  name: Edgar Pelayo
+  image: "/"
+  hover: "/"
+
+- template:
+  span:
+  text: As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum
 ---
