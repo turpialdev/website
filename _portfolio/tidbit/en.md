@@ -69,3 +69,38 @@ sections:
         image_lg: /img/portfolio/tidbit/portafolio-tidbit-lg.png
         image_xl: /img/portfolio/tidbit/portafolio-tidbit-xl.png
 ---
+
+# subtitulo
+
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+okmokmokmokm  hdwfu hdf ndliaoi hhfhdsafhsa fhdsfhsa fihdsa fihsafihdsf
+
+## subtitulo
+Here's our logo (hover to see the title text):
+
+Inline-style:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+Reference-style:
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+# subtitulo
+
+ aiudshf;o hsahsadfsaodsa hfhsaf ;oihsa;ofds
+ ksa hfi [hsafiuhsa](http://google.com) h hf;iusa hf;iaus hfhi hdsfpasf
+ k hf; hsa;ifhsafh;isahfhhfihds.
+
+
+ - algo
+ - esto
+ - aquello
+    - aquellito
+
+
