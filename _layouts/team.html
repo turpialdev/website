@@ -33,18 +33,18 @@
 
                 <style>
                     #grid {
-                        width: calc((36vw * {{ page.gridSize }}) + 26px);
+                        width: calc((36vw * '{{ page.gridSize }}') + 26px);
                     }
 
                     @media only screen and (min-width: 767px) and (max-width: 1025px) {
                         #grid {
-                            width: calc((26vw * {{ page.gridSize }}) + 52px);
+                            width: calc((26vw * '{{ page.gridSize }}') + 52px);
                         }
                     }
 
                     @media only screen and (min-width:1025px) {
                         #grid {
-                            width: calc((16vw * {{ page.gridSize }}) + 52px);
+                            width: calc((16vw * '{{ page.gridSize }}') + 52px);
                         }
                     }
                 </style>
@@ -52,24 +52,46 @@
                 <section id="grid">
                     {% for element in page.elements %}
 
-                    <div class="{{ element.template }} {{ element.span }}">
+                        {% if element.template != 'people' %}
+                        <div class="{{ element.template }} {{ element.span }}">
 
-                        {% if element.template == 'title' %}
-                        <div>
-                            <h1>{{ element.title }}</h1>
-                            <p>{{ element.text }}</p>
+                            {% if element.template == 'title' %}
+                            <div>
+                                <h1>{{ element.title }}</h1>
+                                <p>{{ element.text }}</p>
+                            </div>
+                            {% endif %}
+                            
+                            {% if element.template != 'title' %}
+                                <p>{{ element.text }}</p>
+
+                                {% if element.title %}
+                                <h2>{{ element.title }}</h2>
+                                {% endif %}
+                            {% endif %}
+                            
+                            {% if element.button %}
+                            <a class="call-to-action" href="{{ element.url }}">{{ element.button }}</a>
+                            {% endif %}
+                            
+                            {% if !element.image %}
+                            <b>{{ element.name }}</b>
+                            {% endif %} 
+                            
                         </div>
-                        {% endif %} {% if element.template != 'title' %}
-                        <p>{{ element.text }}</p>
-                        {% if element.title %}
-                        <h2>{{ element.title }}</h2>
-                        {% endif %} {% endif %} {% if element.button %}
-                        <a class="call-to-action" href="{{ element.url }}">{{ element.button }}</a>
-                        {% endif %} {% if element.name %}
-                        <b>{{ element.name }}</b>
-                        {% endif %} {% if element.image %}
-                        <img src="{{ element.image }}" alt="{{ element.name }}"> {% endif %}
-                    </div>
+                        {% endif %} 
+
+                        {% if element.template == 'people' %}
+                        <div id="{{ element.name | remove: ' ' }}" class="{{ element.template }} {{ element.span }}"></div>
+                        <style>
+                            [id|="{{ element.name | remove: ' ' }}"] {
+                                background: url('{{ element.image }}');
+                            }
+                            [id|="{{ element.name | remove: ' ' }}"]:hover {
+                                background: url('{{ element.hover }}');
+                            }
+                        </style>
+                        {% endif %}
 
                     {% endfor %}
                 </section>
@@ -86,6 +108,12 @@
 
 
 </body>
+<script>
+    function changeImage(img){
+        console.log(img)
+        setTimeout(function() {document.getElementById('bigImage').src=img;},1250);
+    }
+</script>
 
 {% include script.html %}
 <script>

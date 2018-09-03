@@ -2073,20 +2073,9 @@ Team Page
             position: relative;
             overflow: hidden;
             background-color: #eee;
-            img {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                max-width: 100%;
-            }
-        }
-        .people.full-vertical {
-            padding: 0;
-            img {
-                max-height: 100%;
-                max-width: unset;
-            }
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
         }
     }
 }
