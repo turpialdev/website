@@ -1947,17 +1947,17 @@ Team Page
     padding: $frameborder 0;
     height: calc(100vh - 118px);
     background: #fff;
-
+    
     #grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, 8vw);
-        grid-template-rows: repeat(2, 39vh);
         grid-auto-flow: column;
         grid-gap: 2vw;
         position: relative;
-
+        overflow: hidden;
+        
         height: 100%;
-        width: 200vw;
+        min-width: 500vw;
 
         div,
         .title,
@@ -2025,12 +2025,13 @@ Team Page
             p {
                 font-size: 4vw;
                 text-transform: uppercase;
-
+                
                 position: absolute;
                 bottom: 52px;
-                left: calc(40% - 4vw);
-                transform: translate(-45%, 0) rotate(-90deg);
-                transform-origin: top;
+                left: 50%;
+                transform: translate(0, 0) rotate(-90deg);
+                transform-origin: bottom;
+                width: 100%;
             }
         }
 
