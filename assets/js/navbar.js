@@ -1,5 +1,7 @@
 var screenSize = $(document).width();
 var menu;
+var nav = $('#nav');
+var hamburger = $('#h-menu');
 
 $(document).ready(function () {
     saveScreenSize();
@@ -18,12 +20,13 @@ function saveScreenSize() {
 }
 
 function openMenu() {
-    // $('#h-menu').toggleClass('open');
     menu.addClass('showMenu');
 }
 
 function closeMenu() {
     menu.removeClass('showMenu');
+    hamburger.css('width', '50');
+    hamburger.css('opacity', '1');
 }
 
 (function () {
@@ -33,9 +36,9 @@ function closeMenu() {
         }, thread;
 
         return function (e) {
-            if (screenSize > '1025') {
+            if (screenSize > '1024') {
 
-                mY = e.pageY - $("#h-menu").offset().top;
+                mY = e.pageY - nav.offset().top;
                 sY = e.pageY - $(".subsection").offset().top;
 
                 if (mY > 55 && sY > 200) {
@@ -43,16 +46,22 @@ function closeMenu() {
 
                     if (mY > 55) {
                         menu.removeClass('showMenu');
+                        hamburger.css('width', '50');
+                        hamburger.css('opacity', '1');
                     }
 
                     if (sY > 200) {
                         menu.removeClass('showMenu');
+                        hamburger.css('width', '50');
+                        hamburger.css('opacity', '1');
                     }
 
                 } else {
                     setTimeout(() => {
                         if (mY < 55) {
                             menu.addClass('showMenu');
+                            hamburger.css('width', '0');
+                            hamburger.css('opacity', '0');
                         }
                     }, 50);
                 };
@@ -63,11 +72,3 @@ function closeMenu() {
 
 
 })();
-
-function clear() {
-    if ($(document).width() > '1025') {
-        setTimeout(() => {
-            menu.removeClass('showMenu');
-        }, 3000);
-    }
-}

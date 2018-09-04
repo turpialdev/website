@@ -45,8 +45,9 @@ Nav-bar
         display: none;
     }
     .small-menu {
+        opacity: 0;
         visibility: hidden;
-        
+
         display: grid;
         grid-template-columns: auto 60px;
         position: fixed;
@@ -653,46 +654,45 @@ Team Page
 *********************
 */
 #team {
+    height: calc(100vh - 65px);
     margin: 52px $frameborder $frameborder;
-}
-#team #grid {
     grid-template-columns: repeat(auto-fill, 20vw);
 }
-#team #grid .title div h1 {
+#team .title div h1 {
     font-size: 14vw;
 }
-#team #grid .title div p {
+#team .title div p {
     font-size: 3.5vw;
 }
-#team #grid .info-black p,
-#team #grid .info-white p,
-#team #grid .info-yellow p {
+#team .info-black p,
+#team .info-white p,
+#team .info-yellow p {
     font-size: 3.5vw;
     line-height: 1.5;
     max-height: 47vw;
     margin-bottom: 5vw;
 }
-#team #grid .info-black a.call-to-action,
-#team #grid .info-white a.call-to-action,
-#team #grid .info-yellow a.call-to-action {
+#team .info-black a.call-to-action,
+#team .info-white a.call-to-action,
+#team .info-yellow a.call-to-action {
     font-size: 3vw;
     display: inline-block;
     padding: 3vw;
 }
-#team #grid .info-black h2,
-#team #grid .info-white h2,
-#team #grid .info-yellow h2 {
+#team .info-black h2,
+#team .info-white h2,
+#team .info-yellow h2 {
     font-size: 8vw;
     text-transform: uppercase;
 }
-#team #grid div,
-#team #grid .title,
-#team #grid .info-black,
-#team #grid .info-white,
-#team #grid .info-yellow {
+#team div,
+#team .title,
+#team .info-black,
+#team .info-white,
+#team .info-yellow {
     padding: 5vw;
 }
-#team #grid .section p {
+#team .section p {
     position: relative;
     font-size: 10vw;
     bottom: -50%;
