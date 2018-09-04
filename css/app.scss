@@ -1941,6 +1941,14 @@ Opportunities Page
     }
 }
 
+@media screen and (min-width:1366px) {
+    .opportunities-grid {
+        grid-template-columns: repeat(4, 1fr);
+        .sub-header {
+            grid-column: 1 / 5;
+        }
+    }
+}
 /*
 *********************
 Culture Page
