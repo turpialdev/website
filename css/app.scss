@@ -80,7 +80,7 @@ $break_md: 1025px;
 $break_lg: 1366px;
 $break_xl: 1920px;
 
-$transition: 0; /* 3s */
+$transition: 1s; /* 3s */
 $menu-transition: 0.6s;
 
 html, body, div, span, applet, object, iframe,
@@ -214,6 +214,13 @@ Frame & container
 Nav-bar
 *********************
 */
+nav:hover {
+    .nav-logo {
+        a > img {
+            filter: grayscale(0%)!important;
+        }
+    }
+}
 
 .nav-items {
     display: grid;
@@ -221,23 +228,25 @@ Nav-bar
     grid-auto-rows: auto;
     align-items: center;
     text-align: center;
-    transition: $menu-transition;
 
     .item {
         grid-column: 1;
     }
     
     ul.large-menu {
+        opacity: 0;
         visibility: hidden;
+        transition: $menu-transition;
 
         display: flex;
         justify-content: space-between;
         list-style: none;
-        margin: 18px 52px;
+        margin: 18px 0;
         width: 100%;
         padding: 0;
         
         li {
+            white-space: nowrap;
             position: relative;
             a, span {
                 cursor: pointer;
@@ -246,7 +255,7 @@ Nav-bar
                 font-size: 1.2vw;
             }
         }
-
+        
         ul {
             display: none;
             position: absolute;
@@ -287,19 +296,17 @@ Hamburger button
 */
 
 #h-menu {
+    opacity: 1;
     float: left;
     width: 50px;
     height: 25px;
     margin-top: 13px;
     position: relative;
+    transition: $menu-transition;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     cursor: pointer;
 }
 
@@ -367,10 +374,11 @@ Turpial Logo
 
 .nav-logo {
     a > img {
-            width: $frameborder;
-            height: auto;
-            padding: 7.7px 0;
-            float: right;
+        width: $frameborder;
+        height: auto;
+        padding: 7.7px 0;
+        float: right;
+        transition: $menu-transition;
     }
     a:hover > img {
         filter: grayscale(0%);
@@ -2117,6 +2125,7 @@ Globals
 }
 
 .showMenu {
+    opacity: 1!important;
     visibility: visible!important;
 }
 .small-menu {
