@@ -1,5 +1,5 @@
 ---
-title: "Tidbit espanol"
+title: "Tidbit español"
 lang: es
 date: 2017-05-09
 layout: project
@@ -18,7 +18,7 @@ phone_number: +582127541143
 sections:
     detail:
         image_pointer_1: Foodies
-        image_pointer_2: obtenla en la App Store y Google Play
+        image_pointer_2: Obtenla en la App Store y Google Play
         synthesis_title: Hecha por Foodies para Foodies
         synthesis: Es una red social para amantes de la comida que ofrece recomendaciones personalizadas de restaurantes y platos según las preferencias del usuario, así como comentarios y valoraciones de platos individuales por parte de sus amigos.
         fun_fact: La primera vez que nuestro cliente tuvo la idea inicial de TidBit Social fue durante una cena familiar, hablando de lo maravilloso que sería tener las recomendaciones de familiares y amigos, por lo que nuestro cliente escribió algunos conceptos en una servilleta, reflexionó sobre esto idea y así nació TidBit Social.
