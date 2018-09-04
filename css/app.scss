@@ -222,22 +222,15 @@ Nav-bar
     align-items: center;
     text-align: center;
     transition: $menu-transition;
-    visibility: hidden;
-    opacity: 1;
 
     .item {
         grid-column: 1;
     }
-
-    .small-menu {
-        display: none;
-    }
-
-    .large-menu {
-        display: flex;
-    }
-
+    
     ul.large-menu {
+        visibility: hidden;
+
+        display: flex;
         justify-content: space-between;
         list-style: none;
         margin: 18px 52px;
@@ -279,11 +272,6 @@ Nav-bar
             display: block;
         }
     }
-}
-
-.showMenu {
-    visibility: visible;
-    opacity: 1;
 }
 
 .nav-btn {
@@ -2115,6 +2103,13 @@ Globals
     img{
         max-width: 100%;
     }
+}
+
+.showMenu {
+    visibility: visible!important;
+}
+.small-menu {
+    display: none;
 }
 
 /*

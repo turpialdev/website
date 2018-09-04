@@ -1,27 +1,39 @@
-$(document).ready(function () {
+var screenSize = $(document).width();
+var menu;
 
-    $('#h-menu').click(function () {
-        if ($(document).width() > '1025') {
-            // $(this).toggleClass('open');
-        }
-        $('#menuItems').toggleClass('showMenu');
-    });
+$(document).ready(function () {
+    saveScreenSize();
 });
 
-function closeMenu() {
+function saveScreenSize() {
+    screenSize = $(document).width();
+
+    if (screenSize > '1024') {
+        menu = $('#menuLG');
+    } else {
+        menu = $('#menuSM');
+    }
+
+    closeMenu();
+}
+
+function openMenu() {
     // $('#h-menu').toggleClass('open');
-    $('#menuItems').toggleClass('showMenu');
+    menu.addClass('showMenu');
+}
+
+function closeMenu() {
+    menu.removeClass('showMenu');
 }
 
 (function () {
-
 
     document.onmousemove = (function () {
         var onmousestop = function () {
         }, thread;
 
         return function (e) {
-            if ($(document).width() > '1025') {
+            if (screenSize > '1025') {
 
                 mY = e.pageY - $("#h-menu").offset().top;
                 sY = e.pageY - $(".subsection").offset().top;
@@ -30,17 +42,17 @@ function closeMenu() {
 
 
                     if (mY > 55) {
-                        $('#menuItems').removeClass('showMenu');
+                        menu.removeClass('showMenu');
                     }
 
                     if (sY > 200) {
-                        $('#menuItems').removeClass('showMenu');
+                        menu.removeClass('showMenu');
                     }
 
                 } else {
                     setTimeout(() => {
-                    if (mY < 55) {
-                            $('#menuItems').addClass('showMenu');
+                        if (mY < 55) {
+                            menu.addClass('showMenu');
                         }
                     }, 50);
                 };
@@ -55,7 +67,7 @@ function closeMenu() {
 function clear() {
     if ($(document).width() > '1025') {
         setTimeout(() => {
-            $('#menuItems').removeClass('showMenu');
+            menu.removeClass('showMenu');
         }, 3000);
     }
 }

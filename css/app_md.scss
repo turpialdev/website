@@ -45,9 +45,8 @@ Nav-bar
         display: none;
     }
     .small-menu {
-        display: block;
-    }
-    .small-menu {
+        visibility: hidden;
+        
         display: grid;
         grid-template-columns: auto 60px;
         position: fixed;
