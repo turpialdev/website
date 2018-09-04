@@ -409,11 +409,11 @@ Opportunities Page
 }
 
 .opportunities-grid {
-    padding: 30px 10vw 30px;
+    padding: 70px 10vw 90px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 12vw auto;
-    grid-gap: 2vw;
+    grid-template-rows: auto auto;
+    grid-gap: 2.7vw;
     // min-height: 120vw;
     // height: calc(100vh - 190px);
     background-color: #fff;
@@ -427,7 +427,8 @@ Opportunities Page
         h2 {
             text-transform: uppercase;
             background-color: $yellow;
-            padding-left: .5vw;
+            padding-top: .5vw;
+            padding-left: 1vw;
             font-size: 64px;
             font-weight: 900;
         }
@@ -435,6 +436,7 @@ Opportunities Page
 
     .col-1{
         background-color: white;
+        margin-bottom: 30px;
         .img-container {
             overflow: hidden;
             // height: 25vw;
@@ -463,14 +465,20 @@ Opportunities Page
     }
 
     .col-1:nth-child(3n + 2) {
-        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .col-1:nth-child(3n) {
-        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .col-1:nth-child(3n + 1) {
-        margin: auto;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .read-more {
