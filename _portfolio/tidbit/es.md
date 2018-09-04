@@ -4,7 +4,7 @@ lang: es
 date: 2017-05-09
 layout: project
 permalink: /tidbit/es/
-description: "Tidbit es una red social para amantes de la cocina que le ofrece recomendaciones personalizadas de restaurantes según sus preferencias y las calificaciones de sus amigos en platos individuales, desarrollados por Turpial."
+description: "Es una red social para amantes de la comida que ofrece recomendaciones personalizadas de restaurantes y platos según las preferencias del usuario, así como comentarios y valoraciones de platos individuales por parte de sus amigos."
 
 # Footer
 call_to_action_title: Ya sabes como trabajamos

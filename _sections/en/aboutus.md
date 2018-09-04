@@ -1,5 +1,5 @@
 ---
-title: We're<br> Turpial
+title: We Are<br> Turpial
 lang: en
 # Set the display order for this section
 order: 6
@@ -13,7 +13,4 @@ culture-link: Our<br> culture
 jobs-link: Work<br> with us
 ---
 
-Initiated by young Venezuelan entrepreneurs, in Turpial we work with
-companies and entrepreneurs in different parts of the continent.
-Producing solutions in a short time with the best standards of usability,
-design and functionality.
+We are a team of developers, designers, project managers and support team working closely with each of our clients to develop the digital solutions they need, using agile methodologies to share the client's priorities in an open dialogue every step of the way.
