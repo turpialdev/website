@@ -4,7 +4,8 @@ lang: en
 date: 2017-05-09
 layout: project
 permalink: /airways/
-description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
+description: "Magazine's website and custom subscription management
+For Airways Magazine we set-up their public website and CMS, to manage the publication of all their stories, and a custom Fully-featured subscriber management system."
 
 # Footer
 call_to_action_title: You already know how we work

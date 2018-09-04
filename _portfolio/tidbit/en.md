@@ -4,7 +4,7 @@ lang: en
 date: 2016-05-09
 layout: project
 permalink: /tidbit/
-description: "Tidbit is social network for foodies that gives you personalized restaurant recommendations based on your preferences and your friends ratings on individual dishes, developed by Turpial."
+description: "It’s a social network for food lovers that offers personalized restaurant and dish recommendations based on the user's preferences as well as comments and ratings of individual dishes by their friends."
 
 # Footer
 call_to_action_title: You already know how we work

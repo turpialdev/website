@@ -8,13 +8,8 @@ include: sections/web.html
 image: path/to/img
 
 # Set style variables
-highlight: Páginas web. No es fácil, es facilísimo
-subtitle: JAPI WEB PAGE 2018
+highlight: Excede las metas de tu negocio digital
+subtitle: Construimos sitios web y webapps efectivos y atractivos
 ---
 
-Hacemos Aplicaciones Web avanzadas y sistemas a la medida que forman
-parte clave del negocio de nuestros clientes, permitiéndoles a su vez
-ofrecer novedosos servicios, mejorar procesos y ser más productivos.
-Si lo tuyo suena a un algo que te ayude en operaciones y ventas, y
-además empuje contenido a apps móviles, hemos estado allí Si eres un
-emprendedor con una idea, hablamos tu idioma, hagámosla realidad.
+Su presencia en línea debe ser cautivadora para los usuarios y efectiva para sus objetivos comerciales. Desarrollamos desde sitios web altamente atractivos hasta aplicaciones web avanzadas que impulsan las empresas digitales.

@@ -4,7 +4,7 @@ lang: es
 date: 2017-05-09
 layout: project
 permalink: /airways/es/
-description:  Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto...
+description:  "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto..."
 
 # Footer
 call_to_action_title: Ya sabes como trabajamos

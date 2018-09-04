@@ -8,13 +8,8 @@ include: sections/web.html
 image: path/to/img
 
 # Set other variables
-highlight: Websites. It is not easy, it is very easy
-subtitle: JAPI WEB PAGE 2018
+highlight: Exceed your business' digital goals
+subtitle: We build effective and engaging websites and webapps
 ---
 
-We make advanced Web Applications and customized systems that are a
-key part of our clients' business, allowing them to offer innovative
-services, improve processes and be more productive. If your thing
-sounds like something that helps you in operations and sales, and also
-push content to mobile apps, we've been there. If you are an
-entrepreneur with an idea, we speak your language, let's make it a reality.
+Your online presence needs to be captivating for users and effective towards your business goals. We build everything from highly engaging websites to advanced web apps that power digital businesses. 
