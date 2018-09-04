@@ -566,18 +566,6 @@ Portfolio detail Page
 Team Page
 *********************
 */
-@media (pointer: coarse) {
-    #scroll {
-        overflow: auto;
-        white-space: normal;
-        position: relative;
-        top: unset;
-        bottom: unset;
-        right: unset;
-        left: unset;
-        display: block;
-    }
-}
 #team {
     grid-template-columns: repeat(auto-fill, 14vw);
 }

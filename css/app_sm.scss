@@ -652,18 +652,6 @@ Portfolio detail Page
 Team Page
 *********************
 */
-@media (pointer: coarse) {
-    #scroll {
-        overflow: auto;
-        white-space: normal;
-        position: relative;
-        top: unset;
-        bottom: unset;
-        right: unset;
-        left: unset;
-        display: block;
-    }
-}
 #team {
     height: calc(100vh - 65px);
     margin: 52px $frameborder $frameborder;
