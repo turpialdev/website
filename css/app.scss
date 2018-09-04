@@ -75,8 +75,8 @@ Responsive size
 
 $frameborder: 52px;
 
-$break_sm: 768px;
-$break_md: 1024px;
+$break_sm: 767px;
+$break_md: 1025px;
 $break_lg: 1366px;
 $break_xl: 1920px;
 
@@ -135,6 +135,10 @@ a, input {
     color: inherit;
 }
 
+a:hover {
+    text-decoration: underline solid $yellow;
+}
+
 body {
     color: $black;
     margin: 0;
@@ -159,17 +163,19 @@ Frame & container
 *********************
 */
 
-.main-head, .content, .main-footer {
+.content {
     margin: 0 $frameborder;
 }
 
 .main-head, .main-footer {
+    padding: 0 $frameborder;
     height: $frameborder;
 }
 
 .main-head {
     grid-area: header;
-    position: sticky;
+    position: fixed;
+    width: calc(100% - 104px);
     top: 0;
     background-color: white;
     z-index: 500;
@@ -183,7 +189,8 @@ Frame & container
 
 .main-footer {
     grid-area: footer;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     background-color: white;
     transition: $transition;
@@ -236,18 +243,14 @@ Nav-bar
         margin: 18px 52px;
         width: 100%;
         padding: 0;
-    
+        
         li {
             position: relative;
             a, span {
                 cursor: pointer;
                 padding: 0 6px;
-                color: $black;
-                font-size: 1.4vw;
-                transition: .3s;
-                &:hover {
-                    color: #777;
-                }
+                color: #333;
+                font-size: 1.2vw;
             }
         }
 
@@ -266,7 +269,7 @@ Nav-bar
                 padding: .5vw;
                 line-height: 2vw;
                 a {
-                    font-size: 1.2vw;
+                    font-size: 1.1vw;
                     padding: 0;
                 }
             }
@@ -380,7 +383,6 @@ Turpial Logo
             height: auto;
             padding: 7.7px 0;
             float: right;
-            transition: 2s;
     }
     a:hover > img {
         filter: grayscale(0%);
@@ -412,13 +414,27 @@ Home Page
     grid-template-rows: auto 9vw auto;
     grid-gap: 2.5vw;
     padding: $frameborder;
-    padding-bottom: 5vw; 
+    padding-bottom: 5vw;
+    margin-top: $frameborder;
     
     height: calc(100vh - 190px);
     background: #686868;
-    background-image: url('/img/pages/xl/home.jpg');
+    background-image: url('/img/Sm/home-sm-@1x-bottom-center.jpg');
+    background-position: center center;
     background-size: cover;
     background-blend-mode: multiply;
+
+    @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
+        background-image: url('/img/Md/home-md-@1x-bottom-center.jpg');
+    }
+
+    @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
+        background-image: url('/img/Lg/home-lg-@1x-bottom-center.jpg');
+    }
+
+    @media only screen and (min-width: $break_xl) {
+        background-image: url('/img/Xl/home-xl-@1x-bottom-center.jpg');
+    }
 
     .title {
         grid-column: 1 / 5;
@@ -537,158 +553,112 @@ Web, Mobile and design Pages
 */
 
 #web, #mobile, #design {
-    height: calc(100vh - 140px);
-    padding: $frameborder;
-    background: #fff;
     position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20vw 1fr;
+    height: calc(100vh - 150px);
+    min-height: 50vw;
+    overflow: hidden;
+    background: #fff;
 
-    .image {
-        width: 50%;
-        height: 100%;
-        position: absolute;
+    .img {
+        grid-column: 2;
+        grid-row: 1 / 3;
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
-        background-blend-mode: multiply;
-        top: 0;
+    }
+    
+    .img.web {
+        background-image: url('/img/Sm/web-sm-center-center.jpg');
+    }
+    .img.mobile {
+        background-image: url('/img/Sm/mobile-sm-center-center.jpg');
+    }
+    .img.design {
+        background-position: bottom right;
+        background-image: url('/img/Sm/diseño-sm-bottom-right.jpg');
     }
 
-    .image.web {
-        background-image: url('/img/pages/sm/web.jpg');
-        right: 0;
-
-        @media screen and (max-width: 1480px) and (min-width: 640px) {
-            background-image: url('/img/pages/md/web.jpg');
+    @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
+        .img.web {
+            background-image: url('/img/Md/web-md-@1x-center-center.jpg');
         }
-
-        @media screen and (max-width: 1481px) and (min-width: 1820px) {
-            background-image: url('/img/pages/lg/web.jpg');
-        }
-
-        @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/web.jpg');
-        }
-    }
-
-    .image.mobile {
-        background-image: url('/img/pages/sm/mobile.jpg');
-        left: 0;
-
-        @media screen and (max-width: 1480px) and (min-width: 640px) {
-            background-image: url('/img/pages/md/mobile.jpg');
-        }
-
-        @media screen and (max-width: 1481px) and (min-width: 1820px) {
-            background-image: url('/img/pages/lg/mobile.jpg');
-        }
-
-        @media screen and (min-width: 1821px) {
-            background-image: url('/img/pages/xl/mobile.jpg');
+        .img.design {
+            background-position: center right;
+            background-image: url('/img/Md/diseño-md-@1x-bottom-right.jpg');
         }
     }
 
-    .image.design {
-        background-image: url('/img/StockSnap_SWRREC0K3A.jpg');
-        right: 0;
+    @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
+        .img.web {
+            background-image: url('/img/Lg/web-lg-@1x-center-center.jpg');
+        }
+        .img.design {
+            background-image: url('/img/Lg/diseño-lg-@1x-bottom-right.jpg');
+        }
     }
 
-    .wmd-content {
-        width: 50%;
-        height: 100%;
-        background: none;
+    @media only screen and (min-width: $break_xl) {
+        .img.web {
+            background-image: url('/img/Xl/web-xl-@1x-center-center.jpg');
+        }
+        .img.design {
+            background-image: url('/img/Xl/diseño-xl-@1x-bottom-right.jpg');
+        }
     }
 
-    .wmd-content.mobile {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .title-box {
-        width: 38.65vw;
-        height: 10.5vw;
-        position: absolute;
-        background-color: $yellow;
-        top: 8vw;
-        right: 40%;
-
-        h1 {
-            margin-top: 1.41vw;
-            margin-left: 2.3vw;
-            font-size: 6.4vw;
+    .tit {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        background-color: #ffcb00;
+        padding: 1.5vw 2.5vw;
+        max-width: 40vw;
+        position: relative;
+        left: 20vw;
+        h2 {
+            font-size: 6vw;
             font-weight: 900;
             line-height: 0.95;
         }
-
-        h2 {
-            margin-left: 2.3vw;
-            font-size: 1.28vw;
+        h3 {
+            font-size: 1.3vw;
             font-weight: bold;
             text-transform: uppercase;
         }
     }
-
-    .title-box.design {
-        width: 47.65vw;
-        right: 30%;
-    }
-
-    .info {
-        margin-top: 19.5vw;
-        margin-left: 2.5vw;
-
-        h3 {
+    .inf {
+        grid-column: 1;
+        grid-row: 2;
+        padding: $frameborder;
+        b {
             font-size: 1.28vw;
             font-weight: bold;
             line-height: 1.1;
         }
-
         p {
-            width: 90%;
             font-size: 1.15vw;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
             line-height: normal;
         }
     }
+}
 
-    .info.mobile {
-        margin-top: 22vw;
-        margin-left: 3.53vw;
-    }
-
-    @media screen and (max-width: 1240px){
-        .info {
-            h3 {
-                font-size: 1.32vw;
-            }
-            p {
-                font-size: 1.2vw;
-            }
+@media screen and (min-width: $break_md) {
+    #mobile {
+        .img {
+            grid-column: 1;
+        }
+        .tit {
+            grid-column: 2;
+            left: unset;
+            right: 20vw;
+        }
+        .inf {
+            grid-column: 2;
         }
     }
-
-    @media screen and (max-width: 1190px){
-        .info {
-            h3 {
-                font-size: 1.35vw;
-            }
-            p {
-                font-size: 1.25vw;
-            }
-        }
-    }
-
-    @media screen and (max-width: 1100px){
-        .info {
-            h3 {
-                font-size: 1.4vw;
-            }
-            p {
-                font-size: 1.3vw;
-            }
-        }
-    }
-
 }
 
 /*
@@ -740,7 +710,7 @@ About Us Page
                     font-weight: bold;
                     text-transform: uppercase;
                     &:hover {
-                        text-decoration: $yellowHover;
+                        text-decoration-color: $yellowHover;
                         color: $yellowHover;
                     }
                     &:nth-child(2) {
@@ -797,7 +767,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -821,7 +790,6 @@ Contact us
                 margin: 5px 0;
                 a:hover {
                     color: $lightgray;
-                    margin-left: 2px;
                 }
             }
         }
@@ -862,10 +830,12 @@ Contact us
         }
 
         label {
+            font-size: 1.2vw;
             display: block;
             margin-bottom: 1vw;
         }
         input, textarea {
+            font-size: 1.2vw;
             width: calc(100% - 2vw);
             color: #fff;
         }
@@ -950,9 +920,8 @@ Advantages
 */
 
 #advantage {
-    height: calc(100vh + 100px);
+    height: calc(100vh - 60px);
     color: #fff;
-    margin: 0;
 
     .v-card {
         transition: 0.4s;
@@ -985,7 +954,7 @@ Advantages
             transition-delay: 0.1s;
             transition: 0.4s;
             position: absolute;
-            bottom: 52px;
+            bottom: 100px;
             left: 50%;
             transform: translateX(-50%);
             opacity: 1;
@@ -1183,8 +1152,8 @@ Portfolio
 */
 
 #portfolio {
-    background-color: #fff;
     padding: 104px;
+    background-color: #fff;
 
     .float-title {
         display: block;
@@ -1219,7 +1188,6 @@ Portfolio
     .title-imag-box {
         position: absolute;
         display: inline-block;
-        background-image: url('https://via.placeholder.com/400x400');
         background-size: cover;
         background-position: center;
         background-color: $lightgray;
@@ -1227,7 +1195,21 @@ Portfolio
         left: 4.7vw;
         width: 26vw;
         height: 18.5vw;
+        background-image: url('/img/Sm/portafolio-sm-@1x-bottom-left.jpg');
+
+        @media only screen and (min-width: $break_sm) and (max-width: $break_md) {
+            background-image: url('/img/Md/portafolio-md-@1x-bottom-left.jpg');
+        }
+    
+        @media only screen and (min-width: $break_md) and (max-width: $break_lg) {
+            background-image: url('/img/Lg/portafolio-lg-@1x-bottom-left.jpg');
+        }
+    
+        @media only screen and (min-width: $break_xl) {
+            background-image: url('/img/Xl/portafolio-xl-@1x-bottom-left.jpg');
+        }
     }
+
 
     .line {
         position: absolute;
@@ -1307,11 +1289,7 @@ Portfolio
         }
 
         a:hover > .titl-box {
-            top: 19.5vw;
-            background-color: $yellow;
-            h2 {
-                color: $black;
-            }
+            background-color: #363636;
         }
 
         .line {
@@ -1399,38 +1377,6 @@ Portfolio
             }
         }
     }
-
-
-    .img-widu {
-        background-image: url("/img/portfolio/widu.png");
-    }
-    .img-tibit {
-        background-image: url("/img/portfolio/tibit.png");
-    }
-    .img-iucn {
-        background-image: url("/img/portfolio/iucn.png");
-    }
-    .img-tintaleo {
-        background-image: url("/img/portfolio/tintaleo.png");
-    }
-    .img-airways {
-        background-image: url("/img/portfolio/airways.png");
-    }
-    .img-citimarine {
-        background-image: url("/img/portfolio/citimarine.png");
-    }
-
-    @media screen and (max-width: $break_md) and (min-width: $break_sm) {
-
-    }
-
-    @media screen and (max-width: $break_lg) and (min-width: $break_md) {
-
-    }
-
-    @media screen and (min-width: $break_xl) {
-
-    }
 }
 
 /*
@@ -1504,7 +1450,9 @@ Portfolio detail
         }
 
         .imag {
-            background: $yellowHover;
+            background-color: $yellowHover;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 20vw;
             margin-left: 5vw;
             box-shadow: 1px 1px 3px rgba(0,0,0,.3);
@@ -1593,7 +1541,7 @@ Portfolio detail
         }
 
         .imag {
-            background: $yellow;
+            background-color: $yellow;
             margin-left: 5vw;
             div {
                 position: relative;
@@ -1602,6 +1550,8 @@ Portfolio detail
                 top: 3vw;
                 left: 3vw;
                 background-color: $yellowHover;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
             p {
                 position: relative;
@@ -1669,29 +1619,18 @@ Portfolio detail
             grid-template-columns: 3vw auto;
             margin: 8vw 5vw 8vw 0;
 
-            .num1, .num2, .num3 {
+            .num {
                 grid-column: 1 / 2;
                 font-size: 2vw;
                 font-weight: 600;
                 color: #fff;
                 letter-spacing: -0.1vw;
             }
-            .txt1, .txt2, .txt3 {
+            .txt {
                 grid-column: 2 / 3;
                 font-size: 1.2vw;
                 line-height: 1.6vw;
                 margin-bottom: 2.5vw;
-            }
-
-            .num1, .txt1 {
-                grid-row: 1 / 2;
-            }
-            .num2, .txt2 {
-                grid-row: 2 / 3;
-            }
-            .num3, .txt3 {
-                grid-row: 3 / 4;
-                margin-bottom: 0;
             }
         }
     }
@@ -1750,21 +1689,12 @@ Portfolio detail
 
                 max-height: 20.5vw;
                 background-color: $yellowHover;
+                background-repeat: no-repeat;
+                background-size: cover;
                 box-shadow: -1px 1px 3px rgba(0,0,0,.3);
             }
-            .box1 {
-                grid-column: 1 / 2;
+            .box {
                 grid-row: 3 / 4;
-            }
-            .box2 {
-                grid-column: 2 / 3;
-                grid-row: 3 / 4;
-            }
-            .box3 {
-                grid-column: 3 / 4;
-                grid-row: 3 / 4;
-            }
-            .box1, .box2, .box3 {
                 background-color: #fff;
                 align-self: center;
                 text-align: center;
@@ -1802,6 +1732,26 @@ Portfolio detail
         }
     }
 
+    /* PROJECT DETAIL CONTENT */
+    .detail-additional-info {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2vw;
+        background-color: #fff;
+        h1, h2, h3, h4, h5, h6 {
+            grid-column: 1 / 3;
+            background-color: red;
+        }
+        p, img, ul  {
+            background-color: seagreen;
+            grid-column: 1 / span 1;
+            &:nth-child(2) {
+                grid-column: span 1 / 1;
+            }
+        }
+        .inj {}
+    }
+
     /* PROJECT DETAIL RESULT */
     .detail-result {
         display: grid;
@@ -1818,7 +1768,10 @@ Portfolio detail
             text-align: center;
         }
         .imag {
-
+            height: 30vw;
+            background-color: $yellowHover;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .text {
             font-size: 1.1vw;
@@ -1839,7 +1792,7 @@ Portfolio detail
                 word-wrap: break-word;
                 max-height: 8vw;
             }
-            button {
+            a.result-link {
                 cursor: pointer;
                 font-weight: 900;
                 font-size: 1.2vw;
@@ -2010,6 +1963,128 @@ Culture Page
 .culture-grid {
     display: grid;
 }
+
+/*
+*********************
+Team Page
+*********************
+*/
+#team {
+    height: calc(100vh - 104px);
+    margin: $frameborder;
+    background: #fff;
+    
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 8vw);
+        grid-auto-flow: column;
+        grid-gap: 2vw;
+        
+        position: relative;
+        height: 100%;
+
+        div,
+        .title,
+        .info-black,
+        .info-white,
+        .info-yellow  {
+            padding: 2vw;
+        }
+
+        .people,
+        .title,
+        .info-black,
+        .info-white,
+        .info-yellow {
+            grid-column: span 2;
+        }
+
+        .info-black, .info-white, .info-yellow {
+            a.call-to-action {
+                font-size: 1vw;
+                display: inline-block;
+                padding: .8vw 2vw;
+            }
+            p {
+                font-size: 1.2vw;
+                line-height: 1.2;
+                margin-bottom: 2.5vw;
+                max-height: 7.2vw;
+                overflow: hidden;
+            }
+            h2 {
+                font-size: 1.5vw;
+                text-transform: uppercase;
+            }
+        }
+
+        .full-horizontal {
+            grid-column: span 4;
+        }
+        .full-vertical {
+            grid-row: 1 / 3;
+        }
+
+        .title {
+            background-color: $yellow;
+            text-transform: uppercase;
+            div {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                h1 {
+                    font-size: 5vw;
+                }
+                p {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+
+        .section {
+            position: relative;
+            padding: 0;
+            grid-row: 1 / 3;
+            background-color: #fff;
+            p {
+                font-size: 4vw;
+                text-transform: uppercase;
+                
+                position: absolute;
+                bottom: 4.6vw;
+                left: 50%;
+                transform: translate(0, 0) rotate(-90deg);
+                transform-origin: bottom;
+                width: 100%;
+            }
+        }
+
+        .info-black {
+            color: #fff;
+            background-color: $black;
+        }
+
+        .info-white {
+            background-color: #fff;
+        }
+
+        .info-yellow {
+            background-color: $yellow;
+        }
+
+        .people {
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: #eee;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+}
+
+
 /*
 *********************
 Globals
@@ -2041,6 +2116,12 @@ Globals
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.imag-box{
+    img{
+        max-width: 100%;
+    }
 }
 
 /*

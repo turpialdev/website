@@ -7,7 +7,7 @@ order: 1
 include: sections/home.html
 image: path/to/img
 
-highlight: We design and program
+highlight: We design and develop
 
 # Set others variables
 typing-line-1: Hello!

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+{% include head.html %}
+
+<style>
+
+    #body {
+        width: calc(100vw - 26px);
+        height: calc(100vh - 65px);
+        overflow: auto;
+    }
+
+    .main-head,
+    .content,
+    .main-footer {
+        background-color: #fff;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    #scroll {
+        width: calc((36vw * {{ page.gridSize }}) + 26px);
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1025px) {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
+            width: calc((26vw * {{ page.gridSize }}) + 52px);
+        }
+    }
+
+    @media only screen and (min-width:1025px) {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
+            width: calc((16vw * {{ page.gridSize }}) + 52px);
+        }
+    }
+</style>
+
+<body id="body">
+
+    <div class="wrapper" id="scroll">
+
+        <header class="main-head">
+            {% include header.html %}
+        </header>
+
+        <div class="content">
+            <div id="team">
+                <section id="grid">
+                    {% for element in page.elements %}
+
+                        {% if element.template != 'people' %}
+                        <div class="{{ element.template }} {{ element.span }}">
+
+                            {% if element.template == 'title' %}
+                            <div>
+                                <h1>{{ element.title }}</h1>
+                                <p>{{ element.text }}</p>
+                            </div>
+                            {% endif %}
+                            
+                            {% if element.template != 'title' %}
+                                <p>{{ element.text }}</p>
+
+                                {% if element.title %}
+                                <h2>{{ element.title }}</h2>
+                                {% endif %}
+                            {% endif %}
+                            
+                            {% if element.button %}
+                            <a class="call-to-action" href="{{ element.url }}">{{ element.button }}</a>
+                            {% endif %}
+                            
+                        </div>
+                        {% endif %} 
+
+                        {% if element.template == 'people' %}
+                        <div id="{{ element.name | remove: ' ' }}" class="{{ element.template }} {{ element.span }}"></div>
+                        <style>
+                            [id|="{{ element.name | remove: ' ' }}"] {
+                                background: url('{{ element.image }}');
+                            }
+                            [id|="{{ element.name | remove: ' ' }}"]:hover {
+                                background: url('{{ element.hover }}');
+                            }
+                        </style>
+                        {% endif %}
+
+                    {% endfor %}
+                </section>
+
+
+            </div>
+        </div>
+
+        <footer class="main-footer">
+            {% include footer.html %}
+        </footer>
+
+    </div>
+
+
+</body>
+
+{% include script.html %}
+
+<script>
+    $(function() {
+
+        const doScroll = function (e) {
+            // cross-browser wheel delta
+            e = window.event || e;
+            const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            var team = $("#body");
+
+            team.animate({
+                scrollLeft: team.scrollLeft() - delta * 30
+            }, 7, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+            });
+
+
+            e.preventDefault();
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener("mousewheel", doScroll, false);
+            window.addEventListener("DOMMouseScroll", doScroll, false);
+        } else {
+            window.attachEvent("onmousewheel", doScroll);
+        }
+
+        $(document).keyup(function (e) {
+            var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+            var container = $("#body");
+            var delta = 0;
+
+            if ( key == 38 ) {  /* up */
+                delta = -30;
+            }else if( key == 40 ){  /* down */
+                delta = 30;
+            }
+
+            container.animate({
+                scrollLeft: container.scrollLeft() + delta
+            }, 7);
+            e.preventDefault();
+            return false;
+        });
+
+    });
+</script>
+
+</html>

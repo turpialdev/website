@@ -20,153 +20,211 @@
 
             <!-- PROJECT DETAIL DESCRIPTION -->
             <div class="detail-project">
-                <h2>Proyecto</h2>
-                <div class="imag">
-                    <img src="" alt="">
-                </div>
+                <h2>{{ page.title }}</h2>
+                <div class="imag"></div>
                 <div class="text">
-                    <b>Lorem ipsum dolor</b>
+                    <b>{{ page.sections.detail.synthesis_title }}</b>
                     <p>
-                        Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido
-                        hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
+                        {{ page.sections.detail.synthesis }}
                     </p>
                 </div>
                 <div class="case">
                     <p>
-                        Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto
-                        aqui lorem ipsum.
+                        {{ page.sections.detail.fun_fact }}
                     </p>
                 </div>
                 <div class="show-case-1">
                     <span></span>
-                    Lorem ipsum dolor
+                    {{ page.sections.detail.image_pointer_1 }}
                 </div>
                 <div class="show-case-2">
                     <span></span>
-                    Lorem ipsum dolor
+                    {{ page.sections.detail.image_pointer_2 }}
                 </div>
             </div>
 
-
             <!-- PROJECT DETAIL FIRTS STEPS -->
+            {% if page.sections.first_steps %}
+
+            {% assign first_steps=page.sections.first_steps %}
+
             <div class="detail-steps">
-                <h2>Primeros pasos</h2>
+                <h2>{{ first_steps.title }}</h2>
                 <div class="imag">
                     <div>
-                        <img src="" alt="">
                     </div>
-                    <p>Loreim ipsum dolor</p>
+                    <p>{{ first_steps.image_pointer }}</p>
                 </div>
                 <div class="text">
-                    <b>Lorem ipsum dolor</b>
+                    <b>{{ first_steps.synthesis_title }}</b>
                     <p>
-                        Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido
-                        hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
+                        {{ first_steps.synthesis }}
                     </p>
                 </div>
                 <div class="info">
                     <p>
-                        Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto
-                        aqui lorem ipsum.
+                        {{ first_steps.fun_fact }}
                     </p>
                 </div>
             </div>
 
+            {% endif %}
+
             <!-- PROJECT DETAIL DESIGN -->
+            {% if page.sections.first_steps %}
+
+            {% assign design=page.sections.design %}
             <div class="detail-design">
                 <h2>
-                    Diseno por
-                    <br> principios
+                    {{ design.title }}
                 </h2>
                 <div class="list">
-                    <div class="num1">
-                        01
+                    {% for step in design.steps %}
+                    <div class="num">
+                        {{ forloop.index }}
                     </div>
-                    <div class="num2">
-                        02
+                    <div class="txt">
+                        {{ step.content }}
                     </div>
-                    <div class="num3">
-                        03
-                    </div>
-                    <div class="txt1">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
-                        Obcaecati delectus quia non laudantium porro, dicta quae autem nobis iusto ut harum sint!
-                    </div>
-                    <div class="txt2">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
-                    </div>
-                    <div class="txt3">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
-                        Obcaecati delectus quia non laudantium porro.
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
+
+            {% endif %}
 
             <!-- PROJECT DETAIL TECHNOLOGIES -->
+            {% if page.sections.technologies %}
+
+            {% assign tech=page.sections.technologies %}
             <div class="detail-tech">
                 <div class="tech-container">
-                    <h2>Tech</h2>
+                    <h2>{{ tech.title }}</h2>
                     <div class="text">
-                        <b>Lorem ipsum dolor sit</b>
+                        <b>{{ tech.synthesis_title }}</b>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure similique incidunt ipsam voluptatum dignissimos praesentium
-                            mollitia laborum exercitationem, quam itaque? Rerum dolore temporibus eius voluptates, quisquam
-                            quia ab maxime labore!
+                            {{ tech.synthesis }}
                         </p>
                     </div>
-                    <div class="imag">
-                        <img src="" alt="">
+                    <div class="imag"></div>
+                    {% for tool in tech.tools limit:3 %}
+                    <div class="box">
+                        <p>{{ tool.name }}</p>
                     </div>
-                    <div class="box1">
-                        <p>Java</p>
-                    </div>
-                    <div class="box2">
-                        <p>Scrum</p>
-                    </div>
-                    <div class="box3">
-                        <p>Sketch</p>
-                    </div>
+                    {% endfor %}
                     <div class="info">
                         <p>
-                            Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto
-                            aqui lorem ipsum.
+                            {{ tech.fun_fact }}
                         </p>
                     </div>
                 </div>
             </div>
 
+            {% endif %}
+
             <!-- PROJECT DETAIL RESULT -->
+            {% if page.content %}
+
+            <div class="detail-additional-info">
+                {{ page.content }}
+            </div>
+
+            {% endif %}
+
+            <!-- PROJECT DETAIL RESULT -->
+            {% if page.sections.results %}
+
+            {% assign results=page.sections.results %}
             <div class="detail-result">
-                <h2>Results</h2>
-                <div class="imag">
-                    <img src="" alt="">
-                </div>
+                <h2>{{ results.title }}</h2>
+                <div class="imag"></div>
                 <div class="text">
                     <span>&#8220;</span>
                     <p>
-                        Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto
-                        aqui lorem ipsum.
+                        {{ results.quote }}
                     </p>
-                    <button>Lorem ipsum, CCO.</button>
+                    <a href="{{ results.external_button_link }}" class="result-link" target="_blank">{{ results.external_button_label }}</a>
                 </div>
             </div>
+
+            {% endif %}
 
             <!-- PROJECT DETAIL FOOTER -->
             <div class="detail-footer">
                 <div>
-                    <h3>You already know how we work</h3>
-                    <p>Start working with us</p>
+                    <h3>{{ page.call_to_action_title }}</h3>
+                    <p>{{ page. cal_to_action_subtitle}}</p>
                 </div>
                 <div>
-                    <a href="mailto:hola@turpialdev.com?Subject=Hola%20Turpial%20Dev" target="_top">hola@turpialdev.com</a>
-                    <a href="tel:+582127541143">+58 (212) 754 1143</a>
+                    <a href="mailto:{{ page.email }}?Subject={{ page.email_subject }}" target="_top">{{ page.email }}</a>
+                    <a href="tel:{{ page.phone_number }}">{{ page.phone_number_label }}</a>
                 </div>
                 <div>
-                    Let's work tl
+                    Let's work together
                 </div>
             </div>
         </div>
     </section>
+
+    <style>
+        .detail-project div.imag {
+            background-image: url('{{ page.sections.detail.image_sm }}');
+        }
+        .detail-steps div.imag div {
+            background-image: url('{{ page.sections.first_steps.image_sm }}');
+        }
+        .detail-tech div.imag {
+            background-image: url('{{ page.sections.technologies.image_sm }}');
+        }
+        .detail-result div.imag {
+            background-image: url('{{ page.sections.results.image_sm }}');
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_md }}');
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_md }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_md }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_md }}');
+            }
+        }
+
+        @media only screen and (min-width: 1024px) and (max-width: 1366px) {
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_lg }}')
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_lg }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_lg }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_lg }}');
+            }
+        }
+
+        @media only screen and (min-width: 1366px) {
+            .detail-project div.imag {
+                background-image: url('{{ page.sections.detail.image_xl }}');
+            }
+            .detail-steps div.imag div {
+                background-image: url('{{ page.sections.first_steps.image_xl }}');
+            }
+            .detail-tech div.imag {
+                background-image: url('{{ page.sections.technologies.image_xl }}');
+            }
+            .detail-result div.imag {
+                background-image: url('{{ page.sections.results.image_xl }}');
+            }
+        }
+    </style>
 
 </body>
 

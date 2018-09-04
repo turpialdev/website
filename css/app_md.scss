@@ -6,7 +6,7 @@
 Global variables
 *********************
 */
-$frameborder: 55px;
+$frameborder: 52px;
 $black: #1b1b1b;
 $yellow: #ffcb00;
 $yellowHover: #e2b500;
@@ -14,246 +14,286 @@ $gray: #ccc;
 $lightgray: #e5e5e5;
 $softgray: #f2f2f2;
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+/*
+*********************
+Frame & container / layout
+*********************
+*/
+.content {
+    margin: 0 $frameborder;
+}
+.main-head {
+    width: calc(100% - 104px);
+}
+.main-head, .main-footer {
+    padding: 0 $frameborder;
+}
+.main-footer {
+    height: $frameborder;
+}
+#home, #contact {
+    padding: $frameborder;
+}
 
-    /*
-    *********************
-    Frame & container / layout
-    *********************
-    */
-    .main-head, .content, .main-footer {
-        margin: 0 $frameborder;
-    }
-    .main-footer {
-        height: $frameborder;
+/*
+*********************
+Nav-bar
+*********************
+*/
+.nav-items {
+    .large-menu {
+        display: none;
     }
     #home, #web, #mobile, #design, #contact, .opportunities-content {
         padding: $frameborder;
     }
-
-    /*
-    *********************
-    Nav-bar
-    *********************
-    */
-    .nav-items {
-        .large-menu {
-            display: none;
-        }
-        .small-menu {
-            display: block;
-        }
-        .small-menu {
-            display: grid;
-            grid-template-columns: auto 60px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba($color: #000, $alpha: .7);
-            ul {
-                font-size: 18px;
-                line-height: 60px;
-                text-align: left;
-                text-transform: uppercase;
-                padding: 0 32px 64px;
-                max-height: 415px;
-                background-color: #fff;
-                li.turpial {
-                    font-size: 28px;
-                    line-height: 76px;
-                    text-transform: lowercase;
-                    text-align: center;
-                    border-bottom: 1px solid $lightgray;
-                }
-            }
-            #s-menu {
-                height: 60px;
-                background: $yellow;
-                cursor: pointer;
-                span {
-                    display: block;
-                    position: absolute;
-                    height: 5px;
-                    width: 25px;
-                    top: 26px;
-                    right: 18px;
-                    background: #fff;
-                }
-                span:nth-child(1) {
-                    transform: rotate(45deg);
-                }
-                span:nth-child(2) {
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-    }
-
-    /*
-    *********************
-    Home Page
-    *********************
-    */
-
-    #home {
-        grid-template-columns: repeat(3, 22vw);
-        grid-template-rows: auto 22vw auto;
-        min-height: 80vw;
-    }
-    #home .title {
-        grid-column: 1 / 4;
-    }
-    #home .title h1 {
-        font-size: 12vw;
-    }
-    #home .title h4 {
-        margin-top: 2vw;
-        font-size: 4.5vw;
-    }
-    #home .fly-a span img,
-    #home .fly-b span img,
-    #home .fly-c span img {
-        max-height: 5vw;
-        max-width: 5vw;
-        width: 5vw;
-        margin-bottom: 2vw;
-    }
-    #home .fly-a span p,
-    #home .fly-b span p,
-    #home .fly-c span p {
-        font-size: 2.2vw;
-    }
-    #home .call-to-action {
-        font-size: 2.4vw;
-        grid-column: 3;
-        align-self: end;
-        position: relative;
-        right: -5vw;
-    }
-
-    /*
-    *********************
-    Web, Mobile and design Pages
-    *********************
-    */
-
-    /*
-    *********************
-    Portfolio Page
-    *********************
-    */
-
-    #portfolio {
-        padding: 25px;
-    }
-    #portfolio .float-title .title-titl-box {
-        padding-left: 15vw;
-        padding-right: 8vw;
-    }
-    #portfolio .float-title .title-titl-box h1 {
-        font-size: 10vw;
-        line-height: .9;
-    }
-    #portfolio .portfolio-card:nth-child(2n) .line,
-    #portfolio .portfolio-card:nth-child(2n+1) .line {
-        display: none;
-    }
-    #portfolio .portfolio-card .imag-box img {
-        max-width: 100%;
-    }
-    #portfolio .portfolio-card .title-text-box {
-        top: 6vw;
-    }
-    #portfolio .portfolio-card .title-text-box h3 {
-        font-size: 2.4vw;
-    }
-    #portfolio .portfolio-card .title-text-box p {
-        font-size: 1.8vw;
-        line-height: 1.3;
-    }
-    #portfolio .portfolio-card:nth-child(2n) .title-year-box {
-        left: unset;
-        margin-left: 0;
-    }
-    #portfolio .portfolio-card:nth-child(2n+1) .title-year-box {
-        right: 1vw;
-    }
-    #portfolio .portfolio-card:nth-child(2n) .title-text-box {
-        left: 3vw;
-    }
-    #portfolio .portfolio-card:nth-child(2n+1) .title-text-box {
-        right: 4.3vw;
-    }
-
-    /*
-    *********************
-    Aboutus Page
-    *********************
-    */
-    #aboutus {
-        min-height: 120vw;
-        max-height: 120vw;
-    }
-    #aboutus .about-content {
-        width: initial;
-        background-color: rgba(29, 29, 29, 0.7);
-    }
-    #aboutus .about-content div {
-        width: initial;
-        left: unset;
-        transform: translateX(0) translateY(-50%);
-        padding: 0 5vw;
-    }
-    #aboutus .about-content div h2 {
-        font-size: 15vw;
-    }
-    #aboutus .about-content div p {
-        font-size: 3vw;
-        line-height: 4vw;
-        margin-bottom: 10vw;
-    }
-    #aboutus .about-content div .call-to-actions a {
-        font-size: 3vw;
-    }
-    #aboutus #video-background {
-        filter: grayscale(35%) brightness(85%);
-    }
-
-    /*
-    *********************
-    Advantage Page
-    *********************
-    */
-    #advantage {
-        max-height: 120vw;
-        min-height: 100vw;
-    }
-
-    /*
-    *********************
-    Contact Page
-    *********************
-    */
-    #contact {
+    .small-menu {
         display: block;
-        padding: 10vw 5vw;
-        height: auto;
     }
-    #contact .contact-form {
-        grid-template-columns: auto 25vw;
-        grid-template-rows: repeat(5, 10vw) 20vw;
-        div {
-            grid-column: 1 / 3;
-            grid-row: unset;
+    .small-menu {
+        display: grid;
+        grid-template-columns: auto 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($color: #000, $alpha: .7);
+        ul {
+            font-size: 18px;
+            line-height: 60px;
+            text-align: left;
+            text-transform: uppercase;
+            padding: 0 32px 64px;
+            max-height: 415px;
+            background-color: #fff;
+            li.turpial {
+                font-size: 28px;
+                line-height: 76px;
+                text-transform: lowercase;
+                text-align: center;
+                border-bottom: 1px solid $lightgray;
+            }
+        }
+        #s-menu {
+            height: 60px;
+            background: $yellow;
+            cursor: pointer;
+            span {
+                display: block;
+                position: absolute;
+                height: 5px;
+                width: 25px;
+                top: 26px;
+                right: 18px;
+                background: #fff;
+            }
+            span:nth-child(1) {
+                transform: rotate(45deg);
+            }
+            span:nth-child(2) {
+                transform: rotate(-45deg);
+            }
         }
     }
-    #contact .contact-form div:nth-child(6) {
-        grid-row: unset;
+}
+
+/*
+*********************
+Home Page
+*********************
+*/
+
+#home {
+    grid-template-columns: repeat(3, 22vw);
+    grid-template-rows: auto 22vw auto;
+    min-height: 80vw;
+}
+#home .title {
+    grid-column: 1 / 4;
+}
+#home .title h1 {
+    font-size: 12vw;
+}
+#home .title h4 {
+    margin-top: 2vw;
+    font-size: 4.5vw;
+}
+#home .fly-a span img,
+#home .fly-b span img,
+#home .fly-c span img {
+    max-height: 5vw;
+    max-width: 5vw;
+    width: 5vw;
+    margin-bottom: 2vw;
+}
+#home .fly-a span p,
+#home .fly-b span p,
+#home .fly-c span p {
+    font-size: 2.2vw;
+}
+#home .call-to-action {
+    font-size: 2.4vw;
+    grid-column: 3;
+    align-self: end;
+    position: relative;
+    right: -5vw;
+}
+
+/*
+*********************
+Web, Mobile and design Pages
+*********************
+*/
+#web, #mobile, #design {
+    height: unset;
+    max-height: 65vw;
+    grid-template-rows: 25vw auto;
+}
+#web .tit, #mobile .tit, #design .tit {
+    grid-column: 1 / 3;
+    max-width: unset;
+    left: unset;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+}
+#web .tit h2, #mobile .tit h2, #design .tit h2 {
+    font-size: 10vw;
+}
+#web .tit h3, #mobile .tit h3, #design .tit h3 {
+    font-size: 2.3vw;
+}
+#web .inf, #mobile .inf, #design .inf {
+    padding: 2.5vw;
+}
+#web .inf b, #mobile .inf b, #design .inf b {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    display: block;
+}
+#web .inf p, #mobile .inf p, #design .inf p {
+    font-size: 1.5vw;
+}
+#mobile {
+    .img {
+        grid-column: 1;
     }
-    #contact .contact-form div:nth-child(7) {
+    .inf {
         grid-column: 2;
+    }
+}
+
+
+/*
+*********************
+Portfolio Page
+*********************
+*/
+
+#portfolio {
+    padding: 25px;
+}
+#portfolio .float-title .title-titl-box {
+    padding-left: 15vw;
+    padding-right: 8vw;
+}
+#portfolio .float-title .title-titl-box h1 {
+    font-size: 10vw;
+    line-height: .9;
+}
+#portfolio .portfolio-card:nth-child(2n) .line,
+#portfolio .portfolio-card:nth-child(2n+1) .line {
+    display: none;
+}
+#portfolio .portfolio-card .imag-box img {
+    max-width: 100%;
+}
+#portfolio .portfolio-card .title-text-box {
+    top: 6vw;
+}
+#portfolio .portfolio-card .title-text-box h3 {
+    font-size: 2.4vw;
+}
+#portfolio .portfolio-card .title-text-box p {
+    font-size: 1.8vw;
+    line-height: 1.3;
+}
+#portfolio .portfolio-card:nth-child(2n) .title-year-box {
+    left: unset;
+    margin-left: 0;
+}
+#portfolio .portfolio-card:nth-child(2n+1) .title-year-box {
+    right: 1vw;
+}
+#portfolio .portfolio-card:nth-child(2n) .title-text-box {
+    left: 3vw;
+}
+#portfolio .portfolio-card:nth-child(2n+1) .title-text-box {
+    right: 4.3vw;
+}
+
+/*
+*********************
+Aboutus Page
+*********************
+*/
+#aboutus {
+    min-height: 120vw;
+    max-height: 120vw;
+}
+#aboutus .about-content {
+    width: initial;
+    background-color: rgba(29, 29, 29, 0.7);
+}
+#aboutus .about-content div {
+    width: initial;
+    left: unset;
+    transform: translateX(0) translateY(-50%);
+    padding: 0 5vw;
+}
+#aboutus .about-content div h2 {
+    font-size: 15vw;
+}
+#aboutus .about-content div p {
+    font-size: 3vw;
+    line-height: 4vw;
+    margin-bottom: 10vw;
+}
+#aboutus .about-content div .call-to-actions a {
+    font-size: 3vw;
+}
+#aboutus #video-background {
+    filter: grayscale(35%) brightness(85%);
+}
+
+/*
+*********************
+Advantage Page
+*********************
+*/
+#advantage {
+    max-height: 120vw;
+    min-height: 100vw;
+}
+#advantage .v-card .v-content {
+    bottom: 50px;
+}
+
+/*
+*********************
+Contact Page
+*********************
+*/
+#contact {
+    display: block;
+    padding: 10vw 5vw;
+    height: auto;
+}
+#contact .contact-form {
+    grid-template-columns: auto 25vw;
+    grid-template-rows: repeat(5, 10vw) 20vw;
+    div {
+        grid-column: 1 / 3;
         grid-row: unset;
     }
     #contact .contact-form h2 {
@@ -299,89 +339,400 @@ $softgray: #f2f2f2;
     #contact .contact-offices .location {
         top: 0;
         left: -4vw;
-    }
+    }   
+}
+#contact .contact-form div:nth-child(6) {
+    grid-row: unset;
+}
+#contact .contact-form div:nth-child(7) {
+    grid-column: 2;
+    grid-row: unset;
+}
+#contact .contact-form h2 {
+    font-size: 8vw;
+    margin-bottom: 10vw;
+}
+#contact .contact-form input, #contact .contact-form textarea {
+    padding: 2vw;
+    width: calc(100% - 4vw);
+    font-size: small;
+}
+#contact .send a {
+    font-size: 3.4vw;
+    float: none;
+    width: 100%;
+    padding: 2vw 0;
+}
+#contact .contact-offices .phones-email {
+    top: -18vw;
+    bottom: unset;
+    left: 0;
+    right: unset;
+}
+#contact .contact-offices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid #fff;
+    border-left: none;
+    margin-top: 10vw;
+}
+#contact .contact-offices .address,
+#contact .contact-offices .phones-email {
+    font-size: 1.6vw;
+    line-height: 1.2;
+}
+#contact .contact-form label,
+#contact .contact-form input,
+#contact .contact-form textarea {
+    font-size: 1.6vw;
+}
+#contact .contact-offices hr {
+    position: absolute;
+    height: 3vw;
+    width: 0;
+    top: -6vw;
+    left: 5vw;
+}
+#contact .contact-offices .location {
+    top: 0;
+    left: -4vw;
+}
 
-    /*
-    *********************
-    Opportunities Page
-    *********************
-    */
+/*
+*********************
+Opportunities Page
+*********************
+*/
 
-    .opportunities-content {
-        padding: 0 $frameborder;
-    }
+.opportunities-content {
+    padding: 0 $frameborder;
+}
 
-    .opportunities-grid {
-        padding: 30px 10vw 30px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: 12vw auto;
-        grid-gap: 2vw;
-        // min-height: 120vw;
-        // height: calc(100vh - 190px);
-        background-color: #fff;
+.opportunities-grid {
+    padding: 30px 10vw 30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 12vw auto;
+    grid-gap: 2vw;
+    // min-height: 120vw;
+    // height: calc(100vh - 190px);
+    background-color: #fff;
 
-        .sub-header {
-            grid-column: 1 / 2;
-            grid-row: 1;
-            letter-spacing: 1.5px;
-            max-width: 60vw;
-            
-            h2 {
-                text-transform: uppercase;
-                background-color: $yellow;
-                padding-left: .5vw;
-                font-size: 64px;
-                font-weight: 900;
-            }
-        }
-
-        .col-1{
-            background-color: white;
-            .img-container {
-                overflow: hidden;
-                // height: 25vw;
-                width: 100%;
-                img {
-                    // height: 100%;
-                    max-width: 100%;
-                }
-            }
-            .col-content {
-                margin-top: 25px;
-                margin-bottom: 20px;
-                h4 {
-                    text-transform: uppercase;
-                    margin-bottom: 15px;
-                    font-weight: bold;
-                    font-size: 16px;
-                    letter-spacing: -.5px;
-                    // line-height: 3.2;
-                }
-                p {
-                    line-height: 1.5;
-                    font-size: 14px;
-                }
-            }
-        }
-
-        .col-1:nth-child(3n + 2) {
-            margin: auto;
-        }
-        .col-1:nth-child(3n) {
-            margin: auto;
-        }
-
-        .col-1:nth-child(3n + 1) {
-            margin: auto;
-        }
-
-        .read-more {
-            border: none;
+    .sub-header {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        letter-spacing: 1.5px;
+        max-width: 60vw;
+        
+        h2 {
+            text-transform: uppercase;
             background-color: $yellow;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            cursor: pointer;
+            padding-left: .5vw;
+            font-size: 64px;
+            font-weight: 900;
         }
-    }    
+    }
+
+    .col-1{
+        background-color: white;
+        .img-container {
+            overflow: hidden;
+            // height: 25vw;
+            width: 100%;
+            img {
+                // height: 100%;
+                max-width: 100%;
+            }
+        }
+        .col-content {
+            margin-top: 25px;
+            margin-bottom: 20px;
+            h4 {
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: -.5px;
+                // line-height: 3.2;
+            }
+            p {
+                line-height: 1.5;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .col-1:nth-child(3n + 2) {
+        margin: auto;
+    }
+    .col-1:nth-child(3n) {
+        margin: auto;
+    }
+
+    .col-1:nth-child(3n + 1) {
+        margin: auto;
+    }
+
+    .read-more {
+        border: none;
+        background-color: $yellow;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+/*
+*********************
+Portfolio detail Page
+*********************
+*/
+#portfolioDetail {
+    border: 25px solid #fff;
+    width: calc(100% - 50px);
+}
+#portfolioDetail .detail-content {
+    padding: 25px;
+}
+#portfolioDetail .dissmiss-btn {
+    top: 6px;
+    right: 6px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #000;
+}
+#portfolioDetail .dissmiss-btn:hover {
+    top: 6px;
+    right: 6px;
+}
+#portfolioDetail .dissmiss-btn span {
+    width: 20px;
+    height: 5px;
+}
+/* change view to block */
+#portfolioDetail .detail-project,
+#portfolioDetail .detail-steps,
+#portfolioDetail .detail-design,
+#portfolioDetail .detail-tech .tech-container,
+#portfolioDetail .detail-result {
+    display: block;
+    padding: 25px
+}
+/* hide unwanted elements */
+#portfolioDetail .detail-project .show-case-1,
+#portfolioDetail .detail-project .show-case-2,
+#portfolioDetail .detail-steps .info,
+#portfolioDetail .detail-tech .tech-container .box {
+    display: none;
+}
+
+/* detail */
+#portfolioDetail .detail-project h2 {
+    font-size: 9vw;
+    margin: 2.5vw 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#portfolioDetail .detail-project .imag {
+    margin: 0;
+    height: 40vw;
+}
+#portfolioDetail .detail-project .text {
+    top: unset;
+    margin: 2.5vw 0;
+    font-size: 2vw;
+    line-height: 3vw;
+}
+#portfolioDetail .detail-project .text p {
+    max-height: 12vw;
+}
+#portfolioDetail .detail-project .case {
+    left: unset;
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+/* first steps */
+#portfolioDetail .detail-steps h2 {
+    font-size: 9vw;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-steps .imag {
+    margin-left: 0;
+    margin-right: 5vw;
+    height: 50vw;
+}
+#portfolioDetail .detail-steps .imag div {
+    height: 40vw;
+    width: calc(100% + 2.5vw);
+}
+#portfolioDetail .detail-steps .imag p {
+    font-size: 2vw;
+}
+#portfolioDetail .detail-steps .text {
+    margin: 0;
+    margin-top: 2.5vw;
+    font-size: 2vw;
+    line-height: 1.5;
+    top: unset;
+}
+#portfolioDetail .detail-steps .text p {
+    max-height: unset;
+}
+
+/* design */
+#portfolioDetail .detail-design h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-design .list .num {
+    font-size: 4vw;
+}
+#portfolioDetail .detail-design .list .txt {
+    font-size: 2vw;
+    line-height: 1.5;
+}
+#portfolioDetail .detail-design .list {
+    grid-template-columns: 5vw auto;
+}
+
+/* technical */
+#portfolioDetail .detail-tech {
+    padding: 0;
+}
+#portfolioDetail .detail-tech .tech-container {
+    border: none;
+    max-height: unset;
+}
+#portfolioDetail .detail-tech .tech-container h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+    color: $black;
+}
+#portfolioDetail .detail-tech .tech-container .text {
+    font-size: 2vw;
+    line-height: 1.5;
+    width: 100%;
+}
+#portfolioDetail .detail-tech .tech-container .text p {
+    max-height: unset;
+}
+#portfolioDetail .detail-tech .tech-container .imag {
+    height: 32vw;
+    right: 0;
+    max-height: unset;
+    width: 90%;
+    margin: 2.5vw 0 2.5vw 10%;
+}
+#portfolioDetail .detail-tech .tech-container .info {
+    width: 60%;
+    font-size: 1.5vw;
+    line-height: 1.5;
+    top: unset;
+    right: unset;
+    margin-left: calc(40% - 3vw);
+}
+#portfolioDetail .detail-tech .tech-container .info p {
+    max-height: unset;
+}
+
+/* Results */
+#portfolioDetail .detail-result h2 {
+    font-size: 9vw;
+    line-height: 1;
+    margin: 2.5vw 0;
+    text-align: center;
+}
+#portfolioDetail .detail-result .imag {
+    height: 25vw;
+    background-color: $yellowHover;;
+    width: 80%;
+    margin: 0 auto;
+}
+#portfolioDetail .detail-result .text {
+    font-size: 2vw;
+    line-height: 1.5;
+}
+#portfolioDetail .detail-result .text span {
+    font-size: 25vw;
+    width: 13%;
+    height: 15vw;
+    line-height: 0.6;
+    top: 9vw;
+}
+#portfolioDetail .detail-result .text p {
+    width: 86%;
+    max-height: unset;
+}
+#portfolioDetail .detail-result .text a.result-link {
+    font-size: 2vw;
+    padding: 2vw;
+    width: 40%;
+    display: block;
+    margin: 5vw auto 0;
+    text-align: center; 
+}
+/* footer */
+#portfolioDetail .detail-footer div:nth-child(1) h3 {
+    letter-spacing: 0;
+    font-size: 2.5vw;
+}
+#portfolioDetail .detail-footer div:nth-child(1) p {
+    font-size: 2vw;
+    line-height: 1;
+}
+#portfolioDetail .detail-footer div:nth-child(3) {
+    padding: 2vw;
+    font-size: 2.5vw;
+}
+
+/*
+*********************
+Team Page
+*********************
+*/
+#team #grid {
+    grid-template-columns: repeat(auto-fill, 14vw);
+}
+#team #grid .title div h1 {
+    font-size: 10vw;
+}
+#team #grid .title div p {
+    font-size: 2.5vw;
+}
+#team #grid .info-black p,
+#team #grid .info-white p,
+#team #grid .info-yellow p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+    max-height: 37vw;
+    margin-bottom: 5vw;
+}
+#team #grid .info-black a.call-to-action,
+#team #grid .info-white a.call-to-action,
+#team #grid .info-yellow a.call-to-action {
+    font-size: 1.2vw;
+    display: inline-block;
+}
+#team #grid .info-black h2,
+#team #grid .info-white h2,
+#team #grid .info-yellow h2 {
+    font-size: 4vw;
+    text-transform: uppercase;
+}
+#team #grid .section p {
+    position: relative;
+    font-size: 4vw;
+    bottom: -50%;
+    transform-origin: bottom;
+    text-align: center;
+    width: unset;
+    left: 50%;
 }
