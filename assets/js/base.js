@@ -1,4 +1,4 @@
-var grayStart = document.getElementById("web").offsetTop - 300;
+var grayStart = document.getElementById("web").offsetTop;
 var grayEnd = document.getElementById("aboutus").offsetTop;
 
 $(function () {

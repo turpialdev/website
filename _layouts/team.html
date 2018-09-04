@@ -9,6 +9,13 @@
 {% include head.html %}
 
 <style>
+
+    #body {
+        width: calc(100vw - 26px);
+        height: calc(100vh - 65px);
+        overflow: auto;
+    }
+
     .main-head,
     .content,
     .main-footer {
@@ -18,37 +25,44 @@
     .content {
         margin: 0;
     }
+
+    #scroll {
+        width: calc((36vw * {{ page.gridSize }}) + 26px);
+    }
+
+    @media only screen and (min-width: 767px) and (max-width: 1025px) {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
+            width: calc((26vw * {{ page.gridSize }}) + 52px);
+        }
+    }
+
+    @media only screen and (min-width:1025px) {
+        #body {
+            height: calc(100vh - 104px);
+            width: calc(100vw - 104px);
+        }
+
+        #scroll {
+            width: calc((16vw * {{ page.gridSize }}) + 52px);
+        }
+    }
 </style>
 
-<body>
+<body id="body" onresize="saveScreenSize()">
 
-    <div class="wrapper">
+    <div class="wrapper" id="scroll">
 
         <header class="main-head">
             {% include header.html %}
         </header>
 
         <div class="content">
-            <div class="team">
-
-                <style>
-                    #grid {
-                        width: calc((36vw * '{{ page.gridSize }}') + 26px);
-                    }
-
-                    @media only screen and (min-width: 767px) and (max-width: 1025px) {
-                        #grid {
-                            width: calc((26vw * '{{ page.gridSize }}') + 52px);
-                        }
-                    }
-
-                    @media only screen and (min-width:1025px) {
-                        #grid {
-                            width: calc((16vw * '{{ page.gridSize }}') + 52px);
-                        }
-                    }
-                </style>
-
+            <div id="team">
                 <section id="grid">
                     {% for element in page.elements %}
 
@@ -73,10 +87,6 @@
                             {% if element.button %}
                             <a class="call-to-action" href="{{ element.url }}">{{ element.button }}</a>
                             {% endif %}
-                            
-                            {% if !element.image %}
-                            <b>{{ element.name }}</b>
-                            {% endif %} 
                             
                         </div>
                         {% endif %} 
@@ -110,11 +120,50 @@
 </body>
 
 {% include script.html %}
+
 <script>
-    $(document).ready(function () {
-        $('#grid').mousewheel(function (e, delta) {
-            this.scrollLeft -= (delta * 40);
+    $(function() {
+
+        const doScroll = function (e) {
+            // cross-browser wheel delta
+            e = window.event || e;
+            const delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            var team = $("#body");
+
+            team.animate({
+                scrollLeft: team.scrollLeft() - delta * 30
+            }, 7, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+            });
+
+
             e.preventDefault();
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener("mousewheel", doScroll, false);
+            window.addEventListener("DOMMouseScroll", doScroll, false);
+        } else {
+            window.attachEvent("onmousewheel", doScroll);
+        }
+
+        $(document).keyup(function (e) {
+            var key = e.charCode ? e.charCode : e.keyCode ? e.keyCode : 0;
+            var container = $("#body");
+            var delta = 0;
+
+            if ( key == 38 ) {  /* up */
+                delta = -30;
+            }else if( key == 40 ){  /* down */
+                delta = 30;
+            }
+
+            container.animate({
+                scrollLeft: container.scrollLeft() + delta
+            }, 7);
+            e.preventDefault();
+            return false;
         });
 
     });

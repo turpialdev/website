@@ -45,9 +45,8 @@ Nav-bar
         display: none;
     }
     .small-menu {
-        display: block;
-    }
-    .small-menu {
+        visibility: hidden;
+        
         display: grid;
         grid-template-columns: auto 60px;
         position: fixed;
@@ -567,41 +566,36 @@ Portfolio detail Page
 Team Page
 *********************
 */
-.team {
-    margin: 0 $frameborder;
-    padding: 52px 0 $frameborder;
-}
-.team #grid {
-    overflow: auto;
+#team #grid {
     grid-template-columns: repeat(auto-fill, 14vw);
 }
-.team #grid .title div h1 {
+#team #grid .title div h1 {
     font-size: 10vw;
 }
-.team #grid .title div p {
+#team #grid .title div p {
     font-size: 2.5vw;
 }
-.team #grid .info-black p,
-.team #grid .info-white p,
-.team #grid .info-yellow p {
+#team #grid .info-black p,
+#team #grid .info-white p,
+#team #grid .info-yellow p {
     font-size: 1.5vw;
     line-height: 1.5;
     max-height: 37vw;
     margin-bottom: 5vw;
 }
-.team #grid .info-black a.call-to-action,
-.team #grid .info-white a.call-to-action,
-.team #grid .info-yellow a.call-to-action {
+#team #grid .info-black a.call-to-action,
+#team #grid .info-white a.call-to-action,
+#team #grid .info-yellow a.call-to-action {
     font-size: 1.2vw;
     display: inline-block;
 }
-.team #grid .info-black h2,
-.team #grid .info-white h2,
-.team #grid .info-yellow h2 {
+#team #grid .info-black h2,
+#team #grid .info-white h2,
+#team #grid .info-yellow h2 {
     font-size: 4vw;
     text-transform: uppercase;
 }
-.team #grid .section p {
+#team #grid .section p {
     position: relative;
     font-size: 4vw;
     bottom: -50%;
