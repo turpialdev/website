@@ -1,7 +1,7 @@
 ---
 title: "IUCN espanol"
 lang: es
-date: 2017-05-09
+date: 2018-02-01
 layout: project
 permalink: /iucn/es/
 description: "La Lista Roja de Ecosistemas de la Unión Internacional para la Conservación de la Naturaleza (UICN) es la iniciativa más extensa del estado de conservación de los ecosistemas en todo el mundo."
@@ -71,4 +71,3 @@ sections:
         image_lg: /img/portfolio/iucn/results/o.png
         image_xl: /img/portfolio/iucn/results/o.png
 ---
-

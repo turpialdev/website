@@ -1,7 +1,7 @@
 ---
 title: "Widu espanol"
 lang: es
-date: 2017-05-09
+date: 2999-05-09
 layout: project
 permalink: /widulegal/es/
 description:  Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto...
@@ -75,4 +75,3 @@ sections:
         image_lg: /img/portfolio/widu/portafolio-widu-o.png
         image_xl: /img/portfolio/widu/portafolio-widu-o.png
 ---
-

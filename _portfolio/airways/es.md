@@ -1,7 +1,7 @@
 ---
 title: "AirWays en español"
 lang: es
-date: 2017-05-09
+date: 2016-09-01
 layout: project
 permalink: /airways/es/
 description:  "Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto..."
@@ -69,4 +69,3 @@ sections:
     #     image_lg: /img/portfolio/airways/results/o.png
     #     image_xl: /img/portfolio/airways/results/o.png
 ---
-

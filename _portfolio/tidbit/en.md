@@ -1,7 +1,7 @@
 ---
 title: "Tidbit"
 lang: en
-date: 2016-05-09
+date: 2017-11-01
 layout: project
 permalink: /tidbit/
 description: "It’s a social network for food lovers that offers personalized restaurant and dish recommendations based on the user's preferences as well as comments and ratings of individual dishes by their friends."
@@ -33,7 +33,7 @@ sections:
         synthesis_title: Built using agile methodologies
         synthesis: "TidBit Social branding agency did a lot of work defining the look of the app while Turpial, with more experience on UX/UI helped ensure usability and good experience in the design. <br>
 We worked using agile methodologies with daily standup meetings, planning the work for each iteration and making sure everyone was on the same page and with the same vision."
-        fun_fact: Turpial started to work on Tidbit Social in 2016 when Washington, DC-based entrepreneurs came to us with this idea. 
+        fun_fact: Turpial started to work on Tidbit Social in 2016 when Washington, DC-based entrepreneurs came to us with this idea.
         image_sm: /img/portfolio/tidbit/first_steps/o.png
         image_md: /img/portfolio/tidbit/first_steps/o.png
         image_lg: /img/portfolio/tidbit/first_steps/o.png
@@ -73,5 +73,3 @@ We worked using agile methodologies with daily standup meetings, planning the wo
         image_lg: /img/portfolio/tidbit/results/o.png
         image_xl: /img/portfolio/tidbit/results/o.png
 ---
-
-

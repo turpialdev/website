@@ -1,7 +1,7 @@
 ---
 title: "AirWays"
 lang: en
-date: 2017-05-09
+date: 2016-09-01
 layout: project
 permalink: /airways/
 description: "Magazine's website and custom subscription management
