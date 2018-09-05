@@ -34,10 +34,10 @@ sections:
         # synthesis_title: Aqui un titulo cool
         synthesis: We started to develop the initial project of restructuring of the website in december 2015 and during the progress we began to work with the client to develop a completely customized system for the management of the subscriptions to both editions of the magazine.
         fun_fact: The client accepted an extension of the deadline because of the extra work that was required by him, this including the subscription system. Our negotiations were always transparent and on point.
-        image_sm: /img/portfolio/airways/detail/o.png
-        image_md: /img/portfolio/airways/detail/o.png
-        image_lg: /img/portfolio/airways/detail/o.png
-        image_xl: /img/portfolio/airways/detail/o.png
+        image_sm: /img/portfolio/airways/first_steps/o.png
+        image_md: /img/portfolio/airways/first_steps/o.png
+        image_lg: /img/portfolio/airways/first_steps/o.png
+        image_xl: /img/portfolio/airways/first_steps/o.png
     # design:
     #     title: Diseno por <br> principios
     #     steps:
@@ -56,10 +56,10 @@ sections:
             - name: Django 1.8
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/airways/detail/o.png
-        image_md: /img/portfolio/airways/detail/o.png
-        image_lg: /img/portfolio/airways/detail/o.png
-        image_xl: /img/portfolio/airways/detail/o.png
+        image_sm: /img/portfolio/airways/technologies/o.png
+        image_md: /img/portfolio/airways/technologies/o.png
+        image_lg: /img/portfolio/airways/technologies/o.png
+        image_xl: /img/portfolio/airways/technologies/o.png
     # results:
     #     title: Results
     #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
