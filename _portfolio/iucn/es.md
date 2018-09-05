@@ -10,6 +10,8 @@ description: "La Lista Roja de Ecosistemas de la Unión Internacional para la Co
 call_to_action_title: Ya sabes como trabajamos
 cal_to_action_subtitle: Comienza a trabajar con nosotros
 
+
+work_together_label: Trabajemos juntos
 email: hola@turpialdev.com
 email_subject: Hola%20Turpial%20Dev
 phone_number_label: +58 (212) 754 1143

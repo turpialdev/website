@@ -10,6 +10,8 @@ description: "It is an established fact too long ago that a reader will be distr
 call_to_action_title: You already know how we work
 cal_to_action_subtitle: Start working with us
 
+
+work_together_label: Let's work together
 email: hola@turpialdev.com
 email_subject: Hello%20Turpial%20Dev
 phone_number_label: +58 (212) 754 1143
