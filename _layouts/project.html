@@ -159,7 +159,11 @@
                     <a href="tel:{{ page.phone_number }}">{{ page.phone_number_label }}</a>
                 </div>
                 <div>
-                    Let's work together
+                    {% if page.lang == 'en' %}
+                    <a href="/#contact">{{ page.work_together_label }}</a>
+                    {% else %}
+                    <a href="/#contact/es">{{ page.work_together_label }}</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
