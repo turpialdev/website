@@ -19,6 +19,7 @@ function saveScreenSize() {
         menu = $('#menuSM');
     }
     closeMenu();
+    resetMenu();
 }
 
 function openMenu() {
@@ -29,6 +30,11 @@ function closeMenu() {
     menu.removeClass('showMenu');
     hamburger.css('width', '50');
     hamburger.css('opacity', '1');
+}
+
+function resetMenu() {
+    $('#menuLG').removeClass('showMenu');
+    $('#menuSM').removeClass('showMenu');
 }
 
 (function () {
