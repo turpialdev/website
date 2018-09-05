@@ -85,7 +85,18 @@
                     {% endif %} 
 
                     {% if element.template == 'people' %}
-                    <div id="{{ element.name | remove: ' ' }}" class="{{ element.template }} {{ element.span }}"></div>
+                    <div id="{{ element.name | remove: ' ' }}" class="{{ element.template }} {{ element.span }}">
+                        <div class="contact-name">
+                            {{ element.name }}
+                        </div>
+                        {% if element.location and element.email %}
+                        <div class="contact-info">
+                            <a href="mailto:{{ element.email }}?Subject={{ page.contact-mail-subject }}" target="_top">{{ element.email }}</a>
+                            <br>
+                            <b>{{ page.location }}:</b> {{ element.location }}
+                        </div>
+                        {% endif %}
+                    </div>
                     <style>
                         [id|="{{ element.name | remove: ' ' }}"] {
                             background: url('{{ element.image }}');

@@ -2108,14 +2108,40 @@ Team Page
         background-color: $yellow;
     }
 
+    
     .people {
         padding: 0;
         position: relative;
         overflow: hidden;
+        color: #fff;
         background-color: #eee;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top center;
+
+        .contact-name {
+
+        }
+
+        .contact-info {
+            display: none;
+            position: absolute;
+            bottom: 0;
+
+            letter-spacing: .1vw;
+            font-size: .9vw;
+            line-height: 1.5;
+            padding: 16px;
+            width: 100%;
+            background-color: rgba(0,0,0,.2);
+            
+            b {
+                font-weight: 600;
+            }
+        }
+        &:hover .contact-info {
+            display: block;
+        }
     }
 }
 
