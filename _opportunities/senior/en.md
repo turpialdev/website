@@ -6,5 +6,5 @@ alt: "senior-profile"
 description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.\
  Molestiae distinctio saepe cupiditate ipsam"
 order: 2
-read-more-url: "/blog/"
+read-more-url: "https://medium.com/turpialdev/jobs/home"
 ---

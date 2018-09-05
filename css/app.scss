@@ -1811,10 +1811,11 @@ Portfolio detail
                 font-size: 1.2vw;
                 padding: 1vw;
                 border: none;
-                width: 70%;
-                margin-left: 30%;
-                margin-top: 2.5vw;
                 background-color: $lightgray;
+                margin: 5vw auto 0;
+                max-width: 200px;
+                display: block;
+                text-align: center;
                 &:hover {
                     background-color: $softgray;
                 }
