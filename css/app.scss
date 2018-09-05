@@ -105,7 +105,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 
@@ -2121,27 +2120,38 @@ Team Page
         background-position: top center;
 
         .contact-name {
-
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            transform: rotate(-90deg);
+            transform-origin: bottom right;
+            width: 100%;
+            padding: .5vw;
+            text-align: right;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.8vw;
         }
 
         .contact-info {
             display: none;
             position: absolute;
             bottom: 0;
-
             letter-spacing: .1vw;
             font-size: .9vw;
             line-height: 1.5;
             padding: 16px;
             width: 100%;
             background-color: rgba(0,0,0,.2);
-            
             b {
                 font-weight: 600;
             }
         }
-        &:hover .contact-info {
-            display: block;
+        &:hover {
+            .contact-info, .contact-name {
+                display: block;
+            }
         }
     }
 }
