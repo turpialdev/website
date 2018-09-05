@@ -2133,18 +2133,19 @@ Team Page
             text-transform: uppercase;
             font-weight: 600;
             font-size: 2vw;
+            white-space: normal;
         }
 
         .contact-info {
             display: none;
             position: absolute;
             bottom: 0;
-            letter-spacing: .1vw;
             font-size: .9vw;
             line-height: 1.5;
             padding: 16px;
             width: 100%;
             background-color: rgba(0,0,0,.2);
+            white-space: normal;
             b {
                 font-weight: 600;
             }
