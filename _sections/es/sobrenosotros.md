@@ -9,8 +9,8 @@ include: sections/aboutus.html
 image: path/to/img
 # Buttons text
 team-link: Nuestro<br> equipo
-culture-link: Nuestra<br> cultura
-jobs-link: Ofertas de<br> Empleo
+culture-link: Nuestro<br> blog
+jobs-link: Ofertas de<br> empleo
 ---
 
 Somos un equipo de desarrolladores, diseñadores, gerentes de proyecto y equipo de soporte que trabajamos estrechamente con cada uno de nuestros clientes para desarrollar las soluciones digitales que necesitan, utilizando metodologías ágiles para compartir las prioridades del cliente en un diálogo abierto en cada paso del camino.

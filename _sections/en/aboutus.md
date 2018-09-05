@@ -9,7 +9,7 @@ include: sections/aboutus.html
 image: path/to/img
 # Buttons text
 team-link: Our<br> team
-culture-link: Our<br> culture
+culture-link: Our<br> blog
 jobs-link-label: Work<br> with us
 jobs-link:  /opportunities
 ---

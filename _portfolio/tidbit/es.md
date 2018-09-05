@@ -1,7 +1,7 @@
 ---
 title: "Tidbit español"
 lang: es
-date: 2017-05-09
+date: 2017-11-01
 layout: project
 permalink: /tidbit/es/
 description: "Es una red social para amantes de la comida que ofrece recomendaciones personalizadas de restaurantes y platos según las preferencias del usuario, así como comentarios y valoraciones de platos individuales por parte de sus amigos."
@@ -38,7 +38,7 @@ sections:
         image_lg: /img/portfolio/tidbit/first_steps/o.png
         image_xl: /img/portfolio/tidbit/first_steps/o.png
    # design:
-        # title: Diseno por <br> 
+        # title: Diseno por <br>
         # principios
        #  steps:
             # - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro, dicta quae autem nobis iusto ut harum sint!
@@ -72,4 +72,3 @@ sections:
         image_lg: /img/portfolio/tidbit/results/o.png
         image_xl: /img/portfolio/tidbit/results/o.png
 ---
-
