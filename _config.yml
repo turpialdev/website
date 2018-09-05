@@ -4,15 +4,15 @@ tagline: "New cool site"
 url: "http://turpialdev.com" # The base hostname & protocol for your site. Use it if you need absolute URL's
 
 # Social
-socialimg: /img/social.jpg # be sure to change this image
+socialimg: "/img/logo-turpial.png" # be sure to change this image
 facebook: fbusername
 twitter: twusername
 github: ghusername
 instagram: turpialdev
 
 # Contact
-phone: "916-276-1044" # This is my real number. You should text me.
-email: "hello@turpialdev.com" # This is my real email address. Please don't email me.
+phone: "916-276-1044"
+email: "hello@turpialdev.com"
 
 # Build settings
 markdown: kramdown
@@ -26,7 +26,7 @@ exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
 navigation:
   - section: Home
-    url: '/'
+    url: '/#home'
     target: '_self"'
 
   - section: Blog

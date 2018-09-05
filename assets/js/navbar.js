@@ -7,16 +7,19 @@ $(document).ready(function () {
     saveScreenSize();
 });
 
+$(window).resize(function () {
+    saveScreenSize();
+});
+
 function saveScreenSize() {
     screenSize = $(document).width();
-
     if (screenSize > '1024') {
         menu = $('#menuLG');
     } else {
         menu = $('#menuSM');
     }
-
     closeMenu();
+    resetMenu();
 }
 
 function openMenu() {
@@ -27,6 +30,11 @@ function closeMenu() {
     menu.removeClass('showMenu');
     hamburger.css('width', '50');
     hamburger.css('opacity', '1');
+}
+
+function resetMenu() {
+    $('#menuLG').removeClass('showMenu');
+    $('#menuSM').removeClass('showMenu');
 }
 
 (function () {

@@ -1,5 +1,8 @@
 ---
 ---
+/**
+ * Medium screen styles
+ */
 
 /*
 *********************
@@ -720,8 +723,6 @@ Team Page
 #team .info-yellow p {
     font-size: 1.5vw;
     line-height: 1.5;
-    max-height: 37vw;
-    margin-bottom: 5vw;
 }
 #team .info-black a.call-to-action,
 #team .info-white a.call-to-action,
@@ -736,11 +737,5 @@ Team Page
     text-transform: uppercase;
 }
 #team .section p {
-    position: relative;
-    font-size: 4vw;
-    bottom: -50%;
-    transform-origin: bottom;
-    text-align: center;
-    width: unset;
-    left: 50%;
+    font-size: 9vw;
 }

@@ -8,7 +8,7 @@
 
 {% include head.html %}
 
-<body onresize="saveScreenSize()">
+<body>
 
     <section id="portfolioDetail">
         <div class="dissmiss-btn" onclick="onDismissDetail()">
@@ -71,7 +71,7 @@
             {% endif %}
 
             <!-- PROJECT DETAIL DESIGN -->
-            {% if page.sections.first_steps %}
+            {% if page.sections.design %}
 
             {% assign design=page.sections.design %}
             <div class="detail-design">

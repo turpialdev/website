@@ -20,29 +20,35 @@ sections:
         image_pointer_1: Hola
         image_pointer_2: Aqui otro hola
         synthesis_title: Aqui un titulo cool
-        synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
+        synthesis: Un sistema de gestión de solicitudes legales de cara al consumidor que permite al equipo de WIDU generar, a través de plantillas preestablecidas, documentos con validez legal que cada cliente puede llenar a través de una sencilla encuesta personalizada, para facilitar el acceso a documentos fiscales con asesoría profesional garantizada.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         image_sm: /img/portfolio/widu/portafolio-widu-sm.png
         image_md: /img/portfolio/widu/portafolio-widu-md.png
         image_lg: /img/portfolio/widu/portafolio-widu-lg.png
         image_xl: /img/portfolio/widu/portafolio-widu-xl.png
     first_steps:
-        title: Primeros Pasos
+        title: Primer contacto
         image: /img/portfolio/airways.png
         image_pointer: Hola
         synthesis_title: Aqui un titulo cool
-        synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
-        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        synthesis: "<ul>
+        <li>Reuniones con el cliente para evaluar su requerimiento.</li>
+        <li> Evaluación del mercado de los documentos legales.</li>
+        <li>Ponderación de herramientas más útiles y solicitadas en el mercado.</li>
+        <li>Planteamiento de tiempos de desarrollo.</li>
+        <li>Reunión con diseño para plasmar visión del producto.</li>
+        </ul>"
+        fun_fact: "Something lorem"
         image_sm: /img/portfolio/widu/portafolio-widu-sm.png
         image_md: /img/portfolio/widu/portafolio-widu-md.png
         image_lg: /img/portfolio/widu/portafolio-widu-lg.png
         image_xl: /img/portfolio/widu/portafolio-widu-xl.png
     design:
-        title: Diseno por <br> principios
+        title: Diseño por <br> etapas
         steps:
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro, dicta quae autem nobis iusto ut harum sint!
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro.
+            - content: "En nuestro primer acercamiento al cliente, solicitó que pensáramos el diseño de la página teniendo en cuenta dos principios: que solo se tenía para trabajar el logo, y la palabra “Hipster”."
+            - content: "A partir de allí el departamento de Diseño se encargó de afinar los detalles hasta construir una experiencia global que no solo es agradable a la vista y funcional, sino que además cumplió con las expectativas del cliente."
+
     technologies:
         title: Tech
         image: /img/portfolio/airways.png
