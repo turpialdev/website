@@ -22,10 +22,10 @@ sections:
         # synthesis_title: Aqui un titulo cool
         synthesis: "La Lista Roja de Ecosistemas de la Unión Internacional para la Conservación de la Naturaleza (UICN) es la iniciativa más extensa del estado de conservación de los ecosistemas en todo el mundo."
         fun_fact: "Propuesto durante el IV Congreso Mundial de Conservación en 2008 y reconocido por la UICN en 2014, la LRE es responsable de recopilar datos, estadísticas y evaluación de riesgos de todos los ecosistemas del planeta, con el objetivo de evaluarlos todos antes del año 2025."
-        image_sm: /img/portfolio/iucn/detail/sm.png
-        image_md: /img/portfolio/iucn/detail/md.png
-        image_lg: /img/portfolio/iucn/detail/lg.png
-        image_xl: /img/portfolio/iucn/detail/xl.png
+        image_sm: /img/portfolio/iucn/detail/o.png
+        image_md: /img/portfolio/iucn/detail/o.png
+        image_lg: /img/portfolio/iucn/detail/o.png
+        image_xl: /img/portfolio/iucn/detail/o.png
     first_steps:
         title: Primeros Pasos
         image: /img/portfolio/airways.png
@@ -35,10 +35,10 @@ sections:
         Uno de los aspectos más llamativos del proyecto son las tablas de información, cuyo objetivo es proporcionar al público información resumida sobre los estudios y publicaciones realizados en todo el mundo sobre el análisis y la preservación de los ecosistemas. <br>
         Además, dentro de la página, hay una forma conceptualizada por el cliente, y puede ser utilizada por quienes evalúan un ecosistema para documentar el estado en el que se encuentra, siguiendo los parámetros diseñados por el ecosistema LRE."
         fun_fact: "También pueden cargar archivos geográficos para proporcionar una abstracción visual georeferenciada del ecosistema dentro del sistema."
-        image_sm: /img/portfolio/iucn/first_steps/sm.png
-        image_md: /img/portfolio/iucn/first_steps/md.png
-        image_lg: /img/portfolio/iucn/first_steps/lg.png
-        image_xl: /img/portfolio/iucn/first_steps/xl.png
+        image_sm: /img/portfolio/iucn/first_steps/o.png
+        image_md: /img/portfolio/iucn/first_steps/o.png
+        image_lg: /img/portfolio/iucn/first_steps/o.png
+        image_xl: /img/portfolio/iucn/first_steps/o.png
     # design:
     #     title: Caracterísitcas
     #     steps:
@@ -56,19 +56,19 @@ sections:
             - name: Mezzanine
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/iucn/technologies/sm.png
-        image_md: /img/portfolio/iucn/technologies/md.png
-        image_lg: /img/portfolio/iucn/technologies/lg.png
-        image_xl: /img/portfolio/iucn/technologies/xl.png
+        image_sm: /img/portfolio/iucn/technologies/o.png
+        image_md: /img/portfolio/iucn/technologies/o.png
+        image_lg: /img/portfolio/iucn/technologies/o.png
+        image_xl: /img/portfolio/iucn/technologies/o.png
     results:
         title: Results
         quote: "Nos pidieron que recrearamos completamente la página web de LRE, que se desarrolló en Wordpress, además de incluir nuevas funcionalidades que le permitieran ofrecer una mejor gestión de la información geográfica asociada a los ecosistemas evaluados.<br>
         Sabías que… Las praderas marinas se encuentran entre los ecosistemas menos conocidos del mundo. Sin embargo, estos jardines submarinos son cruciales para nuestra supervivencia –– se encuentran entre los reservorios de carbono azul más importantes del planeta."
         external_button_label: Widulegal, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/iucn/results/sm.png
-        image_md: /img/portfolio/iucn/results/md.png
-        image_lg: /img/portfolio/iucn/results/lg.png
-        image_xl: /img/portfolio/iucn/results/xl.png
+        image_sm: /img/portfolio/iucn/results/o.png
+        image_md: /img/portfolio/iucn/results/o.png
+        image_lg: /img/portfolio/iucn/results/o.png
+        image_xl: /img/portfolio/iucn/results/o.png
 ---
 

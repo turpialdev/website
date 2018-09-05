@@ -22,10 +22,10 @@ sections:
         synthesis_title: Here's a cool title
         synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/detail/sm.png
-        image_md: /img/portfolio/widu/detail/md.png
-        image_lg: /img/portfolio/widu/detail/lg.png
-        image_xl: /img/portfolio/widu/detail/xl.png
+        image_sm: /img/portfolio/widu/detail/o.png
+        image_md: /img/portfolio/widu/detail/o.png
+        image_lg: /img/portfolio/widu/detail/o.png
+        image_xl: /img/portfolio/widu/detail/o.png
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/first_steps/sm.png
-        image_md: /img/portfolio/widu/first_steps/md.png
-        image_lg: /img/portfolio/widu/first_steps/lg.png
-        image_xl: /img/portfolio/widu/first_steps/xl.png
+        image_sm: /img/portfolio/widu/first_steps/o.png
+        image_md: /img/portfolio/widu/first_steps/o.png
+        image_lg: /img/portfolio/widu/first_steps/o.png
+        image_xl: /img/portfolio/widu/first_steps/o.png
     design:
         title: Diseno por <br> principios
         steps:
@@ -55,17 +55,17 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/widu/technologies/sm.png
-        image_md: /img/portfolio/widu/technologies/md.png
-        image_lg: /img/portfolio/widu/technologies/lg.png
-        image_xl: /img/portfolio/widu/technologies/xl.png
+        image_sm: /img/portfolio/widu/technologies/o.png
+        image_md: /img/portfolio/widu/technologies/o.png
+        image_lg: /img/portfolio/widu/technologies/o.png
+        image_xl: /img/portfolio/widu/technologies/o.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widu, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/widu/results/sm.png
-        image_md: /img/portfolio/widu/results/md.png
-        image_lg: /img/portfolio/widu/results/lg.png
-        image_xl: /img/portfolio/widu/results/xl.png
+        image_sm: /img/portfolio/widu/results/o.png
+        image_md: /img/portfolio/widu/results/o.png
+        image_lg: /img/portfolio/widu/results/o.png
+        image_xl: /img/portfolio/widu/results/o.png
 ---

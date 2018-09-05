@@ -22,10 +22,10 @@ sections:
         synthesis_title: Sitio web de la revista y gestión de suscripciones personalizadas
         synthesis: Para Airways Magazine, configuramos su sitio web público y CMS para administrar la publicación de todas sus historias, y un sistema de gestión de suscriptores con todas las funciones.
         fun_fact: Airways Magazine es una revista de aviación comercial líder con una edición física que se encuentra en más de 35 países, y una edición digital.
-        image_sm: /img/portfolio/airways/detail/sm.png
-        image_md: /img/portfolio/airways/detail/md.png
-        image_lg: /img/portfolio/airways/detail/lg.png
-        image_xl: /img/portfolio/airways/detail/xl.png
+        image_sm: /img/portfolio/airways/detail/o.png
+        image_md: /img/portfolio/airways/detail/o.png
+        image_lg: /img/portfolio/airways/detail/o.png
+        image_xl: /img/portfolio/airways/detail/o.png
     first_steps:
         title: Primeros Pasos
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         # synthesis_title: Aqui un titulo cool
         synthesis: Comenzamos a desarrollar el proyecto inicial de reestructuración del sitio web en diciembre de 2015 y durante el progreso comenzamos a trabajar con el cliente para desarrollar un sistema completamente personalizado para la gestión de las suscripciones a ambas ediciones de la revista.
         fun_fact: El cliente aceptó una extensión de la fecha límite debido al trabajo adicional que requería, incluido el sistema de suscripción. Nuestras negociaciones fueron siempre transparentes y puntuales.
-        image_sm: /img/portfolio/airways/first_steps/sm.png
-        image_md: /img/portfolio/airways/first_steps/md.png
-        image_lg: /img/portfolio/airways/first_steps/lg.png
-        image_xl: /img/portfolio/airways/first_steps/xl.png
+        image_sm: /img/portfolio/airways/first_steps/o.png
+        image_md: /img/portfolio/airways/first_steps/o.png
+        image_lg: /img/portfolio/airways/first_steps/o.png
+        image_xl: /img/portfolio/airways/first_steps/o.png
     # design:
     #     title: Diseno por <br> principios
     #     steps:
@@ -55,18 +55,18 @@ sections:
             - name: Django 1.8
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/airways/technologies/sm.png
-        image_md: /img/portfolio/airways/technologies/md.png
-        image_lg: /img/portfolio/airways/technologies/lg.png
-        image_xl: /img/portfolio/airways/technologies/xl.png
+        image_sm: /img/portfolio/airways/technologies/o.png
+        image_md: /img/portfolio/airways/technologies/o.png
+        image_lg: /img/portfolio/airways/technologies/o.png
+        image_xl: /img/portfolio/airways/technologies/o.png
     # results:
     #     title: Results
     #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
     #     external_button_label: Widulegal, CCO.
     #     external_button_link: https://google.com
-    #     image_sm: /img/portfolio/airways/results/sm.png
-    #     image_md: /img/portfolio/airways/results/md.png
-    #     image_lg: /img/portfolio/airways/results/lg.png
-    #     image_xl: /img/portfolio/airways/results/xl.png
+    #     image_sm: /img/portfolio/airways/results/o.png
+    #     image_md: /img/portfolio/airways/results/o.png
+    #     image_lg: /img/portfolio/airways/results/o.png
+    #     image_xl: /img/portfolio/airways/results/o.png
 ---
 

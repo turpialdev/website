@@ -22,10 +22,10 @@ sections:
         synthesis_title: Aqui un titulo cool
         synthesis: Un sistema de gestión de solicitudes legales de cara al consumidor que permite al equipo de WIDU generar, a través de plantillas preestablecidas, documentos con validez legal que cada cliente puede llenar a través de una sencilla encuesta personalizada, para facilitar el acceso a documentos fiscales con asesoría profesional garantizada.
         fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/widu/portafolio-widu-o.png
+        image_md: /img/portfolio/widu/portafolio-widu-o.png
+        image_lg: /img/portfolio/widu/portafolio-widu-o.png
+        image_xl: /img/portfolio/widu/portafolio-widu-o.png
     first_steps:
         title: Primer contacto
         image: /img/portfolio/airways.png
@@ -39,10 +39,10 @@ sections:
         <li>Reunión con diseño para plasmar visión del producto.</li>
         </ul>"
         fun_fact: "Something lorem"
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/widu/portafolio-widu-o.png
+        image_md: /img/portfolio/widu/portafolio-widu-o.png
+        image_lg: /img/portfolio/widu/portafolio-widu-o.png
+        image_xl: /img/portfolio/widu/portafolio-widu-o.png
     design:
         title: Diseño por <br> etapas
         steps:
@@ -61,18 +61,18 @@ sections:
             - name: Ionic
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/widu/portafolio-widu-o.png
+        image_md: /img/portfolio/widu/portafolio-widu-o.png
+        image_lg: /img/portfolio/widu/portafolio-widu-o.png
+        image_xl: /img/portfolio/widu/portafolio-widu-o.png
     results:
         title: Results
         quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         external_button_label: Widulegal, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/widu/portafolio-widu-sm.png
-        image_md: /img/portfolio/widu/portafolio-widu-md.png
-        image_lg: /img/portfolio/widu/portafolio-widu-lg.png
-        image_xl: /img/portfolio/widu/portafolio-widu-xl.png
+        image_sm: /img/portfolio/widu/portafolio-widu-o.png
+        image_md: /img/portfolio/widu/portafolio-widu-o.png
+        image_lg: /img/portfolio/widu/portafolio-widu-o.png
+        image_xl: /img/portfolio/widu/portafolio-widu-o.png
 ---
 

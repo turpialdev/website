@@ -22,10 +22,10 @@ sections:
         # synthesis_title: Aqui un titulo cool
         synthesis: "Tintaleo.com es una plataforma de comercio electrónico en Wordpress que permite comprar libros infantiles de autores latinoamericanos en español con el objetivo de apoyar la enseñanza como segundo idioma para niños en los Estados Unidos."
         # fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        image_sm: /img/portfolio/tintaleo/detail/sm.png
-        image_md: /img/portfolio/tintaleo/detail/md.png
-        image_lg: /img/portfolio/tintaleo/detail/lg.png
-        image_xl: /img/portfolio/tintaleo/detail/xl.png
+        image_sm: /img/portfolio/tintaleo/detail/o.png
+        image_md: /img/portfolio/tintaleo/detail/o.png
+        image_lg: /img/portfolio/tintaleo/detail/o.png
+        image_xl: /img/portfolio/tintaleo/detail/o.png
     # first_steps:
     #     title: Primeros Pasos
     #     image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
     #     synthesis_title: Aqui un titulo cool
     #     synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
     #     fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-    #     image_sm: /img/portfolio/tintaleo/first_steps/sm.png
-    #     image_md: /img/portfolio/tintaleo/first_steps/md.png
-    #     image_lg: /img/portfolio/tintaleo/first_steps/lg.png
-    #     image_xl: /img/portfolio/tintaleo/first_steps/xl.png
+    #     image_sm: /img/portfolio/tintaleo/first_steps/o.png
+    #     image_md: /img/portfolio/tintaleo/first_steps/o.png
+    #     image_lg: /img/portfolio/tintaleo/first_steps/o.png
+    #     image_xl: /img/portfolio/tintaleo/first_steps/o.png
     # design:
     #     title: Diseno por <br> principios
     #     steps:
@@ -55,18 +55,18 @@ sections:
     #         - name: Ionic
     #         # ----------- limit 3 -------------
     #         - name: Sketch
-    #     image_sm: /img/portfolio/tintaleo/technologies/sm.png
-    #     image_md: /img/portfolio/tintaleo/technologies/md.png
-    #     image_lg: /img/portfolio/tintaleo/technologies/lg.png
-    #     image_xl: /img/portfolio/tintaleo/technologies/xl.png
+    #     image_sm: /img/portfolio/tintaleo/technologies/o.png
+    #     image_md: /img/portfolio/tintaleo/technologies/o.png
+    #     image_lg: /img/portfolio/tintaleo/technologies/o.png
+    #     image_xl: /img/portfolio/tintaleo/technologies/o.png
     results:
         title: Results
         quote: "Tintaleo presenta sus libros en una amplia variedad de formas: Las selecciones son por edad del niño de 0 a 10 años o incluso para los padres, cómo están escritos (poesía, prosa, rimas), los temas y orígenes de los cuentos e incluso sus presentaciones."
         # external_button_label: Widulegal, CCO.
         # external_button_link: https://google.com
-        image_sm: /img/portfolio/tintaleo/results/sm.png
-        image_md: /img/portfolio/tintaleo/results/md.png
-        image_lg: /img/portfolio/tintaleo/results/lg.png
-        image_xl: /img/portfolio/tintaleo/results/xl.png
+        image_sm: /img/portfolio/tintaleo/results/o.png
+        image_md: /img/portfolio/tintaleo/results/o.png
+        image_lg: /img/portfolio/tintaleo/results/o.png
+        image_xl: /img/portfolio/tintaleo/results/o.png
 ---
 
