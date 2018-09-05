@@ -8,7 +8,7 @@
 
 {% include head.html %}
 
-<!--  -->
+<!-- Grid size calculation using page array element size -->
 {% assign gridSize = page.elements | size %}
 {% for grid in page.elements %}
     {% if grid.span == 'full-horizontal' or grid.span == 'full-vertical' %}

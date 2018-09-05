@@ -1,6 +1,11 @@
 ---
 ---
 
+/**
+ * Global application styles
+ * and large screen styles
+ */
+
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
@@ -267,9 +272,8 @@ nav:hover {
             position: absolute;
             top: 100%;
             left: 50%;
-            padding-top: 16px;
             margin: 0;
-            min-width: 8vw;
+            padding: 8px 16px 0;
             transform: translateX(-50%);
             transition: $transition;
             background: #fff;
@@ -279,6 +283,9 @@ nav:hover {
                 a {
                     font-size: 1.1vw;
                     padding: 0;
+                    @media screen and (min-width: $break_lg) {
+                        font-size: initial;
+                    }
                 }
             }
         }
