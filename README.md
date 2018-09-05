@@ -3,4 +3,4 @@
 
  The code is visible to show how we work and code.
 
- All right reserved Turpial Technologies.
+ All rights reserved Turpial Technologies.
