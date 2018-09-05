@@ -26,7 +26,7 @@ exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
 navigation:
   - section: Home
-    url: '/#home'
+    url: '/'
     target: '_self"'
 
   - section: Blog

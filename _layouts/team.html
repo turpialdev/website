@@ -85,23 +85,24 @@
                     {% endif %} 
 
                     {% if element.template == 'people' %}
-                    <div id="{{ element.name | remove: ' ' }}" class="{{ element.template }} {{ element.span }}">
+                    <div id="{{ element.name }}{{ element.last-name }}" class="{{ element.template }} {{ element.span }}">
                         <div class="contact-name">
                             {{ element.name }}
                         </div>
-                        {% if element.location and element.email %}
+                        {% if element.based and element.email %}
                         <div class="contact-info">
+                            <b>{{ element.position }}</b>
                             <a href="mailto:{{ element.email }}?Subject={{ page.contact-mail-subject }}" target="_top">{{ element.email }}</a>
                             <br>
-                            <b>{{ page.location }}:</b> {{ element.location }}
+                            {{ page.based }}: {{ element.based }}
                         </div>
                         {% endif %}
                     </div>
                     <style>
-                        [id|="{{ element.name | remove: ' ' }}"] {
+                        [id|="{{ element.name }}{{ element.last-name }}"] {
                             background: url('{{ element.image }}');
                         }
-                        [id|="{{ element.name | remove: ' ' }}"]:hover {
+                        [id|="{{ element.name }}{{ element.last-name }}"]:hover {
                             background: url('{{ element.hover }}');
                         }
                     </style>
