@@ -17,20 +17,6 @@ send: ENVIAR
 
 # Addresses
 addresses:
-    - link:
-      office: 09
-      building: 20-65
-      zone: El Doral
-      city: Miami
-      country: USA
-      zipcode: 331145
-    - link: https://goo.gl/maps/WRLJfKLENkK2
-      office: Office 11
-      building: 20-65
-      zone: Los Cedritos
-      city: Bogota
-      country: Colombia
-      zipcode: 1080
     - link: https://goo.gl/maps/WRLJfKLENkK2
       office: Office 09
       building: Qta. 20-65
