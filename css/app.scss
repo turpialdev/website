@@ -2031,6 +2031,8 @@ Team Page
     .info-yellow {
         grid-column: span 2;
         white-space: normal;
+        overflow: hidden;
+        max-height: 100%;
     }
 
     .info-black, .info-white, .info-yellow {
@@ -2043,8 +2045,6 @@ Team Page
             font-size: 1.2vw;
             line-height: 1.2;
             margin-bottom: 2.5vw;
-            max-height: 7.2vw;
-            overflow: hidden;
         }
         h2 {
             font-size: 1.5vw;
