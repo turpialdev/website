@@ -40,11 +40,11 @@ sections:
         image_md: /img/portfolio/iucn/first_steps/md.png
         image_lg: /img/portfolio/iucn/first_steps/lg.png
         image_xl: /img/portfolio/iucn/first_steps/xl.png
-    design:
-        title: Features
-        steps:
-            - content: "We were asked to completely re-create the LRE web page, which was developed in Wordpress and to include new functionalities that would allow it to offer a better management of the geographic information associated with the ecosystems evaluated."
-            - content: "Did you know that… Seagrass meadows are among the world’s least known ecosystems. Yet these underwater gardens are crucial to our survival — they are among the most important blue carbon reservoirs on the planet."
+    # design:
+        # title: Features
+        # steps:
+        #     - content: "We were asked to completely re-create the LRE web page, which was developed in Wordpress and to include new functionalities that would allow it to offer a better management of the geographic information associated with the ecosystems evaluated."
+        #     - content: "Did you know that… Seagrass meadows are among the world’s least known ecosystems. Yet these underwater gardens are crucial to our survival — they are among the most important blue carbon reservoirs on the planet."
     technologies:
         title: Tech
         image: /img/portfolio/airways.png
@@ -61,13 +61,14 @@ sections:
         image_md: /img/portfolio/iucn/technologies/md.png
         image_lg: /img/portfolio/iucn/technologies/lg.png
         image_xl: /img/portfolio/iucn/technologies/xl.png
-    # results:
-    #     title: Results
-    #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-    #     external_button_label: Widu, CCO.
-    #     external_button_link: https://google.com
-    #     image_sm: /img/portfolio/iucn/detail/sm.png
-    #     image_md: /img/portfolio/iucn/detail/md.png
-    #     image_lg: /img/portfolio/iucn/detail/lg.png
-    #     image_xl: /img/portfolio/iucn/detail/xl.png
+    results:
+        title: Features
+        quote: "We were asked to completely re-create the LRE web page, which was developed in Wordpress and to include new functionalities that would allow it to offer a better management of the geographic information associated with the ecosystems evaluated. <br>
+        Did you know that… Seagrass meadows are among the world’s least known ecosystems. Yet these underwater gardens are crucial to our survival — they are among the most important blue carbon reservoirs on the planet."
+        external_button_label: Widu, CCO.
+        external_button_link: https://google.com
+        image_sm: /img/portfolio/iucn/detail/sm.png
+        image_md: /img/portfolio/iucn/detail/md.png
+        image_lg: /img/portfolio/iucn/detail/lg.png
+        image_xl: /img/portfolio/iucn/detail/xl.png
 ---

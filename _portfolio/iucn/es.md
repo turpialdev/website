@@ -39,11 +39,11 @@ sections:
         image_md: /img/portfolio/iucn/first_steps/md.png
         image_lg: /img/portfolio/iucn/first_steps/lg.png
         image_xl: /img/portfolio/iucn/first_steps/xl.png
-    design:
-        title: Caracterísitcas
-        steps:
-            - content: "Nos pidieron que recrearamos completamente la página web de LRE, que se desarrolló en Wordpress, además de incluir nuevas funcionalidades que le permitieran ofrecer una mejor gestión de la información geográfica asociada a los ecosistemas evaluados."
-            - content: "Sabías que… Las praderas marinas se encuentran entre los ecosistemas menos conocidos del mundo. Sin embargo, estos jardines submarinos son cruciales para nuestra supervivencia –– se encuentran entre los reservorios de carbono azul más importantes del planeta."
+    # design:
+    #     title: Caracterísitcas
+    #     steps:
+    #         - content: "Nos pidieron que recrearamos completamente la página web de LRE, que se desarrolló en Wordpress, además de incluir nuevas funcionalidades que le permitieran ofrecer una mejor gestión de la información geográfica asociada a los ecosistemas evaluados."
+    #         - content: "Sabías que… Las praderas marinas se encuentran entre los ecosistemas menos conocidos del mundo. Sin embargo, estos jardines submarinos son cruciales para nuestra supervivencia –– se encuentran entre los reservorios de carbono azul más importantes del planeta."
     technologies:
         title: Tecnología
         image: /img/portfolio/airways.png
@@ -60,14 +60,15 @@ sections:
         image_md: /img/portfolio/iucn/technologies/md.png
         image_lg: /img/portfolio/iucn/technologies/lg.png
         image_xl: /img/portfolio/iucn/technologies/xl.png
-    # results:
-    #     title: Results
-    #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-    #     external_button_label: Widulegal, CCO.
-    #     external_button_link: https://google.com
-    #     image_sm: /img/portfolio/iucn/results/sm.png
-    #     image_md: /img/portfolio/iucn/results/md.png
-    #     image_lg: /img/portfolio/iucn/results/lg.png
-    #     image_xl: /img/portfolio/iucn/results/xl.png
+    results:
+        title: Results
+        quote: "Nos pidieron que recrearamos completamente la página web de LRE, que se desarrolló en Wordpress, además de incluir nuevas funcionalidades que le permitieran ofrecer una mejor gestión de la información geográfica asociada a los ecosistemas evaluados.<br>
+        Sabías que… Las praderas marinas se encuentran entre los ecosistemas menos conocidos del mundo. Sin embargo, estos jardines submarinos son cruciales para nuestra supervivencia –– se encuentran entre los reservorios de carbono azul más importantes del planeta."
+        external_button_label: Widulegal, CCO.
+        external_button_link: https://google.com
+        image_sm: /img/portfolio/iucn/results/sm.png
+        image_md: /img/portfolio/iucn/results/md.png
+        image_lg: /img/portfolio/iucn/results/lg.png
+        image_xl: /img/portfolio/iucn/results/xl.png
 ---
 

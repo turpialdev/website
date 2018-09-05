@@ -18,7 +18,7 @@ phone_number: +582127541143
 sections:
     detail:
         image_pointer_1: Foodies
-        image_pointer_2: Get it on the App Store and Google Play
+        image_pointer_2: Get it on the App Store <br> and Google Play
         synthesis_title: By foodies, for foodies
         synthesis: It’s a social network for food lovers that offers personalized restaurant and dish recommendations based on the user's preferences as well as comments and ratings of individual dishes by their friends.
         fun_fact: The first time our client had the initial idea for TidBit Social was during a family dinner, talking about how amazing it would be to access to family and friends' recommendations, so our client wrote some concepts on a napkin, gave some more thought to this idea and TidBit Social was born.
@@ -29,7 +29,7 @@ sections:
     first_steps:
         title: Our Processes
         image: /img/portfolio/airways.png
-        image_pointer: Tidbit won Startup Fan Favorite Award at eMerge Americas, 2018
+        image_pointer: Tidbit won Startup Fan Favorite Award <br> at eMerge Americas, 2018
         synthesis_title: Built using agile methodologies
         synthesis: "TidBit Social branding agency did a lot of work defining the look of the app while Turpial, with more experience on UX/UI helped ensure usability and good experience in the design. <br>
 We worked using agile methodologies with daily standup meetings, planning the work for each iteration and making sure everyone was on the same page and with the same vision."
