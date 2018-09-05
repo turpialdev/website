@@ -137,14 +137,14 @@
             <div class="detail-result">
                 <h2>{{ results.title }}</h2>
                 <div class="imag"></div>
-                {% if result.synthesis %}
                 <div class="text">
-                    <p>
-                        {{ result.synthesis | newline_to_br }}
-                    </p>
-                </div>
-                {% endif %}
-                <div class="text">
+                    {% comment %}
+                    <!--{% if results.synthesis %}-->
+                    <!--<p>-->
+                        <!--{{ results.synthesis | newline_to_br }}-->
+                    <!--</p>-->
+                    <!--{% endif %}-->
+                    {% endcomment %}
                     <span>&#8220;</span>
                     <p>
                         {{ results.quote }}

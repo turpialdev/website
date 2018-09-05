@@ -1,6 +1,6 @@
 <nav id="nav">
     <div class="nav-logo">
-        <a href="{{ site.navigation[0].url }}">
+        <a href="{{ navigation[0].url }}">
             <img src="/img/logo-turpial.png" alt="Turpial Development Logo">
         </a>
     </div>
@@ -12,18 +12,23 @@
         <span></span>
     </div>
 
+    {% assign navigation = site.navigation_en %}
+    {% if page.lang == 'es' %}
+        {% assign navigation = site.navigation_es %}
+    {% endif %}
+
     <div class="nav-items">
         <ul id="menuLG" class="large-menu">
             {% if page.title != 'Home Page' %}
                 <li>
-                    <a onclick="closeMenu()" href="{{ site.navigation[0].url }}" alt="{{ site.navigation[0].section }}">
+                    <a onclick="closeMenu()" href="{{ navigation[0].url }}" alt="{{ navigation[0].section }}">
                         <i class="material-icons">
                             home
                         </i>
                     </a>
                 </li>
             {% endif %}
-            {% for link in site.navigation %}
+            {% for link in navigation %}
                 {% if link.section != 'Home' %}
                     {% if link.subsection %}
                     <li>
@@ -51,11 +56,11 @@
         <div id="menuSM" class="small-menu">
             <ul>
                 <li class="turpial">
-                    <a onclick="closeMenu()" href="{{ site.navigation[0].url }}">
+                    <a onclick="closeMenu()" href="{{ navigation[0].url }}">
                         turpial
                     </a>
                 </li>
-                {% for link in site.navigation %}
+                {% for link in navigation %}
                     {% if link.section != 'Home' %}
                         <li>
                             <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">
