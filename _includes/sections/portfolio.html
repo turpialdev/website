@@ -12,7 +12,7 @@
             <div class="line"></div>
         </span>
 
-        {% assign portfolio=site.portfolio | where:"lang", page.lang | sort: 'date ' %}
+        {% assign portfolio=site.portfolio | where:"lang", page.lang | sort: 'date ' | reverse %}
         {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
 
         {% for project in portfolio %}
