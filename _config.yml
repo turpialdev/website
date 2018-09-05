@@ -30,7 +30,7 @@ navigation:
     target: '_self"'
 
   - section: Blog
-    url: 'https://medium.com/turpialdev'
+    url: 'blog.turpialdev.com'
     target: '_blank"'
 
   - section: Services
