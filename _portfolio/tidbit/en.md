@@ -31,7 +31,7 @@ sections:
         image: /img/portfolio/airways.png
         image_pointer: Tidbit won Startup Fan Favorite Award at eMerge Americas, 2018
         synthesis_title: Built using agile methodologies
-        synthesis: "TidBit Social branding agency did a lot of work defining the look of the app while Turpial, with more experience on UX/UI helped ensure usability and good experience in the design
+        synthesis: "TidBit Social branding agency did a lot of work defining the look of the app while Turpial, with more experience on UX/UI helped ensure usability and good experience in the design. <br>
 We worked using agile methodologies with daily standup meetings, planning the work for each iteration and making sure everyone was on the same page and with the same vision."
         fun_fact: Turpial started to work on Tidbit Social in 2016 when Washington, DC-based entrepreneurs came to us with this idea. 
         image_sm: /img/portfolio/tidbit/first_steps/sm.png
@@ -62,8 +62,8 @@ We worked using agile methodologies with daily standup meetings, planning the wo
         image_xl: /img/portfolio/tidbit/technologies/xl.png
     results:
         title: Results
-        synthesis: "Tidbit Social also lets you explore foodies highlights, users by their real name or username and Featured Restaurants based on ratings or trends around your area.
-You earn trophies by rating dishes and restaurants showing off your fluency with different cuisines. Other functions include a Score Explorer (to filter places according to your own scores) a Wish List of restaurants you want to visit and a list of your Followers and people who you follow."
+#         synthesis: "Tidbit Social also lets you explore foodies highlights, users by their real name or username and Featured Restaurants based on ratings or trends around your area.
+# You earn trophies by rating dishes and restaurants showing off your fluency with different cuisines. Other functions include a Score Explorer (to filter places according to your own scores) a Wish List of restaurants you want to visit and a list of your Followers and people who you follow."
 
         quote: Currently, TidBit Social has more than 11,000 registered restaurants, with Washington, DC and New York City the most active towns and boasting a 4.8/5 stars rating at the App Store and 4.5 at the Google Play store.
         external_button_label: TidBit, CCO.

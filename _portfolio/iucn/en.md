@@ -4,7 +4,7 @@ lang: en
 date: 2017-05-09
 layout: project
 permalink: /iucn/
-description: "It is an established fact too long ago that a reader will be distracted by the content of the text ..."
+description: "The Red List of Ecosystems of the International Union for Conservation of Nature (IUCN), is the most extensive initiative documenting the state of conservation of ecosystems worldwide."
 
 # Footer
 call_to_action_title: You already know how we work
@@ -17,11 +17,11 @@ phone_number: +582127541143
 
 sections:
     detail:
-        image_pointer_1: Hello
-        image_pointer_2: An other hello here
-        synthesis_title: Here's a cool title
-        synthesis: It is an established fact too long ago that a reader will be distracted by the content of the text It is an established fact too long ago that a reader will be distracted by the content of the text
-        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        # image_pointer_1: Hello
+        # image_pointer_2: An other hello here
+        # synthesis_title: Here's a cool title
+        synthesis: "The Red List of Ecosystems of the International Union for Conservation of Nature (IUCN), is the most extensive initiative documenting the state of conservation of ecosystems worldwide."
+        fun_fact: "Proposed during the IV World Congress of Conservation in 2008 and recognized by IUCN in 2014, the LRE is responsible for collecting data, statistics and risk assessment of all the ecosystems of the planet, with the goal of evaluating them all before the year 2025."
         image_sm: /img/portfolio/iucn/detail/sm.png
         image_md: /img/portfolio/iucn/detail/md.png
         image_lg: /img/portfolio/iucn/detail/lg.png
@@ -29,43 +29,45 @@ sections:
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
-        image_pointer: Hello
-        synthesis_title: Aqui un titulo cool
-        synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
-        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        # image_pointer: Hello
+        # synthesis_title: Aqui un titulo cool
+        synthesis: "We were contacted by Provita, a Non-governmental organization whose mission is the conservation of endangered species and environments, combining several fields of knowledge in the search for integral solutions. <br>
+        One of the most striking aspects of the project is the information tables, aimed to provide the public with summary information regarding the studies and publications carried out worldwide regarding the analysis and preservation of ecosystems. <br>
+        Additionally, within the page, there is a form conceptualized by the client, and it can be used by those who evaluate an ecosystem to document the state in which it is located, following the parameters designed by the LRE ecosystem."
+
+        fun_fact: "They can also upload geographic files to provide a georeferenced visual abstraction of the ecosystem within the system."
         image_sm: /img/portfolio/iucn/first_steps/sm.png
         image_md: /img/portfolio/iucn/first_steps/md.png
         image_lg: /img/portfolio/iucn/first_steps/lg.png
         image_xl: /img/portfolio/iucn/first_steps/xl.png
     design:
-        title: Diseno por <br> principios
+        title: Features
         steps:
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro, dicta quae autem nobis iusto ut harum sint!
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
-            - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro.
+            - content: "We were asked to completely re-create the LRE web page, which was developed in Wordpress and to include new functionalities that would allow it to offer a better management of the geographic information associated with the ecosystems evaluated."
+            - content: "Did you know that… Seagrass meadows are among the world’s least known ecosystems. Yet these underwater gardens are crucial to our survival — they are among the most important blue carbon reservoirs on the planet."
     technologies:
         title: Tech
         image: /img/portfolio/airways.png
-        synthesis_title: Aqui un titulo cool
-        synthesis: Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto Es un hecho establecido hace demasiado tiempo que un lector se distraerá con elcontenido del texto.
-        fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+        # synthesis_title: Aqui un titulo cool
+        synthesis: "In order to carry out this task we resorted to the use of OpenSource solutions that facilitate compliance with the requirements, as the core of our development was going to be in Django we integrated Mezzanine CMS to the web app and GeoNode to magane ge-referenced data."
+        # fun_fact: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
         tools:
-            - name: Django
-            - name: Angular4
-            - name: Ionic
+            - name: Django 1.8
+            - name: GeoNode
+            - name: Mezzanine
             # ----------- limit 3 -------------
             - name: Sketch
         image_sm: /img/portfolio/iucn/technologies/sm.png
         image_md: /img/portfolio/iucn/technologies/md.png
         image_lg: /img/portfolio/iucn/technologies/lg.png
         image_xl: /img/portfolio/iucn/technologies/xl.png
-    results:
-        title: Results
-        quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
-        external_button_label: Widu, CCO.
-        external_button_link: https://google.com
-        image_sm: /img/portfolio/iucn/detail/sm.png
-        image_md: /img/portfolio/iucn/detail/md.png
-        image_lg: /img/portfolio/iucn/detail/lg.png
-        image_xl: /img/portfolio/iucn/detail/xl.png
+    # results:
+    #     title: Results
+    #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
+    #     external_button_label: Widu, CCO.
+    #     external_button_link: https://google.com
+    #     image_sm: /img/portfolio/iucn/detail/sm.png
+    #     image_md: /img/portfolio/iucn/detail/md.png
+    #     image_lg: /img/portfolio/iucn/detail/lg.png
+    #     image_xl: /img/portfolio/iucn/detail/xl.png
 ---

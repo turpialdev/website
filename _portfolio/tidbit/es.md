@@ -45,7 +45,7 @@ sections:
            #  - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis.
            #  - content: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus voluptatum nemo vel reprehenderit cumque maxime perferendis. Obcaecati delectus quia non laudantium porro.
     technologies:
-        title: Tech
+        title: Tecnologías
         image: /img/portfolio/airways.png
         synthesis_title: Asegurando la calidad
         synthesis: Las metodologías ágiles siempre están presentes en nuestros proyectos y TidBit. Trabajamos con Ionic para una aplicación rápida en el mercado y con Django para el lado del servidor, luego la aplicación móvil fue refactorizada para React Native. Para garantizar la calidad, metodologías de Desarrollo Basado en Pruebas se practicaron en grandes partes del proyecto.
@@ -62,8 +62,8 @@ sections:
         image_xl: /img/portfolio/tidbit/technologies/xl.png
     results:
         title: Resultados
-        synthesis: "Tidbit Social también te permite explorar los aspectos más destacados de cada amante de la comida, usuarios por su nombre real o nombre de usuario y Restaurantes destacados en función de las clasificaciones o tendencias en tu área.
-Ganas trofeos clasificando platos y restaurantes y mostrando tu fluidez con diferentes cocinas. Otras funciones incluyen un Explorador de puntajes (para filtrar los lugares de acuerdo con sus propios puntajes) una Lista de Deseos de restaurantes que desea visitar y una lista de sus Seguidores y las personas que usted sigue."
+#         synthesis: "Tidbit Social también te permite explorar los aspectos más destacados de cada amante de la comida, usuarios por su nombre real o nombre de usuario y Restaurantes destacados en función de las clasificaciones o tendencias en tu área.
+# Ganas trofeos clasificando platos y restaurantes y mostrando tu fluidez con diferentes cocinas. Otras funciones incluyen un Explorador de puntajes (para filtrar los lugares de acuerdo con sus propios puntajes) una Lista de Deseos de restaurantes que desea visitar y una lista de sus Seguidores y las personas que usted sigue."
         quote: Actualmente, TidBit Social tiene más de 11,000 restaurantes registrados, con Washington, DC y Nueva York como las ciudades más activas y con una calificación de 4.8 / 5 estrellas en la App Store y 4.5 en Google Play.
         external_button_label: TidBit Social, CCO.
         external_button_link: https://google.com
