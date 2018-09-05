@@ -11,7 +11,7 @@ image: path/to/img
 team-link: Our<br> team
 culture-link: Our<br> blog
 jobs-link-label: Work<br> with us
-jobs-link:  /opportunities
+jobs-link:  https://medium.com/turpialdev/jobs
 ---
 
 We are a team of developers, designers, project managers and support team working closely with each of our clients to develop the digital solutions they need, using agile methodologies to share the client's priorities in an open dialogue every step of the way.
