@@ -10,7 +10,8 @@ image: path/to/img
 # Buttons text
 team-link: Our<br> team
 culture-link: Our<br> culture
-jobs-link: Work<br> with us
+jobs-link-label: Work<br> with us
+jobs-link:  /opportunities
 ---
 
 We are a team of developers, designers, project managers and support team working closely with each of our clients to develop the digital solutions they need, using agile methodologies to share the client's priorities in an open dialogue every step of the way.

@@ -26,217 +26,236 @@ class: this defines the template of the element.
 #     full-horizontal: two columns
 #     full-vertical: two rows
 
-gridSize: 29
+gridSize: 30
 
 elements:
-- template: title
-  span: full-horizontal
-  title: Turpiales
-  text: We  are a team lorem ipsum here
+  - template: title
+    span: full-horizontal
+    title: "The team"
+    text: We are Turpial
 
-- template: info-black
-  span:
-  text: Text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button: I wanna be part
-  url: "/"
+  - template: info-black
+    span:
+    text: We are always looking to grow our team. If you love to work on interesting projects with a diverse and talented team we might have an open position for you!
+    button: Career oportunities
+    url: "/"
 
-- template: people
-  span:
-  name: Jacobo Martines
-  image: "/img/team/xl/Jacobo-M-1.jpg"
-  hover: "/img/team/xl/Jacobo-Martinez-2.jpg"
+  - template: people
+    span:
+    name: Fernando Carrera
+    image: "/img/team/xl/fernando1.jpg"
+    hover: "/img/team/xl/fernando2.jpg"
 
-- template: people
-  span: full-vertical
-  name: Andrés Azpurua
-  image: "/img/team/xl/Andres-Azpurua-1-.jpg"
-  hover: "/img/team/xl/Andres-Azpurua-2-.jpg"
+  - template: people
+    span: full-vertical
+    name: Andrés Azpurua
+    image: "/img/team/xl/Andres-Azpurua-1-.jpg"
+    hover: "/img/team/xl/Andres-Azpurua-2-.jpg"
 
-- template: info-white
-  span: full-horizontal
-  text: As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button: Contact us
-  url: "/"
+  - template: info-white
+    span: full-horizontal
+    text: The leadership team at Trupial has experience in digital businesses, technology development, social entrepreneurship, tech startups and communications. Turpial is a talented multi-disciplinary team working to build the digital solution you need.
+    button: Contact us
+    url: "/#contact"
 
-- template: people
-  span:
-  name: Boris Elneser
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  - template: people
+    span:
+    name: Boris Elneser
+    image: "/img/team/xl/boris1.jpg"
+    hover: "/img/team/xl/boris2.jpg"
 
-- template: people
-  span:
-  name: Leonardo Gutierrez
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  - template: people
+    span:
+    name: Leonardo Gutierrez
+    image: "/img/team/xl/leo1.jpg"
+    hover: "/img/team/xl/leo2.jpg"
 
-- template: people
-  span: full-vertical
-  name: Fernando Carrera
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  - template: people
+    span: full-vertical
+    name: Jacobo Martines
+    image: "/img/team/xl/Jacobo-M-1.jpg"
+    hover: "/img/team/xl/Jacobo-Martinez-2.jpg"
 
-# sales
-- template: section
-  text: sales
+  #- template: people
+  #  span: full-vertical
+  #  name: Fernando Carrera
+  #  image: "/img/team/xl"
+  #  hover: "/img/team/xl"
 
-- template: info-yellow
-  span:
-  text: As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
+  # sales
+  - template: section
+    text: Sales Rep.
 
-- template: people
-  span:
-  name: Pinky
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  - template: info-yellow
+    span:
+    text: The first point of contact most clients will have, clarifying their ideas and understanding their needs to get a project going.
+    button:
+    url: "/"
 
-- template: people
-  span: full-vertical
-  name: Edgar Pelayo
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  #- template: people
+  #  span:
+  #  name: Pinky
+  #  image: "/img/team/xl"
+  #  hover: "/img/team/xl"
 
-  # project managers
-- template: section
-  text: project manager
+  - template: people
+    span: full-vertical
+    name: Edgar Pelayo
+    image: "/img/team/xl/yayo1.jpg"
+    hover: "/img/team/xl/yayo2.jpg"
 
-- template: info-yellow
-  span:
-  title: We plan and execute with team.
-  button:
-  url: "/"
+    # project managers
+  - template: section
+    text: project manager
 
-- template: people
-  span:
-  name: Andrés Guzmán
-  image: "/img/team/xl/Andres-Guzman-1.jpg"
-  hover: "/img/team/xl/Andres-Guzman-2.jpg"
+  - template: info-yellow
+    span:
+    title: Leading teams towards client's success.
+    button:
+    url: "/"
 
-- template: people
-  span:
-  name: Melvin Ramos
-  image: "/img/team/xl/melvin1.jpg"
-  hover: "/img/team/xl/melvin2.jpg"
+  - template: people
+    span:
+    name: Andrés Guzmán
+    image: "/img/team/xl/Andres-Guzman-1.jpg"
+    hover: "/img/team/xl/Andres-Guzman-2.jpg"
 
-- template: info-white
-  span:
-  text: We plan and execute with team. As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
+  - template: people
+    span:
+    name: Melvin Ramos
+    image: "/img/team/xl/melvin1.jpg"
+    hover: "/img/team/xl/melvin2.jpg"
 
-  # creative
-- template: section
-  text: creatives
+  - template: info-white
+    span:
+    text: "Leaders, planners and organizers of the team assigned to a project, they make sure communication flows and that everyone is on the same page.
+    Their job is to paint a clear vision of the success of the project and make sure we all get there."
+    button:
+    url: "/"
 
-- template: info-yellow
-  span: full-horizontal
-  text: UX / UI designers are marketing specialist. We plan and execute with team. As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
+    # creative
+  - template: section
+    text: Designers and creatives
 
-- template: people
-  span:
-  name: Layoneal Martinez
-  image: "/img/team/xl/keduards1.jpg"
-  hover: "/img/team/xl/keduards2.jpg"
+  - template: info-yellow
+    span: full-horizontal
+    text: A team that specializes finding user experience solutions using their skill and seeing problems through other's eyes. They understand the needs of all stakeholders to design the right product and user experience selecting the right content and strategy.
+    button:
+    url: "/"
 
-- template: people
-  span:
-  name: Bryan Merchan
-  image: "/img/team/xl/Falco-1.jpg"
-  hover: "/img/team/xl/Falco-2.jpg"
+  - template: people
+    span:
+    name: Layoneal Martinez
+    image: "/img/team/xl/keduards1.jpg"
+    hover: "/img/team/xl/keduards2.jpg"
 
-- template: people
-  span: full-vertical
-  name: Greddy Torres
-  image: "/img/team/xl/greddy1.jpg"
-  hover: "/img/team/xl/greddy2.jpg"
+  - template: people
+    span:
+    name: Bryan Merchan
+    image: "/img/team/xl/Falco-1.jpg"
+    hover: "/img/team/xl/Falco-2.jpg"
 
-  # developers
-- template: section
-  text: developers
+  - template: people
+    span: full-vertical
+    name: Greddy Torres
+    image: "/img/team/xl/greddy1.jpg"
+    hover: "/img/team/xl/greddy2.jpg"
 
-- template: info-yellow
-  span:
-  title: We develop quality systems.
-  button:
-  url: "/"
+    # developers
+  - template: section
+    text: developers
 
-- template: people
-  span:
-  name: Gustavo Santamaría
-  image: "/img/team/xl/Gustavo-Santa-Maria-1.jpg"
-  hover: "/img/team/xl/Gustavo-Santa-Maria-2.jpg"
+  - template: info-yellow
+    span:
+    title: Coding with the users in mind
+    button:
+    url: "/"
 
-- template: people
-  span:
-  name: Omar Padrón
-  image: "/img/team/xl/omar1copy.jpg"
-  hover: "/img/team/xl/omar2.jpg"
+  - template: people
+    span:
+    name: Gustavo Santamaría
+    image: "/img/team/xl/Gustavo-Santa-Maria-1.jpg"
+    hover: "/img/team/xl/Gustavo-Santa-Maria-2.jpg"
 
-- template: info-white
-  span:
-  text: We plan and execute with team. As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
+  - template: people
+    span:
+    name: Omar Padrón
+    image: "/img/team/xl/omar1copy.jpg"
+    hover: "/img/team/xl/omar2.jpg"
 
-- template: people
-  span: full-vertical
-  name: Néstor Bracho
-  image: "/img/team/xl/toto1.jpg"
-  hover: "/img/team/xl/toto2.jpg"
+  - template: info-white
+    span:
+    text: The ones who build the product and materialize the vision for the project. Developers plan software architecture, evaluate risks, code and test the product using agile practices.
+    button:
+    url: "/"
 
-- template: info-white
-  span:
-  text: We plan and execute with team. As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
+  - template: people
+    span: full-vertical
+    name: Néstor
+    image: "/img/team/xl/toto1.jpg"
+    hover: "/img/team/xl/toto2.jpg"
 
-- template: people
-  span:
-  name: Guillermo Sánchez
-  image: "/img/team/xl/Nova-1.jpg"
-  hover: "/img/team/xl/Nova-2.jpg"
+  - template: info-white
+    span:
+    text: We use agile practices to ensure that we are always on the same page with our clients, each of us working towards the same goal to develop the best product and user experience.
+    button:
+    url: "/"
 
-- template: people
-  span:
-  name: Oriana Graterol 
-  image: "/img/team/xl/Oriana-Graterol-1.jpg"
-  hover: "/img/team/xl/Oriana-graterol-2.jpg"
+  - template: people
+    span:
+    name: Guillermo Sánchez
+    image: "/img/team/xl/Nova-1.jpg"
+    hover: "/img/team/xl/Nova-2.jpg"
 
-- template: people
-  span:
-  name: María Lourdes García
-  image: "/img/team/xl/Marilu-1.jpg"
-  hover: "/img/team/xl/Marilu-2.jpg"
+  - template: people
+    span:
+    name: Oriana Graterol
+    image: "/img/team/xl/Oriana-Graterol-1.jpg"
+    hover: "/img/team/xl/Oriana-graterol-2.jpg"
 
-- template: people
-  span:
-  name: Keiber Prin
-  image: "/img/team/xl"
-  hover: "/img/team/xl"
+  - template: people
+    span:
+    name: María Lourdes García
+    image: "/img/team/xl/Marilu-1.jpg"
+    hover: "/img/team/xl/Marilu-2.jpg"
 
-  # administrators
-- template: section
-  text: administrators
+  #- template: people
+  #  span:
+  #  name: Keiber Prin
+  #  image: "/img/team/xl"
+  #  hover: "/img/team/xl"
 
-- template: people
-  span: full-vertical
-  name: Joana Venegas
-  image: "/img/team/xl/Joana-Venegas-1.jpg"
-  hover: "/img/team/xl/Joana-Venegas-2.jpg"
+    # administrators
+  - template: section
+    text: administrators
 
-- template: people
-  span:
-  name: Andrés Gonzalez
-  image: "/img/team/xl/gonzales1.jpg"
-  hover: "/img/team/xl/gonzales2.jpg"
+  - template: people
+    span: full-vertical
+    name: Joana Venegas
+    image: "/img/team/xl/Joana-Venegas-1.jpg"
+    hover: "/img/team/xl/Joana-Venegas-2.jpg"
 
-- template: info-white
-  span:
-  text: We plan and execute with team. As a head, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum, text here about turpial team, lorem ipsum por equipo de lorem ipsum para el cuadro de texto lorem ipsum.
-  button:
-  url: "/"
----
+  - template: people
+    span:
+    name: Andrés Gonzalez
+    image: "/img/team/xl/gonzales1.jpg"
+    hover: "/img/team/xl/gonzales2.jpg"
+
+  - template: info-white
+    span:
+    text: Responsible for all the administrative aspects of the company, they support the organization in innumerable ways helping to make the magic in Turpial
+    button:
+    url: "/"
+
+  - template: people
+    span:
+    name: Marcela
+    image: "/img/team/xl/marcela1.jpg"
+    hover: "/img/team/xl/marcela2.jpg"
+
+  - template: people
+    span:
+    name: Gabriela
+    image: "/img/team/xl/gaby1.jpg"
+    hover: "/img/team/xl/gaby2.jpg"
+  ---

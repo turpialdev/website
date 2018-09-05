@@ -1,0 +1,33 @@
+---
+---
+
+/*
+*********************
+Global variables
+*********************
+*/
+
+$frameborder: 13px;
+$black: #1b1b1b;
+$yellow: #ffcb00;
+$yellowHover: #e2b500;
+$gray: #ccc;
+$lightgray: #e5e5e5;
+$softgray: #f2f2f2;
+
+/*
+*********************
+Team Page
+*********************
+*/
+
+#scroll {
+    overflow: auto;
+    white-space: normal;
+    position: relative;
+    top: unset;
+    bottom: unset;
+    right: unset;
+    left: unset;
+    display: block;
+}
