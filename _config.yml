@@ -24,7 +24,7 @@ sass:
 
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
-navigation:
+navigation_en:
   - section: Home
     url: '/'
     target: '_self"'
@@ -64,6 +64,56 @@ navigation:
 
   - section: Contact
     url: '/#contact'
+    target: '_self"'
+
+  - section: ES
+    url: '/es'
+    target: '_self"'
+
+navigation_es:
+  - section: Home
+    url: '/es/'
+    target: '_self"'
+
+  - section: Blog
+    url: 'blog.turpialdev.com'
+    target: '_blank"'
+
+  - section: Servicios
+    url: '/es/#web'
+    target: '_self"'
+    subsection:
+
+      - section: Web
+        url: '/es/#web'
+        target: '_self"'
+
+      - section: Móvil
+        url: '/es/#mobile'
+        target: '_self"'
+
+      - section: Diseño
+        url: '/es/#design'
+        target: '_self"'
+
+  - section: Portafolio
+    url: '/es/#portfolio'
+    target: '_self"'
+
+  - section: Nosotros
+    url: '/es/#aboutus'
+    target: '_self"'
+
+  - section: Ventajas
+    url: '/es/#advantage'
+    target: '_self"'
+
+  - section: Contacto
+    url: '/es/#contact'
+    target: '_self"'
+
+  - section: EN
+    url: '/'
     target: '_self"'
 
 
