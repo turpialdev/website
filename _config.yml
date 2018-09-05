@@ -26,35 +26,45 @@ exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
 navigation:
   - section: Home
-    url: '/index/'
+    url: '/'
+    target: '_self"'
 
   - section: Blog
-    url: '/blog/'
+    url: 'https://medium.com/@TurpialDev'
+    target: '_blank"'
 
   - section: Services
-    url: '/index/#web'
+    url: '/#web'
+    target: '_self"'
     subsection:
 
       - section: Web
-        url: '/index/#web'
+        url: '/#web'
+        target: '_self"'
 
       - section: Mobile
-        url: '/index/#mobile'
+        url: '/#mobile'
+        target: '_self"'
 
       - section: Design
-        url: '/index/#design'
+        url: '/#design'
+        target: '_self"'
 
   - section: Portfolio
-    url: '/index/#portfolio'
+    url: '/#portfolio'
+    target: '_self"'
 
   - section: About Us
-    url: '/index/#aboutus'
+    url: '/#aboutus'
+    target: '_self"'
 
   - section: Advantages
-    url: '/index/#advantage'
+    url: '/#advantage'
+    target: '_self"'
 
   - section: Contact
-    url: '/index/#contact'
+    url: '/#contact'
+    target: '_self"'
 
 
 collections:

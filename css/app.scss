@@ -263,7 +263,7 @@ nav:hover {
             left: 50%;
             padding-top: 16px;
             margin: 0;
-            min-width: 10vw;
+            min-width: 8vw;
             transform: translateX(-50%);
             transition: $transition;
             background: #fff;
@@ -754,6 +754,7 @@ Contact us
         border-left: 1px solid #ffffff;
         padding-left: 1.28vw;
         line-height: 1.28vw;
+        margin-bottom: 52px;
 
         .address {
             font-size: 1.03vw;
@@ -778,10 +779,9 @@ Contact us
         }
 
         .phones-email {
-            font-size: 1.28vw;
+            font-size: 1.03vw;
             position: absolute;
-            bottom: 0;
-            line-height: 1.73vw;
+            bottom: 2vw;
             p {
                 margin: 5px 0;
                 a:hover {
