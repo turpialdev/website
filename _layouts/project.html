@@ -137,12 +137,21 @@
             <div class="detail-result">
                 <h2>{{ results.title }}</h2>
                 <div class="imag"></div>
+                {% if result.synthesis %}
+                <div class="text">
+                    <p>
+                        {{ result.synthesis | newline_to_br }}
+                    </p>
+                </div>
+                {% endif %}
                 <div class="text">
                     <span>&#8220;</span>
                     <p>
                         {{ results.quote }}
                     </p>
+                    {% if results.external_button_link %}
                     <a href="{{ results.external_button_link }}" class="result-link" target="_blank">{{ results.external_button_label }}</a>
+                    {% endif %}
                 </div>
             </div>
 
@@ -159,7 +168,11 @@
                     <a href="tel:{{ page.phone_number }}">{{ page.phone_number_label }}</a>
                 </div>
                 <div>
-                    Let's work together
+                    {% if page.lang == 'en' %}
+                    <a href="/#contact">{{ page.work_together_label }}</a>
+                    {% else %}
+                    <a href="/#contact/es">{{ page.work_together_label }}</a>
+                    {% endif %}
                 </div>
             </div>
         </div>
