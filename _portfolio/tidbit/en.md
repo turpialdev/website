@@ -68,8 +68,8 @@ We worked using agile methodologies with daily standup meetings, planning the wo
         You earn trophies by rating dishes and restaurants showing off your fluency with different cuisines. Other functions include a Score Explorer (to filter places according to your own scores) a Wish List of restaurants you want to visit and a list of your Followers and people who you follow."
 
         quote: Currently, TidBit Social has more than 11,000 registered restaurants, with Washington, DC and New York City the most active towns and boasting a 4.8/5 stars rating at the App Store and 4.5 at the Google Play store.
-        external_button_label: TidBit, CCO.
-        external_button_link: https://google.com
+        external_button_label: TidBit Social, CTO.
+        external_button_link: http://www.tidbitsocial.com/
         image_sm: /img/portfolio/tidbit/results/o.png
         image_md: /img/portfolio/tidbit/results/o.png
         image_lg: /img/portfolio/tidbit/results/o.png
