@@ -138,11 +138,20 @@
                 <h2>{{ results.title }}</h2>
                 <div class="imag"></div>
                 <div class="text">
+                    {% comment %}
+                    <!--{% if results.synthesis %}-->
+                    <!--<p>-->
+                        <!--{{ results.synthesis | newline_to_br }}-->
+                    <!--</p>-->
+                    <!--{% endif %}-->
+                    {% endcomment %}
                     <span>&#8220;</span>
                     <p>
                         {{ results.quote }}
                     </p>
+                    {% if results.external_button_link %}
                     <a href="{{ results.external_button_link }}" class="result-link" target="_blank">{{ results.external_button_label }}</a>
+                    {% endif %}
                 </div>
             </div>
 
