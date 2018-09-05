@@ -7,8 +7,13 @@ $(document).ready(function () {
     saveScreenSize();
 });
 
+$(window).resize(function () {
+    saveScreenSize();
+});
+
 function saveScreenSize() {
     screenSize = $(document).width();
+    console.log('resized');
 
     if (screenSize > '1024') {
         menu = $('#menuLG');
