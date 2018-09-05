@@ -22,10 +22,10 @@ sections:
         synthesis_title: Hecha por Foodies para Foodies
         synthesis: Es una red social para amantes de la comida que ofrece recomendaciones personalizadas de restaurantes y platos según las preferencias del usuario, así como comentarios y valoraciones de platos individuales por parte de sus amigos.
         fun_fact: La primera vez que nuestro cliente tuvo la idea inicial de TidBit Social fue durante una cena familiar, hablando de lo maravilloso que sería tener las recomendaciones de familiares y amigos, por lo que nuestro cliente escribió algunos conceptos en una servilleta, reflexionó sobre esta idea y así nació TidBit Social.
-        image_sm: /img/portfolio/tidbit/detail/sm.png
-        image_md: /img/portfolio/tidbit/detail/md.png
-        image_lg: /img/portfolio/tidbit/detail/lg.png
-        image_xl: /img/portfolio/tidbit/detail/xl.png
+        image_sm: /img/portfolio/tidbit/detail/o.png
+        image_md: /img/portfolio/tidbit/detail/o.png
+        image_lg: /img/portfolio/tidbit/detail/o.png
+        image_xl: /img/portfolio/tidbit/detail/o.png
     first_steps:
         title: Nuestros Procesos
         image: /img/portfolio/airways.png
@@ -33,10 +33,10 @@ sections:
         synthesis_title: Construido usando prácticas ágiles
         synthesis: "La agencia de marca de TidBit Social trabajó mucho para definir el aspecto de la aplicación, mientras que Turpial, con más experiencia en UX / UI, ayudó a garantizar la usabilidad y una buena experiencia en el diseño. <br> Trabajamos usando metodologías ágiles con reuniones diarias stand-up, planeando el trabajo para cada iteración y asegurándonos de que todos estuvieran en la misma página y con la misma visión."
         fun_fact: Turpial comenzó a trabajar en Tidbit Social en 2016 cuando los empresarios con sede en Washington, DC, vinieron a nosotros con esta idea.
-        image_sm: /img/portfolio/tidbit/first_steps/sm.png
-        image_md: /img/portfolio/tidbit/first_steps/md.png
-        image_lg: /img/portfolio/tidbit/first_steps/lg.png
-        image_xl: /img/portfolio/tidbit/first_steps/xl.png
+        image_sm: /img/portfolio/tidbit/first_steps/o.png
+        image_md: /img/portfolio/tidbit/first_steps/o.png
+        image_lg: /img/portfolio/tidbit/first_steps/o.png
+        image_xl: /img/portfolio/tidbit/first_steps/o.png
    # design:
         # title: Diseno por <br> 
         # principios
@@ -56,10 +56,10 @@ sections:
             - name: React Native
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/tidbit/technologies/sm.png
-        image_md: /img/portfolio/tidbit/technologies/md.png
-        image_lg: /img/portfolio/tidbit/technologies/lg.png
-        image_xl: /img/portfolio/tidbit/technologies/xl.png
+        image_sm: /img/portfolio/tidbit/technologies/o.png
+        image_md: /img/portfolio/tidbit/technologies/o.png
+        image_lg: /img/portfolio/tidbit/technologies/o.png
+        image_xl: /img/portfolio/tidbit/technologies/o.png
     results:
         title: Resultados
 #         synthesis: "Tidbit Social también te permite explorar los aspectos más destacados de cada amante de la comida, usuarios por su nombre real o nombre de usuario y Restaurantes destacados en función de las clasificaciones o tendencias en tu área.
@@ -67,9 +67,9 @@ sections:
         quote: Actualmente, TidBit Social tiene más de 11,000 restaurantes registrados, con Washington, DC y Nueva York como las ciudades más activas y con una calificación de 4.8 / 5 estrellas en la App Store y 4.5 en Google Play.
         external_button_label: TidBit Social, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/tidbit/results/sm.png
-        image_md: /img/portfolio/tidbit/results/md.png
-        image_lg: /img/portfolio/tidbit/results/lg.png
-        image_xl: /img/portfolio/tidbit/results/xl.png
+        image_sm: /img/portfolio/tidbit/results/o.png
+        image_md: /img/portfolio/tidbit/results/o.png
+        image_lg: /img/portfolio/tidbit/results/o.png
+        image_xl: /img/portfolio/tidbit/results/o.png
 ---
 

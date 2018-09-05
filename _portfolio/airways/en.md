@@ -23,10 +23,10 @@ sections:
         synthesis_title: Magazine's website and custom subscription management
         synthesis: For Airways Magazine we set-up their public website and CMS, to manage the publication of all their stories, and a custom Fully-featured subscriber management system.
         fun_fact: Airways Magazine is a leading commercial aviation magazine with both a physical edition, found in over 35 countries, and a digital edition.
-        image_sm: /img/portfolio/airways/detail/sm.png
-        image_md: /img/portfolio/airways/detail/md.png
-        image_lg: /img/portfolio/airways/detail/lg.png
-        image_xl: /img/portfolio/airways/detail/xl.png
+        image_sm: /img/portfolio/airways/detail/o.png
+        image_md: /img/portfolio/airways/detail/o.png
+        image_lg: /img/portfolio/airways/detail/o.png
+        image_xl: /img/portfolio/airways/detail/o.png
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -34,10 +34,10 @@ sections:
         # synthesis_title: Aqui un titulo cool
         synthesis: We started to develop the initial project of restructuring of the website in december 2015 and during the progress we began to work with the client to develop a completely customized system for the management of the subscriptions to both editions of the magazine.
         fun_fact: The client accepted an extension of the deadline because of the extra work that was required by him, this including the subscription system. Our negotiations were always transparent and on point.
-        image_sm: /img/portfolio/airways/detail/sm.png
-        image_md: /img/portfolio/airways/detail/md.png
-        image_lg: /img/portfolio/airways/detail/lg.png
-        image_xl: /img/portfolio/airways/detail/xl.png
+        image_sm: /img/portfolio/airways/detail/o.png
+        image_md: /img/portfolio/airways/detail/o.png
+        image_lg: /img/portfolio/airways/detail/o.png
+        image_xl: /img/portfolio/airways/detail/o.png
     # design:
     #     title: Diseno por <br> principios
     #     steps:
@@ -56,17 +56,17 @@ sections:
             - name: Django 1.8
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/airways/detail/sm.png
-        image_md: /img/portfolio/airways/detail/md.png
-        image_lg: /img/portfolio/airways/detail/lg.png
-        image_xl: /img/portfolio/airways/detail/xl.png
+        image_sm: /img/portfolio/airways/detail/o.png
+        image_md: /img/portfolio/airways/detail/o.png
+        image_lg: /img/portfolio/airways/detail/o.png
+        image_xl: /img/portfolio/airways/detail/o.png
     # results:
     #     title: Results
     #     quote: Sabías que.. en este proyecto utilizamos la tecnología ‘Lorem ipsum” para tal cosa texto aqui lorem ipsum para tal cosa texto aqui lorem ipsum.
     #     external_button_label: Widu, CCO.
     #     external_button_link: https://google.com
-    #     image_sm: /img/portfolio/airways/detail/sm.png
-    #     image_md: /img/portfolio/airways/detail/md.png
-    #     image_lg: /img/portfolio/airways/detail/lg.png
-    #     image_xl: /img/portfolio/airways/detail/xl.png
+    #     image_sm: /img/portfolio/airways/detail/o.png
+    #     image_md: /img/portfolio/airways/detail/o.png
+    #     image_lg: /img/portfolio/airways/detail/o.png
+    #     image_xl: /img/portfolio/airways/detail/o.png
 ---

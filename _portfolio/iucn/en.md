@@ -22,10 +22,10 @@ sections:
         # synthesis_title: Here's a cool title
         synthesis: "The Red List of Ecosystems of the International Union for Conservation of Nature (IUCN), is the most extensive initiative documenting the state of conservation of ecosystems worldwide."
         fun_fact: "Proposed during the IV World Congress of Conservation in 2008 and recognized by IUCN in 2014, the LRE is responsible for collecting data, statistics and risk assessment of all the ecosystems of the planet, with the goal of evaluating them all before the year 2025."
-        image_sm: /img/portfolio/iucn/detail/sm.png
-        image_md: /img/portfolio/iucn/detail/md.png
-        image_lg: /img/portfolio/iucn/detail/lg.png
-        image_xl: /img/portfolio/iucn/detail/xl.png
+        image_sm: /img/portfolio/iucn/detail/o.png
+        image_md: /img/portfolio/iucn/detail/o.png
+        image_lg: /img/portfolio/iucn/detail/o.png
+        image_xl: /img/portfolio/iucn/detail/o.png
     first_steps:
         title: First steps
         image: /img/portfolio/airways.png
@@ -36,10 +36,10 @@ sections:
         Additionally, within the page, there is a form conceptualized by the client, and it can be used by those who evaluate an ecosystem to document the state in which it is located, following the parameters designed by the LRE ecosystem."
 
         fun_fact: "They can also upload geographic files to provide a georeferenced visual abstraction of the ecosystem within the system."
-        image_sm: /img/portfolio/iucn/first_steps/sm.png
-        image_md: /img/portfolio/iucn/first_steps/md.png
-        image_lg: /img/portfolio/iucn/first_steps/lg.png
-        image_xl: /img/portfolio/iucn/first_steps/xl.png
+        image_sm: /img/portfolio/iucn/first_steps/o.png
+        image_md: /img/portfolio/iucn/first_steps/o.png
+        image_lg: /img/portfolio/iucn/first_steps/o.png
+        image_xl: /img/portfolio/iucn/first_steps/o.png
     # design:
         # title: Features
         # steps:
@@ -57,18 +57,18 @@ sections:
             - name: Mezzanine
             # ----------- limit 3 -------------
             - name: Sketch
-        image_sm: /img/portfolio/iucn/technologies/sm.png
-        image_md: /img/portfolio/iucn/technologies/md.png
-        image_lg: /img/portfolio/iucn/technologies/lg.png
-        image_xl: /img/portfolio/iucn/technologies/xl.png
+        image_sm: /img/portfolio/iucn/technologies/o.png
+        image_md: /img/portfolio/iucn/technologies/o.png
+        image_lg: /img/portfolio/iucn/technologies/o.png
+        image_xl: /img/portfolio/iucn/technologies/o.png
     results:
         title: Features
         quote: "We were asked to completely re-create the LRE web page, which was developed in Wordpress and to include new functionalities that would allow it to offer a better management of the geographic information associated with the ecosystems evaluated. <br>
         Did you know that… Seagrass meadows are among the world’s least known ecosystems. Yet these underwater gardens are crucial to our survival — they are among the most important blue carbon reservoirs on the planet."
         external_button_label: Widu, CCO.
         external_button_link: https://google.com
-        image_sm: /img/portfolio/iucn/detail/sm.png
-        image_md: /img/portfolio/iucn/detail/md.png
-        image_lg: /img/portfolio/iucn/detail/lg.png
-        image_xl: /img/portfolio/iucn/detail/xl.png
+        image_sm: /img/portfolio/iucn/detail/o.png
+        image_md: /img/portfolio/iucn/detail/o.png
+        image_lg: /img/portfolio/iucn/detail/o.png
+        image_xl: /img/portfolio/iucn/detail/o.png
 ---
