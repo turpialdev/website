@@ -1564,6 +1564,7 @@ Portfolio detail
             }
             p {
                 overflow: hidden;
+                // overflow: visible;
                 text-overflow: ellipsis;
                 word-wrap: break-word;
                 max-height: 8vw;
@@ -1572,6 +1573,7 @@ Portfolio detail
 
         .info {
             position: absolute;
+            // position: relative;
             color: $black;
             font-size: 0.9vw;
             line-height: 1.5vw;

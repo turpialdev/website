@@ -21,7 +21,7 @@ sections:
         image_pointer_2: Obtenla en la App Store y Google Play
         synthesis_title: Hecha por Foodies para Foodies
         synthesis: Es una red social para amantes de la comida que ofrece recomendaciones personalizadas de restaurantes y platos según las preferencias del usuario, así como comentarios y valoraciones de platos individuales por parte de sus amigos.
-        fun_fact: La primera vez que nuestro cliente tuvo la idea inicial de TidBit Social fue durante una cena familiar, hablando de lo maravilloso que sería tener las recomendaciones de familiares y amigos, por lo que nuestro cliente escribió algunos conceptos en una servilleta, reflexionó sobre esto idea y así nació TidBit Social.
+        fun_fact: La primera vez que nuestro cliente tuvo la idea inicial de TidBit Social fue durante una cena familiar, hablando de lo maravilloso que sería tener las recomendaciones de familiares y amigos, por lo que nuestro cliente escribió algunos conceptos en una servilleta, reflexionó sobre esta idea y así nació TidBit Social.
         image_sm: /img/portfolio/tidbit/detail/sm.png
         image_md: /img/portfolio/tidbit/detail/md.png
         image_lg: /img/portfolio/tidbit/detail/lg.png
@@ -31,8 +31,7 @@ sections:
         image: /img/portfolio/airways.png
         image_pointer: Tidbit ganó el Premio Startup Fan Favorite Award en eMerge Americas, 2018
         synthesis_title: Construido usando prácticas ágiles
-        synthesis: "La agencia de marca de TidBit Social trabajó mucho para definir el aspecto de la aplicación, mientras que Turpial, con más experiencia en UX / UI, ayudó a garantizar la usabilidad y una buena experiencia en el diseño.
-Trabajamos usando metodologías ágiles con reuniones diarias stand-up, planeando el trabajo para cada iteración y asegurándonos de que todos estuvieran en la misma página y con la misma visión."
+        synthesis: "La agencia de marca de TidBit Social trabajó mucho para definir el aspecto de la aplicación, mientras que Turpial, con más experiencia en UX / UI, ayudó a garantizar la usabilidad y una buena experiencia en el diseño. <br> Trabajamos usando metodologías ágiles con reuniones diarias stand-up, planeando el trabajo para cada iteración y asegurándonos de que todos estuvieran en la misma página y con la misma visión."
         fun_fact: Turpial comenzó a trabajar en Tidbit Social en 2016 cuando los empresarios con sede en Washington, DC, vinieron a nosotros con esta idea.
         image_sm: /img/portfolio/tidbit/first_steps/sm.png
         image_md: /img/portfolio/tidbit/first_steps/md.png
@@ -54,7 +53,7 @@ Trabajamos usando metodologías ágiles con reuniones diarias stand-up, planeand
         tools:
             - name: Django
             - name: Ionic
-            - name: Reat Native
+            - name: React Native
             # ----------- limit 3 -------------
             - name: Sketch
         image_sm: /img/portfolio/tidbit/technologies/sm.png
