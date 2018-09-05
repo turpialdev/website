@@ -14,35 +14,56 @@
 
     <div class="nav-items">
         <ul id="menuLG" class="large-menu">
-            {% for link in site.navigation %} {% if link.section != 'Home' %} {% if link.subsection %}
-            <li>
-                <span>{{ link.section }} &nbsp; &#9662;</span>
-                <ul class="subsection">
-                    {% for sublink in link.subsection %}
+            {% if page.title != 'Home Page' %}
+                <li>
+                    <a onclick="closeMenu()" href="{{ site.navigation[0].url }}" alt="{{ site.navigation[0].section }}">
+                        <i class="material-icons">
+                            home
+                        </i>
+                    </a>
+                </li>
+            {% endif %}
+            {% for link in site.navigation %}
+                {% if link.section != 'Home' %}
+                    {% if link.subsection %}
                     <li>
-                        <a onclick="closeMenu()" href="{{ sublink.url }}" alt="{{ sublink.section }}">{{ sublink.section
-                            }}</a>
+                        <span>{{ link.section }} &nbsp; &#9662;</span>
+                        <ul class="subsection">
+                            {% for sublink in link.subsection %}
+                            <li>
+                                <a onclick="closeMenu()" href="{{ sublink.url }}" alt="{{ sublink.section }}">
+                                    {{ sublink.section }}
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
                     </li>
-                    {% endfor %}
-                </ul>
-            </li>
-            {% else %}
-            <li>
-                <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
-            </li>
-            {% endif %} {% endif %} {% endfor %}
+                    {% else %}
+                    <li>
+                        <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}" target="{{ link.target }}">
+                            {{ link.section }}
+                        </a>
+                    </li>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
         </ul>
         <div id="menuSM" class="small-menu">
             <ul>
                 <li class="turpial">
-                    <a onclick="closeMenu()" href="{{ site.navigation[0].url }}">turpial
+                    <a onclick="closeMenu()" href="{{ site.navigation[0].url }}">
+                        turpial
                     </a>
                 </li>
-                {% for link in site.navigation %} {% if link.section != 'Home' %}
-                <li>
-                    <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">{{ link.section }}</a>
-                </li>
-                {% endif %} {% endfor %}
+                {% for link in site.navigation %}
+                    {% if link.section != 'Home' %}
+                        <li>
+                            <a onclick="closeMenu()" href="{{ link.url }}" alt="{{ link.section }}">
+                                {{ link.section }}
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
             </ul>
             <div id="s-menu" onclick="closeMenu()">
                 <span></span>
